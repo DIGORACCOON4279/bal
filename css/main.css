@@ -9,5 +9,20 @@
 /* Padding */
 /* Containers */
 /* Width-Size */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header h1 {
+  color: rgb(235, 235, 235);
+  font-family: "Rubik Distressed", cursive;
+  font-size: 80px;
+}
 
 /*# sourceMappingURL=main.css.map */
