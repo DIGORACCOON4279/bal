@@ -1,0 +1,56 @@
+header{
+    .menuTop{
+        width:100%;
+        height: 60px;
+        position: fixed;
+        top:0;
+        left:0;
+        background-color:#1e1e1e ;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .drawerIcon{
+            width:25px;
+            cursor: pointer;
+            transform: scale(100%) rotate(0deg);
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                filter:drop-shadow(0 0 10px #696061);
+                transform: scale(103%) rotate(-90deg);
+            }
+        }
+        .brand{
+            width:200px;
+        }
+        .menuIcons{
+            ul{
+                display: flex;
+                flex-direction: row;
+                margin: 0px;
+                li{
+                    list-style-type: none;
+                    a{
+                        padding: 0px 5px;
+                        .icon{
+                            transform: scale(100%);
+                            transition: transform 0.3s ease-in-out;
+                            &:hover{
+                                transform: scale(103%);
+                                filter:drop-shadow(0 0 10px #696061);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menuSide{
+
+    }
+}
+.container{
+    width: 100%;
+    height: 1000px;
+}
