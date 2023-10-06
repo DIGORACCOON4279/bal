@@ -26,7 +26,7 @@ body {
   top: 0;
   left: 0;
   background-color: #1b1b1b;
-  box-shadow: 0 0 10px 4px #161616;
+  box-shadow: 0 0 10px 6px #070707;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,11 +104,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #070707;
+  background-color: #141414;
   overflow: hidden;
-  box-shadow: 0 0 10px 4px #161616;
+  box-shadow: 0 0 10px 6px #070707;
   z-index: 10;
-  transform: translate(-100%);
+  transform: translate(-105%);
   transition: 0.3s ease-in-out;
 }
 .header .menuSide .top {
@@ -200,18 +200,52 @@ body {
   position: relative;
 }
 .container .heroSection .heroSectionCentered .paragraph {
-  width: 50%;
+  width: 55%;
   margin-left: -60px;
 }
 .container .heroSection .heroSectionCentered .paragraph .break {
-  font-size: 80px;
+  font-size: 100px;
   font-family: "Rubik Distressed", cursive;
   color: #9A9A9A;
 }
 .container .heroSection .heroSectionCentered .paragraph .subtitle {
-  font-size: 40px;
+  font-size: 45px;
   font-family: "Jura", sans-serif;
   color: #BC2327;
+  margin-top: -45px;
+}
+.container .heroSection .heroSectionCentered .paragraph .cta {
+  margin: 35px 0px;
+}
+.container .heroSection .heroSectionCentered .paragraph .cta .ctaDiscount {
+  background-color: #9A9A9A;
+  padding: 25px 65px;
+  color: #191919;
+  font-weight: 700;
+  font-family: "Jura", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.container .heroSection .heroSectionCentered .paragraph .cta .ctaDiscount:hover {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 10px 6px #070707;
+  color: #ffffff;
+}
+.container .heroSection .heroSectionCentered .paragraph .cta .ctaNewArrivals {
+  background-color: #BC2327;
+  padding: 25px 55px;
+  color: #ffffff;
+  margin-left: 10px;
+  font-weight: 700;
+  font-family: "Jura", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.container .heroSection .heroSectionCentered .paragraph .cta .ctaNewArrivals:hover {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 10px 6px #070707;
 }
 .container .heroSection .heroSectionCentered .laptop {
   width: 65%;

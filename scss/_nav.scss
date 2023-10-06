@@ -5,7 +5,7 @@
     top:0;
     left:0;
     background-color:#1b1b1b;
-    box-shadow: 0 0 10px 4px #161616;
+    box-shadow: 0 0 10px 6px #070707;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,11 +88,11 @@
         flex-direction: column;
         justify-content:space-between;
         align-items: flex-start;
-        background-color: #070707;
+        background-color: #141414;
         overflow: hidden;
-        box-shadow: 0 0 10px 4px #161616;
+        box-shadow: 0 0 10px 6px #070707;
         z-index: 10;
-        transform: translate(-100%);
+        transform: translate(-105%);
         transition: .3s ease-in-out;
         .top{
             width: 100%;

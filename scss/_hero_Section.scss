@@ -18,21 +18,56 @@
             margin: 150px -50px 150px 0px;
             position: relative;
             .paragraph{
-                width:50%;
+                width:55%;
                 margin-left: -60px;
-
                 .break{
-                    font-size: 80px;
+                    font-size: 100px;
                     font-family: $fontRubik;
                     color: #9A9A9A;
                 }
                 .subtitle{
-                    font-size: 40px;
+                    font-size: 45px;
                     font-family: $fontJura;
                     color: #BC2327;
+                    margin-top: -45px;
                 }
-
-
+                .cta{
+                    margin:35px 0px;
+                    .ctaDiscount{
+                        background-color: #9A9A9A;
+                        padding: 25px 65px;
+                        color:#191919;
+                        font-weight: 700;
+                        font-family: $fontJura;
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        // transform: scale(100%);
+                        transition: all 0.3s ease;
+                        &:hover{
+                            // transform: scale(103%);
+                            background-color: #1d1d1d;
+                            box-shadow: 0 0 10px 6px #070707;
+                            color: #ffffff;
+                        }
+                    }
+                    .ctaNewArrivals{
+                        background-color: #BC2327;
+                        padding: 25px 55px;
+                        color:#ffffff;
+                        margin-left: 10px;
+                        font-weight: 700;
+                        font-family: $fontJura;
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        // transform: scale(100%);
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            // transform: scale(103%);
+                            background-color: #1d1d1d;
+                            box-shadow: 0 0 10px 6px #070707;
+                        }
+                    }
+                }
             }
             .laptop{
                 width: 65%;
