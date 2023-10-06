@@ -20,37 +20,46 @@
     <!-- Normalize -->
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel='stylesheet'>
     <!-- Meta para SEO -->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Diego Marin Mora & Break a Leg Company" />
-    <meta name="copyright" content="© [2023] [Diego Marin Mora & Break a Leg Company]" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Diego Marin Mora & Break a Leg Company"/>
+    <meta name="copyright" content="© [2023] [Diego Marin Mora & Break a Leg Company]"/>
 </head>
 <body>
 
     <!-- Header -->
 
-    <header>
-        <nav class="menuTop">
-            <img src="img/menu_Icon.svg" alt="Menu icon" class="drawerIcon">
-            <img src="img/brand_Red.webp" alt="Break a Leg brand" class="brand">
-            <section class="menuIcons">
+    <header class="header">
+        <input id="menuSide" type="checkbox">
+        <label for="menuSide">
+            <img class="drawerIcon" src="img/menu_Icon.svg" alt="Menu icon">
+        </label>
+        <a class="logo" href="index.html">
+            <img class="brand" src="img/skull.svg" alt="Break a Leg brand">
+        </a>
+        <section class="menuIcons">
+            <ul>
+                <li><a href=""><img class="icon" src="img/moon_Icon.svg" alt=""></a></li>
+                <li><a href=""><img class="icon" src="img/user_Icon.svg" alt=""></a></li>
+                <li><a href=""><img class="icon" src="img/whishlist_White_Icon.svg" alt=""></a></li>
+                <li><a href=""><img class="icon" src="img/empty_Shopping_Cart.svg" alt=""></a></li>
+            </ul>
+        </section>
+        <nav class="menuSide">
+            <label for="menuSide">
+                <img class="close" src="img/close_Arrow.svg" alt="Close icon">
+            </label>
+            <section class="menu">
                 <ul>
-                    <li><a href=""><img class="icon" src="img/moon_Icon.svg" alt=""></a></li>
-                    <li><a href=""><img class="icon" src="img/user_Icon.svg" alt=""></a></li>
-                    <li><a href=""><img class="icon" src="img/whishlist_White_Icon.svg" alt=""></a></li>
-                    <li><a href=""><img class="icon" src="img/empty_Shopping_Cart.svg" alt=""></a></li>
+                    <li><a href="../views/sign_In.html" class="link">Sign in</a></li>
+                    <li><a href="../views/my_Cart.html" class="link">My cart</a></li>
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="../views/store.html" class="link">Store</a></li>
+                    <li><a href="index.html#giftCards" class="link">Gift cards</a></li>
                 </ul>
             </section>
-        </nav>
-        <nav class="menuSide">
-            <ul>
-                <li><a href="../views/sign_In.html" class="link">Sign in</a></li>
-                <li><a href="../views/my_Cart.html" class="link">My cart</a></li>
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="../views/store.html" class="link">Store</a></li>
-                <li><a href="index.html#giftCards" class="link">Gift cards</a></li>
-            </ul>
             <section class="contactUs">
+                <p>Contact us</p>
                 <ul>
                     <li><a href="" class="item"></a></li>
                     <li><a href="" class="item"></a></li>
