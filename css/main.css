@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: rgb(187, 186, 186);
+  background-color: rgb(16, 16, 16);
 }
 
 .header {
@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  z-index: 10px;
+  z-index: 10;
 }
 .header #menuSide {
   display: none;
@@ -52,12 +52,27 @@ body {
 }
 .header .logo .brand {
   width: 45px;
-  transform: scale(100%);
+  animation: skull 1s linear;
   transition: transform 0.3s ease-in-out;
 }
 .header .logo .brand:hover {
   transform: scale(103%);
   filter: drop-shadow(0 0 10px #696061);
+}
+@keyframes skull {
+  0% {
+    transform: translateY(-100%) scale(100%);
+  }
+  50% {
+    transform: translateY(5%) scale(100%);
+  }
+  75% {
+    transform: translateY(0%) scale(110%);
+  }
+  100% {
+    transform: translateY(0%) scale(100%);
+    filter: drop-shadow(0 0 10px #696061);
+  }
 }
 .header .menuIcons ul {
   display: flex;
@@ -92,6 +107,7 @@ body {
   background-color: #070707;
   overflow: hidden;
   box-shadow: 0 0 10px 4px #161616;
+  z-index: 10;
   transform: translate(-100%);
   transition: 0.3s ease-in-out;
 }
@@ -101,7 +117,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 20px 0px 0px;
 }
 .header .menuSide .top .brand {
   width: 45px;
@@ -131,7 +147,6 @@ body {
   text-decoration: underline;
 }
 .header .menuSide .contactUs {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -159,13 +174,51 @@ body {
   text-decoration: none;
 }
 .header .menuSide .contactUs ul li .item .itemSocial {
-  width: 35px;
+  width: 30px;
   margin: 0px 5px;
 }
 
 .container {
   width: 100%;
+  height: auto;
+}
+.container .heroSection {
+  width: 100%;
   height: 1000px;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+.container .heroSection .heroSectionCentered {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 150px -50px 150px 0px;
+  position: relative;
+}
+.container .heroSection .heroSectionCentered .paragraph {
+  width: 50%;
+  margin-left: -60px;
+}
+.container .heroSection .heroSectionCentered .paragraph .break {
+  font-size: 80px;
+  font-family: "Rubik Distressed", cursive;
+  color: #9A9A9A;
+}
+.container .heroSection .heroSectionCentered .paragraph .subtitle {
+  font-size: 40px;
+  font-family: "Jura", sans-serif;
+  color: #BC2327;
+}
+.container .heroSection .heroSectionCentered .laptop {
+  width: 65%;
+  position: absolute;
+  top: 0px;
+  right: -115px;
+  overflow: visible;
 }
 
 /*# sourceMappingURL=main.css.map */

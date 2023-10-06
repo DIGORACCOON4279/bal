@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding:0px 20px;
-    z-index: 10px;
+    z-index: 10;
     #menuSide{
         display: none;
         &:checked ~ .menuSide{
@@ -33,11 +33,26 @@
     .logo{
         .brand{
             width:45px;
-            transform: scale(100%);
+            animation: skull 1s linear;
             transition: transform 0.3s ease-in-out;
             &:hover{
                 transform: scale(103%);
                 filter:drop-shadow(0 0 10px #696061);
+            }
+            @keyframes skull {
+                0%{
+                    transform:translateY(-100%) scale(100%);
+                }
+                50%{
+                    transform: translateY(5%) scale(100%);
+                }
+                75%{
+                    transform: translateY(0%) scale(110%);
+                }
+                100%{
+                    transform: translateY(0%) scale(100%);
+                    filter:drop-shadow(0 0 10px #696061);
+                }
             }
         }
     }
@@ -76,6 +91,7 @@
         background-color: #070707;
         overflow: hidden;
         box-shadow: 0 0 10px 4px #161616;
+        z-index: 10;
         transform: translate(-100%);
         transition: .3s ease-in-out;
         .top{
@@ -84,7 +100,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 10px 10px 10px;
+            padding: 5px 20px 0px 0px;
             .brand{
                 width: 45px;
             }
@@ -119,7 +135,6 @@
             }
         }
         .contactUs{
-            width: 100%;
             display:flex;
             flex-direction: column;
             justify-content:space-around;
@@ -143,7 +158,7 @@
                     .item{
                         text-decoration: none;
                         .itemSocial{
-                            width:35px;
+                            width:30px;
                             margin: 0px 5px;
                         }
                     }
@@ -152,7 +167,4 @@
         }
     }
 }
-.container{
-    width: 100%;
-    height: 1000px;
-}
+
