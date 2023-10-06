@@ -31,7 +31,11 @@
         }
     }
     .logo{
+        position: relative;
         .brand{
+            position:absolute;
+            top:-22px;
+            left:53px;
             width:45px;
             animation: skull 1s linear;
             transition: transform 0.3s ease-in-out;

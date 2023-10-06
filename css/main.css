@@ -56,7 +56,13 @@ body .container {
   filter: drop-shadow(0 0 10px #696061);
   transform: scale(103%);
 }
+.header .logo {
+  position: relative;
+}
 .header .logo .brand {
+  position: absolute;
+  top: -22px;
+  left: 53px;
   width: 45px;
   animation: skull 1s linear;
   transition: transform 0.3s ease-in-out;
@@ -209,7 +215,7 @@ body .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
+  padding: 50px 20px;
   position: relative;
 }
 .footerContainer .footer .socialMedia .contactUs {
@@ -217,7 +223,6 @@ body .container {
   font-weight: 600;
   font-size: 0.9rem;
   color: rgb(194, 193, 193);
-  padding: 10px 0px;
 }
 .footerContainer .footer .socialMedia ul {
   display: flex;
@@ -244,7 +249,7 @@ body .container {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 43.5%;
 }
 .footerContainer .footer .brand .nameLogo {
@@ -266,9 +271,9 @@ body .container {
   font-weight: 600;
   font-size: 0.9rem;
   color: rgb(194, 193, 193);
-  padding: 10px 0px;
+  padding: 0px 0px;
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 225px;
 }
 .footerContainer .footer .payments .paymentCards {
@@ -285,6 +290,7 @@ body .container {
 }
 .footerContainer .development .raccoon {
   width: 35px;
+  padding-bottom: 5px;
 }
 .footerContainer .development .developer {
   text-align: center;
