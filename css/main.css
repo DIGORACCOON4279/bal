@@ -18,6 +18,12 @@
 body {
   background-color: rgb(16, 16, 16);
 }
+body .container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
 
 .header {
   width: 100%;
@@ -178,81 +184,118 @@ body {
   margin: 0px 5px;
 }
 
-.container {
+.heroSection {
   width: 100%;
-  height: auto;
-}
-.container .heroSection {
-  width: 100%;
-  height: 1000px;
-  background-position: 100%;
+  height: 100%;
+  background-image: url(../img/background_Hero.webp);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
-  z-index: 1;
+  z-index: -1;
 }
-.container .heroSection .heroSectionCentered {
+
+.footerContainer {
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerContainer .footer {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 150px -50px 150px 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
   position: relative;
 }
-.container .heroSection .heroSectionCentered .paragraph {
-  width: 55%;
-  margin-left: -60px;
-}
-.container .heroSection .heroSectionCentered .paragraph .break {
-  font-size: 100px;
-  font-family: "Rubik Distressed", cursive;
-  color: #9A9A9A;
-}
-.container .heroSection .heroSectionCentered .paragraph .subtitle {
-  font-size: 45px;
+.footerContainer .footer .socialMedia .contactUs {
   font-family: "Jura", sans-serif;
-  color: #BC2327;
-  margin-top: -45px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(194, 193, 193);
+  padding: 10px 0px;
 }
-.container .heroSection .heroSectionCentered .paragraph .cta {
-  margin: 35px 0px;
+.footerContainer .footer .socialMedia ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -40px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(61, 61, 61);
 }
-.container .heroSection .heroSectionCentered .paragraph .cta .ctaDiscount {
-  background-color: #9A9A9A;
-  padding: 25px 95px;
-  color: #191919;
-  font-weight: 700;
-  font-family: "Jura", sans-serif;
-  font-size: 1.2rem;
+.footerContainer .footer .socialMedia ul li {
+  list-style-type: none;
+}
+.footerContainer .footer .socialMedia ul li .item {
   text-decoration: none;
-  transition: all 0.3s ease;
 }
-.container .heroSection .heroSectionCentered .paragraph .cta .ctaDiscount:hover {
-  background-color: #1d1d1d;
-  box-shadow: 0 0 10px 6px #070707;
-  color: #ffffff;
+.footerContainer .footer .socialMedia ul li .item .itemSocial {
+  width: 30px;
+  margin: 0px 5px;
 }
-.container .heroSection .heroSectionCentered .paragraph .cta .ctaNewArrivals {
-  background-color: #BC2327;
-  padding: 25px 85px;
-  color: #ffffff;
-  margin-left: 10px;
-  font-weight: 700;
-  font-family: "Jura", sans-serif;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-.container .heroSection .heroSectionCentered .paragraph .cta .ctaNewArrivals:hover {
-  background-color: #1d1d1d;
-  box-shadow: 0 0 10px 6px #070707;
-}
-.container .heroSection .heroSectionCentered .laptop {
-  width: 65%;
+.footerContainer .footer .brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 0px;
-  right: -115px;
-  overflow: visible;
+  top: 0;
+  left: 43.5%;
+}
+.footerContainer .footer .brand .nameLogo {
+  font-size: 1.8rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #BC2327;
+}
+.footerContainer .footer .brand .skull {
+  width: 35px;
+}
+.footerContainer .footer .payments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footerContainer .footer .payments h3 {
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(194, 193, 193);
+  padding: 10px 0px;
+  position: absolute;
+  top: 0;
+  right: 225px;
+}
+.footerContainer .footer .payments .paymentCards {
+  width: 55%;
+  align-self: flex-end;
+  padding-top: 10px;
+  border-top: 1px solid rgb(61, 61, 61);
+}
+.footerContainer .development {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.footerContainer .development .raccoon {
+  width: 35px;
+}
+.footerContainer .development .developer {
+  text-align: center;
+  border-top: 1px solid rgb(61, 61, 61);
+}
+.footerContainer .development .developer p {
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  font-size: 0.5rem;
+  color: rgb(194, 193, 193);
+  margin: 0px 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
