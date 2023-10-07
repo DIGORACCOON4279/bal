@@ -410,10 +410,56 @@ body .container {
 }
 .newArrivals .sectionCard .cardProducts {
   width: 25%;
-  cursor: pointer;
+  position: relative;
+  transition: clip-path 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article .smallCard {
+  display: none;
 }
 .newArrivals .sectionCard .cardProducts .article .outFit {
   width: 100%;
+}
+.newArrivals .sectionCard .cardProducts .article .new {
+  display: none;
+}
+.newArrivals .sectionCard .cardProducts .article .skull {
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+.newArrivals .sectionCard .cardProducts .article .skull:checked + .new {
+  display: flex;
+  width: 60%;
+  height: auto;
+  cursor: pointer;
+  background-color: rgb(39, 39, 39);
+  position: absolute;
+  top: 125px;
+  right: 25px;
+  box-shadow: 0 0 3px 1px #474747;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article .skull:checked + .new:hover {
+  box-shadow: 0 0 4px 3px #474747;
+}
+.newArrivals .sectionCard .cardProducts .article .skull:checked + .new .outfit {
+  width: 50%;
+}
+.newArrivals .sectionCard .cardProducts .article .skull:checked + .new .price {
+  height: 50px;
+  color: rgb(255, 247, 247);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Jura", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .newArrivals .ctaStore {
   display: flex;

@@ -12,10 +12,64 @@
         margin-bottom: 70px;
         .cardProducts{
             width: 25%;
-            cursor: pointer;
+            position: relative;
+            // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            transition: clip-path 0.3s ease;
+
             .article{
+                .smallCard{
+                    display:none;
+                }
+
+                //     &:checked + .smallCard{
+                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
+                // }
                 .outFit{
                     width:100%;
+                }
+                .new{
+                    display: none;
+                }
+                .skull{
+                    width:35px;
+                    position:absolute;
+                    top:20px;
+                    right:20px;
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    cursor:pointer;
+                    z-index: 1;
+                    &:checked + .new{
+                        display: flex;
+                        width: 60%;
+                        height:auto;
+                        cursor: pointer;
+                        background-color:rgb(39, 39, 39);
+                        position:absolute;
+                        top:125px;
+                        right:25px;
+                        // z-index: 1;
+                        // visibility: visible;
+                        box-shadow:0 0 3px 1px #474747;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            box-shadow: 0 0 4px 3px #474747;;
+                        }
+                        .outfit{
+                            width:50%;
+                        }
+                        .price{
+                            height: 50px;
+                            color:rgb(255, 247, 247);
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            font-family: $fontJura;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin:auto;
+                        }
+                    }
                 }
             }
         }
