@@ -9,8 +9,31 @@
         margin-bottom: 100px;
     }
     .sectionCard{
+        margin-bottom: 70px;
         .cardProducts{
+            width: 25%;
             cursor: pointer;
+            .article{
+                .outFit{
+                    width:100%;
+                }
+            }
+        }
+    }
+    .ctaStore{
+        display:flex;
+        justify-content: center;
+        margin: 70px auto 0px;
+        width: 200px;
+        padding:20px 40px;
+        color:#d9d9d9;
+        background-color: #3f3f3f;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color:#BC2327 ;
+            box-shadow: 0 0 6px 4px black;
+            text-decoration: underline;
         }
     }
 }

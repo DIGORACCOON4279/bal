@@ -13,10 +13,12 @@
             cursor: pointer;
             .outFit{
                 width:100%;
-                filter: grayscale(10%);
+                // background-color: transparent;
                 transition: all 0.3s ease;
                 &:hover{
-                    filter: grayscale(100%);
+                    // filter: blur(.1rem);
+                    // background-color: rgba(255, 0, 0, 0.5);
+                    filter:grayscale(100%);
                 }
             }
             .info{
@@ -40,19 +42,16 @@
                 }
             }
         }
-        .cardProducts + .outFit{
-            filter: grayscale(10%);
-            transition: all 0.3s ease;
-            &:hover{
-            }
-        }
+        // .cardProducts + .outFit{
+        //     filter: grayscale(10%);
+        //     transition: all 0.3s ease;
+        //     &:hover{
+        //     }
+        // }
         .cardProducts{
-            filter: grayscale(10%);
             transition: all 0.3s ease;
             &:hover{
                 box-shadow: 0 0 6px 4px black;
-                filter: grayscale(100%);
-
             }
         }
     }
