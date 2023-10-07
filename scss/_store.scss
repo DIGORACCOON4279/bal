@@ -41,7 +41,7 @@
                 }
             }
         }
-        .cardProducts +.outFit{
+        .cardProducts + .outFit{
             filter: grayscale(10%);
             transition: all 0.3s ease;
             &:hover{
