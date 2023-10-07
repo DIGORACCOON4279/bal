@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 0px 150px 0px;
+    margin: 0px 0px 200px 0px;
     .heroSectionCentered{
         z-index: 1;
         .info{
@@ -44,7 +44,7 @@
                     &:hover{
                         color:#ffffff;
                         background-color: #070707;
-                        box-shadow: 0 0 10px 4px #070707;
+                        box-shadow: 0 0 6px 2px #BC2327;
                         text-decoration: underline;
                     }
                 }
