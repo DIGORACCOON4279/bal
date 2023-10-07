@@ -133,6 +133,7 @@
                         font-family: $fontJura;transition:all .5s;
                         &:hover{
                             text-decoration: underline;
+                            filter: drop-shadow(0 0 6px #BC2327);
                         }
                     }
                 }
