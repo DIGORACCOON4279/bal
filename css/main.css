@@ -234,7 +234,7 @@ body .container {
 }
 .heroSection .heroSectionCentered .info .cta .ctaDiscount:hover, .heroSection .heroSectionCentered .info .cta .ctaNewArrivals:hover {
   color: #ffffff;
-  background-color: #070707;
+  background-color: #3d3d3d;
   box-shadow: 0 0 6px 2px #BC2327;
   text-decoration: underline;
 }
@@ -326,6 +326,78 @@ body .container {
 }
 .advertising .advertisingMood .subtitle:nth-child(3) {
   opacity: 0.35;
+}
+
+.bestSellers {
+  width: 100%;
+  height: auto;
+}
+.bestSellers .subtitle {
+  font-size: 4rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #BC2327;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.bestSellers .sectionCard .cardProducts {
+  cursor: pointer;
+}
+.bestSellers .sectionCard .cardProducts .outFit {
+  width: 100%;
+  filter: grayscale(10%);
+  transition: all 0.3s ease;
+}
+.bestSellers .sectionCard .cardProducts .outFit:hover {
+  filter: grayscale(100%);
+}
+.bestSellers .sectionCard .cardProducts .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #D9D9D9;
+  padding: 10px;
+}
+.bestSellers .sectionCard .cardProducts .info .linkStore {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  color: #D9D9D9;
+  background-color: #BC2327;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.bestSellers .sectionCard .cardProducts .info .linkStore:hover {
+  color: #D9D9D9;
+  background-color: #3d3d3d;
+}
+.bestSellers .sectionCard .cardProducts + .outFit {
+  filter: grayscale(10%);
+  transition: all 0.3s ease;
+}
+.bestSellers .sectionCard .cardProducts + .outFit:hover {
+  filter: grayscale(100%);
+}
+.bestSellers .sectionCard .cardProducts {
+  transition: all 0.3s ease;
+}
+.bestSellers .sectionCard .cardProducts:hover {
+  box-shadow: 0 0 6px 4px black;
+}
+.bestSellers .ctaStore {
+  display: flex;
+  justify-content: center;
+  margin: 70px auto 0px;
+  width: 200px;
+  padding: 20px 40px;
+  color: #d9d9d9;
+  background-color: #3f3f3f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.bestSellers .ctaStore:hover {
+  background-color: #BC2327;
+  box-shadow: 0 0 6px 4px black;
+  text-decoration: underline;
 }
 
 .footerContainer {
