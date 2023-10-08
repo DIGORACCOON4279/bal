@@ -349,13 +349,54 @@ body .container {
   align-items: center;
   margin-bottom: 150px;
 }
+.giftCards .containerGetOff .containerCards {
+  width: 70%;
+  height: auto;
+  margin-right: 100px;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card1, .giftCards .containerGetOff .containerCards .sectionCards .card2, .giftCards .containerGetOff .containerCards .sectionCards .card3, .giftCards .containerGetOff .containerCards .sectionCards .card4 {
+  width: 100%;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card1 .subtitleGift, .giftCards .containerGetOff .containerCards .sectionCards .card2 .subtitleGift, .giftCards .containerGetOff .containerCards .sectionCards .card3 .subtitleGift, .giftCards .containerGetOff .containerCards .sectionCards .card4 .subtitleGift {
+  font-size: 3rem;
+  font-family: "Jura", sans-serif;
+  color: #BC2327;
+  padding: 25px 0px;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card1 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card2 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card3 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card4 .paragraph {
+  font-size: 0.8rem;
+  font-family: "Jura", sans-serif;
+  color: #1E1E1E;
+  font-weight: 700;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card1:nth-child(1) {
+  background-color: #F3F3F3;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card2:nth-child(2) {
+  background-color: #1E1E1E;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card2:nth-child(2) .paragraph {
+  color: #D9D9D9;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card3:nth-child(3) {
+  background-color: #E0B24D;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card4:nth-child(4) {
+  background-color: #BC2327;
+}
+.giftCards .containerGetOff .containerCards .sectionCards .card4:nth-child(4) .subtitleGift {
+  color: #D9D9D9;
+  font-weight: 700px;
+}
 .giftCards .containerGetOff .containerMessage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.giftCards .containerGetOff .containerMessage .subtitle {
+.giftCards .containerGetOff .containerMessage .subtitleMessage {
   font-size: 3rem;
   font-family: "Jura", sans-serif;
   color: #959595;

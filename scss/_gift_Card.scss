@@ -15,12 +15,56 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 150px;
+        .containerCards{
+            width:70%;
+            height: auto;
+            margin-right: 100px;
+            .sectionCards{
+                .card1, .card2, .card3, .card4{
+                    width: 100%;
+                    padding-top:20px;
+                    border-radius: 20px;
+                    // box-shadow: 0 0 3px 2px black;
+                    .subtitleGift{
+                        font-size:3rem;
+                        font-family: $fontJura;
+                        color: #BC2327;
+                        padding: 25px 0px;
+                    }
+                    .paragraph{
+                        font-size:0.8rem;
+                        font-family: $fontJura;
+                        color: #1E1E1E;
+                        font-weight: 700;
+                    }
+                }
+                .card1:nth-child(1){
+                    background-color: #F3F3F3;
+                }
+                .card2:nth-child(2){
+                    background-color:#1E1E1E;
+                    .paragraph{
+                        color: #D9D9D9;
+                    }
+                }
+                .card3:nth-child(3){
+                    background-color: #E0B24D;
+                }
+                .card4:nth-child(4){
+                    background-color: #BC2327;
+                    .subtitleGift{
+                        color: #D9D9D9;
+                        font-weight: 700px;
+                    }
+                }
+            }
+        }
         .containerMessage{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            .subtitle{ font-size:3rem;
+            .subtitleMessage{ font-size:3rem;
                 font-family: $fontJura;
                 color: #959595;
                 text-align: left;
