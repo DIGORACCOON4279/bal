@@ -215,11 +215,11 @@ body .container {
   font-family: "Jura", sans-serif;
   color: #BC2327;
   font-weight: 600;
-  margin-top: -55px;
+  margin-top: -45px;
 }
 .heroSection .heroSectionCentered .info .cta {
   width: 100%;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 .heroSection .heroSectionCentered .info .cta .ctaDiscount, .heroSection .heroSectionCentered .info .cta .ctaNewArrivals {
   padding: 25px 55px;
@@ -328,6 +328,44 @@ body .container {
 }
 .advertising .advertisingMood .subtitle:nth-child(3) {
   opacity: 0.35;
+}
+
+.giftCards {
+  width: 100%;
+  height: auto;
+}
+.giftCards .subtitle {
+  font-size: 4rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #BC2327;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.giftCards .containerGetOff {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.giftCards .containerGetOff .containerMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.giftCards .containerGetOff .containerMessage .subtitle {
+  font-size: 3rem;
+  font-family: "Jura", sans-serif;
+  color: #959595;
+  text-align: left;
+}
+.giftCards .containerGetOff .containerMessage .paragraph {
+  font-size: 1.5rem;
+  font-family: "Jura", sans-serif;
+  color: #A5A5A5;
+  text-align: left;
 }
 
 .bestSellers {
