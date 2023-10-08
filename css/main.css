@@ -399,7 +399,7 @@ body .container {
 .giftCards .containerGetOff .containerMessage .subtitleMessage {
   font-size: 3rem;
   font-family: "Jura", sans-serif;
-  color: #959595;
+  color: #BC2327;
   text-align: left;
 }
 .giftCards .containerGetOff .containerMessage .paragraph {
@@ -407,6 +407,9 @@ body .container {
   font-family: "Jura", sans-serif;
   color: #A5A5A5;
   text-align: left;
+}
+.giftCards .containerGetOff .containerMessage .paragraph .higthlighter {
+  color: #BC2327;
 }
 
 .bestSellers {
