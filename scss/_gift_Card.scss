@@ -30,12 +30,13 @@
                         font-family: $fontJura;
                         color: #BC2327;
                         padding: 25px 0px;
+                        font-weight: 500;
                     }
                     .paragraph{
                         font-size:0.8rem;
                         font-family: $fontJura;
                         color: #1E1E1E;
-                        font-weight: 700;
+                        font-weight: 600;
                     }
                 }
                 .card1:nth-child(1){
@@ -60,20 +61,24 @@
             }
         }
         .containerMessage{
+            // width: 60%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            .subtitleMessage{ font-size:3rem;
+            .subtitleMessage{
+                font-size:3rem;
                 font-family: $fontJura;
                 color: #BC2327;
                 text-align: left;
+                font-weight: 700px;
             }
             .paragraph{
                 font-size:1.5rem;
                 font-family: $fontJura;
                 color: #A5A5A5;
                 text-align: left;
+                font-weight: 400px;
                 .higthlighter{
                     color: #BC2327;
                 }

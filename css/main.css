@@ -364,12 +364,13 @@ body .container {
   font-family: "Jura", sans-serif;
   color: #BC2327;
   padding: 25px 0px;
+  font-weight: 500;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card1 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card2 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card3 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card4 .paragraph {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   color: #1E1E1E;
-  font-weight: 700;
+  font-weight: 600;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card1:nth-child(1) {
   background-color: #F3F3F3;
@@ -401,12 +402,14 @@ body .container {
   font-family: "Jura", sans-serif;
   color: #BC2327;
   text-align: left;
+  font-weight: 700px;
 }
 .giftCards .containerGetOff .containerMessage .paragraph {
   font-size: 1.5rem;
   font-family: "Jura", sans-serif;
   color: #A5A5A5;
   text-align: left;
+  font-weight: 400px;
 }
 .giftCards .containerGetOff .containerMessage .paragraph .higthlighter {
   color: #BC2327;
