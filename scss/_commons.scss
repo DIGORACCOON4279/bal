@@ -48,6 +48,13 @@ html{
             .directionUp{
                 .arrowUpIcon{
                     width:45px;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: #BC2327;
+                        border: 2px solid #BC2327;
+                    }
                 }
             }
         }

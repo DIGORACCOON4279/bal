@@ -59,6 +59,13 @@ html .mainContainer .arrowUp {
 }
 html .mainContainer .arrowUp .directionUp .arrowUpIcon {
   width: 45px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
+  background-color: #BC2327;
+  border: 2px solid #BC2327;
 }
 html .mainContainer .skullSocialMedia {
   position: fixed;
@@ -112,14 +119,8 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transform: translate(0%);
 }
 .header label .drawerIcon {
-  width: 22px;
+  width: 30px;
   cursor: pointer;
-  transform: scale(100%);
-  transition: all 0.3s ease-in-out;
-}
-.header label .drawerIcon:hover {
-  filter: drop-shadow(0 0 10px #696061);
-  transform: scale(103%);
 }
 .header .logo {
   position: relative;
@@ -188,10 +189,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   cursor: pointer;
   transform: scale(100%);
   transition: all 0.3s ease-in-out;
-}
-.header .menuSide .top label .close:hover {
-  filter: drop-shadow(0 0 10px #696061);
-  transform: scale(103%);
 }
 .header .menuSide .menu ul li {
   list-style-type: none;
