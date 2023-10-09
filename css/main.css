@@ -310,41 +310,46 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   background-size: cover;
   margin: 200px 0px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getOff .containerGetOff {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.getOff .info .title {
+.getOff .containerGetOff .info .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
   color: #BC2327;
-  margin-top: -200px;
+  margin-top: -150px;
 }
-.getOff .info .paragraph {
-  margin-top: 100px;
+.getOff .containerGetOff .info .paragraph {
+  margin-top: 50px;
 }
-.getOff .info .paragraph .subtitle, .getOff .info .paragraph .sentence, .getOff .info .paragraph .cta {
+.getOff .containerGetOff .info .paragraph .subtitle, .getOff .containerGetOff .info .paragraph .sentence, .getOff .containerGetOff .info .paragraph .cta {
   font-size: 1.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
   color: #D9D9D9;
 }
-.getOff .info .paragraph .sentence {
+.getOff .containerGetOff .info .paragraph .sentence {
   font-size: 1.5rem;
 }
-.getOff .info .cta {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #E0E0E0;
-  transition: color 0.3s;
+.getOff .containerGetOff .info .cta {
+  width: 45px;
 }
-.getOff .info .cta:hover {
-  color: #8a8a8a;
+.getOff .containerGetOff .info #cross {
+  display: none;
 }
-.getOff .hoddy {
+.getOff .containerGetOff .info #cross:checked ~ .bannerGetOff {
+  transform: translateY(100%);
+}
+.getOff .containerGetOff .hoddy {
   animation: hoddy 2s linear 2s infinite;
 }
 @keyframes hoddy {
@@ -363,6 +368,79 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   100% {
     filter: drop-shadow(0 4px 6px #BC2327);
   }
+}
+.getOff .bannerGetOff {
+  width: 62vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 4px black;
+  position: fixed;
+  top: -380px;
+  left: 18%;
+  z-index: 10;
+  transform: translateY(210%);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.getOff .bannerGetOff .title {
+  font-size: 4rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #BC2327;
+  margin: 40px auto;
+}
+.getOff .bannerGetOff .crossCloseWhite {
+  width: 25px;
+  position: absolute;
+  bottom: 100px;
+  left: 710px;
+  z-index: 8;
+}
+.getOff .bannerGetOff .slideGetOff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+.getOff .bannerGetOff .slideGetOff .hoddy {
+  padding: 10px;
+}
+.getOff .bannerGetOff .slideGetOff .hoddy img {
+  width: 100%;
+  height: auto;
+}
+.getOff .bannerGetOff .slideGetOff .hoddy h3 {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-family: "Jura", sans-serif;
+  color: #BC2327;
+}
+.getOff .bannerGetOff .slideGetOff .hoddy p {
+  padding: 10px auto;
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #d9d9d9;
+}
+.getOff .bannerGetOff::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8980392157);
+  backdrop-filter: blur(10px);
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 10px;
+}
+.getOff .bannerGetOff > * {
+  position: relative;
 }
 
 .advertising {
