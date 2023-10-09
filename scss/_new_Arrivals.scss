@@ -19,11 +19,8 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
-                    width:100%;
+                    width: 100%;
                 }
                 .new{
                     display: none;
@@ -33,26 +30,18 @@
                     flex-direction: column;
                     width: 100%;
                     height:auto;
-                    cursor: pointer;
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
-                        box-shadow: 0 0 4px 3px #474747;;
-                    }
-                    .outfit{
-                        width:100%;
-                        transform: scale(100%);
-                        transition:transform 0.3s ease;
-                        &:hover{
-                            transform:scale(85%);
-                    }
+                        box-shadow: 0 0 4px 3px #474747;
                     }
                     .price{
                         height: 50px;
@@ -76,6 +65,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }
@@ -83,9 +96,6 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
                     width:100%;
                 }
@@ -101,11 +111,12 @@
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
                         box-shadow: 0 0 4px 3px #474747;;
@@ -140,6 +151,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }
@@ -147,9 +182,6 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
                     width:100%;
                 }
@@ -165,11 +197,12 @@
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
                         box-shadow: 0 0 4px 3px #474747;;
@@ -204,6 +237,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }
@@ -211,9 +268,6 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
                     width:100%;
                 }
@@ -229,11 +283,12 @@
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
                         box-shadow: 0 0 4px 3px #474747;;
@@ -268,6 +323,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }
@@ -275,9 +354,6 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
                     width:100%;
                 }
@@ -293,11 +369,12 @@
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
                         box-shadow: 0 0 4px 3px #474747;;
@@ -332,6 +409,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }
@@ -339,9 +440,6 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
                     width:100%;
                 }
@@ -357,11 +455,12 @@
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
                         box-shadow: 0 0 4px 3px #474747;;
@@ -396,6 +495,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }
@@ -403,9 +526,6 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
                     width:100%;
                 }
@@ -421,11 +541,12 @@
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
                         box-shadow: 0 0 4px 3px #474747;;
@@ -460,6 +581,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }
@@ -467,9 +612,6 @@
                 .smallCard{
                     display:none;
                 }
-                //     &:checked + .smallCard{
-                //     clip-path: polygon(100% 0, 100% 0, 100% 0);
-                // }
                 #outFit{
                     width:100%;
                 }
@@ -485,11 +627,12 @@
                     padding: 10px;
                     background-color:#f3f3f3;
                     border-radius: 5px;
+                    text-decoration: none;
                     position:absolute;
                     top: 70px;
                     right:25px;
                     box-shadow:0 0 3px 1px #474747;
-                    z-index: 10;
+                    z-index: 8;
                     transition: all 0.3s ease;
                     &:hover{
                         box-shadow: 0 0 4px 3px #474747;;
@@ -524,6 +667,30 @@
                         border-radius: 50%;
                         cursor:pointer;
                         z-index: 1;
+                        cursor: help;
+                        animation: skull 2s linear infinite;
+                        transform:scale(100%);
+                        transition: transform 0.3s ease;
+                        &:hover{
+                            transform:scale(103%);
+                        }
+                        @keyframes skull{
+                            0%{
+                                box-shadow: 0 0 1px 1px #ffffff;
+                            }
+                            25%{
+                                box-shadow: 0 0 3px 2px #f0f0f0;
+                            }
+                            50%{
+                                box-shadow: 0 0 5px 4px #e4e4e4;
+                            }
+                            80%{
+                                box-shadow: 0 0 6px 6px #d1d1d1;
+                            }
+                            100%{
+                                box-shadow: 0 0 7px 8px #b4b4b4;
+                            }
+                        }
                     }
                 }
             }

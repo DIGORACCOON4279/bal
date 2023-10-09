@@ -514,27 +514,19 @@ body .container {
   flex-direction: column;
   width: 100%;
   height: auto;
-  cursor: pointer;
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard:hover {
   box-shadow: 0 0 4px 3px #474747;
-}
-.newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard .outfit {
-  width: 100%;
-  transform: scale(100%);
-  transition: transform 0.3s ease;
-}
-.newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard .outfit:hover {
-  transform: scale(85%);
 }
 .newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard .price {
   height: 50px;
@@ -556,6 +548,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article1 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .sectionCard .cardProducts .article2 .smallCard {
   display: none;
@@ -575,11 +591,12 @@ body .container {
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article2 .new:checked + .smallCard:hover {
@@ -613,6 +630,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article2 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .sectionCard .cardProducts .article3 .smallCard {
   display: none;
@@ -632,11 +673,12 @@ body .container {
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article3 .new:checked + .smallCard:hover {
@@ -670,6 +712,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article3 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .sectionCard .cardProducts .article4 .smallCard {
   display: none;
@@ -689,11 +755,12 @@ body .container {
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article4 .new:checked + .smallCard:hover {
@@ -727,6 +794,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article4 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .sectionCard .cardProducts .article5 .smallCard {
   display: none;
@@ -746,11 +837,12 @@ body .container {
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article5 .new:checked + .smallCard:hover {
@@ -784,6 +876,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article5 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .sectionCard .cardProducts .article6 .smallCard {
   display: none;
@@ -803,11 +919,12 @@ body .container {
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article6 .new:checked + .smallCard:hover {
@@ -841,6 +958,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article6 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .sectionCard .cardProducts .article7 .smallCard {
   display: none;
@@ -860,11 +1001,12 @@ body .container {
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article7 .new:checked + .smallCard:hover {
@@ -898,6 +1040,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article7 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .sectionCard .cardProducts .article8 .smallCard {
   display: none;
@@ -917,11 +1083,12 @@ body .container {
   padding: 10px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  text-decoration: none;
   position: absolute;
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 10;
+  z-index: 8;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article8 .new:checked + .smallCard:hover {
@@ -955,6 +1122,30 @@ body .container {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article8 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
 }
 .newArrivals .ctaStore {
   display: flex;
