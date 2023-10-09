@@ -488,13 +488,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .bestSellers .sectionCard .cardProducts {
   cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.bestSellers .sectionCard .cardProducts:hover {
+  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
 }
 .bestSellers .sectionCard .cardProducts .outFit {
   width: 100%;
-  transition: all 0.3s ease;
-}
-.bestSellers .sectionCard .cardProducts .outFit:hover {
-  filter: grayscale(100%);
 }
 .bestSellers .sectionCard .cardProducts .info {
   display: flex;
@@ -514,12 +515,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .bestSellers .sectionCard .cardProducts .info .linkStore:hover {
   background-color: #3d3d3d;
-}
-.bestSellers .sectionCard .cardProducts {
-  transition: all 0.3s ease;
-}
-.bestSellers .sectionCard .cardProducts:hover {
-  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
 }
 .bestSellers .ctaStore {
   display: flex;
@@ -1185,6 +1180,170 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transition: transform 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article8 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
+}
+.newArrivals .sectionCard .cardProducts .article9 .smallCard {
+  display: none;
+}
+.newArrivals .sectionCard .cardProducts .article9 #outFit {
+  width: 100%;
+}
+.newArrivals .sectionCard .cardProducts .article9 .new {
+  display: none;
+}
+.newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 70px;
+  right: 25px;
+  box-shadow: 0 0 3px 1px #474747;
+  z-index: 8;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard:hover {
+  box-shadow: 0 0 4px 3px #474747;
+}
+.newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard .outfit {
+  width: 100%;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard .outfit:hover {
+  transform: scale(85%);
+}
+.newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard .price {
+  height: 50px;
+  color: #BC2327;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Jura", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.newArrivals .sectionCard .cardProducts .article9 .fadeAway .skull {
+  width: 35px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article9 .fadeAway .skull:hover {
+  transform: scale(103%);
+}
+@keyframes skull {
+  0% {
+    box-shadow: 0 0 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 0 0 3px 2px #f0f0f0;
+  }
+  50% {
+    box-shadow: 0 0 5px 4px #e4e4e4;
+  }
+  80% {
+    box-shadow: 0 0 6px 6px #d1d1d1;
+  }
+  100% {
+    box-shadow: 0 0 7px 8px #b4b4b4;
+  }
+}
+.newArrivals .sectionCard .cardProducts .article10 .smallCard {
+  display: none;
+}
+.newArrivals .sectionCard .cardProducts .article10 #outFit {
+  width: 100%;
+}
+.newArrivals .sectionCard .cardProducts .article10 .new {
+  display: none;
+}
+.newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 70px;
+  right: 25px;
+  box-shadow: 0 0 3px 1px #474747;
+  z-index: 8;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard:hover {
+  box-shadow: 0 0 4px 3px #474747;
+}
+.newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard .outfit {
+  width: 100%;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard .outfit:hover {
+  transform: scale(85%);
+}
+.newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard .price {
+  height: 50px;
+  color: #BC2327;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Jura", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.newArrivals .sectionCard .cardProducts .article10 .fadeAway .skull {
+  width: 35px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  cursor: help;
+  animation: skull 2s linear infinite;
+  transform: scale(100%);
+  transition: transform 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article10 .fadeAway .skull:hover {
   transform: scale(103%);
 }
 @keyframes skull {
