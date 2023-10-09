@@ -9,8 +9,8 @@ body{
 }
 html{
     .mainContainer{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         .tagGetOff{
             position: fixed;
             top:35%;
@@ -81,5 +81,6 @@ html{
         }
     }
 }
-
-
+.newArrivals, .bestSellers, .footerContainer{
+    padding:0px 20px;
+}

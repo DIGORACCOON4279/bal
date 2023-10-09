@@ -1,6 +1,8 @@
 .giftCards{
     width:100%;
+    max-width: 1000px;
     height: auto;
+    margin: 0px auto 150px;
     .subtitle{
         font-size:4rem;
         font-family: $fontRubik;
@@ -13,11 +15,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 150px;
         .containerCards{
             width:70%;
             height: auto;
-            margin-right: 100px;
             .sectionCards{padding:35px;
                 .card1, .card2, .card3, .card4{
                     width: 100%;
@@ -59,7 +59,7 @@
             }
         }
         .containerMessage{
-            // width: 60%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;

@@ -20,8 +20,8 @@ body {
 }
 
 html .mainContainer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 html .mainContainer .tagGetOff {
   position: fixed;
@@ -83,6 +83,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   width: 40px;
   text-decoration: none;
   margin: 5px 0px;
+}
+
+.newArrivals, .bestSellers, .footerContainer {
+  padding: 0px 20px;
 }
 
 .header {
@@ -237,12 +241,18 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 
 .heroSection {
   width: 100%;
-  height: 100%;
+  height: 1000px;
+  background-image: url(../img/background_Hero.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 0px 200px 0px;
+  overflow: visible;
+  margin: -200px 0px 100px 0px;
+  padding: 0px 100px;
 }
 .heroSection .heroSectionCentered {
   z-index: 1;
@@ -377,7 +387,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 
 .giftCards {
   width: 100%;
+  max-width: 1000px;
   height: auto;
+  margin: 0px auto 150px;
 }
 .giftCards .subtitle {
   font-size: 4rem;
@@ -391,12 +403,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 150px;
 }
 .giftCards .containerGetOff .containerCards {
   width: 70%;
   height: auto;
-  margin-right: 100px;
 }
 .giftCards .containerGetOff .containerCards .sectionCards {
   padding: 35px;
@@ -439,6 +449,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   font-weight: 700px;
 }
 .giftCards .containerGetOff .containerMessage {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
