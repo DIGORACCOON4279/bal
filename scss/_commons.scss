@@ -21,7 +21,6 @@ body{
     background-color: black;
     transform: rotate(180deg);
     z-index: 10;
-
     cursor: pointer;
     box-shadow: 0 0 6px 4px #1f1f1f;
     .discountGetOff{
@@ -40,6 +39,51 @@ body{
                 transform: rotate(180deg);
                 font-weight: 600;
                 padding: 40px 15px;
+            }
+        }
+    }
+}
+
+// ArrowUp
+
+.arrowUp{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    z-index: 8;
+    .directionUp{
+        .arrowUpIcon{
+            width:48px;
+        }
+    }
+}
+
+// SkullSocialMedia
+
+.skullSocialMedia{
+    position: fixed;
+    bottom:30px;
+    left:30px;
+    cursor: pointer;
+    z-index: 8;
+    .socialMedia{
+        .skullIcon{
+            width:48px;
+        }
+        ul{
+            display: none;
+            position: relative;
+            bottom:58px;
+            left:30px;
+            li{
+                list-style-type: none;
+                .item{
+                    .itemSocial{
+                        width:40px;
+                        text-decoration: none;
+                        margin:5px 0px;
+                    }
+                }
             }
         }
     }
