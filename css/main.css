@@ -423,7 +423,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   align-items: center;
 }
 .giftCards .containerGetOff .containerCards {
-  width: 70%;
+  width: 80%;
   height: auto;
 }
 .giftCards .containerGetOff .containerCards .sectionCards {
@@ -565,15 +565,19 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin-bottom: 70px;
 }
 .newArrivals .sectionCard .cardProducts {
-  width: 25%;
+  width: 250%;
   position: relative;
-  transition: clip-path 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article1 .smallCard {
   display: none;
 }
 .newArrivals .sectionCard .cardProducts .article1 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article1 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article1 .new {
   display: none;
@@ -647,6 +651,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article2 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article2 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article2 .new {
   display: none;
@@ -729,6 +738,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article3 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article3 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article3 .new {
   display: none;
@@ -811,6 +825,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article4 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article4 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article4 .new {
   display: none;
@@ -893,6 +912,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article5 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article5 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article5 .new {
   display: none;
@@ -975,6 +999,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article6 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article6 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article6 .new {
   display: none;
@@ -1057,6 +1086,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article7 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article7 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article7 .new {
   display: none;
@@ -1139,6 +1173,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article8 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article8 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article8 .new {
   display: none;
@@ -1221,6 +1260,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article9 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article9 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article9 .new {
   display: none;
@@ -1303,6 +1347,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .newArrivals .sectionCard .cardProducts .article10 #outFit {
   width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.newArrivals .sectionCard .cardProducts .article10 #outFit:hover {
+  filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCard .cardProducts .article10 .new {
   display: none;
