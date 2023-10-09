@@ -112,7 +112,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transform: translate(0%);
 }
 .header label .drawerIcon {
-  width: 25px;
+  width: 22px;
   cursor: pointer;
   transform: scale(100%);
   transition: all 0.3s ease-in-out;
@@ -346,6 +346,26 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .getOff .info .cta:hover {
   color: #8a8a8a;
+}
+.getOff .hoddy {
+  animation: hoddy 2s linear 2s infinite;
+}
+@keyframes hoddy {
+  0% {
+    filter: drop-shadow(0 0 1px #BC2327);
+  }
+  25% {
+    filter: drop-shadow(0 1px 2px #BC2327);
+  }
+  50% {
+    filter: drop-shadow(0 2px 3px #BC2327);
+  }
+  75% {
+    filter: drop-shadow(0 3px 5px #BC2327);
+  }
+  100% {
+    filter: drop-shadow(0 4px 6px #BC2327);
+  }
 }
 
 .advertising {
