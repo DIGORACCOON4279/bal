@@ -59,7 +59,7 @@ body .container {
   z-index: 8;
 }
 .arrowUp .directionUp .arrowUpIcon {
-  width: 48px;
+  width: 45px;
 }
 
 .skullSocialMedia {
@@ -70,7 +70,7 @@ body .container {
   z-index: 8;
 }
 .skullSocialMedia .socialMedia .skullIcon {
-  width: 48px;
+  width: 45px;
 }
 .skullSocialMedia .socialMedia ul {
   display: none;
@@ -419,7 +419,7 @@ body .container {
 .giftCards .containerGetOff .containerCards .sectionCards .card1 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card2 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card3 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card4 .paragraph {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
-  color: #D9D9D9;
+  color: #000000;
   font-weight: 600;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card1:nth-child(1) {
