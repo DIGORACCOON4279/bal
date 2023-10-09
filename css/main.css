@@ -126,27 +126,11 @@ body .container {
   top: -22px;
   left: 53px;
   width: 45px;
-  animation: skull 1s linear;
   transition: transform 0.3s ease-in-out;
 }
 .header .logo .brand:hover {
   transform: scale(103%);
   filter: drop-shadow(0 0 10px #696061);
-}
-@keyframes skull {
-  0% {
-    transform: translateY(-100%) scale(100%);
-  }
-  50% {
-    transform: translateY(5%) scale(100%);
-  }
-  75% {
-    transform: translateY(0%) scale(110%);
-  }
-  100% {
-    transform: translateY(0%) scale(100%);
-    filter: drop-shadow(0 0 10px #696061);
-  }
 }
 .header .menuIcons ul {
   display: flex;
