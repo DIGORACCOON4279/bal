@@ -9,7 +9,6 @@
         margin-bottom: 100px;
     }
     .containerGetOff{
-        width:100%;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
@@ -19,12 +18,11 @@
             width:70%;
             height: auto;
             margin-right: 100px;
-            .sectionCards{
+            .sectionCards{padding:35px;
                 .card1, .card2, .card3, .card4{
                     width: 100%;
                     padding-top:20px;
                     border-radius: 20px;
-                    // box-shadow: 0 0 3px 2px black;
                     .subtitleGift{
                         font-size:3rem;
                         font-family: $fontJura;
@@ -35,7 +33,7 @@
                     .paragraph{
                         font-size:0.8rem;
                         font-family: $fontJura;
-                        color: #1E1E1E;
+                        color: #D9D9D9;
                         font-weight: 600;
                     }
                 }
@@ -76,11 +74,12 @@
             .paragraph{
                 font-size:1.5rem;
                 font-family: $fontJura;
-                color: #A5A5A5;
+                color: #D9D9D9;
                 text-align: left;
                 font-weight: 400px;
                 .higthlighter{
                     color: #BC2327;
+                    font-weight: 600;
                 }
             }
         }

@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(19, 19, 19);
 }
 body .container {
   width: 100%;
@@ -276,7 +276,7 @@ body .container {
   font-size: 1.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
-  color: #E0E0E0;
+  color: #D9D9D9;
 }
 .getOff .info .paragraph .sentence {
   font-size: 1.5rem;
@@ -342,7 +342,6 @@ body .container {
   margin-bottom: 100px;
 }
 .giftCards .containerGetOff {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -353,6 +352,9 @@ body .container {
   width: 70%;
   height: auto;
   margin-right: 100px;
+}
+.giftCards .containerGetOff .containerCards .sectionCards {
+  padding: 35px;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card1, .giftCards .containerGetOff .containerCards .sectionCards .card2, .giftCards .containerGetOff .containerCards .sectionCards .card3, .giftCards .containerGetOff .containerCards .sectionCards .card4 {
   width: 100%;
@@ -369,7 +371,7 @@ body .container {
 .giftCards .containerGetOff .containerCards .sectionCards .card1 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card2 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card3 .paragraph, .giftCards .containerGetOff .containerCards .sectionCards .card4 .paragraph {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
-  color: #1E1E1E;
+  color: #D9D9D9;
   font-weight: 600;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card1:nth-child(1) {
@@ -407,12 +409,13 @@ body .container {
 .giftCards .containerGetOff .containerMessage .paragraph {
   font-size: 1.5rem;
   font-family: "Jura", sans-serif;
-  color: #A5A5A5;
+  color: #D9D9D9;
   text-align: left;
   font-weight: 400px;
 }
 .giftCards .containerGetOff .containerMessage .paragraph .higthlighter {
   color: #BC2327;
+  font-weight: 600;
 }
 
 .bestSellers {
@@ -453,14 +456,13 @@ body .container {
   transition: all 0.3s ease;
 }
 .bestSellers .sectionCard .cardProducts .info .linkStore:hover {
-  color: #D9D9D9;
   background-color: #3d3d3d;
 }
 .bestSellers .sectionCard .cardProducts {
   transition: all 0.3s ease;
 }
 .bestSellers .sectionCard .cardProducts:hover {
-  box-shadow: 0 0 6px 4px black;
+  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
 }
 .bestSellers .ctaStore {
   display: flex;
@@ -475,7 +477,7 @@ body .container {
 }
 .bestSellers .ctaStore:hover {
   background-color: #BC2327;
-  box-shadow: 0 0 6px 4px black;
+  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
   text-decoration: underline;
 }
 
@@ -512,7 +514,7 @@ body .container {
   position: absolute;
   top: 20px;
   right: 20px;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
@@ -522,7 +524,7 @@ body .container {
   width: 60%;
   height: auto;
   cursor: pointer;
-  background-color: rgb(39, 39, 39);
+  background-color: #272727;
   position: absolute;
   top: 125px;
   right: 25px;
@@ -537,7 +539,7 @@ body .container {
 }
 .newArrivals .sectionCard .cardProducts .article .skull:checked + .new .price {
   height: 50px;
-  color: rgb(255, 247, 247);
+  color: #fff7f7;
   font-size: 0.8rem;
   font-weight: 400;
   font-family: "Jura", sans-serif;
@@ -559,7 +561,7 @@ body .container {
 }
 .newArrivals .ctaStore:hover {
   background-color: #BC2327;
-  box-shadow: 0 0 6px 4px black;
+  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
   text-decoration: underline;
 }
 
@@ -571,6 +573,7 @@ body .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px 6px #070707;
 }
 .footerContainer .footer {
   width: 100%;
