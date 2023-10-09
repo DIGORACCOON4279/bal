@@ -85,8 +85,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin: 5px 0px;
 }
 
-.newArrivals, .bestSellers, .footerContainer {
-  padding: 0px 20px;
+.newArrivals, .bestSellers {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .header {
