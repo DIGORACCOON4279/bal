@@ -92,7 +92,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin: 5px 0px;
 }
 
-.newArrivals, .bestSellers {
+.newArrivals, .bestSellers, .containerStore {
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -676,8 +676,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 
 .containerStore {
-  width: 100%;
-  height: auto;
   margin: 150px auto;
 }
 .containerStore .sectionCard .cardProducts {
@@ -759,6 +757,74 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   background-color: #BC2327;
   box-shadow: 0 0 4px 2px rgb(112, 112, 112);
   text-decoration: underline;
+}
+.containerStore .tagGetOff {
+  position: fixed;
+  top: 35%;
+  right: 0%;
+  background-color: black;
+  transform: rotate(180deg);
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 0 6px 4px #1f1f1f;
+}
+.containerStore .tagGetOff .discountGetOff {
+  text-decoration: none;
+}
+.containerStore .tagGetOff .discountGetOff .discount {
+  width: auto;
+  height: auto;
+}
+.containerStore .tagGetOff .discountGetOff .discount .title {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: right;
+  transform: rotate(180deg);
+  font-weight: 600;
+  padding: 40px 15px;
+}
+.containerStore .arrowUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 8;
+}
+.containerStore .arrowUp .directionUp .arrowUpIcon {
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.containerStore .arrowUp .directionUp .arrowUpIcon:hover {
+  background-color: #BC2327;
+  border: 2px solid #BC2327;
+}
+.containerStore .skullSocialMedia {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 8;
+}
+.containerStore .skullSocialMedia .socialMedia .skullIcon {
+  width: 45px;
+}
+.containerStore .skullSocialMedia .socialMedia ul {
+  display: none;
+  position: relative;
+  bottom: 58px;
+  left: 30px;
+}
+.containerStore .skullSocialMedia .socialMedia ul li {
+  list-style-type: none;
+}
+.containerStore .skullSocialMedia .socialMedia ul li .item .itemSocial {
+  width: 40px;
+  text-decoration: none;
+  margin: 5px 0px;
 }
 
 .newArrivals {
