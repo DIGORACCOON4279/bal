@@ -783,34 +783,26 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .containerStore .sectionFilter .menuFilterSide {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.containerStore .sectionFilter .menuFilterSide .filter {
-  width: inherit;
-  display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.containerStore .sectionFilter .menuFilterSide .filter #filterSide {
+.containerStore .sectionFilter .menuFilterSide #filterSide {
   display: none;
 }
-.containerStore .sectionFilter .menuFilterSide .filter #filterSide:checked ~ .menuFilter {
+.containerStore .sectionFilter .menuFilterSide #filterSide:checked ~ .menuFilter {
   transform: translate(0%);
 }
-.containerStore .sectionFilter .menuFilterSide .filter .headLine {
+.containerStore .sectionFilter .menuFilterSide .headLine .filter {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 5px;
   cursor: pointer;
 }
-.containerStore .sectionFilter .menuFilterSide .filter .headLine .filterIcon {
+.containerStore .sectionFilter .menuFilterSide .headLine .filter .filterIcon {
   width: 35px;
   background-color: #D9D9D9;
   border-radius: 50%;
@@ -818,7 +810,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin: 5px;
   box-shadow: 0 0 4px 2px #707070;
 }
-.containerStore .sectionFilter .menuFilterSide .filter .headLine .filterParagraph {
+.containerStore .sectionFilter .menuFilterSide .headLine .filter .filterParagraph {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   color: #D9D9D9;
@@ -826,7 +818,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   padding: 5px;
   margin: 5px;
 }
-.containerStore .sectionFilter .menuFilterSide .filter p {
+.containerStore .sectionFilter .menuFilterSide .headLine p {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #D9D9D9;
@@ -834,10 +826,44 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   padding: 5px;
   margin: 5px;
 }
-.containerStore .sectionFilter .menuFilterSide .menufilter {
-  width: 30vw;
+.containerStore .sectionFilter .menuFilterSide .menuFilter {
+  width: 20vw;
   height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 0 10px 6px #070707;
+  z-index: 10;
+  transform: translate(-100%);
+  transition: 0.3s ease-in-out;
+}
+.containerStore .sectionFilter .menuFilterSide .menuFilter label .closeCross {
+  width: 20px;
+  cursor: pointer;
+  transform: scale(100%);
+  transition: all 0.3s ease-in-out;
+}
+.containerStore .sectionFilter .menuFilterSide .menuFilter .choiceFilter ul li {
+  list-style-type: none;
+  padding: 10px 0px;
+}
+.containerStore .sectionFilter .menuFilterSide .menuFilter .choiceFilter ul li .link {
+  text-decoration: none;
+  color: rgb(194, 193, 193);
+  font-size: 0.9rem;
+  font-family: "Jura", sans-serif;
+  transition: all 0.5s;
+}
+.containerStore .sectionFilter .menuFilterSide .menuFilter .choiceFilter ul li .link:hover {
+  text-decoration: underline;
+  filter: drop-shadow(0 0 6px #BC2327);
 }
 
 .newArrivals {
