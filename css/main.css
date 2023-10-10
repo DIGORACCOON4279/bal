@@ -610,7 +610,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   overflow: hidden;
 }
 .bestSellers .sectionCard .cardProducts .article:hover > .outFit {
-  transform: scale(110%);
+  transform: scale(103%);
   filter: grayscale(100%);
   box-shadow: 0 0 4px 2px #707070;
 }
@@ -696,7 +696,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   overflow: hidden;
 }
 .containerStore .sectionCard .cardProducts .article:hover > .outFit {
-  transform: scale(110%);
+  transform: scale(103%);
   filter: grayscale(100%);
   box-shadow: 0 0 4px 2px #707070;
 }
