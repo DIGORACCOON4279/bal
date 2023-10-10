@@ -620,7 +620,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   font-weight: 400;
   margin-top: 20px;
   padding: 20px;
-  background-color: rgba(19, 19, 19, 0.8235294118);
+  background-color: rgba(19, 19, 19, 0.9647058824);
   transform: translateY(-110%);
   transition: transform 0.3s ease;
 }
@@ -704,7 +704,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   font-weight: 400;
   margin-top: 20px;
   padding: 20px;
-  background-color: rgba(19, 19, 19, 0.8235294118);
+  background-color: rgba(19, 19, 19, 0.9647058824);
   transform: translateY(-110%);
   transition: transform 0.3s ease;
 }
