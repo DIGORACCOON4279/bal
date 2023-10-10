@@ -644,6 +644,51 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   text-decoration: underline;
 }
 
+.containerStore {
+  width: 100%;
+  height: auto;
+  margin: 150px auto;
+}
+.containerStore .sectionCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.containerStore .sectionCard .cardProducts {
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.containerStore .sectionCard .cardProducts:hover {
+  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
+}
+.containerStore .sectionCard .cardProducts .outFit {
+  width: 100%;
+}
+.containerStore .sectionCard .cardProducts .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #D9D9D9;
+  padding: 10px;
+}
+.containerStore .sectionCard .cardProducts .info .heartIcon {
+  align-self: self-end;
+}
+.containerStore .sectionCard .cardProducts .info .linkStore {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  color: #D9D9D9;
+  background-color: #BC2327;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.containerStore .sectionCard .cardProducts .info .linkStore:hover {
+  background-color: #3d3d3d;
+}
+
 .newArrivals {
   width: 100%;
   height: auto;
