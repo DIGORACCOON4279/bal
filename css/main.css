@@ -1689,7 +1689,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   align-items: flex-start;
   margin-left: -40px;
   padding-top: 10px;
-  border-top: 1px solid rgb(61, 61, 61);
 }
 .footerContainer .footer .socialMedia ul li {
   list-style-type: none;
@@ -1738,7 +1737,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   width: 55%;
   align-self: flex-end;
   padding-top: 10px;
-  border-top: 1px solid rgb(61, 61, 61);
 }
 .footerContainer .development {
   display: flex;
