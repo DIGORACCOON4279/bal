@@ -26,6 +26,9 @@
                 align-items: flex-start;
                 color: #D9D9D9;
                 padding:10px;
+                .heartIcon{
+                    align-self: self-end;
+                }
                 .linkStore{
                     width: 100%;
                     text-align: center;

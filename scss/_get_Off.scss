@@ -67,7 +67,7 @@
         font-family: $fontJura;
         font-weight: 600;
         color: #E0E0E0;
-        transition: color .3s;
+        transition: color .3s ease;
         &:hover{
             color: #8a8a8a;
             text-decoration: underline;
