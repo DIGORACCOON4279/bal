@@ -10,40 +10,64 @@
     }
     .sectionCard{
         .cardProducts{
+            width:250px;
+            height:auto;
             cursor: pointer;
             overflow: hidden;
             transition: all 0.3s ease;
             &:hover{
-                box-shadow: 0 0 4px 2px rgb(112, 112, 112);
-                // filter:grayscale(0%);
+                box-shadow: 0 0 10px 2px #707070;
             }
-            .outFit{
+            .article{
                 width:100%;
-                filter: grayscale(0%);
-                transition: filter 0.3s ease;
-                &:hover{
+                height:100%;
+                &:hover > .outFit{
+                    transform:scale(110%);
                     filter: grayscale(100%);
+                    box-shadow: 0 0 4px 2px #707070;
                 }
-            }
-            .info{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                color: #D9D9D9;
-                padding:10px;
-                .heartIcon{
-                    align-self: self-end;
-                }
-                .linkStore{
-                    width: 100%;
-                    text-align: center;
-                    padding: 5px;
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                     color: #D9D9D9;
-                    background-color: #BC2327;
-                    text-decoration: none;
+                    font-weight: 400;
+                    margin-top: 20px;
+                    padding:10px;
+                    background-color: #131313d2;
+                    transform: translateY(-115%);
+                    transition: transform 0.3s ease;
+                    .heartIcon{
+                        align-self: self-end;
+                    }
+                    .linkStore{
+                        width: 100%;
+                        text-align: center;
+                        padding: 5px;
+                        color: #D9D9D9;
+                        font-weight: 500;
+                        background-color: #BC2327;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            color: #BC2327;
+                            background-color: #D9D9D9;
+                            box-shadow: 0 0 4px 2px rgb(112, 112, 112);
+                        }
+                    }
+                }
+                .outFit{
+                    width:inherit;
+                    max-width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                    vertical-align: middle;
+                    filter: grayscale(20%);
+                    box-shadow: 0 0 4px 2px rgb(112, 112, 112);
                     transition: all 0.3s ease;
-                    &:hover{
-                        background-color: #3d3d3d;
+                    &:hover > .info{
+                        filter: grayscale(100%);
                     }
                 }
             }
