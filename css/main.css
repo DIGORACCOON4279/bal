@@ -393,7 +393,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   position: fixed;
   top: -340px;
   left: 18%;
-  z-index: 10;
+  z-index: 3;
   transform: translateY(300%);
   overflow: hidden;
   transition: 0.3s ease-in-out;
@@ -410,7 +410,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   bottom: 90px;
   left: 390px;
   cursor: pointer;
-  z-index: 8;
+  z-index: 3;
 }
 .getOff .bannerGetOff .slideGetOff {
   display: flex;
