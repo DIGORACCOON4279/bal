@@ -641,7 +641,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .bestSellers .sectionCard .cardProducts .article .info .linkStore:hover {
   color: #BC2327;
   background-color: #D9D9D9;
-  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
+  box-shadow: 0 0 4px 2px #BC2327;
 }
 .bestSellers .sectionCard .cardProducts .article .outFit {
   width: inherit;
