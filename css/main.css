@@ -674,29 +674,29 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 
 .containerStore {
-  margin: 150px auto;
+  margin: 100px auto 150px;
 }
-.containerStore .sectionCard .cardProducts {
+.containerStore .sectionStore .sectionCard .cardProducts {
   width: 250px;
   height: auto;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.containerStore .sectionCard .cardProducts:hover {
+.containerStore .sectionStore .sectionCard .cardProducts:hover {
   box-shadow: 0 0 4px 2px #707070;
 }
-.containerStore .sectionCard .cardProducts .article {
+.containerStore .sectionStore .sectionCard .cardProducts .article {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.containerStore .sectionCard .cardProducts .article:hover > .outFit {
+.containerStore .sectionStore .sectionCard .cardProducts .article:hover > .outFit {
   transform: scale(103%);
   filter: grayscale(100%);
   box-shadow: 0 0 4px 2px #707070;
 }
-.containerStore .sectionCard .cardProducts .article .info {
+.containerStore .sectionStore .sectionCard .cardProducts .article .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -708,10 +708,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transform: translateY(-110%);
   transition: transform 0.3s ease;
 }
-.containerStore .sectionCard .cardProducts .article .info .heartIcon {
+.containerStore .sectionStore .sectionCard .cardProducts .article .info .heartIcon {
   align-self: self-end;
 }
-.containerStore .sectionCard .cardProducts .article .info .linkStore {
+.containerStore .sectionStore .sectionCard .cardProducts .article .info .linkStore {
   width: 100%;
   text-align: center;
   padding: 5px;
@@ -721,12 +721,12 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.containerStore .sectionCard .cardProducts .article .info .linkStore:hover {
+.containerStore .sectionStore .sectionCard .cardProducts .article .info .linkStore:hover {
   color: #BC2327;
   background-color: #D9D9D9;
   box-shadow: 0 0 4px 2px #BC2327;
 }
-.containerStore .sectionCard .cardProducts .article .outFit {
+.containerStore .sectionStore .sectionCard .cardProducts .article .outFit {
   width: inherit;
   max-width: 100%;
   height: 100%;
@@ -734,59 +734,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   object-position: center center;
   vertical-align: middle;
   filter: grayscale(20%);
-  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
+  box-shadow: 0 0 4px 2px #707070;
   transition: all 0.3s ease;
 }
-.containerStore .sectionCard .cardProducts .article .outFit:hover > .info {
+.containerStore .sectionStore .sectionCard .cardProducts .article .outFit:hover > .info {
   filter: grayscale(100%);
-}
-.containerStore .ctaStore {
-  display: flex;
-  justify-content: center;
-  margin: 70px auto 0px;
-  width: 200px;
-  padding: 20px 40px;
-  color: #d9d9d9;
-  background-color: #3f3f3f;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.containerStore .ctaStore:hover {
-  background-color: #BC2327;
-  box-shadow: 0 0 4px 2px rgb(112, 112, 112);
-  text-decoration: underline;
-}
-.containerStore .tagGetOff {
-  position: fixed;
-  top: 35%;
-  right: 0%;
-  background-color: black;
-  transform: rotate(180deg);
-  z-index: 10;
-  box-shadow: 0 0 6px 4px #1f1f1f;
-  text-decoration: none;
-}
-.containerStore .tagGetOff .discount {
-  width: auto;
-  height: auto;
-}
-.containerStore .tagGetOff .discount #cross {
-  display: none;
-}
-.containerStore .tagGetOff .discount #cross:checked ~ .bannerGetOff {
-  transform: translateY(-100%);
-}
-.containerStore .tagGetOff .discount .title {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  color: #ffffff;
-  cursor: pointer;
-  text-align: center;
-  writing-mode: vertical-rl;
-  text-orientation: right;
-  transform: rotate(180deg);
-  font-weight: 600;
-  padding: 40px 15px;
 }
 .containerStore .arrowUp {
   position: fixed;
@@ -827,6 +779,44 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   width: 40px;
   text-decoration: none;
   margin: 5px 0px;
+}
+.containerStore .sectionFilter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerStore .sectionFilter .filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.containerStore .sectionFilter .filter .filterIcon {
+  width: 35px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 0 4px 2px #707070;
+}
+.containerStore .sectionFilter .filter .filterParagraph {
+  font-size: 0.8rem;
+  font-family: "Jura", sans-serif;
+  color: #D9D9D9;
+  font-weight: 400;
+  padding: 5px;
+  margin: 5px;
+}
+.containerStore .sectionFilter p {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #D9D9D9;
+  font-weight: 400;
+  padding: 5px;
+  margin: 5px;
 }
 
 .newArrivals {
@@ -1817,7 +1807,12 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   padding-bottom: 5px;
 }
 .footerContainer .development .developer {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
   border-top: 1px solid rgb(61, 61, 61);
 }
 .footerContainer .development .developer p {

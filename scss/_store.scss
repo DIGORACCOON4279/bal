@@ -1,117 +1,70 @@
 .containerStore{
-    margin: 150px auto;
-    .sectionCard{
-        .cardProducts{
-            width:250px;
-            height:auto;
-            cursor: pointer;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            &:hover{
-                box-shadow: 0 0 4px 2px #707070;
-            }
-            .article{
-                width:100%;
-                height:100%;
+    margin: 100px auto 150px;
+    .sectionStore{
+        .sectionCard{
+            .cardProducts{
+                width:250px;
+                height:auto;
+                cursor: pointer;
                 overflow: hidden;
-                &:hover > .outFit{
-                    transform:scale(103%);
-                    filter: grayscale(100%);
+                transition: all 0.3s ease;
+                &:hover{
                     box-shadow: 0 0 4px 2px #707070;
                 }
-                .info{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    color: #D9D9D9;
-                    font-weight: 400;
-                    margin-top: 20px;
-                    padding:20px;
-                    background-color: #131313f6;
-                    transform: translateY(-110%);
-                    transition: transform 0.3s ease;
-                    .heartIcon{
-                        align-self: self-end;
+                .article{
+                    width:100%;
+                    height:100%;
+                    overflow: hidden;
+                    &:hover > .outFit{
+                        transform:scale(103%);
+                        filter: grayscale(100%);
+                        box-shadow: 0 0 4px 2px #707070;
                     }
-                    .linkStore{
-                        width: 100%;
-                        text-align: center;
-                        padding: 5px;
+                    .info{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
                         color: #D9D9D9;
-                        font-weight: 500;
-                        background-color: #BC2327;
-                        text-decoration: none;
+                        font-weight: 400;
+                        margin-top: 20px;
+                        padding:20px;
+                        background-color: #131313f6;
+                        transform: translateY(-110%);
+                        transition: transform 0.3s ease;
+                        .heartIcon{
+                            align-self: self-end;
+                        }
+                        .linkStore{
+                            width: 100%;
+                            text-align: center;
+                            padding: 5px;
+                            color: #D9D9D9;
+                            font-weight: 500;
+                            background-color: #BC2327;
+                            text-decoration: none;
+                            transition: all 0.3s ease;
+                            &:hover{
+                                color: #BC2327;
+                                background-color: #D9D9D9;
+                                box-shadow: 0 0 4px 2px #BC2327;
+                            }
+                        }
+                    }
+                    .outFit{
+                        width:inherit;
+                        max-width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                        vertical-align: middle;
+                        filter: grayscale(20%);
+                        box-shadow: 0 0 4px 2px #707070;
                         transition: all 0.3s ease;
-                        &:hover{
-                            color: #BC2327;
-                            background-color: #D9D9D9;
-                            box-shadow: 0 0 4px 2px #BC2327;
+                        &:hover > .info{
+                            filter: grayscale(100%);
                         }
                     }
                 }
-                .outFit{
-                    width:inherit;
-                    max-width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: center center;
-                    vertical-align: middle;
-                    filter: grayscale(20%);
-                    box-shadow: 0 0 4px 2px rgb(112, 112, 112);
-                    transition: all 0.3s ease;
-                    &:hover > .info{
-                        filter: grayscale(100%);
-                    }
-                }
-            }
-        }
-    }
-    .ctaStore{
-        display:flex;
-        justify-content: center;
-        margin: 70px auto 0px;
-        width: 200px;
-        padding:20px 40px;
-        color:#d9d9d9;
-        background-color: #3f3f3f;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        &:hover{
-            background-color:#BC2327 ;
-            box-shadow: 0 0 4px 2px rgb(112, 112, 112);
-            text-decoration: underline;
-        }
-    }
-    .tagGetOff{
-        position: fixed;
-        top:35%;
-        right:0%;
-        background-color: black;
-        transform: rotate(180deg);
-        z-index: 10;
-        box-shadow: 0 0 6px 4px #1f1f1f;
-        text-decoration: none;
-        .discount{
-            // padding: 40px 15px;
-            width:auto;
-            height: auto;
-            #cross{
-                display: none;
-                &:checked ~ .bannerGetOff{
-                    transform: translateY(-100%);
-                }
-            }
-            .title{
-                font-size:1rem;
-                font-family: $fontJura;
-                color: #ffffff;
-                cursor: pointer;
-                text-align: center;
-                writing-mode: vertical-rl;
-                text-orientation: right;
-                transform: rotate(180deg);
-                font-weight: 600;
-                padding: 40px 15px;
             }
         }
     }
@@ -161,4 +114,45 @@
             }
         }
     }
+    .sectionFilter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .filter{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 5px;
+            cursor:pointer;
+            .filterIcon{
+                width:35px;
+                background-color: #D9D9D9;
+                border-radius: 50%;
+                padding: 5px;
+                margin: 5px;
+                box-shadow: 0 0 4px 2px #707070;
+            }
+            .filterParagraph{
+                font-size: 0.8rem;
+                font-family: $fontJura;
+                color: #D9D9D9;
+                font-weight: 400;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+        p{
+            font-size: 1rem;
+            font-family: $fontJura;
+            color: #D9D9D9;
+            font-weight: 400;
+            padding: 5px;
+            margin: 5px;
+
+        }
+    }
+
 }
+
