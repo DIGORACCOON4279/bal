@@ -115,44 +115,66 @@
         }
     }
     .sectionFilter{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        .filter{
+        .menuFilterSide{
+            width: 100%;
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5px;
-            cursor:pointer;
-            .filterIcon{
-                width:35px;
-                background-color: #D9D9D9;
-                border-radius: 50%;
-                padding: 5px;
-                margin: 5px;
-                box-shadow: 0 0 4px 2px #707070;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            .filter{
+                width: inherit;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items:center;
+                #filterSide{
+                    display: none;
+                    &:checked ~ .menuFilter{
+                        transform: translate(0%);
+                    }
+                }
+                .headLine{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 5px;
+                    cursor:pointer;
+                    .filterIcon{
+                        width:35px;
+                        background-color: #D9D9D9;
+                        border-radius: 50%;
+                        padding: 5px;
+                        margin: 5px;
+                        box-shadow: 0 0 4px 2px #707070;
+                    }
+                    .filterParagraph{
+                        font-size: 0.8rem;
+                        font-family: $fontJura;
+                        color: #D9D9D9;
+                        font-weight: 400;
+                        padding: 5px;
+                        margin: 5px;
+                    }
+                }
+                p{
+                    font-size: 1rem;
+                    font-family: $fontJura;
+                    color: #D9D9D9;
+                    font-weight: 400;
+                    padding: 5px;
+                    margin: 5px;
+                }
             }
-            .filterParagraph{
-                font-size: 0.8rem;
-                font-family: $fontJura;
-                color: #D9D9D9;
-                font-weight: 400;
-                padding: 5px;
-                margin: 5px;
-            }
-        }
-        p{
-            font-size: 1rem;
-            font-family: $fontJura;
-            color: #D9D9D9;
-            font-weight: 400;
-            padding: 5px;
-            margin: 5px;
+            .menufilter{
+                width:30vw;
+                height:100vh;
+                background-color: #ffffff;
 
+            }
         }
     }
-
 }
 

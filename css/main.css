@@ -780,21 +780,37 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   text-decoration: none;
   margin: 5px 0px;
 }
-.containerStore .sectionFilter {
+.containerStore .sectionFilter .menuFilterSide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.containerStore .sectionFilter .menuFilterSide .filter {
+  width: inherit;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.containerStore .sectionFilter .filter {
+.containerStore .sectionFilter .menuFilterSide .filter #filterSide {
+  display: none;
+}
+.containerStore .sectionFilter .menuFilterSide .filter #filterSide:checked ~ .menuFilter {
+  transform: translate(0%);
+}
+.containerStore .sectionFilter .menuFilterSide .filter .headLine {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
   padding: 5px;
   cursor: pointer;
 }
-.containerStore .sectionFilter .filter .filterIcon {
+.containerStore .sectionFilter .menuFilterSide .filter .headLine .filterIcon {
   width: 35px;
   background-color: #D9D9D9;
   border-radius: 50%;
@@ -802,7 +818,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin: 5px;
   box-shadow: 0 0 4px 2px #707070;
 }
-.containerStore .sectionFilter .filter .filterParagraph {
+.containerStore .sectionFilter .menuFilterSide .filter .headLine .filterParagraph {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   color: #D9D9D9;
@@ -810,13 +826,18 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   padding: 5px;
   margin: 5px;
 }
-.containerStore .sectionFilter p {
+.containerStore .sectionFilter .menuFilterSide .filter p {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #D9D9D9;
   font-weight: 400;
   padding: 5px;
   margin: 5px;
+}
+.containerStore .sectionFilter .menuFilterSide .menufilter {
+  width: 30vw;
+  height: 100vh;
+  background-color: #ffffff;
 }
 
 .newArrivals {
