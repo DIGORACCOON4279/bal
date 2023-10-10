@@ -340,15 +340,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .getOff .containerGetOff .info .paragraph .sentence {
   font-size: 1.5rem;
 }
-.getOff .containerGetOff .info .cta {
-  width: 45px;
-}
-.getOff .containerGetOff .info #cross {
-  display: none;
-}
-.getOff .containerGetOff .info #cross:checked ~ .bannerGetOff {
-  transform: translateY(100%);
-}
 .getOff .containerGetOff .hoddy {
   animation: hoddy 2s linear 2s infinite;
 }
@@ -369,6 +360,27 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
     filter: drop-shadow(0 4px 6px #BC2327);
   }
 }
+.getOff .ctaSentence {
+  position: relative;
+  bottom: 250px;
+  left: -140px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #E0E0E0;
+  transition: color 0.3s;
+}
+.getOff .ctaSentence:hover {
+  color: #8a8a8a;
+  text-decoration: underline;
+}
+.getOff #cross {
+  display: none;
+}
+.getOff #cross:checked ~ .bannerGetOff {
+  transform: translateY(100%);
+}
 .getOff .bannerGetOff {
   width: 62vw;
   height: auto;
@@ -379,10 +391,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   border-radius: 10px;
   box-shadow: 0 0 6px 4px black;
   position: fixed;
-  top: -380px;
+  top: -340px;
   left: 18%;
   z-index: 10;
-  transform: translateY(210%);
+  transform: translateY(300%);
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
@@ -390,13 +402,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
   color: #BC2327;
-  margin: 40px auto;
+  margin-top: 20px;
 }
 .getOff .bannerGetOff .crossCloseWhite {
   width: 25px;
-  position: absolute;
-  bottom: 100px;
-  left: 710px;
+  position: relative;
+  bottom: 90px;
+  left: 390px;
+  cursor: pointer;
   z-index: 8;
 }
 .getOff .bannerGetOff .slideGetOff {

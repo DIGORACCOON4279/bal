@@ -36,23 +36,6 @@
                     font-size:1.5rem;
                 }
             }
-            .cta{
-                width:45px;
-                // font-size:1rem;
-                // font-family: $fontJura;
-                // font-weight: 600;
-                // color: #E0E0E0;
-                // transition: color .3s;
-                // &:hover{
-                //     color: #8a8a8a;
-                // }
-            }
-            #cross{
-                display: none;
-                &:checked ~ .bannerGetOff{
-                    transform: translateY(100%);
-                }
-            }
         }
         .hoddy{
             animation: hoddy 2s linear 2s infinite;
@@ -75,6 +58,27 @@
             }
         }
     }
+    .ctaSentence{
+        position: relative;
+        bottom:250px;
+        left:-140px;
+        cursor: pointer;
+        font-size:1rem;
+        font-family: $fontJura;
+        font-weight: 600;
+        color: #E0E0E0;
+        transition: color .3s;
+        &:hover{
+            color: #8a8a8a;
+            text-decoration: underline;
+        }
+    }
+    #cross{
+        display: none;
+        &:checked ~ .bannerGetOff{
+            transform: translateY(100%);
+        }
+    }
     .bannerGetOff{
         width: 62vw;
         height: auto;
@@ -85,23 +89,24 @@
         border-radius: 10px;
         box-shadow: 0 0 6px 4px black;
         position: fixed;
-        top:-380px;
+        top:-340px;
         left:18%;
         z-index: 10;
-        transform: translateY(210%);
+        transform: translateY(300%);
         overflow: hidden;
         transition: .3s ease-in-out;
         .title{
             font-size:4rem;
             font-family: $fontRubik;
             color: #BC2327;
-            margin: 40px auto;
+            margin-top:20px;
         }
         .crossCloseWhite{
             width:25px;
-            position: absolute;
-            bottom:100px;
-            left:710px;
+            position: relative;
+            bottom:90px;
+            left:390px;
+            cursor: pointer;
             z-index: 8;
         }
         .slideGetOff{
