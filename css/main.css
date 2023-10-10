@@ -810,7 +810,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin: 5px;
   box-shadow: 0 0 4px 2px #707070;
 }
-.containerStore .sectionFilter .menuFilterSide .headLine .filter .filterParagraph {
+.containerStore .sectionFilter .menuFilterSide .headLine .filter .filterWord {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   color: #D9D9D9;
@@ -818,7 +818,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   padding: 5px;
   margin: 5px;
 }
-.containerStore .sectionFilter .menuFilterSide .headLine p {
+.containerStore .sectionFilter .menuFilterSide p {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #D9D9D9;
@@ -847,6 +847,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .containerStore .sectionFilter .menuFilterSide .menuFilter label .closeCross {
   width: 20px;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
   transform: scale(100%);
   transition: all 0.3s ease-in-out;
 }
