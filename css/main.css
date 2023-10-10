@@ -604,6 +604,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .bestSellers .sectionCard .cardProducts .outFit {
   width: 100%;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+}
+.bestSellers .sectionCard .cardProducts .outFit:hover {
+  filter: grayscale(100%);
 }
 .bestSellers .sectionCard .cardProducts .info {
   display: flex;
