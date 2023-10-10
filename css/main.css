@@ -30,20 +30,18 @@ html .mainContainer .tagGetOff {
   background-color: black;
   transform: rotate(180deg);
   z-index: 10;
-  cursor: pointer;
   box-shadow: 0 0 6px 4px #1f1f1f;
-}
-html .mainContainer .tagGetOff .discountGetOff {
   text-decoration: none;
 }
-html .mainContainer .tagGetOff .discountGetOff .discount {
+html .mainContainer .tagGetOff .discount {
   width: auto;
   height: auto;
 }
-html .mainContainer .tagGetOff .discountGetOff .discount .title {
+html .mainContainer .tagGetOff .discount .title {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #ffffff;
+  cursor: pointer;
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: right;
@@ -765,20 +763,24 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   background-color: black;
   transform: rotate(180deg);
   z-index: 10;
-  cursor: pointer;
   box-shadow: 0 0 6px 4px #1f1f1f;
-}
-.containerStore .tagGetOff .discountGetOff {
   text-decoration: none;
 }
-.containerStore .tagGetOff .discountGetOff .discount {
+.containerStore .tagGetOff .discount {
   width: auto;
   height: auto;
 }
-.containerStore .tagGetOff .discountGetOff .discount .title {
+.containerStore .tagGetOff .discount #cross {
+  display: none;
+}
+.containerStore .tagGetOff .discount #cross:checked ~ .bannerGetOff {
+  transform: translateY(-100%);
+}
+.containerStore .tagGetOff .discount .title {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #ffffff;
+  cursor: pointer;
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: right;

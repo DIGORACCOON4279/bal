@@ -89,25 +89,29 @@
         background-color: black;
         transform: rotate(180deg);
         z-index: 10;
-        cursor: pointer;
         box-shadow: 0 0 6px 4px #1f1f1f;
-        .discountGetOff{
-            text-decoration: none;
+        text-decoration: none;
+        .discount{
             // padding: 40px 15px;
-            .discount{
-                width:auto;
-                height: auto;
-                .title{
-                    font-size:1rem;
-                    font-family: $fontJura;
-                    color: #ffffff;
-                    text-align: center;
-                    writing-mode: vertical-rl;
-                    text-orientation: right;
-                    transform: rotate(180deg);
-                    font-weight: 600;
-                    padding: 40px 15px;
+            width:auto;
+            height: auto;
+            #cross{
+                display: none;
+                &:checked ~ .bannerGetOff{
+                    transform: translateY(-100%);
                 }
+            }
+            .title{
+                font-size:1rem;
+                font-family: $fontJura;
+                color: #ffffff;
+                cursor: pointer;
+                text-align: center;
+                writing-mode: vertical-rl;
+                text-orientation: right;
+                transform: rotate(180deg);
+                font-weight: 600;
+                padding: 40px 15px;
             }
         }
     }
