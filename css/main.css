@@ -153,6 +153,12 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transform: scale(103%);
   filter: drop-shadow(0 0 10px #696061);
 }
+.header #whishListSide {
+  display: none;
+}
+.header #whishListSide:checked ~ .sectionWhishList {
+  transform: translate(0%);
+}
 .header .whishHeadLine .whishListIcon {
   cursor: pointer;
   margin: 0px 5px;
@@ -163,10 +169,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transform: scale(103%);
   filter: drop-shadow(0 0 10px #696061);
 }
-.header #whishListSide {
-  display: none;
+.header #cart {
+  display: flex;
 }
-.header #whishListSide:checked ~ .sectionWhishList {
+.header #cart:checked ~ .menuCart {
   transform: translate(100%);
 }
 .header .menuSide {
@@ -933,6 +939,25 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   border: 0px solid transparent;
   font-weight: 600;
 }
+.containerStore .sectionShop .menuCart {
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 0 10px 6px #070707;
+  z-index: 10;
+  padding-top: 60px;
+  transform: translate(-100%);
+  transition: 0.3s ease-in-out;
+}
 .containerStore .sectionWhishList {
   width: 25vw;
   height: 100vh;
@@ -948,8 +973,8 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   overflow: hidden;
   box-shadow: 0 0 10px 6px #070707;
   z-index: 10;
-  transform: translate(0%);
   padding-top: 60px;
+  transform: translate(100%);
   transition: 0.3s ease-in-out;
 }
 .containerStore .sectionWhishList .whishHeadLine .closeCross {

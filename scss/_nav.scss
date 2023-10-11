@@ -75,7 +75,12 @@
             }
         }
     }
-
+    #whishListSide{
+        display: none;
+        &:checked ~ .sectionWhishList{
+            transform:translate(0%);
+        }
+    }
     .whishHeadLine{
         .whishListIcon{
             cursor: pointer;
@@ -88,12 +93,16 @@
             }
         }
     }
-    #whishListSide{
-        display: none;
-        &:checked ~ .sectionWhishList{
-            transform: translate(100%);
+
+    #cart{
+        display: flex;
+        &:checked ~ .menuCart{
+            transform:translate(100%);
         }
     }
+
+
+
     .menuSide{
         width:20vw;
         height: 100vh;
