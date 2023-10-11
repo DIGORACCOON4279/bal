@@ -252,29 +252,29 @@
         }
     }
 
-    .sectionShop{
-        .menuCart{
-            width:30vw;
-            height: 100vh;
-            display:flex;
-            position: fixed;
-            top:0;
-            right:0;
-            z-index: 10px;
-            flex-direction: column;
-            justify-content:flex-start;
-            align-items: flex-start;
-            background-color: #ffffff;
-            overflow: hidden;
-            box-shadow: 0 0 10px 6px #070707;
-            z-index: 10;
-            padding-top: 60px;
-            transform: translate(-100%);
-            transition: .3s ease-in-out;
+    // .sectionShop{
+    //     .menuCart{
+    //         width:30vw;
+    //         height: 100vh;
+    //         display:flex;
+    //         position: fixed;
+    //         top:0;
+    //         right:0;
+    //         z-index: 10px;
+    //         flex-direction: column;
+    //         justify-content:flex-start;
+    //         align-items: flex-start;
+    //         background-color: #ffffff;
+    //         overflow: hidden;
+    //         box-shadow: 0 0 10px 6px #070707;
+    //         z-index: 10;
+    //         padding-top: 60px;
+    //         transform: translate(-100%);
+    //         transition: .3s ease-in-out;
 
-        }
+    //     }
 
-    }
+    // }
 
 
 
