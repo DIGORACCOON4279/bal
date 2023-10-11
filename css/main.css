@@ -153,6 +153,21 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transform: scale(103%);
   filter: drop-shadow(0 0 10px #696061);
 }
+.header .menuIcons ul #whishListSide {
+  display: none;
+}
+.header .menuIcons ul #whishListSide:checked ~ .menuFilter {
+  transform: translate(0%);
+}
+.header .menuIcons ul .whishHeadLine li .icon {
+  margin: 0px 5px;
+  transform: scale(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.header .menuIcons ul .whishHeadLine li .icon:hover {
+  transform: scale(103%);
+  filter: drop-shadow(0 0 10px #696061);
+}
 .header .menuSide {
   width: 20vw;
   height: 100vh;
@@ -923,12 +938,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.containerStore .sectionWhishList .menuWhishListSide #filterSide {
-  display: none;
-}
-.containerStore .sectionWhishList .menuWhishListSide #filterSide:checked ~ .menuFilter {
-  transform: translate(0%);
 }
 .containerStore .sectionWhishList .menuWhishListSide .headLine .filter {
   position: fixed;

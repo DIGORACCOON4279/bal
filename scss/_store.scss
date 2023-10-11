@@ -192,7 +192,7 @@
                         &:hover{
                             transform: rotate(270deg);
                         }
-           }
+            }
                 }
                 .choiceFilter{
                     width: 90%;
@@ -258,12 +258,6 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            #filterSide{
-                display: none;
-                &:checked ~ .menuFilter{
-                    transform: translate(0%);
-                }
-            }
             .headLine{
                 .filter{
                     position: fixed;
@@ -329,7 +323,7 @@
                         &:hover{
                             transform: rotate(270deg);
                         }
-           }
+            }
                 }
                 .choiceFilter{
                     width: 90%;
