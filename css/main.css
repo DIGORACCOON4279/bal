@@ -1921,5 +1921,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   color: rgb(194, 193, 193);
   margin: 0px 0px;
 }
+.footerContainer .development .developer p .raccoon {
+  color: #BC2327;
+  font-weight: 600;
+  font-family: "Jura", sans-serif;
+}
 
 /*# sourceMappingURL=main.css.map */
