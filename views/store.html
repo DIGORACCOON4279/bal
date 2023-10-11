@@ -41,13 +41,16 @@
             <ul>
                 <li><a href="#"><img class="icon" src="../img/moon_Icon.svg" alt=""></a></li>
                 <li><a href="sign_In.html"><img class="icon" src="../img/user_Icon.svg" alt=""></a></li>
-                <input id="whishListSide" type="checkbox">
-                <label for="whishListSide" class="whishHeadLine">
-                    <li><img class="icon" src="../img/whishlist_White_Icon.svg" alt=""></li>
-                </label>
+
                 <li><img class="icon" src="../img/empty_Shopping_Cart.svg" alt=""></li>
             </ul>
         </section>
+
+            <input id="whishListSide" type="checkbox">
+            <label for="whishListSide" class="whishHeadLine">
+                <img class="whishListIcon" src="../img/whishlist_White_Icon.svg" alt="Heart icon">
+            </label>
+
         <nav class="menuSide">
             <section class="top">
                 <img class="brand" src="../img/skullLogo.svg" alt="Break a Leg brand">
@@ -217,25 +220,30 @@
         <!-- WhishList -->
 
         <section class="sectionWhishList">
-            <article class="menuWhishListSide">
 
+                <label for="whishListSide" class="whishHeadLine">
+                    <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
+                </label>
                 <nav class="menuWhishList">
-                    <label for="whishListSide" class="whishHeadLine">
-                        <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
-                    </label>
+
                     <div class="choiceWhishList">
                         <h3 class="whishListWord">WhishList</h3>
-                        <div class="sectionWhishList">
-                            <div class="category">
+                        <div class="whish">
+                            <article class="category">
                                 <h3 class="titleWhishList">Item</h3>
                                 <h3 class="titleWhishList">Pricing</h3>
-                            </div>
+                                <h3 class="titleWhishList">Whish</h3>
+                            </article>
+
                             <article class="whishList">
                                 <div class="blockProduct">
                                     <img class="itemProduct" src="../img/pic24.webp" alt="Product pic">
                                     <div class="description">
-                                        <img src="../img/trash_Icon.svg" alt="Trash icon">
-                                        <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
                                     </div>
                                     <img class="itemWhishList" src="../img/whishlist_Icon.svg" alt="WhishList icon">
                                 </div>
@@ -244,8 +252,11 @@
                                 <div class="blockProduct">
                                     <img class="itemProduct" src="../img/pic25.webp" alt="Product pic">
                                     <div class="description">
-                                        <img src="../img/trash_Icon.svg" alt="Trash icon">
-                                        <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
                                     </div>
                                     <img class="itemWhishList" src="../img/whishlist_Icon.svg" alt="WhishList icon">
                                 </div>
@@ -253,7 +264,6 @@
                         </div>
                     </div>
                 </nav>
-            </article>
         </section>
 
         <!-- Store -->
