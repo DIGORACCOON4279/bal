@@ -928,15 +928,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   font-family: "Jura", sans-serif;
   font-weight: 600;
   color: #ffffff;
-  border: 0px solid transparent;
+  border: 1px solid transparent;
   background-color: #070707;
   transition: all 0.3s ease;
 }
 .containerStore .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter:hover {
   color: #070707;
   background-color: #ffffff;
-  box-shadow: 0 0 4px 2px #707070;
-  border: 0px solid transparent;
+  border: 1px solid #000000;
   font-weight: 600;
 }
 .containerStore .sectionWhishList {
@@ -1926,21 +1925,30 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .sectionSignIn {
   width: 100%;
   height: auto;
-  background-image: url(../img/background_Signin.webp);
+  background-image: linear-gradient(rgba(188, 35, 40, 0.431372549), rgba(0, 0, 0, 0.5215686275)), url(../img/background_Signin.webp);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.sectionSignIn .titleSignIn {
+  color: #f8f8f8;
+  filter: drop-shadow(4px 4px 8px #000000);
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Jura", sans-serif;
+  margin-top: 200px;
 }
 .sectionSignIn .formSignIn {
   width: 40vw;
   height: auto;
   background-color: #ffffff;
   box-shadow: 4px 4px 8px 0px #5c5c5c;
-  margin-top: 200px;
+  margin-top: 30px;
   margin-bottom: 200px;
 }
 .sectionSignIn .formSignIn .form {
@@ -1990,17 +1998,27 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   height: 50px;
   color: #ffffff;
   background-color: #000000;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 600;
   font-family: "Jura", sans-serif;
   margin: 80px auto 30px;
   padding: 40px auto;
+  transition: all 0.3s ease;
+}
+.sectionSignIn .formSignIn .form .ctaToCreateAcount .btnSignIn:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid black;
 }
 .sectionSignIn .formSignIn .form .ctaToCreateAcount .toCreateAccount {
   color: #000000;
   font-size: 1rem;
   font-weight: 400;
   font-family: "Jura", sans-serif;
+  text-decoration: none;
+}
+.sectionSignIn .formSignIn .form .ctaToCreateAcount .toCreateAccount:hover {
+  text-decoration: underline;
 }
 
 .footerContainer {
