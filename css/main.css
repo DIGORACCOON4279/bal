@@ -1923,6 +1923,86 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   text-decoration: underline;
 }
 
+.sectionSignIn {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/background_Signin.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionSignIn .formSignIn {
+  width: 40vw;
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 8px 0px #5c5c5c;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.sectionSignIn .formSignIn .form {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 80px auto;
+}
+.sectionSignIn .formSignIn .form .form-floating {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Jura", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px auto;
+}
+.sectionSignIn .formSignIn .form .form-floating .input {
+  width: 100%;
+  height: 40px;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Jura", sans-serif;
+  margin-top: 20px;
+  padding: 20px 0px 20px 10px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid #9c9c9c;
+}
+.sectionSignIn .formSignIn .form .form-floating:nth-child(2) {
+  margin-top: 50px;
+}
+.sectionSignIn .formSignIn .form .ctaToCreateAcount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionSignIn .formSignIn .form .ctaToCreateAcount .btnSignIn {
+  width: inherit;
+  height: 50px;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Jura", sans-serif;
+  margin: 80px auto 30px;
+  padding: 40px auto;
+}
+.sectionSignIn .formSignIn .form .ctaToCreateAcount .toCreateAccount {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Jura", sans-serif;
+}
+
 .footerContainer {
   width: 100%;
   height: 100%;
