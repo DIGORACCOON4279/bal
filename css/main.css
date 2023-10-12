@@ -330,7 +330,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .sectionCreateAccount {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(rgba(188, 35, 40, 0.431372549), rgba(0, 0, 0, 0.5215686275)), url(../img/background_Create.webp);
+  background-image: linear-gradient(rgba(188, 35, 40, 0.431372549), rgba(139, 54, 54, 0.733)), url(../img/background_Create.webp);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -349,7 +349,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin-top: 200px;
 }
 .sectionCreateAccount .formCreateAccount {
-  width: 40vw;
+  width: 50vw;
   height: auto;
   background-color: #ffffff;
   box-shadow: 4px 4px 8px 0px #5c5c5c;
@@ -362,7 +362,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 80px auto;
+  margin: 70px auto;
 }
 .sectionCreateAccount .formCreateAccount .form .form-floating {
   color: #000000;
@@ -389,13 +389,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   border-bottom: 1px solid #9c9c9c;
 }
 .sectionCreateAccount .formCreateAccount .form .form-floating:nth-child(2) {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .sectionCreateAccount .formCreateAccount .form .form-floating:nth-child(3) {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .sectionCreateAccount .formCreateAccount .form .form-floating:nth-child(4) {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount {
   width: 100%;
@@ -421,14 +421,19 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   background-color: #ffffff;
   border: 1px solid black;
 }
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .toCreateAccount {
+.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Jura", sans-serif;
+}
+.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .toSignIn {
   color: #000000;
   font-size: 1rem;
   font-weight: 400;
   font-family: "Jura", sans-serif;
   text-decoration: none;
 }
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .toCreateAccount:hover {
+.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .toSignIn:hover {
   text-decoration: underline;
 }
 
@@ -2049,7 +2054,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin-top: 200px;
 }
 .sectionSignIn .formSignIn {
-  width: 40vw;
+  width: 50vw;
   height: auto;
   background-color: #ffffff;
   box-shadow: 4px 4px 8px 0px #5c5c5c;
@@ -2062,7 +2067,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 80px auto;
+  margin: 70px auto;
 }
 .sectionSignIn .formSignIn .form .form-floating {
   color: #000000;
@@ -2072,7 +2077,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px auto;
+  padding: 0px auto;
 }
 .sectionSignIn .formSignIn .form .form-floating .input {
   width: 100%;
@@ -2089,7 +2094,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   border-bottom: 1px solid #9c9c9c;
 }
 .sectionSignIn .formSignIn .form .form-floating:nth-child(2) {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .sectionSignIn .formSignIn .form .ctaToSignIn {
   width: 100%;

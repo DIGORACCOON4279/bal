@@ -1,7 +1,7 @@
 .sectionCreateAccount{
     width: 100%;
     height: auto;
-    background-image: linear-gradient(#bc23286e, #00000085), url(../img/background_Create.webp);
+    background-image: linear-gradient(#bc23286e, rgba(139, 54, 54, 0.733)), url(../img/background_Create.webp);
     background-position: top center;
     background-repeat:no-repeat ;
     background-size: cover ;
@@ -19,7 +19,7 @@
         margin-top: 200px;
     }
     .formCreateAccount{
-        width: 40vw;
+        width: 50vw;
         height: auto;
         background-color: #ffffff;
         box-shadow: 4px 4px 8px 0px #5c5c5c;
@@ -31,7 +31,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            margin: 80px auto;
+            margin: 70px auto;
             .form-floating{
                 color: #000000;
                 font-size: 1.5rem;
@@ -57,13 +57,13 @@
                 }
             }
             .form-floating:nth-child(2){
-                margin-top: 50px;
+                margin-top: 30px;
             }
             .form-floating:nth-child(3){
-                margin-top: 50px;
+                margin-top: 30px;
             }
             .form-floating:nth-child(4){
-                margin-top: 50px;
+                margin-top: 30px;
             }
             .ctaToCreateAccount{
                 width:100%;
@@ -88,7 +88,12 @@
                         border: 1px solid black;
                     }
                 }
-                .toCreateAccount{
+                p{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    font-family: $fontJura;
+                }
+                .toSignIn{
                     color: #000000;
                     font-size: 1rem;
                     font-weight: 400;
