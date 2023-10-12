@@ -1,0 +1,104 @@
+.sectionCreateAccount{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(#bc23286e, #00000085), url(../img/background_Create.webp);
+    background-position: top center;
+    background-repeat:no-repeat ;
+    background-size: cover ;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .titleCreateAccount{
+        color: #f8f8f8;
+        filter: drop-shadow(4px 4px 8px #000000 );
+        font-size: 4rem;
+        font-weight: 600;
+        font-family: $fontJura;
+        margin-top: 200px;
+    }
+    .formCreateAccount{
+        width: 40vw;
+        height: auto;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 8px 0px #5c5c5c;
+        margin-top:30px;
+        margin-bottom:200px;
+        .form{
+            max-width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 80px auto;
+            .form-floating{
+                color: #000000;
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: $fontJura;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 20px auto;
+                .input{
+                    width: 100%;
+                    height: 40px;
+                    color: #000000;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    font-family: $fontJura;
+                    margin-top:20px;
+                    padding: 20px 0px 20px 10px;
+                    border-top: transparent;
+                    border-right: transparent;
+                    border-left: transparent;
+                    border-bottom: 1px solid #9c9c9c;
+                }
+            }
+            .form-floating:nth-child(2){
+                margin-top: 50px;
+            }
+            .form-floating:nth-child(3){
+                margin-top: 50px;
+            }
+            .form-floating:nth-child(4){
+                margin-top: 50px;
+            }
+            .ctaToCreateAccount{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .btnCreateAccount{
+                    width:inherit;
+                    height: 50px;
+                    color: #ffffff;
+                    background-color: #000000;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    font-family: $fontJura;
+                    margin: 80px auto 30px;
+                    padding: 40px auto;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: #000000;
+                        background-color: #ffffff;
+                        border: 1px solid black;
+                    }
+                }
+                .toCreateAccount{
+                    color: #000000;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    font-family: $fontJura;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
