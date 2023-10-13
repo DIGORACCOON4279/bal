@@ -60,3 +60,5 @@ Pero quedan faltando para proximas consignas activar el dark mode, el cart(check
 ![raccon_Logo2](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/08827f4f-d19f-4bc9-bfec-d27e44041dc2)
 
 ![raccon_Logo3](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/6eed7b47-0499-4198-8e7e-da65a3ce9e51)
+
+![raccon_Logo4](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/045ad93a-44a3-4afd-88df-55e12da9d586)
