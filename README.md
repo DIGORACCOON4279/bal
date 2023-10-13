@@ -26,7 +26,7 @@ Primero que todo se realizo el mockup:</br>
 👉Links  </br>
 
 💻[Prototipo desktop](https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design)</br>
-🚧[Prototipo cellphone]📱Cellphone (man at work)</br>
+🚧I´m so sorry📱Cellphone (man at work)</br>
 
 En esta primera entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con CSS:</br>
 
@@ -44,8 +44,7 @@ En los formularios "Sign in" & "Create Account", se realizo con JS el simulador,
 ✔Regex &</br>
 ✔AddEvenListener</br>
 
-Pero quedan faltando para proximas consignas activar el dark mode, el cart & favoritos. 
-Tambien ajustes en las interfaces y page Error 404</br>
+Pero quedan faltando para proximas consignas activar el dark mode, el cart & favoritos. Tambien ajustes en las interfaces y page Error 404, como tambien su adaptacion a pantallas cellphone y tablet</br>
 
 👉Links:</br>
 
