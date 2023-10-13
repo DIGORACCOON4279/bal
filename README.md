@@ -44,7 +44,7 @@ En los formularios "Sign in" & "Create Account", se realizo con JS el simulador,
 ✔Regex &</br>
 ✔AddEvenListener</br>
 
-Pero quedan faltando para proximas consignas activar el dark mode, el cart & favoritos. Tambien ajustes en las interfaces y page Error 404, como tambien su adaptacion a pantallas cellphone y tablet</br>
+Pero quedan faltando para proximas consignas activar el dark mode, el cart(checkout & orden de compra) & favoritos. Tambien ajustes en las interfaces y page Error 404, como tambien su adaptacion a pantallas cellphone y tablet</br>
 
 👉Links:</br>
 
