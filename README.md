@@ -15,7 +15,7 @@ Herramientas utilizadas: 🛠</br>
 ![photopea](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/ceac05f4-c505-4889-85d0-60a1566fc4ef) Photopea</br>
 ![github](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/01f94f79-8e78-42f8-bc9a-2b6707a9a36d) Github</br>
 ![gitbash](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/3d2e83ec-bea3-47bf-a5a4-d9524e0406b0) Git Bash</br>
-
+![]()JavaScript</br>
 Primero que todo se realizo el mockup:</br>
 
 👉Links  </br>
