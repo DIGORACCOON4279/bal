@@ -319,11 +319,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   align-items: center;
 }
 .sectionCreateAccount .titleCreateAccount {
-  color: #f8f8f8;
+  color: #BC2327;
   filter: drop-shadow(4px 4px 8px #000000);
   font-size: 4rem;
-  font-weight: 600;
-  font-family: "Jura", sans-serif;
+  font-family: "Rubik Distressed", cursive;
   margin-top: 200px;
 }
 .sectionCreateAccount .formCreateAccount {
@@ -1937,11 +1936,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   align-items: center;
 }
 .sectionSignIn .titleSignIn {
-  color: #f8f8f8;
+  color: #BC2327;
   filter: drop-shadow(4px 4px 8px #000000);
   font-size: 4rem;
-  font-weight: 600;
-  font-family: "Jura", sans-serif;
+  font-family: "Rubik Distressed", cursive;
   margin-top: 200px;
 }
 .sectionSignIn .formSignIn {
