@@ -21,7 +21,7 @@ Break a Leg es un ecommerce ficticio de ropa adolescente y jovenes que gustan de
 ![Bootstrap](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/570d9449-d0dc-4e46-b34c-cae994960cff)Bootstrap(Framework)</br>
 ![Sass](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/97214254-d103-46e6-a306-8f5c3c10571c)Sass(Preprocesador)</br>
 
-Primero que todo se realizo el mockup:</br>
+Primero que todo se realizo el mockup en Figma:</br>
 
 👉Links  </br>
 
