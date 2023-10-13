@@ -1,4 +1,4 @@
-![portadadelord]([![image](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/44778540-8d45-44eb-af6c-efe9fef192d0)
+([![image](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/44778540-8d45-44eb-af6c-efe9fef192d0)
 </br>
 
 # Break a Leg</br>
@@ -12,7 +12,7 @@ Break a Leg es un ecommerce de ropa adolescente y jovenes que gustan del skate. 
 En los formularios "Sign in" & "Create Account", se realizo con JS el simulador, pero quedan faltando para proximas consignas activar el dark mode, el cart & favoritos. 
 Tambien ajustes en las interfaces y page Error 404</br>
 
-Links:
+Links:</br>
 🚀  [Github Pages]( https://digoraccoon4279.github.io/Break-a-Leg/)</br>
 🚀  [Vercel](https://boilerplate-nine-lyart.vercel.app/)</br>
 
