@@ -50,6 +50,7 @@ Pero quedan faltando para proximas consignas activar el dark mode, el cart & fav
 
 🚀  [Github Pages]( https://digoraccoon4279.github.io/Break-a-Leg/)</br>
 🚀  [Vercel](https://break-a-leg.vercel.app/)</br>
+🚀  [Netlify](https://mellow-monstera-fca4be.netlify.app)</br>
 
 
 ![logo marca - reducida](https://github.com/DIGORACCOON4279/MercurioGUI/assets/88150970/e8492f0f-bf40-4810-ab83-fea9f0dfe61e)
