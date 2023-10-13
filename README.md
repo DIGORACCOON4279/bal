@@ -10,7 +10,14 @@ Break a Leg es un ecommerce de ropa adolescente y jovenes que gustan del skate. 
 ✔Create Account</br>
 ✖Resta la pagina Error 404</br>
 
-En los formularios "Sign in" & "Create Account", se realizo con JS el simulador, pero quedan faltando para proximas consignas activar el dark mode, el cart & favoritos. 
+En los formularios "Sign in" & "Create Account", se realizo con JS el simulador:
+✔Constantes</br>
+✔Condicionales</br>
+✔Funcion flecha</br>
+✔Regex &</br>
+✔AddEvenListener</br>
+
+Pero quedan faltando para proximas consignas activar el dark mode, el cart & favoritos. 
 Tambien ajustes en las interfaces y page Error 404</br>
 
 Links:</br>
