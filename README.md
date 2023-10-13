@@ -52,13 +52,4 @@ Pero quedan faltando para proximas consignas activar el dark mode, el cart(check
 🚀 ![white_Vercel](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/05e191bc-53e1-42d0-9c84-0b4b832abd88)[Vercel](https://break-a-leg.vercel.app/)</br>
 🚀 ![white_Netlify](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/34a9e620-2716-4e99-ac33-149190eb0cad)[Netlify](https://mellow-monstera-fca4be.netlify.app)</br>
 
-
-![logo marca - reducida](https://github.com/DIGORACCOON4279/MercurioGUI/assets/88150970/e8492f0f-bf40-4810-ab83-fea9f0dfe61e)
-![raccon_Logo](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/058cf0cc-a78c-4800-926e-82e5071d1307)
-![raccon_Logo1](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/209de9d3-2c64-4ac1-a677-982c71f3b319)
-
-![raccon_Logo2](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/08827f4f-d19f-4bc9-bfec-d27e44041dc2)
-
-![raccon_Logo3](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/6eed7b47-0499-4198-8e7e-da65a3ce9e51)
-
 ![raccon_Logo4](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/045ad93a-44a3-4afd-88df-55e12da9d586)
