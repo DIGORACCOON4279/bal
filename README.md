@@ -1,5 +1,4 @@
-![image](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/44778540-8d45-44eb-af6c-efe9fef192d0)
-</br>
+![image](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/afd2b75f-751d-433b-9d3c-2f3370bff6ca)</br>
 
 # Break a Leg</br>
 
