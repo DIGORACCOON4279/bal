@@ -54,3 +54,4 @@ Pero quedan faltando para proximas consignas activar el dark mode, el cart(check
 
 
 ![logo marca - reducida](https://github.com/DIGORACCOON4279/MercurioGUI/assets/88150970/e8492f0f-bf40-4810-ab83-fea9f0dfe61e)
+![raccon_Logo](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/058cf0cc-a78c-4800-926e-82e5071d1307)
