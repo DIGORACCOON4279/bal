@@ -28,7 +28,7 @@ Primero que todo se realizo el mockup:</br>
 💻[Prototipo desktop](https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design)</br>
 🚧[Prototipo desktop]📱Cellphone (man at work)</br>
 
-En esta primera entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con css:</br>
+En esta primera entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con CSS:</br>
 
 ✔Landing page</br>
 ✔Store</br>
