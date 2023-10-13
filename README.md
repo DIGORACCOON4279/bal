@@ -7,7 +7,7 @@ Break a Leg es un ecommerce de ropa adolescente y jovenes que gustan del skate. 
 
 Herramientas utilizadas: 🛠</br>
 
-👉Link  </br>
+👉Links  </br>
 
 ![figma](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/fca318c0-6b7d-4046-b0aa-55a83f0419a3) Figma</br>
 ![animations](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/2fdc31da-eb29-4247-90d3-0b5727606aa7) Animations</br>
@@ -18,8 +18,9 @@ Herramientas utilizadas: 🛠</br>
 
 Primero que todo se realizo el mockup:</br>
 
-💻[Prototipo desktop](https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design)</br>
+👉Links  </br>
 
+💻[Prototipo desktop](https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design)</br>
 🚧[Prototipo desktop]📱Cellphone (man at work)</br>
 
 En esta primera entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con css:</br>
@@ -30,7 +31,7 @@ En esta primera entrega aunque no se pide en la consigna se ha realizado la maqu
 ✔Create Account</br>
 ✖Resta la pagina Error 404</br>
 
-En los formularios "Sign in" & "Create Account", se realizo con JS el simulador:</br>
+En los formularios "Sign in" & "Create Account", se realizo con JS el simulador, para la consigna se utilizaron:</br>
 
 ✔Constantes</br>
 ✔Condicionales</br>
