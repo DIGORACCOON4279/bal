@@ -4,10 +4,14 @@
 # Break a Leg</br>
 
 Break a Leg es un ecommerce de ropa adolescente y jovenes que gustan del skate. </br>
-
-Primero que todo se realizo prototipo en figma:</br>
-
+Herranientas utilizadas:</br>
 ![figma](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/fca318c0-6b7d-4046-b0aa-55a83f0419a3)Figma</br>
+
+Primero que todo se realizo el mockup:</br>
+
+💻Desktop</br>
+🚧📱Cellphone (man at work)</br>
+
 
 En esta primera entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con css:</br>
 ✔Landing page</br>
