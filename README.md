@@ -52,4 +52,4 @@ Pero quedan faltando para proximas consignas activar el dark mode, el cart(check
 🚀 ![white_Vercel](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/05e191bc-53e1-42d0-9c84-0b4b832abd88)[Vercel](https://break-a-leg.vercel.app/)</br>
 🚀 ![white_Netlify](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/34a9e620-2716-4e99-ac33-149190eb0cad)[Netlify](https://mellow-monstera-fca4be.netlify.app)</br>
 
-![raccon_Logo4](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/045ad93a-44a3-4afd-88df-55e12da9d586)
+![raccon_Logo3](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/0950de58-a518-42f3-a502-088da15a18d4)
