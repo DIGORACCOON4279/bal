@@ -10,26 +10,16 @@ Herramientas utilizadas: 🛠</br>
 👉Links  </br>
 
 ![figma](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/fca318c0-6b7d-4046-b0aa-55a83f0419a3) Figma</br>
-![animations](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/2fdc31da-eb29-4247-90d3-0b5727606aa7) Animations CSS (@keyframes & transitions)</br>
-![vsc](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/bd61bcc5-5a44-4c33-b675-d03bb01589c0) VSC</br>
-![Uploadi<svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_2533_2782)">
-<path d="M0 0H32L29.1434 31.541L15.9848 35L2.8566 31.541L0 0Z" fill="#0A71B9"/>
-<path d="M15.9849 2.60938H29.3258L26.7731 29.4896L15.9849 32.4796V2.60938Z" fill="#28A7DE"/>
-<path d="M24.2508 6.50781H5.98682L6.38188 10.3478H21.6373L21.1511 14.2172H6.74655L7.11122 17.9986H20.9384L20.4218 23.2164L15.9241 24.2716L11.5177 23.2164L11.2746 20.1092H7.32395L7.93174 26.3529L16.1065 28.4927L24.2508 26.3529L26.1654 6.50781H24.2508Z" fill="#EBEBEB"/>
-<path d="M24.2204 6.50781H15.9849V10.3478H21.6069L21.1207 14.2172H15.9849V17.9986H20.9079L20.3913 23.2164L15.9849 24.213V28.4927H16.0456L24.2204 26.3529L26.1653 6.50781H24.2204Z" fill="white"/>
-</g>
-<defs>
-<clipPath id="clip0_2533_2782">
-<rect width="32" height="35" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-ng css3 logo.svg…]
+![animations](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/2fdc31da-eb29-4247-90d3-0b5727606aa7) Animations CSS (@keyframes & transitions</br>
 ![photopea](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/ceac05f4-c505-4889-85d0-60a1566fc4ef) Photopea</br>
 ![github](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/01f94f79-8e78-42f8-bc9a-2b6707a9a36d) Github</br>
 ![gitbash](https://github.com/DIGORACCOON4279/EntregaFinal/assets/88150970/3d2e83ec-bea3-47bf-a5a4-d9524e0406b0) Git Bash</br>
-![]()JavaScript</br>
+
+![css](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/b2e2f475-b8d9-4188-aae4-fe7e9a7acf4a)CSS</br>
+![html](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/b0692228-5ca9-433d-a4c5-b52369d3c4bf)HTML</br>
+![js](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/1ef7c489-c0b4-41a6-bdce-b12d8c0654ad)JavaScript</br>
+![Bootstrap](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/570d9449-d0dc-4e46-b34c-cae994960cff)Bootstrap</br>
+![Sass](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/97214254-d103-46e6-a306-8f5c3c10571c)Sass</br>
 
 Primero que todo se realizo el mockup:</br>
 
