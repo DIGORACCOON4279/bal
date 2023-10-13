@@ -5,7 +5,7 @@
 
 Break a Leg es un ecommerce de ropa adolescente y jovenes que gustan del skate. </br>
 Primero que todo se realizo prototipo en figma:</br>
-https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design</br>
+![figma](https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design) Figma</br>
 En esta primera entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con css:</br>
 ✔Landing page</br>
 ✔Store</br>
@@ -13,7 +13,7 @@ En esta primera entrega aunque no se pide en la consigna se ha realizado la maqu
 ✔Create Account</br>
 ✖Resta la pagina Error 404</br>
 
-En los formularios "Sign in" & "Create Account", se realizo con JS el simulador:
+En los formularios "Sign in" & "Create Account", se realizo con JS el simulador:</br>
 ✔Constantes</br>
 ✔Condicionales</br>
 ✔Funcion flecha</br>
@@ -23,7 +23,7 @@ En los formularios "Sign in" & "Create Account", se realizo con JS el simulador:
 Pero quedan faltando para proximas consignas activar el dark mode, el cart & favoritos. 
 Tambien ajustes en las interfaces y page Error 404</br>
 
-Links:</br>
+👉Links:</br>
 🚀  [Github Pages]( https://digoraccoon4279.github.io/Break-a-Leg/)</br>
 🚀  [Vercel](https://boilerplate-nine-lyart.vercel.app/)</br>
 
