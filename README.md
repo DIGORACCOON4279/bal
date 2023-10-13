@@ -3,7 +3,7 @@
 
 # Break a Leg</br>
 
-Break a Leg es un ecommerce ficticio de ropa adolescente y jovenes que gustan del skate. Se adopta este proyecto para trabajar en el curso de JS e ir modificandolo dependiendo de la 3 preentregas y la entrega final, asi que hira cambiando.</br>
+Break a Leg es un ecommerce ficticio de ropa adolescente y jovenes que gustan del skate. Se adopta este proyecto para trabajar en el curso de JS e irlo modificando a medida que se vaya aprendiendo, dependiendo de las consignas de las 3 preentregas y la entrega final.</br>
 
 Herramientas utilizadas: 🛠</br>
 
