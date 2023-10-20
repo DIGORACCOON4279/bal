@@ -3,7 +3,7 @@
 // Pseudocodigo
 // *crear los estilos de background y color en css
 // *crear dos constantes en el archivo de js osea main:
-//  una clase para body y otra para button  o sea la clase toggleDarkMode
+//  una clase para body y otra para button o sea la clase toggleDarkMode
 // *en la clase creada para el button toggleDarkMode escuche el evento para encender y pagar
 
 // const toggleDarkMode = document.querySelector(".toggleDarkMode");
@@ -51,18 +51,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailInput = document.getElementById('floatingInput');
     const passwordInput = document.getElementById('floatingPassword');
 
-    formSignIn.addEventListener('submit', function(event) {
+    formSignIn.addEventListener('submit', function(e) {
         // Validar el campo de correo electrónico
         if (!validateEmail(emailInput.value)) {
             alert('Por favor, ingresa una dirección de correo electrónico válida.');
-            event.preventDefault(); // Evitar el envío del formulario
+            e.preventDefault(); // Evitar el envío del formulario
             return;
         }
 
         // Validar el campo de contraseña (puedes agregar tus propias reglas aquí)
         if (passwordInput.value.length < 6) {
             alert('La contraseña debe tener al menos 6 caracteres.');
-            event.preventDefault(); // Evitar el envío del formulario
+            e.preventDefault(); // Evitar el envío del formulario
         }
     });
 
@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     };
+
 });
 
 
@@ -83,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailInput = document.querySelector('input[placeholder="Enter your Email"]');
     const passwordInput = document.getElementById('floatingPassword');
 
-    formCreateAccount.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evitar el envío por defecto del formulario
+    formCreateAccount.addEventListener('submit', function(e) {
+        e.preventDefault(); // Evitar el envío por defecto del formulario
 
         // Validar los campos del formulario
         if (!validateName(firstNameInput.value, "First name")) {
@@ -107,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Procesar los datos del formulario (puedes agregar tu lógica aquí)
+        // Procesar los datos del formulario
         alert('¡Cuenta creada exitosamente!');
         formCreateAccount.reset(); // Limpiar el formulario después del envío
     });
