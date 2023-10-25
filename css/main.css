@@ -16,6 +16,7 @@
 }
 
 body {
+  background-color: #ffffff;
   background-color: #131313;
 }
 
@@ -42,7 +43,7 @@ html .mainContainer .bannerShipping .shipping {
     transform: translateX(-100%);
   }
   25% {
-    transform: translateX(-750%);
+    transform: translateX(-75%);
   }
   50% {
     transform: translateX(-50%);
@@ -58,25 +59,24 @@ html .mainContainer .tagGetOff {
   position: fixed;
   top: 35%;
   right: 0%;
-  background-color: black;
   transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 10;
   text-decoration: none;
-}
-html .mainContainer .tagGetOff .discount {
-  width: auto;
-  height: auto;
 }
 html .mainContainer .tagGetOff .discount .title {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #ffffff;
-  cursor: pointer;
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: right;
   transform: rotate(180deg);
   font-weight: 600;
+  cursor: pointer;
+  background-color: #000000;
   padding: 40px 15px;
 }
 html .mainContainer .arrowUp {
@@ -842,7 +842,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
     transform: translateX(-100%);
   }
   25% {
-    transform: translateX(-750%);
+    transform: translateX(-75%);
   }
   50% {
     transform: translateX(-50%);

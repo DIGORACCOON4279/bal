@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    // background-color: #ffffff;
+    background-color: #ffffff;
     background-color: #131313;
 }
 html{
@@ -28,7 +28,7 @@ html{
                         transform: translateX(-100%);
                     }
                     25%{
-                        transform: translateX(-750%);
+                        transform: translateX(-75%);
                     }
                     50%{
                         transform: translateX(-50%);
@@ -46,24 +46,24 @@ html{
             position: fixed;
             top:35%;
             right:0%;
-            background-color: black;
             transform: rotate(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             z-index: 10;
             text-decoration: none;
-            // padding: 40px 15px;
             .discount{
-                width:auto;
-                height: auto;
                 .title{
                     font-size:1rem;
                     font-family: $fontJura;
                     color: #ffffff;
-                    cursor: pointer;
                     text-align: center;
                     writing-mode: vertical-rl;
                     text-orientation: right;
                     transform: rotate(180deg);
                     font-weight: 600;
+                    cursor: pointer;
+                    background-color: #000000;
                     padding: 40px 15px;
                 }
             }
