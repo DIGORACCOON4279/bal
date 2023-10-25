@@ -10,7 +10,7 @@
     }
     .sectionCard{
         .cardProducts{
-            width:250px;
+            width:auto;
             height:auto;
             cursor: pointer;
             overflow: hidden;
@@ -19,11 +19,11 @@
                 box-shadow: 0 0 4px 2px #707070;
             }
             .article{
-                width:100%;
-                height:100%;
+                width:inherit;
+                height:inherit;
                 overflow: hidden;
                 &:hover > .outFit{
-                    transform:scale(103%);
+                    transform:scale(110%);
                     filter: grayscale(100%);
                     box-shadow: 0 0 4px 2px #707070;
                 }
@@ -32,12 +32,16 @@
                     flex-direction: column;
                     align-items: flex-start;
                     color: #D9D9D9;
-                    font-weight: 400;
+                    font-weight: 500;
+                    font-family: $fontJura;
                     margin-top: 20px;
                     padding:20px;
                     background-color: #131313;
-                    transform: translateY(-110%);
+                    transform: translateY(110%);
                     transition: transform 0.3s ease;
+                    &:hover{
+                        transform: translateY(-110%);
+                    }
                     .heartIcon{
                         align-self: self-end;
                     }
@@ -46,7 +50,8 @@
                         text-align: center;
                         padding: 5px;
                         color: #D9D9D9;
-                        font-weight: 500;
+                        font-weight: 600;
+                        font-family: $fontJura;
                         background-color: #BC2327;
                         text-decoration: none;
                         transition: all 0.3s ease;
@@ -58,17 +63,17 @@
                     }
                 }
                 .outFit{
-                    width:inherit;
+                    width:100%;
                     max-width: 100%;
                     height: 100%;
                     object-fit: cover;
                     object-position: center center;
                     vertical-align: middle;
-                    filter: grayscale(20%);
+                    filter: grayscale(10%);
                     box-shadow: 0 0 4px 2px rgb(112, 112, 112);
                     transition: all 0.3s ease;
-                    &:hover > .info{
-                        filter: grayscale(100%);
+                    &:hover ~ .info{
+                        transform: translateY(-110%);
                     }
                 }
             }
@@ -81,6 +86,8 @@
         width: 200px;
         padding:20px 40px;
         color:#d9d9d9;
+        font-family: $fontJura;
+        font-weight: 700;
         background-color: #3f3f3f;
         text-decoration: none;
         transition: all 0.3s ease;
