@@ -4,13 +4,44 @@
     box-sizing: border-box;
 }
 body{
-    // background-color: rgb(238, 238, 238);
-    background-color: rgb(19, 19, 19);
+    // background-color: #ffffff;
+    background-color: #131313;
 }
 html{
     .mainContainer{
         width: 100%;
         height: 100%;
+        .bannerShipping{
+            width:100%;
+            height: 25px;
+            margin-top:70px;
+            .shipping{
+                color:#BC2327;
+                font-size:.8rem;
+                font-weight: 700;
+                font-family: $fontJura;
+                text-align: center;
+                text-transform: uppercase;
+                animation: shipping 4s linear;
+                @keyframes shipping {
+                    0%{
+                        transform: translateX(-100%);
+                    }
+                    25%{
+                        transform: translateX(-750%);
+                    }
+                    50%{
+                        transform: translateX(-50%);
+                    }
+                    75%{
+                        transform: translateX(-25%);
+                    }
+                    100%{
+                        transform: translateX(0%);
+                    }
+                }
+            }
+        }
         .tagGetOff{
             position: fixed;
             top:35%;
@@ -18,7 +49,6 @@ html{
             background-color: black;
             transform: rotate(180deg);
             z-index: 10;
-            box-shadow: 0 0 6px 4px #1f1f1f;
             text-decoration: none;
             // padding: 40px 15px;
             .discount{
