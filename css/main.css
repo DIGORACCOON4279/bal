@@ -583,7 +583,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   position: fixed;
   top: -340px;
   left: 18%;
-  z-index: 3;
+  z-index: 8;
   transform: translateY(300%);
   overflow: hidden;
   transition: 0.3s ease-in-out;
@@ -1186,7 +1186,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   top: 70px;
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
-  z-index: 8;
+  z-index: 1;
   transition: all 0.3s ease;
 }
 .newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard:hover {
