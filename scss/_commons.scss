@@ -65,6 +65,11 @@ html{
                     cursor: pointer;
                     background-color: #000000;
                     padding: 40px 15px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: #BC2327;
+                        // box-shadow: 0 0 4px 2px #BC2327;
+                    }
                 }
             }
         }

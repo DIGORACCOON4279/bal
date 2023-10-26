@@ -78,6 +78,10 @@ html .mainContainer .tagGetOff .discount .title {
   cursor: pointer;
   background-color: #000000;
   padding: 40px 15px;
+  transition: all 0.3s ease;
+}
+html .mainContainer .tagGetOff .discount .title:hover {
+  background-color: #BC2327;
 }
 html .mainContainer .arrowUp {
   position: fixed;
