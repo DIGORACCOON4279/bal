@@ -10,11 +10,12 @@
     justify-content: space-between;
     align-items: center;
     overflow: visible;
-    margin: -200px 0px 100px 0px;
+    margin: -250px 0px 100px 0px;
     padding: 0px 100px;
     .heroSectionCentered{
         z-index: 1;
         .info{
+            animation: info 0.75s linear;
             text-align: left;
             .break{
                 font-size: 4.5rem;
@@ -55,10 +56,39 @@
                     background-color: #BC2327;
                 }
             }
+            @keyframes info{
+                0%{
+                    transform: translateX(-30%);
+                    opacity: 0;
+                }
+                25%{
+                    transform: translateX(-15%);
+                    opacity: 0.5;
+                }
+                100%{
+                    transform: translateX(0%);
+                    opacity: 1;
+                }
+            }
         }
     }
     .laptop{
         width: 60%;
-        padding-top: 100px;
+        padding-top: 50px;
+        animation: laptopSlide 0.75s linear;
+        @keyframes laptopSlide{
+            0%{
+                transform: translateY(30%);
+                opacity: 0;
+            }
+            25%{
+                transform: translateY(15%);
+                opacity: 0.5;
+            }
+            100%{
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
     }
 }
