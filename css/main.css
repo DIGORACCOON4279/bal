@@ -786,7 +786,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   margin-bottom: 100px;
 }
 .bestSellers .sectionCard .cardProducts {
-  width: auto;
+  width: 100%;
   height: auto;
   cursor: pointer;
   overflow: hidden;
@@ -796,7 +796,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   box-shadow: 0 0 4px 2px #707070;
 }
 .bestSellers .sectionCard .cardProducts .article {
-  width: inherit;
+  width: 100%;
   height: inherit;
   overflow: hidden;
 }
@@ -806,6 +806,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   box-shadow: 0 0 4px 2px #707070;
 }
 .bestSellers .sectionCard .cardProducts .article .info {
+  width: 101%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -842,10 +843,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .bestSellers .sectionCard .cardProducts .article .outFit {
   width: 100%;
-  max-width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
   vertical-align: middle;
   filter: grayscale(10%);
   box-shadow: 0 0 4px 2px rgb(112, 112, 112);
@@ -908,7 +908,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   }
 }
 .containerStore .sectionStore .sectionCard .cardProducts {
-  width: auto;
+  width: 100%;
   height: auto;
   cursor: pointer;
   overflow: hidden;
@@ -918,7 +918,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   box-shadow: 0 0 4px 2px #707070;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article {
-  width: inherit;
+  width: 100%;
   height: inherit;
   overflow: hidden;
 }
@@ -928,6 +928,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   box-shadow: 0 0 4px 2px #707070;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info {
+  width: 101%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

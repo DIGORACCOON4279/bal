@@ -36,7 +36,7 @@
     .sectionStore{
         .sectionCard{
             .cardProducts{
-                width:auto;
+                width:100%;
                 height:auto;
                 cursor: pointer;
                 overflow: hidden;
@@ -45,7 +45,7 @@
                     box-shadow: 0 0 4px 2px #707070;
                 }
                 .article{
-                    width:inherit;
+                    width:100%;
                     height: inherit;
                     overflow: hidden;
                     &:hover > .outFit{
@@ -54,6 +54,7 @@
                         box-shadow: 0 0 4px 2px #707070;
                     }
                     .info{
+                        width:101%;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;

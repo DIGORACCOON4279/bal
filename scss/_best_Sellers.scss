@@ -10,7 +10,7 @@
     }
     .sectionCard{
         .cardProducts{
-            width:auto;
+            width:100%;
             height:auto;
             cursor: pointer;
             overflow: hidden;
@@ -19,7 +19,7 @@
                 box-shadow: 0 0 4px 2px #707070;
             }
             .article{
-                width:inherit;
+                width:100%;
                 height:inherit;
                 overflow: hidden;
                 &:hover > .outFit{
@@ -28,6 +28,7 @@
                     box-shadow: 0 0 4px 2px #707070;
                 }
                 .info{
+                    width:101%;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -64,10 +65,9 @@
                 }
                 .outFit{
                     width:100%;
-                    max-width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    object-position: center center;
+                    object-position: center top;
                     vertical-align: middle;
                     filter: grayscale(10%);
                     box-shadow: 0 0 4px 2px rgb(112, 112, 112);
