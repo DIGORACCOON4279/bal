@@ -102,13 +102,15 @@
             color: #BC2327;
             margin-top:20px;
         }
-        .crossCloseWhite{
-            width:25px;
-            position: relative;
-            bottom:90px;
-            left:390px;
-            cursor: pointer;
-            z-index: 3;
+        label{
+            .crossCloseWhite{
+                width:25px;
+                position: relative;
+                top:-90px;
+                right:-390px;
+                cursor: pointer;
+                z-index: 3;
+            }
         }
         .slideGetOff{
             display: flex;

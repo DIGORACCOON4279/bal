@@ -594,11 +594,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   color: #BC2327;
   margin-top: 20px;
 }
-.getOff .bannerGetOff .crossCloseWhite {
+.getOff .bannerGetOff label .crossCloseWhite {
   width: 25px;
   position: relative;
-  bottom: 90px;
-  left: 390px;
+  top: -90px;
+  right: -390px;
   cursor: pointer;
   z-index: 3;
 }
@@ -946,7 +946,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   width: 25px;
   position: relative;
   top: 15px;
-  right: 0px;
+  right: -390px;
   cursor: pointer;
   z-index: 10;
 }
@@ -2293,7 +2293,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   width: 25px;
   position: relative;
   top: 15px;
-  right: 0px;
+  right: -390px;
   cursor: pointer;
   z-index: 10;
 }
