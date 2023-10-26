@@ -57,7 +57,7 @@
             justify-content: space-evenly;
             align-items: center;
             border-radius: 10px;
-            background-color:#000000e5;
+            background-color:#00000013;
             box-shadow: 0 0 6px 4px black;
             position: fixed;
             top:-340px;
@@ -117,6 +117,7 @@
             left: 0;
             right: 0;
             bottom: 0;
+            background-color:#000000e5;
             backdrop-filter: blur(10px);
             filter: blur(10px);
             z-index: -1;

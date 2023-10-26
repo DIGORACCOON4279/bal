@@ -932,7 +932,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8980392157);
+  background-color: rgba(0, 0, 0, 0.0745098039);
   box-shadow: 0 0 6px 4px black;
   position: fixed;
   top: -340px;
@@ -990,6 +990,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8980392157);
   backdrop-filter: blur(10px);
   filter: blur(10px);
   z-index: -1;
@@ -2279,7 +2280,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8980392157);
+  background-color: rgba(0, 0, 0, 0.0745098039);
   box-shadow: 0 0 6px 4px black;
   position: fixed;
   top: -340px;
@@ -2337,6 +2338,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8980392157);
   backdrop-filter: blur(10px);
   filter: blur(10px);
   z-index: -1;
