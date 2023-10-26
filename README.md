@@ -1,6 +1,7 @@
-![image](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/afd2b75f-751d-433b-9d3c-2f3370bff6ca)</br>
 
 # Break a Leg</br>
+
+![portadaBreakaLeg](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/e6fee5e6-b19b-4c69-9284-9de105b0228c)
 
 Break a Leg es un ecommerce ficticio de ropa adolescente y jovenes que gustan del skate. Se adopta este proyecto para trabajar en el curso de JS e ir modificandolo a medida que se vaya aprendiendo y dependiendo de las consignas de las 3 preentregas y la entrega final.</br>
 
