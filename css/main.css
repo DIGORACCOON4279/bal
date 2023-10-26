@@ -2282,26 +2282,26 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   background-color: rgba(0, 0, 0, 0.8980392157);
   box-shadow: 0 0 6px 4px black;
   position: fixed;
-  top: -300px;
+  top: -340px;
   left: 18%;
   z-index: 8;
   transform: translateY(300%);
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
+.getOffHoddy .bannerGetOff label .crossCloseWhite {
+  width: 25px;
+  position: relative;
+  top: 15px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 10;
+}
 .getOffHoddy .bannerGetOff .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
   color: #BC2327;
   margin-top: 20px;
-}
-.getOffHoddy .bannerGetOff .crossCloseWhite {
-  width: 25px;
-  position: relative;
-  bottom: 90px;
-  left: 390px;
-  cursor: pointer;
-  z-index: 3;
 }
 .getOffHoddy .bannerGetOff .slideGetOff {
   display: flex;
