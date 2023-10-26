@@ -66,6 +66,9 @@ html .mainContainer .tagGetOff {
   z-index: 10;
   text-decoration: none;
 }
+html .mainContainer .tagGetOff .discount {
+  animation: get-off 0.5s linear;
+}
 html .mainContainer .tagGetOff .discount .title {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
@@ -82,6 +85,14 @@ html .mainContainer .tagGetOff .discount .title {
 }
 html .mainContainer .tagGetOff .discount .title:hover {
   background-color: #BC2327;
+}
+@keyframes get-off {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 html .mainContainer .arrowUp {
   position: fixed;
