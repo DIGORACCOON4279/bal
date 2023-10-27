@@ -206,9 +206,11 @@
                             text-decoration: none;
                             transition: all 0.3s ease;
                             &:hover{
-                                color: #BC2327;
-                                background-color: #D9D9D9;
-                                box-shadow: 0 0 4px 2px #BC2327;
+                                // color: #BC2327;
+                                color: #ffffff;
+                                // background-color: #D9D9D9;
+                                background-color: #000000;
+                                // box-shadow: 0 0 4px 2px #BC2327;
                             }
                         }
                     }
