@@ -480,6 +480,23 @@
                             font-weight: 600;
                             margin: 15px 0px;
                         }
+                        .availability, .pricing{
+                            font-size: 1rem;
+                            font-family: $fontJura;
+                            color:#424242;
+                            .labelOne, .labelTwo, .labelThree{
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-between;
+                                align-items:flex-start;
+                            }
+                            .priceOne, .priceTwo, .priceThree{
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-between;
+                                align-items:flex-start;
+                            }
+                        }
                     }
                     .btnFilter{
                         width: 90%;
@@ -578,7 +595,7 @@
                                 margin: 15px 0px;
                             }
                         }
-                        .blockProduct{
+                        .cartlist{
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
@@ -591,7 +608,6 @@
                             .description{
                                 display: flex;
                                 flex-direction: column;
-                                margin-left:-40px;
                                 .price{
                                     font-size: 1rem;
                                     font-family: $fontJura;
@@ -604,8 +620,15 @@
                                     }
                                 }
                             }
+                            .itemNumber{
+                            }
+                            .total{
+                                font-size: 1rem;
+                                font-family: $fontJura;
+                                color:#BC2327;
+                                font-weight: 600;
+                            }
                         }
-
                     }
                 }
             }

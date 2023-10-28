@@ -186,32 +186,37 @@
                         <div class="sectionAvailability">
                             <h3 class="titleAvailability">Availability</h3>
                             <article class="availability">
-                                <div>
-                                    <label for="inStock" class=""></label>
-                                    <input type="checkbox" id="inStock">In-stock
-                                </div>
-                                <div>
-                                <label for="newArrivals" class=""></label>
-                                    <input type="checkbox" id="newArrivals">New Arrivals
-                                </div>
-                                <div>
-                                    <label for="soldOut" class=""></label>
-                                    <input type="checkbox"  id="soldOut">Sold-out
-                                </div>
+
+                                    <label for="inStock" class="labelOne">
+                                        <input type="checkbox" id="inStock">In-stock
+                                    </label>
+
+                                    <label for="newArrivals" class="labelTwo">
+                                        <input type="checkbox" id="newArrivals">New Arrivals
+                                    </label>
+
+                                    <label for="soldOut" class="labelThree">
+                                        <input type="checkbox"  id="soldOut">Sold-out
+                                    </label>
+
                             </article>
                         </div>
                         <div class="sectionPricing">
                             <h3 class="titlePricing">Pricing</h3>
                             <article class="pricing">
-                                <div><label for="priceOne" class=""></label>
-                                    <input type="checkbox" id="priceOne">$499
-                                </div>
-                                <div><label for="priceTwo" class=""></label>
-                                    <input type="checkbox" id="priceTwo">$599
-                                </div>
-                                <div><label for="priceThree" class=""></label>
-                                    <input type="checkbox" id="priceThree">$999
-                                </div>
+
+                                    <label for="priceOne" class="priceOne">
+                                        <input type="checkbox" id="priceOne">$499
+                                    </label>
+
+                                    <label for="priceTwo" class="priceTwo">
+                                        <input type="checkbox" id="priceTwo">$599
+                                    </label>
+
+                                    <label for="priceThree" class="priceThree">
+                                        <input type="checkbox" id="priceThree">$999
+                                    </label>
+
                             </article>
                         </div>
                         <input class="btnFilter" type="submit" placeholder="Filter">
@@ -239,7 +244,6 @@
                                 <h3 class="titleCartlist">Total</h3>
                             </article>
                             <article class="cartlist">
-                                <div class="blockProduct">
                                     <img class="itemProduct" src="../img/pic24.webp" alt="Product pic">
                                     <div class="description">
                                         <p class="price">$499</p>
@@ -248,13 +252,13 @@
                                             <img src="../img/edit_Icon.svg" alt="Edit icon">
                                         </div>
                                     </div>
-                                    <label for="quantity"></label>
-                                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                                    <div class="itemNumber">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity" name="quantity" min="1" value="0">
+                                    </div>
                                     <p class="total">$499</p>
-                                </div>
                             </article>
                             <article class="cartlist">
-                                <div class="blockProduct">
                                     <img class="itemProduct" src="../img/pic25.webp" alt="Product pic">
                                     <div class="description">
                                         <p class="price">$499</p>
@@ -264,12 +268,10 @@
                                         </div>
                                     </div>
                                     <label for="quantity"></label>
-                                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                                    <input type="number" id="quantity" name="quantity" min="1" value="0">
                                     <p class="total">$499</p>
-                                </div>
                             </article>
                             <article class="cartlist">
-                                <div class="blockProduct">
                                     <img class="itemProduct" src="../img/pic25.webp" alt="Product pic">
                                     <div class="description">
                                         <p class="price">$499</p>
@@ -279,9 +281,8 @@
                                         </div>
                                     </div>
                                     <label for="quantity"></label>
-                                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                                    <input type="number" id="quantity" name="quantity" min="1" value="0">
                                     <p class="total">$499</p>
-                                </div>
                             </article>
                             <article class="outcome">
                                 <p class="price">Shipping........................00</p>
