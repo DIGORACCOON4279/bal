@@ -510,7 +510,7 @@
     #cart{
         display: none;
         &:checked ~ .sectionShop{
-            transform:translate(0%);
+            transform:translate(105%);
         }
     }
     .sectionShop{
@@ -543,6 +543,69 @@
                     transition: all 0.3s ease-in-out;
                     &:hover{
                         transform: rotate(270deg);
+                    }
+                }
+            }
+            .menuCartlist{
+                .choiceCartlist{
+                    width: 80%;
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: space-between;
+                    align-items:flex-start;
+                    margin: 0px auto;
+                    .cartlistWord{
+                        width: inherit;
+                        font-size: 1.3rem;
+                        font-family: $fontJura;
+                        color:#BC2327;
+                        font-weight: 600;
+                        margin:0px ;
+                    }
+                    .cart{
+                        .category{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            padding: 20px 0px;
+                            border-bottom: 1px solid #e4e4e4;
+                            .titleCartlist{
+                                font-size: 1rem;
+                                font-family: $fontJura;
+                                color:#BC2327;
+                                font-weight: 600;
+                                margin: 15px 0px;
+                            }
+                        }
+                        .blockProduct{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 20px 0px;
+                            border-bottom: 1px solid #e4e4e4;
+                            .itemProduct{
+                                width:15%;
+                            }
+                            .description{
+                                display: flex;
+                                flex-direction: column;
+                                margin-left:-40px;
+                                .price{
+                                    font-size: 1rem;
+                                    font-family: $fontJura;
+                                    color:#BC2327;
+                                    font-weight: 600;
+                                }
+                                .icons{
+                                    img{
+                                        width:20px;
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
             }

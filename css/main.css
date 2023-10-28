@@ -1367,7 +1367,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   display: none;
 }
 .containerStore #cart:checked ~ .sectionShop {
-  transform: translate(0%);
+  transform: translate(105%);
 }
 .containerStore .sectionShop {
   width: 30vw;
@@ -1399,6 +1399,62 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .containerStore .sectionShop .menuCart .cartShop .closeCross:hover {
   transform: rotate(270deg);
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px auto;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cartlistWord {
+  width: inherit;
+  font-size: 1.3rem;
+  font-family: "Jura", sans-serif;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 0px;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category .titleCartlist {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .blockProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .blockProduct .itemProduct {
+  width: 15%;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .blockProduct .description {
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .blockProduct .description .price {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #BC2327;
+  font-weight: 600;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .blockProduct .description .icons img {
+  width: 20px;
 }
 .containerStore #wishlistSide {
   display: none;
