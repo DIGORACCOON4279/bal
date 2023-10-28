@@ -73,41 +73,20 @@
                     }
                 }
             }
+            .wishHeadLine, .cartShop{
+                .wishlistIcon, .cartIcon{
+                    cursor: pointer;
+                    margin: 0px 5px;
+                    transform: scale(100%);
+                    transition: transform 0.3s ease-in-out;
+                    &:hover{
+                        transform: scale(103%);
+                        filter:drop-shadow(0 0 10px #696061);
+                    }
+                }
+            }
         }
     }
-
-    // Checkout this code
-
-    // #whishListSide{
-    //     display: none;
-    //     &:checked ~ .sectionWhishList{
-    //         transform:translate(0%);
-    //     }
-    // }
-    // .whishHeadLine{
-    //     .whishListIcon{
-    //         cursor: pointer;
-    //         margin: 0px 5px;
-    //         transform: scale(100%);
-    //         transition: transform 0.3s ease-in-out;
-    //         &:hover{
-    //             transform: scale(103%);
-    //             filter:drop-shadow(0 0 10px #696061);
-    //         }
-    //     }
-    // }
-
-    // Checkout this code
-
-    // #cart{
-    //     display: flex;
-    //     &:checked ~ .menuCart{
-    //         transform:translate(100%);
-    //     }
-    // }
-
-
-
     .menuSide{
         width:20vw;
         height: 100vh;
@@ -201,3 +180,5 @@
         }
     }
 }
+
+
