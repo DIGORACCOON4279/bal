@@ -1488,7 +1488,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex;
   position: absolute;
   bottom: 0px;
   left: 20px;
