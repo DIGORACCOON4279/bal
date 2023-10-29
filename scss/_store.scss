@@ -527,7 +527,7 @@
     #cart{
         display: none;
         &:checked ~ .sectionShop{
-            transform:translate(105%);
+            transform:translate(0%);
         }
     }
     .sectionShop{
@@ -545,7 +545,7 @@
         box-shadow: 0 0 10px 6px #070707;
         z-index: 10;
         padding-top: 30px;
-        transform: translate(0%);
+        transform: translate(105%);
         transition: .3s ease-in-out;
         .menuCart{
             .cartShop{
@@ -608,9 +608,7 @@
                             padding: 20px 0px;
                             border-bottom: 1px solid #e4e4e4;
                             .total{
-
                                 font-size: 1rem;
-
                             }
                             .itemProduct{
                                 width:15%;

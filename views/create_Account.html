@@ -41,8 +41,16 @@
             <ul>
                 <li><a href="#"><img class="icon" src="../img/moon_Icon.svg" alt=""></a></li>
                 <li><a href="sign_In.html"><img class="icon" src="../img/user_Icon.svg" alt=""></a></li>
-                <li><a href="#"><img class="icon" src="../img/whishlist_White_Icon.svg" alt=""></a></li>
-                <li><a href="#"><img class="icon" src="../img/empty_Shopping_Cart.svg" alt=""></a></li>
+                <li>
+                    <label for="wishlistSide" class="wishHeadLine">
+                        <img class="wishlistIcon" src="../img/wishlist_White_Icon.svg" alt="Heart icon">
+                    </label>
+                </li>
+                <li>
+                    <label for="cart" class="cartShop">
+                        <img class="cartIcon" src="../img/empty_Shopping_Cart.svg" alt="CArt icon">
+                    </label>
+                </li>
             </ul>
         </section>
         <nav class="menuSide">
@@ -128,6 +136,145 @@
                     </div>
                 </div>
             </article>
+        </section>
+
+        <!-- Cart -->
+
+        <input id="cart" type="checkbox">
+        <section class="sectionShop">
+            <div class="menuCart">
+                <label for="cart" class="cartShop">
+                    <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
+                </label>
+                <nav class="menuCartlist">
+                    <div class="choiceCartlist">
+                        <h3 class="cartlistWord">My cart</h3>
+                        <div class="cart">
+                            <article class="category">
+                                <h3 class="titleCartlist">Item</h3>
+                                <h3 class="titleCartlist">Pricing</h3>
+                                <h3 class="titleCartlist">Quantity</h3>
+                                <h3 class="titleCartlist">Total</h3>
+                            </article>
+                            <article class="cartlist">
+                                    <img class="itemProduct" src="../img/pic24.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <div class="itemNumber">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="5" value="0" >
+                                    </div>
+                                    <p class="total">$499</p>
+                            </article>
+                            <article class="cartlist">
+                                    <img class="itemProduct" src="../img/pic25.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <div class="itemNumber">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
+                                    </div>
+                                    <p class="total">$499</p>
+                            </article>
+                            <article class="cartlist">
+                                    <img class="itemProduct" src="../img/pic29.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <div class="itemNumber">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
+                                    </div>
+                                    <p class="total">$499</p>
+                            </article>
+                            <article class="cartlist">
+                                <img class="itemProduct" src="../img/pic22.webp" alt="Product pic">
+                                <div class="description">
+                                    <p class="price">$499</p>
+                                    <div class="icons">
+                                        <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                        <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                    </div>
+                                </div>
+                                <div class="itemNumber">
+                                    <label for="quantity"></label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
+                                </div>
+                                <p class="total">$499</p>
+                        </article>
+                        </div>
+                    </div>
+                    <div class="outcomeCard">
+                        <article class="outcome">
+                            <p class="shipping">Shipping<span>$00</span></p>
+                            <p class="discount">Discount 25%<span>$374</span></p>
+                            <p class="total">Total<span>$1122</span></p>
+                        </article>
+                        <button class="btnCheckout">Secure checkout</button>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- WhishList -->
+
+        <input type="checkbox" id="wishlistSide">
+        <section class="sectionWishlist">
+            <label for="wishlistSide" class="wishHeadLine">
+                <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
+            </label>
+                <nav class="menuWishlist">
+                    <div class="choiceWishlist">
+                        <h3 class="wishlistWord">WhishList</h3>
+                        <div class="wish">
+                            <article class="category">
+                                <h3 class="titleWishlist">Item</h3>
+                                <h3 class="titleWishlist">Pricing</h3>
+                                <h3 class="titleWishlist">Whish</h3>
+                            </article>
+                            <article class="wishlist">
+                                <div class="blockProduct">
+                                    <img class="itemProduct" src="../img/pic24.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <img class="itemWishlist" src="../img/wishlist_Icon.svg" alt="Wishlist icon">
+                                </div>
+                            </article>
+                            <article class="wishlist">
+                                <div class="blockProduct">
+                                    <img class="itemProduct" src="../img/pic25.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <img class="itemWishlist" src="img/wishlist_Icon.svg" alt="Wishlist icon">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </nav>
         </section>
 
 
