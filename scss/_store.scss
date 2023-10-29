@@ -727,18 +727,18 @@
         width:65vw;
         height:auto;
         background-color: #707070;
-        display:flex;
         position: fixed;
-        top:25%;
-        left:17.5%;
+        top:20%;
+        left:16.5%;
         z-index: 10px;
-        flex-direction: column;
-        justify-content:flex-start;
-        align-items: flex-start;
+        display:flex;
+        justify-content:center;
+        align-items: center;
         overflow: hidden;
         box-shadow: 0 0 10px 6px #070707;
+        margin:0px auto;
+        padding:20px;
         z-index: 10;
-        padding-top: 60px;
         transform: translate(0%);
         transition: .3s ease-in-out;
         .orderCross{
@@ -751,9 +751,17 @@
                 transform: rotate(0deg);
                 transition: all 0.3s ease-in-out;
                 &:hover{
-                    transform: rotate(270deg);
+                    transform: rotate(90deg);
                 }
             }
+        }
+        .unionOrder{
+            width:85%;
+            display:flex;
+            flex-direction: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
 
     }
