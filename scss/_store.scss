@@ -607,6 +607,11 @@
                             align-items: center;
                             padding: 20px 0px;
                             border-bottom: 1px solid #e4e4e4;
+                            .total{
+
+                                font-size: 1rem;
+
+                            }
                             .itemProduct{
                                 width:15%;
                             }
@@ -616,7 +621,7 @@
                                 .price{
                                     font-size: 1rem;
                                     font-family: $fontJura;
-                                    color:#BC2327;
+                                    color:#424242;
                                     font-weight: 600;
                                 }
                                 .icons{
@@ -626,6 +631,15 @@
                                 }
                             }
                             .itemNumber{
+                                #quantity{
+                                    width:45px;
+                                    padding: 2px;
+                                    text-align: left;
+                                    font-size: 1rem;
+                                    font-family: $fontJura;
+                                    color:#BC2327;
+                                    font-weight: 600;
+                                }
                             }
                             .total{
                                 font-size: 1rem;

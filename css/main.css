@@ -1461,6 +1461,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+  font-size: 1rem;
+}
 .containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
   width: 15%;
 }
@@ -1471,11 +1474,20 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .price {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #424242;
   font-weight: 600;
 }
 .containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
   width: 20px;
+}
+.containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
+  width: 45px;
+  padding: 2px;
+  text-align: left;
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #BC2327;
+  font-weight: 600;
 }
 .containerStore .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
   font-size: 1rem;
