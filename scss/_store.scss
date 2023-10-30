@@ -77,6 +77,11 @@
                     right:-390px;
                     cursor: pointer;
                     z-index: 10;
+                    transform: rotate(0deg);
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        transform: rotate(90deg);
+                    }
                 }
             }
             .title{
@@ -196,6 +201,12 @@
                 top:-15px;
                 right:-250px;
                 cursor:pointer;
+                z-index:10;
+                transform: rotate(0deg);
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: rotate(90deg);
+                }
             }
         }
         .breakaLeg{
@@ -462,7 +473,7 @@
                         transform: rotate(0deg);
                         transition: all 0.3s ease-in-out;
                         &:hover{
-                            transform: rotate(270deg);
+                            transform: rotate(90deg);
                         }
                     }
                 }
@@ -576,7 +587,7 @@
                     transform: rotate(0deg);
                     transition: all 0.3s ease-in-out;
                     &:hover{
-                        transform: rotate(270deg);
+                        transform: rotate(90deg);
                     }
                 }
             }
@@ -722,9 +733,9 @@
     // Place order
 
     #order{
-        display: none;
+        display: flex;
         &:checked ~ .sectionPlaceOrder{
-            transform:translate(0%);
+            transform:translateY(0%);
         }
     }
     .sectionPlaceOrder{
@@ -732,7 +743,7 @@
         height:auto;
         background-color: #707070;
         position: fixed;
-        top:20%;
+        top:-80%;
         left:16.5%;
         display:flex;
         flex-direction: column;
@@ -740,21 +751,21 @@
         align-items: center;
         overflow: hidden;
         box-shadow: 0 0 10px 6px #070707;
-        margin:0px auto;
-        padding-top:15px;
+        margin:7px auto;
+        padding-top:35px;
         padding-bottom:30px;
         font-family: $fontJura;
         z-index: 8;
-        transform: translate(0%);
+        transform: translateY(150%);
         border-radius: 10px;
         transition: .3s ease-in-out;
         .orderCross{
             .crossCloseWhite{
-                width:15px;
+                width:25px;
                 cursor: pointer;
-                // position: absolute;
-                // top:20px;
-                // left:35px;
+                position: absolute;
+                top:10px;
+                right:10px;
                 transform: rotate(0deg);
                 transition: all 0.3s ease-in-out;
                 &:hover{
@@ -916,7 +927,7 @@
                 transform: rotate(0deg);
                 transition: all 0.3s ease-in-out;
                 &:hover{
-                    transform: rotate(270deg);
+                    transform: rotate(90deg);
                 }
             }
         }
