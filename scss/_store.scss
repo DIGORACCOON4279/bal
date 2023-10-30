@@ -770,6 +770,7 @@
             align-items: center;
             .delivery{
                 width:60%;
+                height: 350px;
                 margin-right:35px;
                 background-color: #ffffff;
                 padding: 15px ;
@@ -778,15 +779,23 @@
                     display:flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    background-color: #329cf3;
                     row-gap: 4px;
                     .contactTitle, .deliveryTitle{
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         font-family: $fontJura;
                         font-weight: 600;
                         color: #BC2327;
-                        margin-bottom: -5px;
+                        margin-bottom: -2px;
                     }
+                }
+                input{
+                    width:100%;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    padding-left: 5px;
+                    font-size: 0.9rem;
+                    border:1px solid #d9d9d9;
+                    border-radius: 5px;
                 }
                 .creditCards{
                     .transactions{
@@ -797,8 +806,9 @@
                     }
                 }
             }
-            .payment{
+            .formPayment{
                 width:40%;
+                height: 350px;
                 display:flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -806,34 +816,49 @@
                 background-color: #ffffff;
                 padding: 15px;
                 border-radius: 10px;
-                row-gap: 4px;
-                .paymentTitle{
-                    font-size: 1.2rem;
-                    font-family: $fontJura;
-                    font-weight: 600;
-                    color: #BC2327;
-                    margin-bottom: -3px;
-                }
-                .btnPlaceOnOrder{
-                    width: 100%;
-                    padding: 10px 20px;
-                    display: flex;
+                .payment{
+                    width:100%;
+                    display:flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin:60px auto 0px;
-                    font-size: 1rem;
-                    font-family: $fontJura;
-                    font-weight: 600;
-                    color: #ffffff;
-                    border: 1px solid transparent;
-                    background-color: #070707;
-                    transition: all 0.3s ease;
-                    &:hover{
-                        color: #070707;
-                        background-color: #ffffff;
-                        border:1px solid #000000;
+                    align-items: flex-start;
+                    row-gap: 4px;
+                    .paymentTitle{
+                        font-size: 1rem;
+                        font-family: $fontJura;
                         font-weight: 600;
+                        color: #BC2327;
+                        margin-bottom: -2px;
+                    }
+                    input{
+                        width:100%;
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        padding-left: 7px;
+                        font-size: 0.9rem;
+                        border:1px solid #d9d9d9;
+                        border-radius: 5px;
+                    }
+                    .btnPlaceOnOrder{
+                        width: 100%;
+                        padding: 10px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin:85px auto 0px;
+                        font-size: 1rem;
+                        font-family: $fontJura;
+                        font-weight: 600;
+                        color: #ffffff;
+                        border: 1px solid transparent;
+                        background-color: #070707;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            color: #070707;
+                            background-color: #ffffff;
+                            border:1px solid #000000;
+                            font-weight: 600;
+                        }
                     }
                 }
             }
