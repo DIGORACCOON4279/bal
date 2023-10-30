@@ -741,7 +741,7 @@
     .sectionPlaceOrder{
         width:65vw;
         height:auto;
-        background-color: #707070;
+        background-color:#f3f3f31c;
         position: fixed;
         top:-80%;
         left:16.5%;
@@ -889,6 +889,22 @@
                 }
             }
         }
+    }
+    .sectionPlaceOrder::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:#00000081;
+        backdrop-filter: blur(25px);
+        filter: blur(10px);
+        z-index: -1;
+        border-radius: 10px;
+    }
+    .sectionPlaceOrder > * {
+        position: relative;
     }
 
     // Wishlist
