@@ -663,7 +663,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   filter: drop-shadow(4px 4px 8px #000000);
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .sectionCreateAccount .formCreateAccount {
   width: 50vw;
@@ -671,7 +671,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
   box-shadow: 4px 4px 8px 0px #181818;
   margin-top: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .sectionCreateAccount .formCreateAccount .form {
   max-width: fit-content;
@@ -2976,7 +2976,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   filter: drop-shadow(4px 4px 8px #000000);
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .sectionSignIn .formSignIn {
   width: 50vw;
@@ -2984,7 +2984,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
   box-shadow: 4px 4px 8px 0px #181818;
   margin-top: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .sectionSignIn .formSignIn .form {
   max-width: fit-content;
