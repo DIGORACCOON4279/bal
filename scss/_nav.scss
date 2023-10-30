@@ -34,24 +34,17 @@
             left:53px;
             width:45px;
             border-radius: 50%;
-            animation: skull 1s linear;
             transition: transform 0.3s ease-in-out;
             &:hover{
-                transform: scale(103%);
+                transform: translateY(0%) scale(105%);
                 filter:drop-shadow(0 0 6px #696061);
             }
-            @keyframes skull {
+            animation: skull 1s linear;
+            @keyframes skull{
                 0%{
-                    transform:translateY(-100%) scale(100%);
-                }
-                50%{
-                    transform: translateY(5%) scale(100%);
-                }
-                75%{
-                    transform: translateY(0%) scale(110%);
+                    filter:drop-shadow(0 0 2px #696061);
                 }
                 100%{
-                    transform: translateY(0%) scale(100%);
                     filter:drop-shadow(0 0 6px #696061);
                 }
             }
@@ -70,7 +63,7 @@
                         transform: scale(100%);
                         transition: transform 0.3s ease-in-out;
                         &:hover{
-                            transform: scale(103%);
+                            transform: scale(120%);
                             filter:drop-shadow(0 0 10px #696061);
                         }
                     }
@@ -83,7 +76,7 @@
                     transform: scale(100%);
                     transition: transform 0.3s ease-in-out;
                     &:hover{
-                        transform: scale(103%);
+                        transform: scale(120%);
                         filter:drop-shadow(0 0 10px #696061);
                     }
                 }
@@ -116,6 +109,9 @@
             padding: 5px 20px 0px 0px;
             .brand{
                 width: 45px;
+                position: absolute;
+                top:10px;
+                left:25px;
             }
             label{
                 .close{

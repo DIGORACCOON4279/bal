@@ -428,25 +428,18 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   left: 53px;
   width: 45px;
   border-radius: 50%;
-  animation: skull 1s linear;
   transition: transform 0.3s ease-in-out;
+  animation: skull 1s linear;
 }
 .header .logo .brand:hover {
-  transform: scale(103%);
+  transform: translateY(0%) scale(105%);
   filter: drop-shadow(0 0 6px #696061);
 }
 @keyframes skull {
   0% {
-    transform: translateY(-100%) scale(100%);
-  }
-  50% {
-    transform: translateY(5%) scale(100%);
-  }
-  75% {
-    transform: translateY(0%) scale(110%);
+    filter: drop-shadow(0 0 2px #696061);
   }
   100% {
-    transform: translateY(0%) scale(100%);
     filter: drop-shadow(0 0 6px #696061);
   }
 }
@@ -466,7 +459,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   transition: transform 0.3s ease-in-out;
 }
 .header .menuIcons ul li a .icon:hover {
-  transform: scale(103%);
+  transform: scale(120%);
   filter: drop-shadow(0 0 10px #696061);
 }
 .header .menuIcons ul .wishHeadLine .wishlistIcon, .header .menuIcons ul .wishHeadLine .cartIcon, .header .menuIcons ul .cartShop .wishlistIcon, .header .menuIcons ul .cartShop .cartIcon {
@@ -476,7 +469,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   transition: transform 0.3s ease-in-out;
 }
 .header .menuIcons ul .wishHeadLine .wishlistIcon:hover, .header .menuIcons ul .wishHeadLine .cartIcon:hover, .header .menuIcons ul .cartShop .wishlistIcon:hover, .header .menuIcons ul .cartShop .cartIcon:hover {
-  transform: scale(103%);
+  transform: scale(120%);
   filter: drop-shadow(0 0 10px #696061);
 }
 .header .menuSide {
@@ -507,6 +500,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .header .menuSide .top .brand {
   width: 45px;
+  position: absolute;
+  top: 10px;
+  left: 25px;
 }
 .header .menuSide .top label .close {
   width: 25px;
