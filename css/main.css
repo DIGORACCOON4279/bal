@@ -1303,110 +1303,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
     transform: translateX(0%);
   }
 }
-.containerStore #orderCross {
-  display: flex;
-  font-family: "Jura", sans-serif;
-}
-.containerStore #orderCross:checked ~ .sectionPurchaseOrder {
-  transform: translateY(150%);
-}
-.containerStore .sectionPurchaseOrder {
-  width: 40%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-radius: 10px;
-  background-color: rgba(243, 243, 243, 0.1098039216);
-  box-shadow: 0 0 4px 2px rgb(82, 82, 82);
-  position: fixed;
-  top: -87%;
-  left: 30%;
-  z-index: 8;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  transform: translateY(0%);
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-}
-.containerStore .sectionPurchaseOrder #orderCross {
-  display: none;
-}
-.containerStore .sectionPurchaseOrder label .crossCloseWhite {
-  width: 25px;
-  position: absolute;
-  top: -15px;
-  right: -250px;
-  cursor: pointer;
-  z-index: 10;
-  transform: rotate(0deg);
-  transition: all 0.3s ease-in-out;
-}
-.containerStore .sectionPurchaseOrder label .crossCloseWhite:hover {
-  transform: rotate(90deg);
-}
-.containerStore .sectionPurchaseOrder .breakaLeg {
-  color: #BC2327;
-  font-size: 1.8rem;
-  font-family: "Rubik Distressed", cursive;
-}
-.containerStore .sectionPurchaseOrder .brand {
-  width: 35px;
-}
-.containerStore .sectionPurchaseOrder .confirmation {
-  width: 60%;
-  text-align: center;
-  margin: 20px auto;
-  padding: 20px 40px;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-.containerStore .sectionPurchaseOrder .confirmation .done, .containerStore .sectionPurchaseOrder .confirmation .order, .containerStore .sectionPurchaseOrder .confirmation .number, .containerStore .sectionPurchaseOrder .confirmation .close {
-  font-family: "Jura", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-.containerStore .sectionPurchaseOrder .confirmation .done {
-  color: #BC2327;
-}
-.containerStore .sectionPurchaseOrder .confirmation .number {
-  color: #BC2327;
-  padding: -10px;
-}
-.containerStore .sectionPurchaseOrder .confirmation .cartCheck {
-  width: 50px;
-}
-.containerStore .sectionPurchaseOrder .confirmation .close {
-  width: 100%;
-  height: 40px;
-  color: #ffffff;
-  background-color: #000000;
-  text-decoration: none;
-  border: 1px solid #000000;
-  transition: all 0.3s ease;
-}
-.containerStore .sectionPurchaseOrder .confirmation .close:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
-}
-.containerStore .sectionPurchaseOrder::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5058823529);
-  backdrop-filter: blur(25px);
-  filter: blur(10px);
-  z-index: -1;
-  border-radius: 10px;
-}
-.containerStore .sectionPurchaseOrder > * {
-  position: relative;
-}
 .containerStore .sectionStore .sectionCard .cardProducts {
   width: 100%;
   height: auto;
@@ -1817,178 +1713,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
   border: 1px solid #000000;
   font-weight: 600;
-}
-.containerStore #order {
-  display: flex;
-  font-family: "Jura", sans-serif;
-}
-.containerStore #order:checked ~ .sectionPlaceOrder {
-  transform: translateY(150%);
-}
-.containerStore .sectionPlaceOrder {
-  width: 65vw;
-  height: auto;
-  position: fixed;
-  top: -80%;
-  left: 16.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  background-color: rgba(243, 243, 243, 0.1098039216);
-  box-shadow: 0 0 4px 2px #525252;
-  margin: 7px auto;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  font-family: "Jura", sans-serif;
-  z-index: 8;
-  transform: translateY(0%);
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
-}
-.containerStore .sectionPlaceOrder .orderCross .crossCloseWhite {
-  width: 25px;
-  cursor: pointer;
-  position: absolute;
-  top: -30px;
-  right: -435px;
-  z-index: 8;
-  transform: rotate(0deg);
-  transition: all 0.3s ease-in-out;
-}
-.containerStore .sectionPlaceOrder .orderCross .crossCloseWhite:hover {
-  transform: rotate(90deg);
-}
-.containerStore .sectionPlaceOrder .unionOrder {
-  width: 92%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery {
-  width: 60%;
-  height: 350px;
-  margin-right: 35px;
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 4px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact .contactTitle, .containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #BC2327;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
-  margin-top: 15px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery .fullName {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery .fullName #lastName {
-  margin-left: 15px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery input {
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  font-size: 0.8rem;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery .creditCards .transactions {
-  margin: 25px auto 5px;
-  font-size: 0.8rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #BC2327;
-}
-.containerStore .sectionPlaceOrder .unionOrder .delivery .creditCards .paymentCards {
-  width: 100%;
-}
-.containerStore .sectionPlaceOrder .unionOrder .formPayment {
-  width: 40%;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .formPayment .payment {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 4px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .formPayment .payment .paymentTitle {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #BC2327;
-}
-.containerStore .sectionPlaceOrder .unionOrder .formPayment .payment input {
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  font-size: 0.8rem;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-}
-.containerStore .sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder {
-  width: 100%;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 75px auto 0px;
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #ffffff;
-  border: 1px solid transparent;
-  background-color: #070707;
-  transition: all 0.3s ease;
-}
-.containerStore .sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder:hover {
-  color: #070707;
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  font-weight: 600;
-}
-.containerStore .sectionPlaceOrder::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5058823529);
-  backdrop-filter: blur(25px);
-  filter: blur(10px);
-  z-index: -1;
-  border-radius: 10px;
-}
-.containerStore .sectionPlaceOrder > * {
-  position: relative;
 }
 .containerStore #wishlistSide {
   display: none;
@@ -2981,6 +2705,290 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #BC2327;
   box-shadow: 0 0 4px 2px rgb(112, 112, 112);
   text-decoration: underline;
+}
+
+#orderCross {
+  display: flex;
+  font-family: "Jura", sans-serif;
+}
+#orderCross:checked ~ .sectionPurchaseOrder {
+  transform: translateY(150%);
+}
+
+.sectionPurchaseOrder {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(243, 243, 243, 0.1098039216);
+  box-shadow: 0 0 4px 2px rgb(82, 82, 82);
+  position: fixed;
+  top: -87%;
+  left: 30%;
+  z-index: 8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transform: translateY(0%);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.sectionPurchaseOrder #orderCross {
+  display: none;
+}
+.sectionPurchaseOrder label .crossCloseWhite {
+  width: 25px;
+  position: absolute;
+  top: -15px;
+  right: -250px;
+  cursor: pointer;
+  z-index: 10;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.sectionPurchaseOrder label .crossCloseWhite:hover {
+  transform: rotate(90deg);
+}
+.sectionPurchaseOrder .breakaLeg {
+  color: #BC2327;
+  font-size: 1.8rem;
+  font-family: "Rubik Distressed", cursive;
+}
+.sectionPurchaseOrder .brand {
+  width: 35px;
+}
+.sectionPurchaseOrder .confirmation {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.sectionPurchaseOrder .confirmation .done, .sectionPurchaseOrder .confirmation .order, .sectionPurchaseOrder .confirmation .number, .sectionPurchaseOrder .confirmation .close {
+  font-family: "Jura", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.sectionPurchaseOrder .confirmation .done {
+  color: #BC2327;
+}
+.sectionPurchaseOrder .confirmation .number {
+  color: #BC2327;
+  padding: -10px;
+}
+.sectionPurchaseOrder .confirmation .cartCheck {
+  width: 50px;
+}
+.sectionPurchaseOrder .confirmation .close {
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+}
+.sectionPurchaseOrder .confirmation .close:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.sectionPurchaseOrder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  backdrop-filter: blur(25px);
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.sectionPurchaseOrder > * {
+  position: relative;
+}
+
+#order {
+  display: flex;
+  font-family: "Jura", sans-serif;
+}
+#order:checked ~ .sectionPlaceOrder {
+  transform: translateY(150%);
+}
+
+.sectionPlaceOrder {
+  width: 65vw;
+  height: auto;
+  position: fixed;
+  top: -80%;
+  left: 16.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(243, 243, 243, 0.1098039216);
+  box-shadow: 0 0 4px 2px #525252;
+  margin: 7px auto;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  font-family: "Jura", sans-serif;
+  z-index: 8;
+  transform: translateY(0%);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.sectionPlaceOrder .orderCross .crossCloseWhite {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: -30px;
+  right: -435px;
+  z-index: 8;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.sectionPlaceOrder .orderCross .crossCloseWhite:hover {
+  transform: rotate(90deg);
+}
+.sectionPlaceOrder .unionOrder {
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionPlaceOrder .unionOrder .delivery {
+  width: 60%;
+  height: 350px;
+  margin-right: 35px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 4px;
+}
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact .contactTitle, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #BC2327;
+}
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
+  margin-top: 15px;
+}
+.sectionPlaceOrder .unionOrder .delivery .fullName {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionPlaceOrder .unionOrder .delivery .fullName #lastName {
+  margin-left: 15px;
+}
+.sectionPlaceOrder .unionOrder .delivery input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+.sectionPlaceOrder .unionOrder .delivery .creditCards .transactions {
+  margin: 25px auto 5px;
+  font-size: 0.8rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #BC2327;
+}
+.sectionPlaceOrder .unionOrder .delivery .creditCards .paymentCards {
+  width: 100%;
+}
+.sectionPlaceOrder .unionOrder .formPayment {
+  width: 40%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.sectionPlaceOrder .unionOrder .formPayment .payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 4px;
+}
+.sectionPlaceOrder .unionOrder .formPayment .payment .paymentTitle {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #BC2327;
+}
+.sectionPlaceOrder .unionOrder .formPayment .payment input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+.sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 75px auto 0px;
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid transparent;
+  background-color: #070707;
+  transition: all 0.3s ease;
+}
+.sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder:hover {
+  color: #070707;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  font-weight: 600;
+}
+
+.sectionPlaceOrder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  backdrop-filter: blur(25px);
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.sectionPlaceOrder > * {
+  position: relative;
 }
 
 .sectionSignIn {
