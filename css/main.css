@@ -1815,8 +1815,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   overflow: hidden;
   box-shadow: 0 0 10px 6px #070707;
   margin: 0px auto;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 30px;
+  font-family: "Jura", sans-serif;
   z-index: 8;
   transform: translate(0%);
   border-radius: 10px;
@@ -1832,7 +1833,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   transform: rotate(90deg);
 }
 .containerStore .sectionPlaceOrder .unionOrder {
-  width: 85%;
+  width: 92%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1842,6 +1843,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   width: 65%;
   margin-right: 35px;
   background-color: #ffffff;
+  padding: 15px;
   border-radius: 10px;
 }
 .containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact {
