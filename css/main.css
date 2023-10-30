@@ -1303,7 +1303,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
     transform: translateX(0%);
   }
 }
-.containerStore .purchaseOrder {
+.containerStore #orderCross {
+  display: flex;
+  font-family: "Jura", sans-serif;
+}
+.containerStore #orderCross:checked ~ .sectionPurchaseOrder {
+  transform: translateY(150%);
+}
+.containerStore .sectionPurchaseOrder {
   width: 40%;
   height: auto;
   display: flex;
@@ -1319,14 +1326,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   z-index: 8;
   padding-top: 30px;
   padding-bottom: 30px;
-  transform: translateY(150%);
+  transform: translateY(0%);
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.containerStore .purchaseOrder #orderCross {
+.containerStore .sectionPurchaseOrder #orderCross {
   display: none;
 }
-.containerStore .purchaseOrder label .crossCloseWhite {
+.containerStore .sectionPurchaseOrder label .crossCloseWhite {
   width: 25px;
   position: absolute;
   top: -15px;
@@ -1336,18 +1343,18 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   transform: rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
-.containerStore .purchaseOrder label .crossCloseWhite:hover {
+.containerStore .sectionPurchaseOrder label .crossCloseWhite:hover {
   transform: rotate(90deg);
 }
-.containerStore .purchaseOrder .breakaLeg {
+.containerStore .sectionPurchaseOrder .breakaLeg {
   color: #BC2327;
   font-size: 1.8rem;
   font-family: "Rubik Distressed", cursive;
 }
-.containerStore .purchaseOrder .brand {
+.containerStore .sectionPurchaseOrder .brand {
   width: 35px;
 }
-.containerStore .purchaseOrder .confirmation {
+.containerStore .sectionPurchaseOrder .confirmation {
   width: 60%;
   text-align: center;
   margin: 20px auto;
@@ -1355,22 +1362,22 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
   border-radius: 10px;
 }
-.containerStore .purchaseOrder .confirmation .done, .containerStore .purchaseOrder .confirmation .order, .containerStore .purchaseOrder .confirmation .number, .containerStore .purchaseOrder .confirmation .close {
+.containerStore .sectionPurchaseOrder .confirmation .done, .containerStore .sectionPurchaseOrder .confirmation .order, .containerStore .sectionPurchaseOrder .confirmation .number, .containerStore .sectionPurchaseOrder .confirmation .close {
   font-family: "Jura", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
 }
-.containerStore .purchaseOrder .confirmation .done {
+.containerStore .sectionPurchaseOrder .confirmation .done {
   color: #BC2327;
 }
-.containerStore .purchaseOrder .confirmation .number {
+.containerStore .sectionPurchaseOrder .confirmation .number {
   color: #BC2327;
   padding: -10px;
 }
-.containerStore .purchaseOrder .confirmation .cartCheck {
+.containerStore .sectionPurchaseOrder .confirmation .cartCheck {
   width: 50px;
 }
-.containerStore .purchaseOrder .confirmation .close {
+.containerStore .sectionPurchaseOrder .confirmation .close {
   width: 100%;
   height: 40px;
   color: #ffffff;
@@ -1379,12 +1386,12 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   border: 1px solid #000000;
   transition: all 0.3s ease;
 }
-.containerStore .purchaseOrder .confirmation .close:hover {
+.containerStore .sectionPurchaseOrder .confirmation .close:hover {
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #000000;
 }
-.containerStore .purchaseOrder::before {
+.containerStore .sectionPurchaseOrder::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1397,7 +1404,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   z-index: -1;
   border-radius: 10px;
 }
-.containerStore .purchaseOrder > * {
+.containerStore .sectionPurchaseOrder > * {
   position: relative;
 }
 .containerStore .sectionStore .sectionCard .cardProducts {
@@ -1813,14 +1820,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .containerStore #order {
   display: flex;
+  font-family: "Jura", sans-serif;
 }
 .containerStore #order:checked ~ .sectionPlaceOrder {
-  transform: translateY(0%);
+  transform: translateY(150%);
 }
 .containerStore .sectionPlaceOrder {
   width: 65vw;
   height: auto;
-  background-color: rgba(243, 243, 243, 0.1098039216);
   position: fixed;
   top: -80%;
   left: 16.5%;
@@ -1829,13 +1836,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0 0 10px 6px #070707;
+  background-color: rgba(243, 243, 243, 0.1098039216);
+  box-shadow: 0 0 4px 2px #525252;
   margin: 7px auto;
   padding-top: 35px;
   padding-bottom: 30px;
   font-family: "Jura", sans-serif;
   z-index: 8;
-  transform: translateY(150%);
+  transform: translateY(0%);
   border-radius: 10px;
   transition: 0.3s ease-in-out;
 }
@@ -1843,8 +1851,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 25px;
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -30px;
+  right: -435px;
+  z-index: 8;
   transform: rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
