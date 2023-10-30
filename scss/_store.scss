@@ -769,27 +769,36 @@
             justify-content: space-between;
             align-items: center;
             .delivery{
-                width:65%;
+                width:60%;
                 margin-right:35px;
                 background-color: #ffffff;
-                padding: 15px;
+                padding: 15px ;
                 border-radius: 10px;
                 .deliveryContact{
                     display:flex;
                     flex-direction: column;
-                    justify-content: space-between;
                     align-items: flex-start;
+                    background-color: #329cf3;
+                    row-gap: 4px;
+                    .contactTitle, .deliveryTitle{
+                        font-size: 1.2rem;
+                        font-family: $fontJura;
+                        font-weight: 600;
+                        color: #BC2327;
+                        margin-bottom: -5px;
+                    }
                 }
                 .creditCards{
                     .transactions{
+                        margin:20px auto 5px;
                     }
                     .paymentCards{
-                        width:70%;
+                        width:65%;
                     }
                 }
             }
             .payment{
-                width:35%;
+                width:40%;
                 display:flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -797,6 +806,14 @@
                 background-color: #ffffff;
                 padding: 15px;
                 border-radius: 10px;
+                row-gap: 4px;
+                .paymentTitle{
+                    font-size: 1.2rem;
+                    font-family: $fontJura;
+                    font-weight: 600;
+                    color: #BC2327;
+                    margin-bottom: -3px;
+                }
                 .btnPlaceOnOrder{
                     width: 100%;
                     padding: 10px 20px;

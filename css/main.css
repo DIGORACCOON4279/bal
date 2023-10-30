@@ -1840,7 +1840,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   align-items: center;
 }
 .containerStore .sectionPlaceOrder .unionOrder .delivery {
-  width: 65%;
+  width: 60%;
   margin-right: 35px;
   background-color: #ffffff;
   padding: 15px;
@@ -1849,14 +1849,25 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 .containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
+  background-color: #329cf3;
+  row-gap: 4px;
+}
+.containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact .contactTitle, .containerStore .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
+  font-size: 1.2rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #BC2327;
+  margin-bottom: -5px;
+}
+.containerStore .sectionPlaceOrder .unionOrder .delivery .creditCards .transactions {
+  margin: 20px auto 5px;
 }
 .containerStore .sectionPlaceOrder .unionOrder .delivery .creditCards .paymentCards {
-  width: 70%;
+  width: 65%;
 }
 .containerStore .sectionPlaceOrder .unionOrder .payment {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1864,6 +1875,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
   background-color: #ffffff;
   padding: 15px;
   border-radius: 10px;
+  row-gap: 4px;
+}
+.containerStore .sectionPlaceOrder .unionOrder .payment .paymentTitle {
+  font-size: 1.2rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #BC2327;
+  margin-bottom: -3px;
 }
 .containerStore .sectionPlaceOrder .unionOrder .payment .btnPlaceOnOrder {
   width: 100%;
