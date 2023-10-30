@@ -1490,6 +1490,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
   width: 20px;
+  cursor: pointer;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
   width: 45px;
@@ -2653,6 +2654,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .icons img {
   width: 20px;
+  cursor: pointer;
 }
 
 #order {
