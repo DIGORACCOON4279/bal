@@ -800,9 +800,13 @@
                 .creditCards{
                     .transactions{
                         margin:20px auto 5px;
+                        font-size: 0.7rem;
+                        font-family: $fontJura;
+                        font-weight: 600;
+                        color: #BC2327;
                     }
                     .paymentCards{
-                        width:65%;
+                        width:100%;
                     }
                 }
             }

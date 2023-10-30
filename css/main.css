@@ -1871,9 +1871,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li .item .itemSocial {
 }
 .containerStore .sectionPlaceOrder .unionOrder .delivery .creditCards .transactions {
   margin: 20px auto 5px;
+  font-size: 0.7rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #BC2327;
 }
 .containerStore .sectionPlaceOrder .unionOrder .delivery .creditCards .paymentCards {
-  width: 65%;
+  width: 100%;
 }
 .containerStore .sectionPlaceOrder .unionOrder .formPayment {
   width: 40%;
