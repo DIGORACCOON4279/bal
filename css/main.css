@@ -455,6 +455,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding: 0px 5px;
 }
 .header .menuIcons ul li a .icon {
+  cursor: pointer;
   transform: scale(100%);
   transition: transform 0.3s ease-in-out;
 }
