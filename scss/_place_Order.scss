@@ -1,6 +1,6 @@
  // Place order
 
- #order{
+#order{
     display: flex;
     font-family: $fontJura;
     &:checked ~ .sectionPlaceOrder{
