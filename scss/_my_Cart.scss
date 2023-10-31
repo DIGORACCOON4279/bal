@@ -7,15 +7,15 @@
     }
 }
 .sectionShop{
-    width:30vw;
+    width:40vw;
     height: 100vh;
     display:flex;
     position: fixed;
     top:0;
     right:0;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items: flex-start;
+    justify-content:space-between;
+    align-items: center;
     background-color: #ffffff;
     overflow: hidden;
     box-shadow: 0 0 10px 6px #070707;
@@ -30,7 +30,7 @@
                 cursor: pointer;
                 position: absolute;
                 top:20px;
-                left:35px;
+                left:40px;
                 transform: rotate(0deg);
                 transition: all 0.3s ease-in-out;
                 &:hover{
@@ -46,7 +46,7 @@
                 justify-content: space-between;
                 align-items:flex-start;
                 margin: 0px auto;
-                padding: 0px 10px;
+                padding: 0px 20px;
                 height: 380px;
                 overflow: scroll;
                 position: fixed;
@@ -65,7 +65,7 @@
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        align-items: flex-start;
+                        align-items: center;
                         padding: 20px 0px;
                         border-bottom: 1px solid #e4e4e4;
                         .titleCartlist{
@@ -87,7 +87,7 @@
                             font-size: 1rem;
                         }
                         .itemProduct{
-                            width:15%;
+                            width:12%;
                         }
                         .description{
                             display: flex;
@@ -107,9 +107,9 @@
                         }
                         .itemNumber{
                             #quantity{
-                                width:45px;
+                                width:50px;
+                                height:35px;
                                 padding: 2px;
-                                text-align: left;
                                 font-size: 1rem;
                                 font-family: $fontJura;
                                 color:#BC2327;

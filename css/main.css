@@ -30,15 +30,15 @@ html .mainContainer #cart:checked ~ .sectionShop {
   transform: translate(0%);
 }
 html .mainContainer .sectionShop {
-  width: 30vw;
+  width: 40vw;
   height: 100vh;
   display: flex;
   position: fixed;
   top: 0;
   right: 0;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   overflow: hidden;
   box-shadow: 0 0 10px 6px #070707;
@@ -52,7 +52,7 @@ html .mainContainer .sectionShop .menuCart .cartShop .closeCross {
   cursor: pointer;
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 40px;
   transform: rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
@@ -66,7 +66,7 @@ html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0px auto;
-  padding: 0px 10px;
+  padding: 0px 20px;
   height: 380px;
   overflow: scroll;
   position: fixed;
@@ -85,7 +85,7 @@ html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
@@ -108,7 +108,7 @@ html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .
   font-size: 1rem;
 }
 html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
-  width: 15%;
+  width: 12%;
 }
 html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description {
   display: flex;
@@ -122,11 +122,12 @@ html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .
 }
 html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
   width: 20px;
+  cursor: pointer;
 }
 html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
-  width: 45px;
+  width: 50px;
+  height: 35px;
   padding: 2px;
-  text-align: left;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #BC2327;
@@ -1436,15 +1437,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 
 .sectionShop {
-  width: 30vw;
+  width: 40vw;
   height: 100vh;
   display: flex;
   position: fixed;
   top: 0;
   right: 0;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   overflow: hidden;
   box-shadow: 0 0 10px 6px #070707;
@@ -1458,7 +1459,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   cursor: pointer;
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 40px;
   transform: rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
@@ -1472,7 +1473,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0px auto;
-  padding: 0px 10px;
+  padding: 0px 20px;
   height: 380px;
   overflow: scroll;
   position: fixed;
@@ -1491,7 +1492,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
@@ -1514,7 +1515,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-size: 1rem;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
-  width: 15%;
+  width: 12%;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description {
   display: flex;
@@ -1531,9 +1532,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   cursor: pointer;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
-  width: 45px;
+  width: 50px;
+  height: 35px;
   padding: 2px;
-  text-align: left;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #BC2327;
@@ -2953,7 +2954,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: 0px auto;
 }
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .filterWord {
@@ -2988,13 +2989,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceThree {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter {
   width: 90%;
