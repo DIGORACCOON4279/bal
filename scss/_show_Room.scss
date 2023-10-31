@@ -35,37 +35,58 @@
                 width: 100%;
                 height:auto;
                 display:flex;
-                flex-direction: row;
+                flex-direction: column;
                 align-items: flex-start;
                 margin: 10px auto;
-                gap:55px;
-                .colorBlack, .colorWhite{
-                    width: 50px;
-                    height: 70px;
-                    background-color: #000000;
+                .titleColor{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: #000000;
                 }
-                .colorWhite{
-                    background-color: #ffffff;
+                .containerColor{
+                    display:flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap:55px;
+                    .colorBlack, .colorWhite{
+                        width: 50px;
+                        height: 70px;
+                        background-color: #000000;
+                    }
+                    .colorWhite{
+                        background-color: #ffffff;
+                    }
                 }
             }
             .size{
                 width: 100%;
                 height:auto;
                 display:flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
                 margin: 10px auto;
-                .itemSize{
-                    width: 50px;
-                    height: 70px;
-                    font-size: 1rem;
+                .titleSize{
+                    font-size: 1.1rem;
                     font-weight: 600;
-                    color: #dfdede;
-                    background-color: #5f5f5f;
+                    color: #000000;
+                }
+                .containerSize{
                     display:flex;
-                    justify-content: center;
-                    align-items: center;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap:55px;
+                    .itemSize{
+                        width: 50px;
+                        height: 70px;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: #dfdede;
+                        background-color: #5f5f5f;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
             }
             .addToCart{
@@ -90,9 +111,28 @@
                     }
                 }
                 .wishlistIcon{
-                    width:25px;
+                    width:35px;
+                    cursor: pointer;
                 }
+            }
+            .complementInfo{
+                width:100%;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap:40px;
+                color: #000000;
+                font-size: 0.8rem;
+                font-weight: 700;
+                text-align: center;
+                margin: 20px auto;
+                .delivery, .creditCard, .return{
+                    .deliveryIcon, .creditCardIcon, .returnIcon{
+                        width:35px;
 
+                    }
+                }
             }
 
         }

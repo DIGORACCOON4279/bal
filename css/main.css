@@ -3274,29 +3274,50 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   margin: 10px auto;
+}
+.showRoom .rightSide .infoProduct .color .titleColor {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+}
+.showRoom .rightSide .infoProduct .color .containerColor {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 55px;
 }
-.showRoom .rightSide .infoProduct .color .colorBlack, .showRoom .rightSide .infoProduct .color .colorWhite {
+.showRoom .rightSide .infoProduct .color .containerColor .colorBlack, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   width: 50px;
   height: 70px;
   background-color: #000000;
 }
-.showRoom .rightSide .infoProduct .color .colorWhite {
+.showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   background-color: #ffffff;
 }
 .showRoom .rightSide .infoProduct .size {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 10px auto;
 }
-.showRoom .rightSide .infoProduct .size .itemSize {
+.showRoom .rightSide .infoProduct .size .titleSize {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+}
+.showRoom .rightSide .infoProduct .size .containerSize {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 55px;
+}
+.showRoom .rightSide .infoProduct .size .containerSize .itemSize {
   width: 50px;
   height: 70px;
   font-size: 1rem;
@@ -3330,7 +3351,24 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
 }
 .showRoom .rightSide .infoProduct .addToCart .wishlistIcon {
-  width: 25px;
+  width: 35px;
+  cursor: pointer;
+}
+.showRoom .rightSide .infoProduct .complementInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px auto;
+}
+.showRoom .rightSide .infoProduct .complementInfo .delivery .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .delivery .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .delivery .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .return .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .return .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .return .returnIcon {
+  width: 35px;
 }
 
 .footerContainer {
