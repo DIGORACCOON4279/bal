@@ -2730,17 +2730,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
   margin-top: 15px;
 }
-.sectionPlaceOrder .unionOrder .delivery .fullName {
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.sectionPlaceOrder .unionOrder .delivery .fullName #lastName {
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName #lastName {
   margin-left: 15px;
 }
-.sectionPlaceOrder .unionOrder .delivery input {
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact input {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
