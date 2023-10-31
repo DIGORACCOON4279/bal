@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Room</title>
+    <!-- Google fonts Jura & Rubik-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="../img/skullLogo.svg" sizes="16x16"/>
+    <link rel="icon" type="image/svg" href="../img/skullLogo.svg" sizes="32x32"/>
+    <link rel="icon" type="image/svg" href="../img/skullLogo.svg" sizes="64x64"/>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Normalize -->
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel='stylesheet'>
+    <!-- Meta para SEO -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Diego Marin Mora & Break a Leg Company" />
+    <meta name="copyright" content="© [2023] [Diego Marin Mora & Break a Leg Company]" />
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+        <input id="menuSide" type="checkbox">
+        <label for="menuSide">
+            <img class="drawerIcon" src="../img/menu_Icon.svg" alt="Menu icon">
+        </label>
+        <a class="logo" href="../index.html">
+            <img class="brand" src="../img/skullLogo.svg" alt="Break a Leg brand">
+        </a>
+        <section class="menuIcons">
+            <ul>
+                <li><a href="#"><img class="icon" src="../img/moon_Icon.svg" alt=""></a></li>
+                <li><a href="sign_In.html"><img class="icon" src="../img/user_Icon.svg" alt=""></a></li>
+                <li>
+                    <label for="wishlistSide" class="wishHeadLine">
+                        <img class="wishlistIcon" src="../img/wishlist_White_Icon.svg" alt="Heart icon">
+                    </label>
+                </li>
+                <li>
+                    <label for="cart" class="cartShop">
+                        <img class="cartIcon" src="../img/empty_Shopping_Cart.svg" alt="CArt icon">
+                    </label>
+                </li>
+            </ul>
+        </section>
+        <nav class="menuSide">
+            <section class="top">
+                <img class="brand" src="../img/skullLogo.svg" alt="Break a Leg brand">
+                <label for="menuSide">
+                    <img class="close" src="../img/close_Cross_White.svg" alt="Close icon">
+                </label>
+            </section>
+            <section class="menu">
+                <ul>
+                    <li><a href="sign_In.html" class="link">Sign in</a></li>
+                    <li>
+                        <label for="cart" class="cartShop">
+                            <p href="#" class="link">My cart</p>
+                        </label>
+                    </li>
+                    <li><a href="../index.html" class="link">Home</a></li>
+                    <li><a href="store.html" class="link">Store</a></li>
+                    <li><a href="../index.html#giftCards" class="link">Gift cards</a></li>
+                </ul>
+            </section>
+            <section class="contactUs">
+                <p>Contact us...</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="item"><img src="../img/instagram.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" class="item"><img src="../img/youtube.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="item"><img src="../img/facebook.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank" class="item"><img src="../img/twitter.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://co.pinterest.com/" target="_blank" class="item"><img src="../img/pinterest.svg" alt="" class="itemSocial"></a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+    <!-- Main -->
+
+    <main class="mainContainer">
+
+        <!-- Banner Shipping -->
+
+        <section class="bannerShipping">
+            <p class="shipping">
+                ⚡ "Free shipping on orders over $1000" 🛹⚡
+            </p>
+        </section>
+
+        <!-- Cart -->
+
+        <input id="cart" type="checkbox">
+        <section class="sectionShop">
+            <div class="menuCart">
+                <label for="cart" class="cartShop">
+                    <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
+                </label>
+                <nav class="menuCartlist">
+                    <div class="choiceCartlist">
+                        <h3 class="cartlistWord">My cart</h3>
+                        <div class="cart">
+                            <article class="category">
+                                <h3 class="titleCartlist">Item</h3>
+                                <h3 class="titleCartlist">Pricing</h3>
+                                <h3 class="titleCartlist">Quantity</h3>
+                                <h3 class="titleCartlist">Total</h3>
+                            </article>
+                            <article class="cartlist">
+                                    <img class="itemProduct" src="../img/pic24.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <div class="itemNumber">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="5" value="0" >
+                                    </div>
+                                    <p class="total">$499</p>
+                            </article>
+                            <article class="cartlist">
+                                    <img class="itemProduct" src="../img/pic25.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <div class="itemNumber">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
+                                    </div>
+                                    <p class="total">$499</p>
+                            </article>
+                            <article class="cartlist">
+                                    <img class="itemProduct" src="../img/pic29.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <div class="itemNumber">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
+                                    </div>
+                                    <p class="total">$499</p>
+                            </article>
+                            <article class="cartlist">
+                                <img class="itemProduct" src="../img/pic22.webp" alt="Product pic">
+                                <div class="description">
+                                    <p class="price">$499</p>
+                                    <div class="icons">
+                                        <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                        <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                    </div>
+                                </div>
+                                <div class="itemNumber">
+                                    <label for="quantity"></label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
+                                </div>
+                                <p class="total">$499</p>
+                        </article>
+                        </div>
+                    </div>
+                    <div class="outcomeCard">
+                        <article class="outcome">
+                            <p class="shipping">Shipping<span>$00</span></p>
+                            <p class="discount">Discount 25%<span>$374</span></p>
+                            <p class="total">Total<span>$1122</span></p>
+                        </article>
+                        <button class="btnCheckout">Secure checkout</button>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- WhishList -->
+
+        <input type="checkbox" id="wishlistSide">
+        <section class="sectionWishlist">
+            <label for="wishlistSide" class="wishHeadLine">
+                <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
+            </label>
+                <nav class="menuWishlist">
+                    <div class="choiceWishlist">
+                        <h3 class="wishlistWord">WhishList</h3>
+                        <div class="wish">
+                            <article class="category">
+                                <h3 class="titleWishlist">Item</h3>
+                                <h3 class="titleWishlist">Pricing</h3>
+                                <h3 class="titleWishlist">Whish</h3>
+                            </article>
+                            <article class="wishlist">
+                                <div class="blockProduct">
+                                    <img class="itemProduct" src="../img/pic24.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <img class="itemWishlist" src="../img/wishlist_Icon.svg" alt="Wishlist icon">
+                                </div>
+                            </article>
+                            <article class="wishlist">
+                                <div class="blockProduct">
+                                    <img class="itemProduct" src="../img/pic25.webp" alt="Product pic">
+                                    <div class="description">
+                                        <p class="price">$499</p>
+                                        <div class="icons">
+                                            <img src="../img/trash_Icon.svg" alt="Trash icon">
+                                            <img src="../img/edit_Icon.svg" alt="Edit icon">
+                                        </div>
+                                    </div>
+                                    <img class="itemWishlist" src="../img/wishlist_Icon.svg" alt="Wishlist icon">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </nav>
+        </section>
+
+        <!-- Tag GetOff -->
+
+        <section class="tagGetOff">
+            <article class="discount">
+                <label for="cross">
+                    <h2 class="title">Get 25% Off</h2>
+                </label>
+            </article>
+        </section>
+
+        <!-- Get 25% Off -->
+
+        <section class="getOffHoddy" id="getOff">
+            <input type="checkbox" id="cross">
+            <article class="bannerGetOff">
+                <label for="cross">
+                    <img src="../img/close_Cross_White.svg" alt="Cross Icon" class="crossCloseWhite">
+                </label>
+                <h2 class="title">Get 25% off</h2>
+                <div class="slideGetOff">
+                    <div class="hoddy">
+                        <img src="../img/hoddy1.webp" alt="Hoddy skull">
+                        <h3>Sold-out</h3>
+                        <p>Hoddy............................$499</p>
+                    </div>
+                    <div class="hoddy">
+                        <img src="../img/hoddy2.webp" alt="Hoddy skull">
+                        <h3>Sold-out</h3>
+                        <p>Hoddy............................$499</p>
+                    </div>
+                    <div class="hoddy">
+                        <img src="../img/hoddy3.webp" alt="Hoddy skull">
+                        <h3>Sold-out</h3>
+                        <p>Hoddy............................$499</p>
+                    </div>
+                    <div class="hoddy">
+                        <img src="../img/hoddy4.webp" alt="Hoddy skull">
+                        <h3>In-stock</h3>
+                        <p>Hoddy............................$499</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ShowRoom -->
+
+        <section class="showRoom">
+            <div class="leftSide">
+                <img src="../img/pic25.webp" alt="" class="itemProduct">
+            </div>
+            <div class="rightSide">
+                <div class="infoProduct">
+                    <article class="">
+
+                    </article>
+                    <article class="">
+
+                    </article>
+                    <article class="">
+
+                    </article>
+                    <article class="">
+
+                    </article>
+                    <article class="">
+
+                    </article>
+                </div>
+                <div class="accordion accordion-flush containerAccordion" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footerContainer">
+        <div class="footer">
+            <section class="socialMedia">
+                <h3 class="contactUs">Contact us..</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="item"><img src="../img/instagram.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" class="item"><img src="../img/youtube.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="item"><img src="../img/facebook.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank" class="item"><img src="../img/twitter.svg" alt="" class="itemSocial"></a></li>
+                    <li><a href="https://co.pinterest.com/" target="_blank" class="item"><img src="../img/pinterest.svg" alt="" class="itemSocial"></a></li>
+                </ul>
+            </section>
+            <section class="brand">
+                <h3 class="nameLogo">Break a Leg</h3>
+                <img src="../img/skull.svg" alt="Skull logo" class="skull">
+            </section>
+            <section class="payments">
+                <h3>Payments</h3>
+                <img class="paymentCards" src="../img/payments.webp" alt="Credit cards">
+            </section>
+        </div>
+        <section class="development">
+            <img class="raccoon" src="../img/logo_Raccoon.svg" alt="Raccoon brand">
+            <div class="developer">
+                <p>Developed and made with 💖 by Diego Marin </p>
+                <p>© 2023 <span class="raccoon">Raccoon</span>. All rights reserved.</p>
+                <p> Medellin - Colombia</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+
+    <script src="../main.js"></script>
+
+</body>
+</html>

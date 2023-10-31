@@ -3241,6 +3241,20 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   }
 }
 
+.showRoom {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 150px auto;
+}
+.showRoom .leftSide, .showRoom .rightSide {
+  width: 100%;
+  margin: 20px auto;
+}
+
 .footerContainer {
   width: 100%;
   height: 100%;
