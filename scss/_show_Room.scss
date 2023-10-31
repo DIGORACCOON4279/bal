@@ -1,18 +1,35 @@
 // Show Room
 
 .showRoom{
-    width: 100%;
+    width: 85%;
     height:100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin: 150px auto;
+    background-color: aqua;
+    overflow: hidden;
+    font-family: $fontJura;
     .leftSide, .rightSide{
         width: 100%;
-        margin: 20px auto;
-
-
+        background-color: rgb(21, 255, 0);
     }
+    .rightSide{
+        .infoProduct{
+            width: 100%;
+            display: block;
 
+            .productRating{
+                width: 100%;
+
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(221, 29, 29);
+
+            }
+         }
+    }
 }
