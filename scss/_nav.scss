@@ -98,7 +98,7 @@
         overflow: hidden;
         box-shadow: 0 0 10px 6px #070707;
         z-index: 10;
-        transform: translate(0%);
+        transform: translate(-105%);
         transition: .3s ease-in-out;
         .top{
             width:100%;
@@ -107,7 +107,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #181818;
-            padding: 10px;
+            padding: 10px 10px 10px 20px;
             .brand{
                 width:45px;
             }
