@@ -9,7 +9,7 @@
     align-items: center;
     margin: 150px auto;
     background-color: aqua;
-    overflow: hidden;
+    // overflow: hidden;
     font-family: $fontJura;
     .leftSide, .rightSide{
         width: 100%;
@@ -18,11 +18,12 @@
     .rightSide{
         .infoProduct{
             width: 100%;
-            display: block;
-
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            // gap: 20px;
             .productRating{
                 width: 100%;
-
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -30,6 +31,70 @@
                 background-color: rgb(221, 29, 29);
 
             }
-         }
+            .color{
+                width: 100%;
+                height:auto;
+                display:flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin: 10px auto;
+                gap:55px;
+                .colorBlack, .colorWhite{
+                    width: 50px;
+                    height: 70px;
+                    background-color: #000000;
+                }
+                .colorWhite{
+                    background-color: #ffffff;
+                }
+            }
+            .size{
+                width: 100%;
+                height:auto;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px auto;
+                .itemSize{
+                    width: 50px;
+                    height: 70px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #dfdede;
+                    background-color: #5f5f5f;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .addToCart{
+                width:100%;
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                gap:30px;
+                .btnAddToCart{
+                    width:90%;
+                    color: #ffffff;
+                    padding: 15px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    border: 1px solid black;
+                    background-color: #000000;
+                    transition:all .3s ease;
+                    &:hover{
+                        color: #000000;
+                        border: 1px solid black;
+                        background-color: #ffffff;
+                    }
+                }
+                .wishlistIcon{
+                    width:25px;
+                }
+
+            }
+
+        }
     }
 }

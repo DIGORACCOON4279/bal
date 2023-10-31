@@ -3250,7 +3250,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   align-items: center;
   margin: 150px auto;
   background-color: aqua;
-  overflow: hidden;
   font-family: "Jura", sans-serif;
 }
 .showRoom .leftSide, .showRoom .rightSide {
@@ -3259,7 +3258,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .showRoom .rightSide .infoProduct {
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .showRoom .rightSide .infoProduct .productRating {
   width: 100%;
@@ -3268,6 +3269,68 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(221, 29, 29);
+}
+.showRoom .rightSide .infoProduct .color {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 10px auto;
+  gap: 55px;
+}
+.showRoom .rightSide .infoProduct .color .colorBlack, .showRoom .rightSide .infoProduct .color .colorWhite {
+  width: 50px;
+  height: 70px;
+  background-color: #000000;
+}
+.showRoom .rightSide .infoProduct .color .colorWhite {
+  background-color: #ffffff;
+}
+.showRoom .rightSide .infoProduct .size {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+.showRoom .rightSide .infoProduct .size .itemSize {
+  width: 50px;
+  height: 70px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dfdede;
+  background-color: #5f5f5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showRoom .rightSide .infoProduct .addToCart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.showRoom .rightSide .infoProduct .addToCart .btnAddToCart {
+  width: 90%;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid black;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+.showRoom .rightSide .infoProduct .addToCart .btnAddToCart:hover {
+  color: #000000;
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+.showRoom .rightSide .infoProduct .addToCart .wishlistIcon {
+  width: 25px;
 }
 
 .footerContainer {
