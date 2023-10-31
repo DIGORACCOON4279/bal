@@ -409,12 +409,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding: 0px 30px;
   z-index: 10;
 }
-.header #menuSide {
-  display: none;
-}
-.header #menuSide:checked ~ .menuSide {
-  transform: translate(0%);
-}
 .header label .drawerIcon {
   width: 30px;
   cursor: pointer;
@@ -442,6 +436,12 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   100% {
     filter: drop-shadow(0 0 6px #696061);
   }
+}
+.header #menuSide {
+  display: none;
+}
+.header #menuSide:checked ~ .menuSide {
+  transform: translate(0%);
 }
 .header .menuIcons ul {
   display: flex;
@@ -476,11 +476,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .header .menuSide {
   width: 20vw;
   height: 100vh;
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -488,7 +487,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   overflow: hidden;
   box-shadow: 0 0 10px 6px #070707;
   z-index: 10;
-  transform: translate(-105%);
+  transform: translate(0%);
   transition: 0.3s ease-in-out;
 }
 .header .menuSide .top {
@@ -497,20 +496,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px 0px 0px;
+  background-color: #181818;
+  padding: 10px;
 }
 .header .menuSide .top .brand {
   width: 45px;
-  position: absolute;
-  top: 10px;
-  left: 25px;
 }
 .header .menuSide .top label .close {
   width: 25px;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 25px;
   transform: rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
@@ -522,71 +516,90 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .header .menuSide .menu ul {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 0;
 }
 .header .menuSide .menu ul li {
   width: 100%;
   list-style-type: none;
-  padding: 10px 0px;
+  cursor: pointer;
+  background-color: #141414;
 }
 .header .menuSide .menu ul li .link {
-  width: 100%;
-  text-decoration: none;
-  color: rgb(194, 193, 193);
-  font-size: 0.9rem;
+  display: block;
+  width: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 100px;
+  font-size: 1rem;
   font-family: "Jura", sans-serif;
-  transition: all 0.5s;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
 }
 .header .menuSide .menu ul li .link:hover {
-  text-decoration: underline;
-  filter: drop-shadow(0 0 6px #BC2327);
+  background-color: rgba(188, 35, 40, 0.3490196078);
 }
 .header .menuSide .menu ul li .cartShop {
   width: 100%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(61, 61, 61);
+  cursor: pointer;
 }
 .header .menuSide .menu ul li .cartShop .link {
+  display: block;
   width: 100%;
-  text-decoration: none;
-  color: rgb(194, 193, 193);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Jura", sans-serif;
-  transition: all 0.5s;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0px auto 0px 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #6b6b6b;
+  transition: all 0.3s ease;
 }
 .header .menuSide .menu ul li .cartShop .link:hover {
-  text-decoration: underline;
-  filter: drop-shadow(0 0 6px #BC2327);
+  background-color: rgba(188, 35, 40, 0.3490196078);
 }
 .header .menuSide .contactUs {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  margin-left: 30px;
+  background-color: #181818;
+  padding-top: 10px;
 }
 .header .menuSide .contactUs p {
-  color: rgb(194, 193, 193);
-  font-size: 0.9rem;
+  width: 100%;
+  font-size: 1rem;
   font-family: "Jura", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  padding-left: 30px;
+  border-bottom: 1px solid #6b6b6b;
+  padding-bottom: 15px;
 }
 .header .menuSide .contactUs ul {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-left: -40px;
-  padding-top: 10px;
-  border-top: 1px solid rgb(61, 61, 61);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .header .menuSide .contactUs ul li {
+  display: block;
   list-style-type: none;
 }
 .header .menuSide .contactUs ul li .item {
   text-decoration: none;
 }
 .header .menuSide .contactUs ul li .item .itemSocial {
-  width: 30px;
-  margin: 0px 5px;
+  width: 35px;
 }
 
 .heroSection {
