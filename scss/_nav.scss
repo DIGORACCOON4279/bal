@@ -130,11 +130,16 @@
             }
         }
         .menu{
+            width:100%;
             ul{
+                width: 100%;
                 li{
+                    width:100%;
                     list-style-type: none;
                     padding: 10px 0px;
                     .link{
+                        width:100%;
+
                         text-decoration: none;
                         color:rgb(194, 193, 193);
                         font-size: .9rem;
@@ -142,6 +147,22 @@
                         &:hover{
                             text-decoration: underline;
                             filter: drop-shadow(0 0 6px #BC2327);
+                        }
+                    }
+                    .cartShop{
+                        width:100%;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid rgb(61, 61, 61);
+                        .link{
+                            width:100%;
+                            text-decoration: none;
+                            color:rgb(194, 193, 193);
+                            font-size: .9rem;
+                            font-family: $fontJura;transition:all .5s;
+                            &:hover{
+                                text-decoration: underline;
+                                filter: drop-shadow(0 0 6px #BC2327);
+                            }
                         }
                     }
                 }
