@@ -3303,7 +3303,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   color: #000000;
 }
 .showRoom .rightSide .infoProduct .productRating .rating {
-  width: 20225;
+  width: 20%;
 }
 .showRoom .rightSide .infoProduct .color {
   width: 100%;
@@ -3330,6 +3330,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   height: 70px;
   background-color: #000000;
   border: 1px solid #000000;
+}
+.showRoom .rightSide .infoProduct .color .containerColor .colorBlack:hover, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite:hover {
+  border: 1px solid #a3a3a3;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   background-color: #ffffff;
@@ -3365,6 +3368,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.showRoom .rightSide .infoProduct .size .containerSize .itemSize:hover {
+  border: 1px solid #000000;
 }
 .showRoom .rightSide .infoProduct .addToCart {
   width: 100%;

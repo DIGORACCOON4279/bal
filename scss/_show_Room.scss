@@ -46,7 +46,7 @@
                     color: #000000;
                 }
                 .rating{
-                    width:20225;
+                    width:20%;
                 }
             }
             .color{
@@ -72,6 +72,9 @@
                         height: 70px;
                         background-color: #000000;
                         border:1px solid #000000;
+                        &:hover{
+                            border: 1px solid #a3a3a3;
+                        }
                     }
                     .colorWhite{
                         background-color: #ffffff;
@@ -107,6 +110,9 @@
                         display:flex;
                         justify-content: center;
                         align-items: center;
+                        &:hover{
+                            border: 1px solid #000000;
+                        }
                     }
                 }
             }
