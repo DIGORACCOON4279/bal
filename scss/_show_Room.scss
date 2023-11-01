@@ -164,11 +164,29 @@
                 }
             }
         }
-        .containeraccordion{
-            .title{
-                width:100%;
-                height:40px;
-                font-weight: 700;
+        .containerAccordion{
+            .accordionItem{
+                .title{
+                    .btnCollapse{
+                        width:100%;
+                        font-weight: 700;
+                        color: #000000;
+                        background-color: #ffffff;
+                    }
+                }
+                .accordionCollapse{
+                    border: 1px solid #d9d9d9;
+                    .accordionBody{
+                        p{
+                            font-size: 0.8rem;
+                            font-weight: 600;
+                            span{
+                                color: #da2222;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
