@@ -640,6 +640,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .heroSection .heroSectionCentered .info .cta {
   width: 100%;
   margin-top: 45px;
+  margin-bottom: 35px;
 }
 .heroSection .heroSectionCentered .info .cta .ctaDiscount, .heroSection .heroSectionCentered .info .cta .ctaNewArrivals {
   padding: 25px 55px;
@@ -677,6 +678,18 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
     transform: translateX(0%);
     opacity: 1;
   }
+}
+.heroSection .heroSectionCentered .info .ctaShowRoom {
+  font-size: 0.9rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #BC2327;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.heroSection .heroSectionCentered .info .ctaShowRoom:hover {
+  color: #858585;
+  text-decoration: underline;
 }
 .heroSection .laptop {
   width: 60%;
