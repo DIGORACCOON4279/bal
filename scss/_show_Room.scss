@@ -15,9 +15,11 @@
         height: auto;
     }
     .leftSide{
+        overflow: hidden;
         .itemProduct{
             width:auto;
             height: auto;
+            object-fit: cover;
         }
     }
     .rightSide{
@@ -36,6 +38,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                padding: 5px 5px ;
                 background-color: #d9d9d9;
                 .product{
                     font-size: 1.2rem;
@@ -64,6 +67,7 @@
                     align-items: flex-start;
                     gap:55px;
                     .colorBlack, .colorWhite{
+                        cursor:pointer;
                         width: 50px;
                         height: 70px;
                         background-color: #000000;
@@ -97,6 +101,7 @@
                         height: 70px;
                         font-size: 1rem;
                         font-weight: 700;
+                        cursor:pointer;
                         color: #000000;
                         background-color: #d9d9d9;
                         display:flex;
@@ -137,7 +142,7 @@
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
                 gap:40px;
                 color: #000000;
                 font-size: 0.8rem;

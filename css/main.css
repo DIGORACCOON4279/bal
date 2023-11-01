@@ -3255,9 +3255,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 100%;
   height: auto;
 }
+.showRoom .leftSide {
+  overflow: hidden;
+}
 .showRoom .leftSide .itemProduct {
   width: auto;
   height: auto;
+  object-fit: cover;
 }
 .showRoom .rightSide {
   display: flex;
@@ -3277,6 +3281,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 5px;
   background-color: #d9d9d9;
 }
 .showRoom .rightSide .infoProduct .productRating .product {
@@ -3307,6 +3312,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   gap: 55px;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorBlack, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
+  cursor: pointer;
   width: 50px;
   height: 70px;
   background-color: #000000;
@@ -3340,6 +3346,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   height: 70px;
   font-size: 1rem;
   font-weight: 700;
+  cursor: pointer;
   color: #000000;
   background-color: #d9d9d9;
   display: flex;
@@ -3378,7 +3385,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   color: #000000;
   font-size: 0.8rem;
