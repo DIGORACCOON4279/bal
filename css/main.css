@@ -3396,8 +3396,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
 }
 .showRoom .rightSide .infoProduct .addToCart .wishlistIcon {
-  width: 25px;
+  width: 50px;
   cursor: pointer;
+  padding-top: 11px;
+  padding-right: 11px;
+  padding-left: 11px;
+  padding-bottom: 11px;
+  border: 1px solid black;
+}
+.showRoom .rightSide .infoProduct .addToCart .wishlistIcon:hover {
+  border: 1px solid #d9d9d9;
+  background-color: #d9d9d9;
 }
 .showRoom .rightSide .infoProduct .complementInfo {
   width: 100%;
