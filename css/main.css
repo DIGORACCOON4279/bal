@@ -3243,24 +3243,33 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 
 .showRoom {
   width: 85%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 150px auto;
-  background-color: aqua;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 100px auto;
   font-family: "Jura", sans-serif;
 }
 .showRoom .leftSide, .showRoom .rightSide {
   width: 100%;
-  background-color: rgb(21, 255, 0);
+  height: auto;
+}
+.showRoom .leftSide .itemProduct {
+  width: auto;
+  height: auto;
+}
+.showRoom .rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .showRoom .rightSide .infoProduct {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 20px;
 }
 .showRoom .rightSide .infoProduct .productRating {
   width: 100%;
@@ -3268,7 +3277,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(221, 29, 29);
+  background-color: #d9d9d9;
+}
+.showRoom .rightSide .infoProduct .productRating .product {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
+}
+.showRoom .rightSide .infoProduct .productRating .rating {
+  width: 20225;
 }
 .showRoom .rightSide .infoProduct .color {
   width: 100%;
@@ -3279,8 +3296,8 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   margin: 10px auto;
 }
 .showRoom .rightSide .infoProduct .color .titleColor {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: #000000;
 }
 .showRoom .rightSide .infoProduct .color .containerColor {
@@ -3293,6 +3310,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 50px;
   height: 70px;
   background-color: #000000;
+  border: 1px solid #000000;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   background-color: #ffffff;
@@ -3303,12 +3321,12 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 10px auto;
 }
 .showRoom .rightSide .infoProduct .size .titleSize {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: #000000;
 }
 .showRoom .rightSide .infoProduct .size .containerSize {
@@ -3321,9 +3339,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 50px;
   height: 70px;
   font-size: 1rem;
-  font-weight: 600;
-  color: #dfdede;
-  background-color: #5f5f5f;
+  font-weight: 700;
+  color: #000000;
+  background-color: #d9d9d9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3334,13 +3352,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  margin: 20px auto;
 }
 .showRoom .rightSide .infoProduct .addToCart .btnAddToCart {
   width: 90%;
   color: #ffffff;
   padding: 15px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   border: 1px solid black;
   background-color: #000000;
   transition: all 0.3s ease;
@@ -3351,7 +3370,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
 }
 .showRoom .rightSide .infoProduct .addToCart .wishlistIcon {
-  width: 35px;
+  width: 25px;
   cursor: pointer;
 }
 .showRoom .rightSide .infoProduct .complementInfo {
@@ -3365,10 +3384,19 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-size: 0.8rem;
   font-weight: 700;
   text-align: center;
-  margin: 20px auto;
+  margin: 20px auto 0px;
+}
+.showRoom .rightSide .infoProduct .complementInfo .delivery, .showRoom .rightSide .infoProduct .complementInfo .creditCard, .showRoom .rightSide .infoProduct .complementInfo .return {
+  width: 100%;
+  height: auto;
 }
 .showRoom .rightSide .infoProduct .complementInfo .delivery .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .delivery .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .delivery .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .return .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .return .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .return .returnIcon {
   width: 35px;
+}
+.showRoom .rightSide .containeraccordion .title {
+  width: 100%;
+  height: 40px;
+  font-weight: 700;
 }
 
 .footerContainer {

@@ -2,34 +2,49 @@
 
 .showRoom{
     width: 85%;
-    height:100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 150px auto;
-    background-color: aqua;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px auto;
     // overflow: hidden;
     font-family: $fontJura;
     .leftSide, .rightSide{
         width: 100%;
-        background-color: rgb(21, 255, 0);
+        height: auto;
+    }
+    .leftSide{
+        .itemProduct{
+            width:auto;
+            height: auto;
+        }
     }
     .rightSide{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
         .infoProduct{
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            // gap: 20px;
+            gap: 20px;
             .productRating{
                 width: 100%;
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                background-color: rgb(221, 29, 29);
-
+                background-color: #d9d9d9;
+                .product{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: #000000;
+                }
+                .rating{
+                    width:20225;
+                }
             }
             .color{
                 width: 100%;
@@ -39,8 +54,8 @@
                 align-items: flex-start;
                 margin: 10px auto;
                 .titleColor{
-                    font-size: 1.1rem;
-                    font-weight: 600;
+                    font-size: 1.2rem;
+                    font-weight: 700;
                     color: #000000;
                 }
                 .containerColor{
@@ -52,6 +67,7 @@
                         width: 50px;
                         height: 70px;
                         background-color: #000000;
+                        border:1px solid #000000;
                     }
                     .colorWhite{
                         background-color: #ffffff;
@@ -64,11 +80,11 @@
                 display:flex;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
                 margin: 10px auto;
                 .titleSize{
-                    font-size: 1.1rem;
-                    font-weight: 600;
+                    font-size: 1.2rem;
+                    font-weight: 700;
                     color: #000000;
                 }
                 .containerSize{
@@ -80,9 +96,9 @@
                         width: 50px;
                         height: 70px;
                         font-size: 1rem;
-                        font-weight: 600;
-                        color: #dfdede;
-                        background-color: #5f5f5f;
+                        font-weight: 700;
+                        color: #000000;
+                        background-color: #d9d9d9;
                         display:flex;
                         justify-content: center;
                         align-items: center;
@@ -95,12 +111,13 @@
                 flex-direction: row;
                 align-items: center;
                 gap:30px;
+                margin: 20px auto;
                 .btnAddToCart{
                     width:90%;
                     color: #ffffff;
                     padding: 15px;
                     font-size: 1rem;
-                    font-weight: 600;
+                    font-weight: 700;
                     border: 1px solid black;
                     background-color: #000000;
                     transition:all .3s ease;
@@ -111,7 +128,7 @@
                     }
                 }
                 .wishlistIcon{
-                    width:35px;
+                    width:25px;
                     cursor: pointer;
                 }
             }
@@ -126,15 +143,22 @@
                 font-size: 0.8rem;
                 font-weight: 700;
                 text-align: center;
-                margin: 20px auto;
+                margin: 20px auto 0px;
                 .delivery, .creditCard, .return{
+                    width:100%;
+                    height: auto;
                     .deliveryIcon, .creditCardIcon, .returnIcon{
                         width:35px;
-
                     }
                 }
             }
-
+        }
+        .containeraccordion{
+            .title{
+                width:100%;
+                height:40px;
+                font-weight: 700;
+            }
         }
     }
 }
