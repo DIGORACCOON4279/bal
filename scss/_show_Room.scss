@@ -15,11 +15,11 @@
         height: auto;
     }
     .leftSide{
-        overflow: hidden;
         .itemProduct{
             width:auto;
             height: auto;
             object-fit: cover;
+            overflow: hidden;
         }
     }
     .rightSide{
@@ -39,7 +39,7 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 5px 5px ;
-                background-color: #d9d9d9;
+                background-color: #f1f1f1;
                 .product{
                     font-size: 1.2rem;
                     font-weight: 700;
@@ -66,14 +66,26 @@
                     flex-direction: row;
                     align-items: flex-start;
                     gap:55px;
+                    .smallPic{
+                        overflow: hidden;
+                        .itemProduct{
+                            width:50px;
+                            height:70px;
+                            object-fit: cover;
+                            border: 1px solid #f1f1f1;
+                            &:hover{
+                                border: 1px solid #000000;
+                            }
+                        }
+                    }
                     .colorBlack, .colorWhite{
                         cursor:pointer;
                         width: 50px;
                         height: 70px;
                         background-color: #000000;
-                        border:1px solid #000000;
+                        border:1px solid #f1f1f1;
                         &:hover{
-                            border: 1px solid #a3a3a3;
+                            border: 1px solid #000000;
                         }
                     }
                     .colorWhite{
@@ -106,7 +118,7 @@
                         font-weight: 700;
                         cursor:pointer;
                         color: #000000;
-                        background-color: #d9d9d9;
+                        background-color: #f1f1f1;
                         display:flex;
                         justify-content: center;
                         align-items: center;
@@ -145,10 +157,9 @@
                     padding-right: 11px;
                     padding-left: 11px;
                     padding-bottom: 11px;
-                    border: 1px solid black;
+                    border: 1px solid #f1f1f1;
                     &:hover{
-                        border: 1px solid #d9d9d9;
-                        background-color: #d9d9d9;
+                        border: 1px solid #000000;
                     }
                 }
             }
@@ -167,8 +178,20 @@
                 .delivery, .creditCard, .return{
                     width:100%;
                     height: auto;
+                    cursor: pointer;
+                    &:hover > .deliveryIcon{
+                        transform:scale(107%);
+                    }
+                    &:hover > .creditCardIcon{
+                        transform:scale(107%);
+                    }
+                    &:hover > .returnIcon{
+                        transform:scale(108%);
+                    }
                     .deliveryIcon, .creditCardIcon, .returnIcon{
                         width:35px;
+                        transform: scale(100%);
+                        transition:transform 0.3s ease;
                     }
                 }
             }
@@ -184,8 +207,50 @@
                     }
                 }
                 .accordionCollapse{
-                    border: 1px solid #d9d9d9;
-                    .accordionBody{
+                    border: 1px solid #f1f1f1;
+                    .accordionBody:nth-child(1){
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: flex-end;
+                        gap:5px;
+                        .case{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: flex-end;
+                            cursor:pointer;
+                            background-color: #f1f1f1;
+                            padding:5px;
+                            &:hover{
+                                background-color: #f8f8f8;
+                            }
+                            p{
+                                font-size: 0.8rem;
+                                font-weight: 600;
+                                span{
+                                    color: #da2222;
+                                    font-weight: 700;
+                                }
+                            }
+                            .rating{
+                                width:70px;
+                            }
+                            .name{
+                                font-size: 0.9rem;
+                                font-weight: 700;
+                            }
+                            .date{
+                                font-size: 0.7rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .accordionBodyDos{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         p{
                             font-size: 0.8rem;
                             font-weight: 600;
