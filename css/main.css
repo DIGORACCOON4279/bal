@@ -3434,6 +3434,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 100%;
   height: auto;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .showRoom .rightSide .infoProduct .complementInfo .delivery:hover > .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard:hover > .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .return:hover > .deliveryIcon {
   transform: scale(107%);
