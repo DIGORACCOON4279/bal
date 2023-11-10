@@ -3213,88 +3213,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   }
 }
 
-.getOff {
+.getOffHoddy {
   width: 100%;
   height: 100%;
-  background-image: url("../img/background_Gift.webp");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #131313;
-  margin: 200px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.getOff .containerGetOff {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.getOff .containerGetOff .info .title {
-  font-size: 4rem;
-  font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
-  margin-top: -150px;
-}
-.getOff .containerGetOff .info .paragraph {
-  margin-top: 50px;
-}
-.getOff .containerGetOff .info .paragraph .subtitle, .getOff .containerGetOff .info .paragraph .sentence, .getOff .containerGetOff .info .paragraph .cta {
-  font-size: 1.8rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #D9D9D9;
-}
-.getOff .containerGetOff .info .paragraph .sentence {
-  font-size: 1.5rem;
-}
-.getOff .containerGetOff .hoddy {
-  animation: hoddy 2s linear 2s infinite;
-}
-@keyframes hoddy {
-  0% {
-    filter: drop-shadow(0 0 1px #BC2327);
-  }
-  25% {
-    filter: drop-shadow(0 1px 2px #BC2327);
-  }
-  50% {
-    filter: drop-shadow(0 2px 3px #BC2327);
-  }
-  75% {
-    filter: drop-shadow(0 3px 5px #BC2327);
-  }
-  100% {
-    filter: drop-shadow(0 4px 6px #BC2327);
-  }
-}
-.getOff .ctaSentence {
-  position: relative;
-  bottom: 250px;
-  left: -140px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #E0E0E0;
-  transition: color 0.3s ease;
-}
-.getOff .ctaSentence:hover {
-  color: #BC2327;
-  text-decoration: underline;
-}
-.getOff #cross {
+.getOffHoddy #cross {
   display: none;
 }
-.getOff #cross:checked ~ .bannerGetOff {
+.getOffHoddy #cross:checked ~ .bannerGetOff {
   transform: translateY(100%);
 }
-.getOff .bannerGetOff {
+.getOffHoddy .bannerGetOff {
   width: 62vw;
   height: auto;
   display: flex;
@@ -3302,6 +3231,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.0745098039);
   box-shadow: 0 0 6px 4px black;
   position: fixed;
   top: -340px;
@@ -3311,26 +3241,26 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.getOff .bannerGetOff .title {
-  font-size: 4rem;
-  font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
-  margin-top: 20px;
-}
-.getOff .bannerGetOff label .crossCloseWhite {
+.getOffHoddy .bannerGetOff label .crossCloseWhite {
   width: 25px;
   position: relative;
   top: -90px;
   right: -390px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 10;
   transform: rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
-.getOff .bannerGetOff label .crossCloseWhite:hover {
+.getOffHoddy .bannerGetOff label .crossCloseWhite:hover {
   transform: rotate(90deg);
 }
-.getOff .bannerGetOff .slideGetOff {
+.getOffHoddy .bannerGetOff .title {
+  font-size: 4rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #BC2327;
+  margin-top: 20px;
+}
+.getOffHoddy .bannerGetOff .slideGetOff {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -3338,26 +3268,26 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding: 20px;
   backdrop-filter: blur(10px);
 }
-.getOff .bannerGetOff .slideGetOff .hoddy {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy {
   padding: 10px;
 }
-.getOff .bannerGetOff .slideGetOff .hoddy img {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy img {
   width: 100%;
   height: auto;
 }
-.getOff .bannerGetOff .slideGetOff .hoddy h3 {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy h3 {
   margin-top: 30px;
   font-size: 1.1rem;
   font-family: "Jura", sans-serif;
   color: #BC2327;
 }
-.getOff .bannerGetOff .slideGetOff .hoddy p {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy p {
   padding: 10px auto;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #d9d9d9;
 }
-.getOff .bannerGetOff::before {
+.getOffHoddy .bannerGetOff::before {
   content: "";
   position: absolute;
   top: 0;
@@ -3370,7 +3300,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   z-index: -1;
   border-radius: 10px;
 }
-.getOff .bannerGetOff > * {
+.getOffHoddy .bannerGetOff > * {
   position: relative;
 }
 
@@ -3879,6 +3809,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   justify-content: space-between;
   align-items: center;
 }
+.sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability input, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing input, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability input, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing input {
+  width: 16px;
+  height: 16px;
+}
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter {
   width: 90%;
   padding: 10px 20px;
@@ -4066,12 +4000,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   margin: 20px auto;
 }
 .showRoom .rightSide .infoProduct .addToCart .btnAddToCart {
-  width: 90%;
+  width: 81.5%;
+  height: 50px;
   color: #ffffff;
   padding: 15px;
   font-size: 1rem;
@@ -4117,16 +4053,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   transition: all 0.3s ease;
 }
 .showRoom .rightSide .infoProduct .complementInfo .delivery:hover > .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard:hover > .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .return:hover > .deliveryIcon {
-  transform: scale(107%);
+  transform: scale(109%);
 }
 .showRoom .rightSide .infoProduct .complementInfo .delivery:hover > .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard:hover > .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .return:hover > .creditCardIcon {
-  transform: scale(107%);
+  transform: scale(109%);
 }
 .showRoom .rightSide .infoProduct .complementInfo .delivery:hover > .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard:hover > .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .return:hover > .returnIcon {
-  transform: scale(108%);
+  transform: scale(109%);
 }
 .showRoom .rightSide .infoProduct .complementInfo .delivery .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .delivery .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .delivery .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard .returnIcon, .showRoom .rightSide .infoProduct .complementInfo .return .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .return .creditCardIcon, .showRoom .rightSide .infoProduct .complementInfo .return .returnIcon {
   width: 35px;
+  padding-bottom: 10px;
   transform: scale(100%);
   transition: transform 0.3s ease;
 }
