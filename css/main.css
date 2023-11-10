@@ -711,115 +711,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   }
 }
 
-.sectionCreateAccount {
-  width: 100%;
-  height: auto;
-  background-image: linear-gradient(rgba(188, 35, 40, 0.431372549), rgba(139, 54, 54, 0.733)), url(../img/background_Create.webp);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sectionCreateAccount .titleCreateAccount {
-  color: #BC2327;
-  filter: drop-shadow(4px 4px 8px #000000);
-  font-size: 4rem;
-  font-family: "Rubik Distressed", cursive;
-  margin-top: 100px;
-}
-.sectionCreateAccount .formCreateAccount {
-  width: 50vw;
-  height: auto;
-  background-color: #ffffff;
-  box-shadow: 4px 4px 8px 0px #181818;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-.sectionCreateAccount .formCreateAccount .form {
-  max-width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 70px auto;
-}
-.sectionCreateAccount .formCreateAccount .form .form-floating {
-  color: #000000;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Jura", sans-serif;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px auto;
-}
-.sectionCreateAccount .formCreateAccount .form .form-floating .input {
-  width: 100%;
-  height: 40px;
-  color: #000000;
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-family: "Jura", sans-serif;
-  margin-top: 20px;
-  padding: 20px 0px 20px 10px;
-  border-top: transparent;
-  border-right: transparent;
-  border-left: transparent;
-  border-bottom: 1px solid #9c9c9c;
-}
-.sectionCreateAccount .formCreateAccount .form .form-floating:nth-child(2) {
-  margin-top: 30px;
-}
-.sectionCreateAccount .formCreateAccount .form .form-floating:nth-child(3) {
-  margin-top: 30px;
-}
-.sectionCreateAccount .formCreateAccount .form .form-floating:nth-child(4) {
-  margin-top: 30px;
-}
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .btnCreateAccount {
-  width: inherit;
-  height: 50px;
-  color: #ffffff;
-  background-color: #000000;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-family: "Jura", sans-serif;
-  margin: 80px auto 30px;
-  padding: 40px auto;
-  transition: all 0.3s ease;
-}
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .btnCreateAccount:hover {
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid black;
-}
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount p {
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: "Jura", sans-serif;
-}
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .toSignIn {
-  color: #000000;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Jura", sans-serif;
-  text-decoration: none;
-}
-.sectionCreateAccount .formCreateAccount .form .ctaToCreateAccount .toSignIn:hover {
-  text-decoration: underline;
-}
-
 .getOff {
   width: 100%;
   height: 100%;
@@ -2505,6 +2396,980 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   text-decoration: underline;
 }
 
+.container {
+  width: 100vw;
+  height: auto;
+}
+.container .logInCreateAccount {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fraction);
+  grid-template-rows: repeat(1, 1fraction);
+  align-items: center;
+  z-index: 9;
+}
+.container .logInCreateAccount .tags {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .logInCreateAccount .tags #navBarMenu {
+  display: none;
+}
+.container .logInCreateAccount .tags #navBarMenu:checked ~ .formCreateAccount {
+  transform: translate(0%);
+}
+.container .logInCreateAccount .tags #navBarMenu:checked ~ .formLogIn {
+  transform: translate(-100%);
+  z-index: 10;
+}
+.container .logInCreateAccount .tags .formCreateAccount {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  margin: 0px auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+.container .logInCreateAccount .tags .formCreateAccount .tag {
+  position: fixed;
+  /* top:136px; */
+  top: -10px;
+  right: -45px;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 9;
+}
+.container .logInCreateAccount .tags .formCreateAccount .tag .tagCreateAccount {
+  font-size: 0.8rem;
+  font-family: Jura;
+  color: #ffffff;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: right;
+  transform: rotate(180deg);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #000000;
+  padding: 20px 15px;
+  transition: all 0.3s ease;
+}
+.container .logInCreateAccount .tags .formLogIn {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  margin: 0px auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(0%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+.container .logInCreateAccount .tags .formLogIn .tag {
+  position: fixed;
+  /* top:136px; */
+  top: -10px;
+  right: -45px;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 9;
+}
+.container .logInCreateAccount .tags .formLogIn .tag .tagLogIn {
+  font-size: 0.8rem;
+  font-family: Jura;
+  color: #ffffff;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: right;
+  transform: rotate(180deg);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #000000;
+  padding: 20px 15px;
+  transition: all 0.3s ease;
+}
+.container .logInCreateAccount .tags .formLogIn legend {
+  font-size: 3rem;
+  color: #BC2327;
+  font-family: "Rubik Distressed", cursive;
+  text-align: center;
+}
+.container .logInCreateAccount .tags .formLogIn .formFloating {
+  width: 50%;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px auto;
+}
+.container .logInCreateAccount .tags .formLogIn .formFloating .formControl {
+  width: 100%;
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 10px 0px 10px 10px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid #9c9c9c;
+}
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Jura;
+  padding: 10px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  transition: all 0.3s ease-in-out;
+}
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn p {
+  color: #2e2e2e;
+  font-size: 0.8rem;
+  font-family: Jura;
+  font-weight: 500;
+  margin-bottom: -15px;
+}
+.container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  font-family: Jura;
+  text-decoration: none;
+}
+.container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount:hover {
+  text-decoration: underline;
+  color: #BC2327;
+}
+.container .logInCreateAccount .tags .formCreateAccount legend {
+  font-size: 3rem;
+  color: #BC2327;
+  font-family: "Rubik Distressed", cursive;
+  text-align: center;
+}
+.container .logInCreateAccount .tags .formCreateAccount .formFloating {
+  width: 50%;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px auto;
+}
+.container .logInCreateAccount .tags .formCreateAccount .formFloating .formControl {
+  width: 100%;
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 10px 0px 10px 10px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid #9c9c9c;
+}
+.container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+.container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount .btnCreateAccount {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Jura;
+  padding: 10px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  transition: all 0.3s ease-in-out;
+}
+.container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount .btnCreateAccount:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount p {
+  color: #2e2e2e;
+  font-size: 0.8rem;
+  font-family: Jura;
+  font-weight: 500;
+  margin-bottom: -15px;
+}
+.container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  font-family: Jura;
+  text-decoration: none;
+}
+.container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn:hover {
+  text-decoration: underline;
+  color: #BC2327;
+}
+.container .logInCreateAccount .bannerCreateAccount {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.container .logInCreateAccount .bannerCreateAccount .background {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  animation: background 7s linear infinite alternate-reverse;
+}
+@keyframes background {
+  0% {
+    filter: grayscale(0%);
+  }
+  25% {
+    filter: grayscale(25%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  75% {
+    filter: grayscale(75%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+  75% {
+    filter: grayscale(75%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  25% {
+    filter: grayscale(25%);
+  }
+  0% {
+    filter: grayscale(0%);
+  }
+}
+
+.headerSignIn {
+  width: 20vw;
+  height: 100vh;
+  position: relative;
+}
+.headerSignIn .menuIcons {
+  width: 49.19px;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  right: 0%;
+  z-index: 1;
+  animation: getoff 0.5s linear;
+}
+@keyframes getoff {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+.headerSignIn .menuIcons ul {
+  padding: 5px 0px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.headerSignIn .menuIcons ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px 0px;
+}
+.headerSignIn .menuIcons ul li .wishHeadLine .wishlistIcon, .headerSignIn .menuIcons ul li .wishHeadLine .cartIcon, .headerSignIn .menuIcons ul li .cartShop .wishlistIcon, .headerSignIn .menuIcons ul li .cartShop .cartIcon {
+  cursor: pointer;
+  transform: scale(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.headerSignIn .menuIcons ul li .wishHeadLine .wishlistIcon:hover, .headerSignIn .menuIcons ul li .wishHeadLine .cartIcon:hover, .headerSignIn .menuIcons ul li .cartShop .wishlistIcon:hover, .headerSignIn .menuIcons ul li .cartShop .cartIcon:hover {
+  transform: scale(120%);
+  filter: drop-shadow(0 0 10px #696061);
+}
+.headerSignIn .menuIcons ul li .menu, .headerSignIn .menuIcons ul li .wishHeadLine, .headerSignIn .menuIcons ul li .cartShop {
+  cursor: pointer;
+  order: 2;
+}
+.headerSignIn .menuIcons ul li .menu:hover + .toolTip, .headerSignIn .menuIcons ul li .wishHeadLine:hover + .toolTip, .headerSignIn .menuIcons ul li .cartShop:hover + .toolTip {
+  opacity: 1;
+  visibility: visible;
+}
+.headerSignIn .menuIcons ul li .toolTip {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -70px;
+  background-color: rgb(153, 153, 153);
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+.headerSignIn .menuIcons ul li .toolTip .toolTipMessage {
+  margin: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Jura;
+}
+.headerSignIn #menuSide {
+  display: flex;
+}
+.headerSignIn #menuSide:checked ~ .menuSide {
+  transform: translate(-225%);
+}
+.headerSignIn .menuSide {
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 125%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #141414;
+  overflow: hidden;
+  box-shadow: 0 0 10px 6px #070707;
+  z-index: 10;
+  transform: translate(-105%);
+  transition: 0.3s ease-in-out;
+}
+.headerSignIn .menuSide .top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  padding: 10px 10px 10px 30px;
+}
+.headerSignIn .menuSide .top .brand {
+  width: 45px;
+  order: 2;
+}
+.headerSignIn .menuSide .top label .close {
+  width: 25px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.headerSignIn .menuSide .top label .close:hover {
+  transform: rotate(90deg);
+}
+.headerSignIn .menuSide .menu {
+  width: 100%;
+}
+.headerSignIn .menuSide .menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 0;
+}
+.headerSignIn .menuSide .menu ul li {
+  width: 100%;
+  list-style-type: none;
+  cursor: pointer;
+  background-color: #141414;
+}
+.headerSignIn .menuSide .menu ul li .link {
+  display: block;
+  width: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 100px;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.headerSignIn .menuSide .menu ul li .link:hover {
+  background-color: rgba(188, 35, 40, 0.3490196078);
+}
+.headerSignIn .menuSide .menu ul li .cartShop {
+  width: 100%;
+  cursor: pointer;
+}
+.headerSignIn .menuSide .menu ul li .cartShop .link {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0px auto 0px 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #6b6b6b;
+  transition: all 0.3s ease;
+}
+.headerSignIn .menuSide .menu ul li .cartShop .link:hover {
+  background-color: rgba(188, 35, 40, 0.3490196078);
+}
+.headerSignIn .menuSide .contactUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #181818;
+  padding-top: 10px;
+}
+.headerSignIn .menuSide .contactUs p {
+  width: 100%;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #ffffff;
+  font-weight: 600;
+  padding-left: 30px;
+  border-bottom: 1px solid #6b6b6b;
+  padding-bottom: 15px;
+}
+.headerSignIn .menuSide .contactUs ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.headerSignIn .menuSide .contactUs ul li {
+  display: block;
+  list-style-type: none;
+}
+.headerSignIn .menuSide .contactUs ul li .item {
+  text-decoration: none;
+}
+.headerSignIn .menuSide .contactUs ul li .item .itemSocial {
+  width: 35px;
+}
+
+#cart {
+  display: none;
+}
+#cart:checked ~ .sectionShop {
+  transform: translate(0%);
+}
+
+.sectionShop {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 0 10px 6px #070707;
+  z-index: 10;
+  padding-top: 30px;
+  transform: translate(105%);
+  transition: 0.3s ease-in-out;
+}
+.sectionShop .menuCart .cartShop .closeCross {
+  width: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.sectionShop .menuCart .cartShop .closeCross:hover {
+  transform: rotate(90deg);
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px auto;
+  padding: 0px 20px;
+  height: 380px;
+  overflow: scroll;
+  position: fixed;
+  top: 60px;
+  left: 20px;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cartlistWord {
+  width: inherit;
+  font-size: 1.3rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 0px;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category .titleCartlist {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+  font-size: 1rem;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
+  width: 12%;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description {
+  display: flex;
+  flex-direction: column;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .price {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #424242;
+  font-weight: 600;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
+  width: 20px;
+  cursor: pointer;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
+  width: 50px;
+  height: 35px;
+  padding: 2px;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .outcome .shipping, .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .discount, .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .total {
+  margin: 2px;
+  width: inherit;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #424242;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .outcome .total {
+  color: #BC2327;
+  font-weight: 700;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 1rem;
+  font-family: Jura;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid transparent;
+  background-color: #070707;
+  transition: all 0.3s ease;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout:hover {
+  color: #070707;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  font-weight: 600;
+}
+
+#wishlistSide {
+  display: none;
+}
+#wishlistSide:checked ~ .sectionWishlist {
+  transform: translate(0%);
+}
+
+.sectionWishlist {
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 0 10px 6px #070707;
+  z-index: 10;
+  padding-top: 60px;
+  transform: translate(105%);
+  transition: 0.3s ease-in-out;
+}
+.sectionWishlist .wishHeadLine .closeCross {
+  width: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.sectionWishlist .wishHeadLine .closeCross:hover {
+  transform: rotate(90deg);
+}
+.sectionWishlist .menuWishlist .choiceWishlist {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px auto;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wishlistWord {
+  width: inherit;
+  font-size: 1.3rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 0px;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .category .titleWishlist {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .itemProduct {
+  width: 15%;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description {
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .price {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .icons img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.tagGetOff {
+  position: fixed;
+  top: 35%;
+  right: 0%;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+  text-decoration: none;
+}
+.tagGetOff .discount {
+  animation: getOff 0.5s linear;
+}
+.tagGetOff .discount .title {
+  font-size: 1rem;
+  font-family: Jura, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: right;
+  transform: rotate(180deg);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #000000;
+  padding: 40px 15px;
+  transition: all 0.3s ease;
+}
+.tagGetOff .discount .title:hover {
+  background-color: #BC2327;
+}
+@keyframes getOff {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.getOff {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/background_Gift.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #131313;
+  margin: 200px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getOff .containerGetOff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.getOff .containerGetOff .info .title {
+  font-size: 4rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #BC2327;
+  margin-top: -150px;
+}
+.getOff .containerGetOff .info .paragraph {
+  margin-top: 50px;
+}
+.getOff .containerGetOff .info .paragraph .subtitle, .getOff .containerGetOff .info .paragraph .sentence, .getOff .containerGetOff .info .paragraph .cta {
+  font-size: 1.8rem;
+  font-family: Jura, sans-serif;
+  font-weight: 600;
+  color: #D9D9D9;
+}
+.getOff .containerGetOff .info .paragraph .sentence {
+  font-size: 1.5rem;
+}
+.getOff .containerGetOff .hoddy {
+  animation: hoddy 2s linear 2s infinite;
+}
+@keyframes hoddy {
+  0% {
+    filter: drop-shadow(0 0 1px #BC2327);
+  }
+  25% {
+    filter: drop-shadow(0 1px 2px #BC2327);
+  }
+  50% {
+    filter: drop-shadow(0 2px 3px #BC2327);
+  }
+  75% {
+    filter: drop-shadow(0 3px 5px #BC2327);
+  }
+  100% {
+    filter: drop-shadow(0 4px 6px #BC2327);
+  }
+}
+.getOff .ctaSentence {
+  position: relative;
+  bottom: 250px;
+  left: -140px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Jura, sans-serif;
+  font-weight: 600;
+  color: #E0E0E0;
+  transition: color 0.3s ease;
+}
+.getOff .ctaSentence:hover {
+  color: #BC2327;
+  text-decoration: underline;
+}
+.getOff #cross {
+  display: none;
+}
+.getOff #cross:checked ~ .bannerGetOff {
+  transform: translateY(100%);
+}
+.getOff .bannerGetOff {
+  width: 62vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 4px black;
+  position: fixed;
+  top: -340px;
+  left: 18%;
+  z-index: 8;
+  transform: translateY(300%);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.getOff .bannerGetOff .title {
+  font-size: 4rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #BC2327;
+  margin-top: 20px;
+}
+.getOff .bannerGetOff label .crossCloseWhite {
+  width: 25px;
+  position: relative;
+  top: -90px;
+  right: -390px;
+  cursor: pointer;
+  z-index: 3;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.getOff .bannerGetOff label .crossCloseWhite:hover {
+  transform: rotate(90deg);
+}
+.getOff .bannerGetOff .slideGetOff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+.getOff .bannerGetOff .slideGetOff .hoddy {
+  padding: 10px;
+}
+.getOff .bannerGetOff .slideGetOff .hoddy img {
+  width: 100%;
+  height: auto;
+}
+.getOff .bannerGetOff .slideGetOff .hoddy h3 {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-family: Jura;
+  color: #BC2327;
+}
+.getOff .bannerGetOff .slideGetOff .hoddy p {
+  padding: 10px auto;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #d9d9d9;
+}
+.getOff .bannerGetOff::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8980392157);
+  backdrop-filter: blur(10px);
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 10px;
+}
+.getOff .bannerGetOff > * {
+  position: relative;
+}
+
 #orderCross {
   display: flex;
   font-family: "Jura", sans-serif;
@@ -3031,195 +3896,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #ffffff;
   border: 1px solid #000000;
   font-weight: 600;
-}
-
-.sectionSignIn {
-  width: 100%;
-  height: auto;
-  background-image: linear-gradient(rgba(188, 35, 40, 0.431372549), rgba(0, 0, 0, 0.5215686275)), url(../img/background_Signin.webp);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sectionSignIn .titleSignIn {
-  color: #BC2327;
-  filter: drop-shadow(4px 4px 8px #000000);
-  font-size: 4rem;
-  font-family: "Rubik Distressed", cursive;
-  margin-top: 100px;
-}
-.sectionSignIn .formSignIn {
-  width: 50vw;
-  height: auto;
-  background-color: #ffffff;
-  box-shadow: 4px 4px 8px 0px #181818;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-.sectionSignIn .formSignIn .form {
-  max-width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 70px auto;
-}
-.sectionSignIn .formSignIn .form .form-floating {
-  color: #000000;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Jura", sans-serif;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px auto;
-}
-.sectionSignIn .formSignIn .form .form-floating .input {
-  width: 100%;
-  height: 40px;
-  color: #000000;
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-family: "Jura", sans-serif;
-  margin-top: 20px;
-  padding: 20px 0px 20px 10px;
-  border-top: transparent;
-  border-right: transparent;
-  border-left: transparent;
-  border-bottom: 1px solid #9c9c9c;
-}
-.sectionSignIn .formSignIn .form .form-floating:nth-child(2) {
-  margin-top: 30px;
-}
-.sectionSignIn .formSignIn .form .ctaToSignIn {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sectionSignIn .formSignIn .form .ctaToSignIn .btnSignIn {
-  width: inherit;
-  height: 50px;
-  color: #ffffff;
-  background-color: #000000;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-family: "Jura", sans-serif;
-  margin: 80px auto 30px;
-  padding: 40px auto;
-  transition: all 0.3s ease;
-}
-.sectionSignIn .formSignIn .form .ctaToSignIn .btnSignIn:hover {
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid black;
-}
-.sectionSignIn .formSignIn .form .ctaToSignIn .toCreateAccount {
-  color: #000000;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Jura", sans-serif;
-  text-decoration: none;
-}
-.sectionSignIn .formSignIn .form .ctaToSignIn .toCreateAccount:hover {
-  text-decoration: underline;
-}
-
-.getOffHoddy {
-  width: 100%;
-  height: 100%;
-}
-.getOffHoddy #cross {
-  display: none;
-}
-.getOffHoddy #cross:checked ~ .bannerGetOff {
-  transform: translateY(100%);
-}
-.getOffHoddy .bannerGetOff {
-  width: 62vw;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.0745098039);
-  box-shadow: 0 0 6px 4px black;
-  position: fixed;
-  top: -340px;
-  left: 18%;
-  z-index: 8;
-  transform: translateY(300%);
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-}
-.getOffHoddy .bannerGetOff label .crossCloseWhite {
-  width: 25px;
-  position: relative;
-  top: 15px;
-  right: -390px;
-  cursor: pointer;
-  z-index: 10;
-  transform: rotate(0deg);
-  transition: all 0.3s ease-in-out;
-}
-.getOffHoddy .bannerGetOff label .crossCloseWhite:hover {
-  transform: rotate(90deg);
-}
-.getOffHoddy .bannerGetOff .title {
-  font-size: 4rem;
-  font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
-  margin-top: 20px;
-}
-.getOffHoddy .bannerGetOff .slideGetOff {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px;
-  backdrop-filter: blur(10px);
-}
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy {
-  padding: 10px;
-}
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy img {
-  width: 100%;
-  height: auto;
-}
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy h3 {
-  margin-top: 30px;
-  font-size: 1.1rem;
-  font-family: "Jura", sans-serif;
-  color: #BC2327;
-}
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy p {
-  padding: 10px auto;
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  color: #d9d9d9;
-}
-.getOffHoddy .bannerGetOff::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8980392157);
-  backdrop-filter: blur(10px);
-  filter: blur(10px);
-  z-index: -1;
-  border-radius: 10px;
-}
-.getOffHoddy .bannerGetOff > * {
-  position: relative;
 }
 
 .bannerShipping {

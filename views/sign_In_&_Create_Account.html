@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
-    <!-- Google fonts Jura & Rubik-->
+    <title>Sign In & Create Account</title>
+    <!-- Google fonts Jura & Rubik -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap" rel="stylesheet">
@@ -20,39 +20,21 @@
     <!-- Normalize -->
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel='stylesheet'>
     <!-- Meta para SEO -->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Diego Marin Mora & Break a Leg Company" />
-    <meta name="copyright" content="© [2023] [Diego Marin Mora & Break a Leg Company]" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Diego Marin Mora & Break a Leg Company"/>
+    <meta name="copyright" content="© [2023] [Diego Marin Mora & Break a Leg Company]"/>
+
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header & NavBar -->
 
-    <header class="header">
+    <header class="headerSignIn">
+        <!-- <label for="menuSide">
+            <img class="drawerIcon" src="img/menu_Icon.svg" alt="Menu icon">
+        </label> -->
         <input id="menuSide" type="checkbox">
-        <label for="menuSide">
-            <img class="drawerIcon" src="../img/menu_Icon.svg" alt="Menu icon">
-        </label>
-        <a class="logo" href="../index.html">
-            <img class="brand" src="../img/skullLogo.svg" alt="Break a Leg brand">
-        </a>
-        <section class="menuIcons">
-            <ul>
-                <li><a href="#"><img class="icon" src="../img/moon_Icon.svg" alt=""></a></li>
-                <li><a href="sign_In.html"><img class="icon" src="../img/user_Icon.svg" alt=""></a></li>
-                <li>
-                    <label for="wishlistSide" class="wishHeadLine">
-                        <img class="wishlistIcon" src="../img/wishlist_White_Icon.svg" alt="Heart icon">
-                    </label>
-                </li>
-                <li>
-                    <label for="cart" class="cartShop">
-                        <img class="cartIcon" src="../img/empty_Shopping_Cart.svg" alt="CArt icon">
-                    </label>
-                </li>
-            </ul>
-        </section>
         <nav class="menuSide">
             <section class="top">
                 <img class="brand" src="../img/skullLogo.svg" alt="Break a Leg brand">
@@ -62,7 +44,7 @@
             </section>
             <section class="menu">
                 <ul>
-                    <li><a href="sign_In.html" class="link">Sign in</a></li>
+                    <li><a href="sign_In_&_Create_Account.html" class="link">Sign in</a></li>
                     <li>
                         <label for="cart" class="cartShop">
                             <p href="#" class="link">My cart</p>
@@ -85,19 +67,40 @@
                 </ul>
             </section>
         </nav>
+
+        <!-- Menu icons -->
+
+        <nav class="menuIcons">
+            <ul>
+                <li>
+                    <label for="menuSide" class="menu">
+                        <img class="drawerIcon" src="../img/menu_Icon.svg" alt="Menu icon">
+                    </label>
+                    <article class="toolTip">
+                        <p class="toolTipMessage">Menu</p>
+                    </article>
+                </li>
+                <li>
+                    <label for="wishlistSide" class="wishHeadLine">
+                        <img class="wishlistIcon" src="../img/wishlist_White_Icon.svg" alt="Heart icon">
+                    </label>
+                    <article class="toolTip">
+                        <p class="toolTipMessage">Wishlist</p>
+                    </article>
+                </li>
+                <li>
+                    <label for="cart" class="cartShop">
+                        <img class="cartIcon" src="../img/empty_Shopping_Cart.svg" alt="CArt icon">
+                    </label>
+                    <article class="toolTip">
+                        <p class="toolTipMessage">My cart</p>
+                    </article>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main -->
-
-    <main class="mainContainer">
-
-        <!-- Banner Shipping -->
-
-        <section class="bannerShipping">
-            <p class="shipping">
-                ⚡ "Free shipping on orders over $1000" 🛹⚡
-            </p>
-        </section>
+    <main class="container">
 
         <!-- Tag GetOff -->
 
@@ -111,13 +114,28 @@
 
         <!-- Get 25% Off -->
 
-        <section class="getOffHoddy" id="getOff">
+        <section class="getOff" id="getOff">
+            <article class="containerGetOff">
+                <div class="info">
+                    <h2 class="title">Get 25% off</h2>
+                    <div class="paragraph">
+                        <h3 class="subtitle">For purchases over $1000</h3>
+                        <p class="sentence">You get 25% off on one of our
+                        hoddies
+                        </p>
+                    </div>
+                </div>
+                <img src="../img/hoddy_White.webp" alt="Hoddy pic" class="hoddy">
+            </article>
             <input type="checkbox" id="cross">
+            <label for="cross">
+                <p class="ctaSentence">See more in detail...</p>
+            </label>
             <article class="bannerGetOff">
+                <h2 class="title">Get 25% off</h2>
                 <label for="cross">
                     <img src="../img/close_Cross_White.svg" alt="Cross Icon" class="crossCloseWhite">
                 </label>
-                <h2 class="title">Get 25% off</h2>
                 <div class="slideGetOff">
                     <div class="hoddy">
                         <img src="../img/hoddy1.webp" alt="Hoddy skull">
@@ -143,7 +161,7 @@
             </article>
         </section>
 
-        <!-- Cart -->
+        <!-- My Cart -->
 
         <input id="cart" type="checkbox">
         <section class="sectionShop">
@@ -282,73 +300,83 @@
                 </nav>
         </section>
 
+        <!-- Section Log in & Create Account -->
 
-        <!-- Create Account -->
+        <section class="logInCreateAccount">
 
-        <section class="sectionCreateAccount">
-            <h2 class="titleCreateAccount">Create account</h2>
-            <form action="" class="formCreateAccount">
-                <div class="col-lg-6 col-sm-12 form">
-                    <article class="form-floating">
-                        <label for="floatingInput"></label>First name
+            <!-- LogIn -->
+
+            <article class ="tags">
+
+                <input id="navBarMenu" type="checkbox">
+                <form action="" class="formLogIn">
+                    <label for="navBarMenu" class="tag">
+                        <h3 class="tagLogIn">Log in</h3>
+                    </label>
+
+                    <legend>Welcome back</legend>
+
+                    <article class="formFloating">
+                        <label class="email" for="floatingInput"></label>Email address
+                        <input type="email" class="formControl input" id="floatingInput" placeholder="Email">
+                    </article>
+                    <article class="formFloating">
+                        <label class="password" for="floatingInput"></label>Password
+                        <input type="password" class="formControl input" id="floatingPassword" placeholder="Password">
+                    </article>
+                    <article class="ctaToSignIn">
+                        <input class="btnSignIn" type="Submit">
+                        <p>¿Do you have an account with us?</p>
+                    </article>
+
+                    <label for="navBarMenu">
+                        <p class="ctaFormCreateAccount">Create account</p>
+                    </label>
+
+                </form>
+
+                <!-- CreateAccount -->
+
+                <form action="" class="formCreateAccount">
+                    <label  for="navBarMenu" class="tag">
+                        <h3 class="tagCreateAccount">Create Account</h3>
+                    </label>
+
+                    <legend>Create Account</legend>
+
+                    <article class="formFloating">
+                        <label class="firstName" for="floatingInput"></label>First name
                         <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your first name">
                     </article>
-                    <article class="form-floating">
-                        <label for="floatingInput"></label>Last name
+                    <article class="formFloating">
+                        <label class="lastName" for="floatingInput"></label>Last name
                         <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your last name">
                     </article>
-                    <article class="form-floating">
-                        <label for="floatingInput"></label>Email address
+                    <article class="formFloating">
+                        <label class="email" for="floatingInput"></label>Email address
                         <input type="email" class="formControl input" id="floatingInput" placeholder="Enter your Email">
                     </article>
-                    <article class="form-floating">
-                        <label for="floatingPassword"></label>Password
+                    <article class="formFloating">
+                        <label class="password"for="floatingPassword"></label>Password
                         <input type="password" class="formControl input" id="floatingPassword" placeholder="Enter your password">
                     </article>
-
                     <article class="ctaToCreateAccount">
                         <input class="btnCreateAccount" type="Submit">
-                        <p>¿Do you have an account with us?</p>
-                        <a href="sign_In.html" class="toSignIn">Sign in</a>
+                        <p>"Do you already have an account?"</p>
                     </article>
-                </div>
-            </form>
-        </section>
 
+                    <label  for="navBarMenu">
+                        <p class="ctaFormLogIn"> Enter here </p>
+                    </label>
+
+                </form>
+            </article>
+
+            <article class="bannerCreateAccount">
+                <img src="../img/background_Sunset.webp" alt="" class="background">
+            </article>
+        </section>
     </main>
-
-    <!-- Footer -->
-
-    <footer class="footerContainer">
-        <div class="footer">
-            <section class="socialMedia">
-                <h3 class="contactUs">Contact us..</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/" target="_blank" class="item"><img src="../img/instagram.svg" alt="" class="itemSocial"></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank" class="item"><img src="../img/youtube.svg" alt="" class="itemSocial"></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank" class="item"><img src="../img/facebook.svg" alt="" class="itemSocial"></a></li>
-                    <li><a href="https://twitter.com/?lang=es" target="_blank" class="item"><img src="../img/twitter.svg" alt="" class="itemSocial"></a></li>
-                    <li><a href="https://co.pinterest.com/" target="_blank" class="item"><img src="../img/pinterest.svg" alt="" class="itemSocial"></a></li>
-                </ul>
-            </section>
-            <section class="brand">
-                <h3 class="nameLogo">Break a Leg</h3>
-                <img src="../img/skull.svg" alt="Skull logo" class="skull">
-            </section>
-            <section class="payments">
-                <h3>Payments</h3>
-                <img class="paymentCards" src="../img/payments.webp" alt="Credit cards">
-            </section>
-        </div>
-        <section class="development">
-            <img class="raccoon" src="../img/logo_Raccoon.svg" alt="Raccoon brand">
-            <div class="developer">
-                <p>Developed and made with 💖 by Diego Marin </p>
-                <p>© 2023 <span class="raccoon">Raccoon</span>. All rights reserved.</p>
-                <p> Medellin - Colombia</p>
-            </div>
-        </section>
-    </footer>
 
     <!-- Bootstrap -->
 
@@ -357,7 +385,6 @@
 
     <!-- JS -->
 
-    <script src="../main.js"></script>
-
+    <script src="main.js"></script>
 </body>
 </html>
