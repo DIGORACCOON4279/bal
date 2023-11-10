@@ -3244,7 +3244,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .getOffHoddy .bannerGetOff label .crossCloseWhite {
   width: 25px;
   position: relative;
-  top: -90px;
+  top: 15px;
   right: -390px;
   cursor: pointer;
   z-index: 10;
@@ -3929,19 +3929,20 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
+  margin-bottom: 20px;
 }
 .showRoom .rightSide .infoProduct .color .containerColor {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 55px;
+  gap: 30px;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .smallPic {
   overflow: hidden;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .smallPic .itemProduct {
-  width: 50px;
-  height: 70px;
+  width: 70px;
+  height: auto;
   object-fit: cover;
   border: 1px solid #f1f1f1;
 }
@@ -3950,8 +3951,8 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorBlack, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   cursor: pointer;
-  width: 50px;
-  height: 70px;
+  width: 70px;
+  height: 104px;
   background-color: #000000;
   border: 1px solid #f1f1f1;
 }
@@ -3974,16 +3975,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
+  margin-bottom: 20px;
 }
 .showRoom .rightSide .infoProduct .size .containerSize {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 55px;
+  gap: 30px;
 }
 .showRoom .rightSide .infoProduct .size .containerSize .itemSize {
-  width: 50px;
-  height: 70px;
+  width: 70px;
+  height: 60px;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -4002,11 +4004,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   margin: 20px auto;
 }
 .showRoom .rightSide .infoProduct .addToCart .btnAddToCart {
-  width: 81.5%;
+  width: 100%;
   height: 50px;
   color: #ffffff;
   padding: 15px;
