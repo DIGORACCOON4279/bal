@@ -57,7 +57,7 @@
                         z-index: 9;
                         .tagCreateAccount{
                             font-size:0.8rem;
-                            font-family: Jura;
+                            font-family:$fontJura;
                             color: #ffffff;
                             text-align: center;
                             writing-mode: vertical-rl;
@@ -100,7 +100,7 @@
                         z-index: 9;
                         .tagLogIn{
                             font-size:0.8rem;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             color: #ffffff;
                             text-align: center;
                             writing-mode: vertical-rl;
@@ -118,12 +118,13 @@
                     legend{
                         font-size: 3rem;
                         color: #BC2327;
-                        font-family: "Rubik Distressed", cursive;
+                        font-family: $fontRubik;
                         text-align: center;
                     }
                     .formFloating{
                         width:50%;
                         color: #000000;
+                        font-family: $fontJura;
                         font-size: 0.9rem;
                         font-weight: 600;
                         display: flex;
@@ -136,6 +137,7 @@
                             color: #000000;
                             font-size: 0.8rem;
                             font-weight: 400;
+                            font-family: $fontJura;
                             padding: 10px 0px 10px 10px;
                             border-top: transparent;
                             border-right: transparent;
@@ -155,7 +157,7 @@
                             font-size: 1rem;
                             font-weight: 700;
                             color: #ffffff;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             padding: 10px;
                             background-color: #000000;
                             border: 1px solid #000000;
@@ -169,7 +171,7 @@
                         p{
                             color: #2e2e2e;
                             font-size: 0.8rem;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             font-weight: 500;
                             margin-bottom:-15px;
                         }
@@ -179,7 +181,7 @@
                             font-size: 0.8rem;
                             font-weight: 700;
                             color: #2e2e2e;
-                            font-family: Jura;
+                            font-family:$fontJura;
                             text-decoration: none;
                             &:hover{
                                 text-decoration: underline;
@@ -192,7 +194,7 @@
                     legend{
                         font-size: 3rem;
                         color: #BC2327;
-                        font-family: "Rubik Distressed", cursive;
+                        font-family: $fontRubik;
                         text-align: center;
                     }
                     .formFloating{
@@ -200,6 +202,7 @@
                         color: #000000;
                         font-size: 0.9rem;
                         font-weight: 600;
+                        font-family: $fontJura;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -210,6 +213,7 @@
                             color: #000000;
                             font-size: 0.8rem;
                             font-weight: 400;
+                            font-family: $fontJura;
                             padding: 10px 0px 10px 10px;
                             border-top: transparent;
                             border-right: transparent;
@@ -229,7 +233,7 @@
                             font-size: 1rem;
                             font-weight: 700;
                             color: #ffffff;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             padding: 10px;
                             background-color: #000000;
                             border: 1px solid #000000;
@@ -243,7 +247,7 @@
                         p{
                             color: #2e2e2e;
                             font-size: 0.8rem;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             font-weight: 500;
                             margin-bottom:-15px;
                         }
@@ -253,7 +257,7 @@
                             font-size: 0.8rem;
                             font-weight: 700;
                             color: #2e2e2e;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             text-decoration: none;
                             &:hover{
                                 text-decoration: underline;
@@ -429,7 +433,7 @@
                         font-size: 0.7rem;
                         font-weight: 700;
                         color: #ffffff;
-                        font-family: Jura;
+                        font-family: $fontJura;
                     }
                 }
             }
@@ -504,7 +508,7 @@
                         padding-left: 30px;
                         padding-right: 100px;
                         font-size: 1rem;
-                        font-family: Jura;
+                        font-family: $fontJura;
                         color:#ffffff;
                         font-weight: 600;
                         text-decoration: none;
@@ -519,7 +523,7 @@
                             display: block;
                             width:100%;
                             font-size: 1rem;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             color:#ffffff;
                             font-weight: 600;
                             margin: 0px auto 0px 0px;
@@ -545,7 +549,7 @@
             p{
                 width:100%;
                 font-size: 1rem;
-                font-family: Jura;
+                font-family: $fontJura;
                 color:#ffffff;
                 font-weight: 600;
                 padding-left: 30px;
@@ -632,7 +636,7 @@
                 .cartlistWord{
                     width: inherit;
                     font-size: 1.3rem;
-                    font-family: Jura;
+                    font-family: $fontJura;
                     color:#BC2327;
                     font-weight: 600;
                     margin:0px ;
@@ -647,7 +651,7 @@
                         border-bottom: 1px solid #e4e4e4;
                         .titleCartlist{
                             font-size: 1rem;
-                            font-family: Jura;
+                            font-family:$fontJura;
                             color:#BC2327;
                             font-weight: 600;
                             margin: 15px 0px;
@@ -671,7 +675,7 @@
                             flex-direction: column;
                             .price{
                                 font-size: 1rem;
-                                font-family: Jura;
+                                font-family: $fontJura;
                                 color:#424242;
                                 font-weight: 600;
                             }
@@ -688,14 +692,14 @@
                                 height:35px;
                                 padding: 2px;
                                 font-size: 1rem;
-                                font-family: Jura;
+                                font-family:$fontJura;
                                 color:#BC2327;
                                 font-weight: 600;
                             }
                         }
                         .total{
                             font-size: 1rem;
-                            font-family: Jura;
+                            font-family: $fontJura;
                             color:#BC2327;
                             font-weight: 600;
                         }
@@ -716,7 +720,7 @@
                         margin: 2px;
                         width: inherit;
                         font-size: 1rem;
-                        font-family: Jura;
+                        font-family: $fontJura;
                         color:#424242;
                         font-weight: 600;
                         display: flex;
@@ -737,7 +741,7 @@
                     align-items: center;
                     margin:20px auto;
                     font-size: 1rem;
-                    font-family: Jura;
+                    font-family: $fontJura;
                     font-weight: 600;
                     color: #ffffff;
                     border: 1px solid transparent;
@@ -806,7 +810,7 @@
             .wishlistWord{
                 width: inherit;
                 font-size: 1.3rem;
-                font-family: Jura;
+                font-family:$fontJura;
                 color:#BC2327;
                 font-weight: 600;
                 margin:0px ;
@@ -821,7 +825,7 @@
                     border-bottom: 1px solid #e4e4e4;
                     .titleWishlist{
                         font-size: 1rem;
-                        font-family: Jura;
+                        font-family:$fontJura;
                         color:#BC2327;
                         font-weight: 600;
                         margin: 15px 0px;
@@ -844,7 +848,7 @@
                             margin-left:-40px;
                             .price{
                                 font-size: 1rem;
-                                font-family: Jura;
+                                font-family:$fontJura;
                                 color:#BC2327;
                                 font-weight: 600;
                             }
@@ -878,7 +882,7 @@
         animation: getOff 0.5s linear;
         .title{
             font-size:1rem;
-            font-family: Jura, sans-serif;
+            font-family: $fontJura;
             color: #ffffff;
             text-align: center;
             writing-mode: vertical-rl;
@@ -930,7 +934,7 @@
         .info{
             .title{
                 font-size:4rem;
-                font-family: 'Rubik Distressed', cursive;
+                font-family: $fontRubik;
                 color: #BC2327;
                 margin-top: -150px;
             }
@@ -938,7 +942,7 @@
                 margin-top: 50px;
                 .subtitle, .sentence, .cta{
                     font-size:1.8rem;
-                    font-family: Jura, sans-serif;
+                    font-family: $fontJura;
                     font-weight: 600;
                     color: #D9D9D9;
                 }
@@ -974,7 +978,7 @@
         left:-140px;
         cursor: pointer;
         font-size:1rem;
-        font-family: Jura, sans-serif;
+        font-family: $fontJura;
         font-weight: 600;
         color: #E0E0E0;
         transition: color .3s ease;
@@ -1007,7 +1011,7 @@
         transition: .3s ease-in-out;
         .title{
             font-size:4rem;
-            font-family:'Rubik Distressed', cursive;
+            font-family:$fontRubik;
             color: #BC2327;
             margin-top:20px;
         }
@@ -1042,13 +1046,13 @@
                 h3{
                     margin-top: 30px;
                     font-size:1.1rem;
-                    font-family: Jura;
+                    font-family: $fontJura;
                     color: #BC2327;
                 }
                 p{
                     padding: 10px auto;
                     font-size:1rem;
-                    font-family: Jura;
+                    font-family: $fontJura;
                     color: #d9d9d9;
                 }
             }
