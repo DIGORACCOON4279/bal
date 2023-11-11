@@ -215,40 +215,55 @@
                 .accordionCollapse{
                     border: 1px solid #f1f1f1;
                     .accordionBody:nth-child(1){
+                        height: auto;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-around;
-                        align-items: flex-end;
+                        // align-items: center;
                         gap:5px;
                         .case{
+                            width:100%;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-around;
                             align-items: flex-end;
                             cursor:pointer;
                             background-color: #f1f1f1;
-                            padding:5px;
+                            padding:10px;
                             &:hover{
                                 background-color: #f8f8f8;
                             }
-                            p{
-                                font-size: 0.8rem;
+                            .message{
+                                font-size: 0.7rem;
                                 font-weight: 600;
                                 span{
                                     color: #da2222;
                                     font-weight: 700;
                                 }
                             }
-                            .rating{
-                                width:70px;
-                            }
-                            .name{
-                                font-size: 0.9rem;
-                                font-weight: 700;
-                            }
-                            .date{
-                                font-size: 0.7rem;
-                                font-weight: 600;
+                            .opinion{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                .itemProduct{
+                                    width:auto;
+                                    height: 70px;
+                                }
+                                .info{
+                                    align-items: flex-end;
+                                    .rating{
+                                        width:50px;
+                                    }
+                                    .name, .date{
+                                        font-size: 0.6rem;
+                                        font-weight: 700;
+                                    }
+                                    .date{
+                                        color: #da2222;
+                                    }
+                                }
                             }
                         }
                     }
@@ -260,6 +275,7 @@
                         p{
                             font-size: 0.8rem;
                             font-weight: 600;
+                            align-self: self-start;
                             span{
                                 color: #da2222;
                                 font-weight: 700;

@@ -4079,42 +4079,56 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   border: 1px solid #f1f1f1;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) {
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
   gap: 5px;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
   cursor: pointer;
   background-color: #f1f1f1;
-  padding: 5px;
+  padding: 10px;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case:hover {
   background-color: #f8f8f8;
 }
-.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case p {
-  font-size: 0.8rem;
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .message {
+  font-size: 0.7rem;
   font-weight: 600;
 }
-.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case p span {
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .message span {
   color: #da2222;
   font-weight: 700;
 }
-.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .rating {
-  width: 70px;
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .name {
-  font-size: 0.9rem;
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .itemProduct {
+  width: auto;
+  height: 70px;
+}
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info {
+  align-items: flex-end;
+}
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info .rating {
+  width: 50px;
+}
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info .name, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info .date {
+  font-size: 0.6rem;
   font-weight: 700;
 }
-.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .date {
-  font-size: 0.7rem;
-  font-weight: 600;
+.showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info .date {
+  color: #da2222;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos {
   display: flex;
@@ -4125,6 +4139,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos p {
   font-size: 0.8rem;
   font-weight: 600;
+  align-self: self-start;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos p span {
   color: #da2222;
