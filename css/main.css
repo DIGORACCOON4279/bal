@@ -3701,6 +3701,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .sectionFilter .menuFilterSide #filterSide:checked ~ .menuFilter {
   transform: translate(0%);
 }
+.sectionFilter .menuFilterSide .headLine {
+  position: relative;
+}
 .sectionFilter .menuFilterSide .headLine .filter {
   position: fixed;
   top: 70px;
@@ -3721,11 +3724,26 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   margin: 5px;
   box-shadow: 0 0 4px 2px #707070;
 }
+.sectionFilter .menuFilterSide .headLine .filter .filterIcon:hover + .filterWord {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(100%);
+}
 .sectionFilter .menuFilterSide .headLine .filter .filterWord {
+  opacity: 0;
+  visibility: hidden;
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
-  color: #D9D9D9;
+  font-weight: 600;
+  color: #ffffff;
   font-weight: 400;
+  background-color: #000000;
+  padding: 5px 15px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  transform: translateY(50%);
+  transition: all 0.3s ease-in-out;
 }
 .sectionFilter .menuFilterSide .subtitle {
   font-size: 1.1rem;
