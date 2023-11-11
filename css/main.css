@@ -2769,8 +2769,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   visibility: hidden;
   position: absolute;
   left: -70px;
-  background-color: rgb(153, 153, 153);
-  box-shadow: 0 0 2px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   transform: translate(-100%);
   transition: all 0.2s ease-in-out;
 }
@@ -3941,28 +3940,76 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: row;
   align-items: flex-start;
   gap: 20px;
+  position: relative;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .smallPic {
-  overflow: hidden;
+  position: relative;
+}
+.showRoom .rightSide .infoProduct .color .containerColor .smallPic .toolTip {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -40%;
+  left: 10px;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+.showRoom .rightSide .infoProduct .color .containerColor .smallPic .toolTip p {
+  background-color: #000000;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Jura", sans-serif;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .smallPic .itemProduct {
   width: 70px;
   height: auto;
   object-fit: cover;
   border: 1px solid #f1f1f1;
+  transition: all 0.3s ease-in-out;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .smallPic .itemProduct:hover {
   border: 1px solid #000000;
+}
+.showRoom .rightSide .infoProduct .color .containerColor .smallPic .itemProduct:hover + .toolTip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorBlack, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   cursor: pointer;
   width: 70px;
   height: 104px;
+  position: relative;
   background-color: #555555;
   border: 1px solid #f1f1f1;
+  transition: all 0.3s ease-in-out;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorBlack:hover, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite:hover {
   border: 1px solid #000000;
+}
+.showRoom .rightSide .infoProduct .color .containerColor .colorBlack:hover > .toolTip, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite:hover > .toolTip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+.showRoom .rightSide .infoProduct .color .containerColor .colorBlack .toolTip, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite .toolTip {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -40%;
+  left: 10px;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+.showRoom .rightSide .infoProduct .color .containerColor .colorBlack .toolTip p, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite .toolTip p {
+  background-color: #000000;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Jura", sans-serif;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   background-color: #ffffff;
@@ -4011,6 +4058,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   align-items: center;
   gap: 20px;
   margin: 20px auto;
+  position: relative;
 }
 .showRoom .rightSide .infoProduct .addToCart .btnAddToCart {
   width: 100%;
@@ -4039,6 +4087,31 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .showRoom .rightSide .infoProduct .addToCart .wishlistIcon:hover {
   border: 1px solid #000000;
+}
+.showRoom .rightSide .infoProduct .addToCart .wishlistIcon:hover + .toolTip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+.showRoom .rightSide .infoProduct .addToCart .toolTip {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -80%;
+  right: -10px;
+  background-color: rgb(0, 0, 0);
+  transform: translateY(100%);
+  transition: all 0.2s ease-in-out;
+}
+.showRoom .rightSide .infoProduct .addToCart .toolTip .toolTipMessage {
+  margin: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Jura", sans-serif;
 }
 .showRoom .rightSide .infoProduct .complementInfo {
   width: 100%;
