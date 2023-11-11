@@ -679,15 +679,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
     opacity: 1;
   }
 }
-.heroSection .heroSectionCentered .info .ctaShowRoom {
-  font-size: 0.9rem;
+.heroSection .heroSectionCentered .info .promo {
+  font-size: 1rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
+}
+.heroSection .heroSectionCentered .info .promo .ctaShowRoom {
   color: #BC2327;
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.heroSection .heroSectionCentered .info .ctaShowRoom:hover {
+.heroSection .heroSectionCentered .info .promo .ctaShowRoom:hover {
   color: #858585;
   text-decoration: underline;
 }

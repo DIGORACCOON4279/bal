@@ -73,16 +73,18 @@
                     opacity: 1;
                 }
             }
-            .ctaShowRoom{
-                font-size:0.9rem;
+            .promo{
+                font-size: 1rem;
                 font-family: $fontJura;
                 font-weight: 600;
-                color: #BC2327;
-                text-decoration: none;
-                transition:all 0.3s ease;
-                &:hover{
-                    color: #858585;
-                    text-decoration: underline;
+                .ctaShowRoom{
+                    color: #BC2327;
+                    text-decoration: none;
+                    transition:all 0.3s ease;
+                    &:hover{
+                        color: #858585;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
