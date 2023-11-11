@@ -2759,6 +2759,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .headerSignIn .menuIcons ul li .menu:hover + .toolTip, .headerSignIn .menuIcons ul li .wishHeadLine:hover + .toolTip, .headerSignIn .menuIcons ul li .cartShop:hover + .toolTip {
   opacity: 1;
   visibility: visible;
+  transform: translate(0%);
 }
 .headerSignIn .menuIcons ul li .toolTip {
   width: auto;
@@ -2770,6 +2771,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   left: -70px;
   background-color: rgb(153, 153, 153);
   box-shadow: 0 0 2px rgb(0, 0, 0);
+  transform: translate(-100%);
   transition: all 0.2s ease-in-out;
 }
 .headerSignIn .menuIcons ul li .toolTip .toolTipMessage {
@@ -3205,7 +3207,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .tagGetOff .discount .title:hover {
   background-color: #BC2327;
-  transform: translateX(98%) rotate(180deg);
+  transform: translateX(40%) rotate(180deg);
 }
 @keyframes getOff {
   0% {

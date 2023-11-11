@@ -415,6 +415,7 @@
                     &:hover + .toolTip{
                         opacity:1;
                         visibility: visible;
+                        transform: translate(0%);
                     }
                 }
                 .toolTip{
@@ -427,6 +428,7 @@
                     left:-70px;
                     background-color: rgb(153, 153, 153);
                     box-shadow: 0 0 2px rgb(0, 0, 0);
+                    transform: translate(-100%);
                     transition: all 0.2s ease-in-out;
                     .toolTipMessage{
                         margin: 5px 10px;
@@ -895,7 +897,7 @@
             transition: all 0.3s ease;
             &:hover{
                 background-color: #BC2327;
-                transform: translateX(98%) rotate(180deg);
+                transform: translateX(40%) rotate(180deg);
                 // box-shadow: 0 0 4px 2px #BC2327;
             }
         }
