@@ -1102,7 +1102,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .containerStore {
   margin: 100px auto 150px;
 }
-.containerStore .tagGetOff {
+.containerStore .tagGetoff {
   position: fixed;
   top: 35%;
   right: 0%;
@@ -1113,10 +1113,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   z-index: 10;
   text-decoration: none;
 }
-.containerStore .tagGetOff .discount {
+.containerStore .tagGetoff .discount {
   animation: getOff 0.5s linear;
 }
-.containerStore .tagGetOff .discount .title {
+.containerStore .tagGetoff .discount .title {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #ffffff;
@@ -1130,7 +1130,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding: 40px 15px;
   transition: all 0.3s ease;
 }
-.containerStore .tagGetOff .discount .title:hover {
+.containerStore .tagGetoff .discount .title:hover {
   background-color: #BC2327;
 }
 @keyframes getOff {
