@@ -369,11 +369,12 @@
     // }
     .menuIcons{
         width:49.19px;
-        height:auto;
+        height:100vh;
         position: fixed;
         top:0px;
         right:0%;
         z-index: 1;
+        background-color: #000000;
         animation: getoff 0.5s linear;
         @keyframes getoff{
             0%{
@@ -385,7 +386,6 @@
         }
         ul{
             padding: 5px 0px;
-            background-color: #000000;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -871,7 +871,7 @@
 .tagGetOff{
     position: fixed;
     top:35%;
-    right:0%;
+    right:0px;
     transform: rotate(180deg);
     display: flex;
     justify-content: center;
@@ -895,6 +895,7 @@
             transition: all 0.3s ease;
             &:hover{
                 background-color: #BC2327;
+                transform: translateX(98%) rotate(180deg);
                 // box-shadow: 0 0 4px 2px #BC2327;
             }
         }
