@@ -107,7 +107,7 @@
         "id": 14,
         "title": "Aggressive",
         "stock": 5,
-        "availability": "New Arrivals",
+        "availability": "Best Sellers",
         "pricing": 999,
         "image": "img/pic14.webp"
     },
@@ -187,7 +187,7 @@
         "id": 24,
         "title": "Street",
         "stock": 5,
-        "availability": "New Arrivals",
+        "availability": "Best Sellers",
         "pricing": 499,
         "image": "img/pic24.webp"
     },
