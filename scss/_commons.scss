@@ -106,7 +106,7 @@ html{
                                     display: flex;
                                     flex-direction: column;
                                     .price{
-                                        font-size: 1rem;
+                                        font-size: 0.9em;
                                         font-family: $fontJura;
                                         color:#424242;
                                         font-weight: 600;
@@ -123,14 +123,14 @@ html{
                                         width:50px;
                                         height:35px;
                                         padding: 2px;
-                                        font-size: 1rem;
+                                        font-size: 0.9rem;
                                         font-family: $fontJura;
                                         color:#BC2327;
                                         font-weight: 600;
                                     }
                                 }
                                 .total{
-                                    font-size: 1rem;
+                                    font-size: 0.9em;
                                     font-family: $fontJura;
                                     color:#BC2327;
                                     font-weight: 600;
@@ -151,7 +151,7 @@ html{
                             .shipping, .discount, .total{
                                 margin: 2px;
                                 width: inherit;
-                                font-size: 1rem;
+                                font-size: 0.9rem;
                                 font-family: $fontJura;
                                 color:#424242;
                                 font-weight: 600;
@@ -414,6 +414,6 @@ html{
 }
 .newArrivals, .bestSellers, .containerStore{
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 0px 30px;
 }
