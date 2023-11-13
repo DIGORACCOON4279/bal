@@ -729,7 +729,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .getOff .containerGetOff .info .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
+  color: #bc2327;
   margin-top: -150px;
 }
 .getOff .containerGetOff .info .paragraph {
@@ -739,7 +739,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-size: 1.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
-  color: #D9D9D9;
+  color: #9a9a9a;
 }
 .getOff .containerGetOff .info .paragraph .sentence {
   font-size: 1.5rem;
@@ -772,11 +772,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
-  color: #E0E0E0;
-  transition: color 0.3s ease;
+  color: #f1f1f1;
+  transition: color 0.3s ease-in-out;
 }
 .getOff .ctaSentence:hover {
-  color: #BC2327;
+  color: #bc2327;
   text-decoration: underline;
 }
 .getOff #cross {
@@ -793,19 +793,19 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 0 6px 4px black;
+  box-shadow: 0 0 10px 6px #070707;
   position: fixed;
   top: -340px;
   left: 18%;
   z-index: 8;
   transform: translateY(300%);
   overflow: hidden;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .getOff .bannerGetOff .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
+  color: #bc2327;
   margin-top: 20px;
 }
 .getOff .bannerGetOff label .crossCloseWhite {
@@ -838,15 +838,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .getOff .bannerGetOff .slideGetOff .hoddy h3 {
   margin-top: 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
 }
 .getOff .bannerGetOff .slideGetOff .hoddy p {
   padding: 10px auto;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #d9d9d9;
+  color: #f1f1f1;
 }
 .getOff .bannerGetOff::before {
   content: "";
