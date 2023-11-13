@@ -3189,10 +3189,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   cursor: pointer;
   background-color: #000000;
   padding: 40px 15px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .tagGetOff .discount .title:hover {
-  background-color: #BC2327;
+  background-color: #bc2327;
   transform: translateX(15%) rotate(180deg);
 }
 @keyframes getOff {

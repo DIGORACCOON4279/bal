@@ -835,20 +835,20 @@
     .discount{
         animation: getOff 0.5s linear;
         .title{
-            font-size:1rem;
+            font-size:$regularText;
             font-family: $fontJura;
-            color: #ffffff;
+            color: $whiteColor;
             text-align: center;
             writing-mode: vertical-rl;
             text-orientation: right;
             transform: rotate(180deg);
-            font-weight: 600;
+            font-weight: $bold;
             cursor: pointer;
-            background-color: #000000;
+            background-color: $blackColor;
             padding: 40px 15px;
-            transition: all 0.3s ease;
+            transition: $transition;
             &:hover{
-                background-color: #BC2327;
+                background-color: $primaryColor;
                 transform: translateX(15%) rotate(180deg);
             }
         }
