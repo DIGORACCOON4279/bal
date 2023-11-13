@@ -735,7 +735,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-size: 1.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
-  color: #9a9a9a;
+  color: #f1f1f1;
 }
 .getOff .containerGetOff .info .paragraph .sentence {
   font-size: 1.5rem;
@@ -1345,7 +1345,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   z-index: 10;
   padding-top: 30px;
   transform: translate(105%);
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sectionShop .menuCart .cartShop .closeCross {
   width: 15px;
@@ -1375,10 +1375,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cartlistWord {
   width: inherit;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
-  font-weight: 600;
+  color: #bc2327;
+  font-weight: 700;
   margin: 0px;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
@@ -1392,7 +1392,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category .titleCartlist {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
   margin: 15px 0px;
 }
@@ -1405,7 +1405,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   border-bottom: 1px solid #e4e4e4;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
   width: 12%;
@@ -1415,9 +1415,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: column;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .price {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Jura", sans-serif;
-  color: #424242;
+  color: #191919;
   font-weight: 600;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
@@ -1428,15 +1428,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 50px;
   height: 35px;
   padding: 2px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
 }
 .sectionShop .menuCart .menuCartlist .outcomeCard {
@@ -1452,15 +1452,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .shipping, .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .discount, .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .total {
   margin: 2px;
   width: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Jura", sans-serif;
-  color: #424242;
+  color: #191919;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
 }
 .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .total {
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 700;
 }
 .sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout {
@@ -1476,11 +1476,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 600;
   color: #ffffff;
   border: 1px solid transparent;
-  background-color: #070707;
-  transition: all 0.3s ease;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 .sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout:hover {
-  color: #070707;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #000000;
   font-weight: 600;
