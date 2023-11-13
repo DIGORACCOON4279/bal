@@ -2429,7 +2429,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   top: 0;
   left: 0;
   transform: translate(-100%);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 1;
 }
 .container .logInCreateAccount .tags .formCreateAccount .tag {
@@ -2456,7 +2456,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   cursor: pointer;
   background-color: #000000;
   padding: 20px 15px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .container .logInCreateAccount .tags .formLogIn {
   width: 50vw;
@@ -2471,9 +2471,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   position: fixed;
   top: 0;
   left: 0;
-  transform: translate(0%);
-  transition: transform 0.3s ease-in-out;
   z-index: 1;
+  transform: translate(0%);
+  transition: all 0.3s ease-in-out;
 }
 .container .logInCreateAccount .tags .formLogIn .tag {
   position: fixed;
@@ -2498,11 +2498,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   cursor: pointer;
   background-color: #000000;
   padding: 20px 15px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .container .logInCreateAccount .tags .formLogIn legend {
   font-size: 3rem;
-  color: #BC2327;
+  color: #bc2327;
   font-family: "Rubik Distressed", cursive;
   text-align: center;
 }
@@ -2546,7 +2546,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-family: "Jura", sans-serif;
   padding: 10px;
   background-color: #000000;
-  border: 1px solid #000000;
+  border: 0 0 10px 6px #070707;
   transition: all 0.3s ease-in-out;
 }
 .container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn:hover {
@@ -2555,7 +2555,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   border: 1px solid #000000;
 }
 .container .logInCreateAccount .tags .formLogIn .ctaToSignIn p {
-  color: #2e2e2e;
+  color: #191919;
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 500;
@@ -2564,17 +2564,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #2e2e2e;
+  color: #191919;
   font-family: "Jura", sans-serif;
   text-decoration: none;
 }
 .container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount:hover {
   text-decoration: underline;
-  color: #BC2327;
+  color: #bc2327;
 }
 .container .logInCreateAccount .tags .formCreateAccount legend {
   font-size: 3rem;
-  color: #BC2327;
+  color: #bc2327;
   font-family: "Rubik Distressed", cursive;
   text-align: center;
 }
@@ -2591,7 +2591,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding: 0px auto;
 }
 .container .logInCreateAccount .tags .formCreateAccount .formFloating .formControl {
-  width: 100%;
+  width: 100vw;
   color: #000000;
   font-size: 0.8rem;
   font-weight: 400;
@@ -2612,7 +2612,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount .btnCreateAccount {
   width: 50%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #ffffff;
   font-family: "Jura", sans-serif;
@@ -2627,7 +2627,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   border: 1px solid #000000;
 }
 .container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount p {
-  color: #2e2e2e;
+  color: #191919;
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 500;
@@ -2636,13 +2636,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #2e2e2e;
+  color: #191919;
   font-family: "Jura", sans-serif;
   text-decoration: none;
 }
 .container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn:hover {
   text-decoration: underline;
-  color: #BC2327;
+  color: #bc2327;
 }
 .container .logInCreateAccount .bannerCreateAccount {
   width: 50%;

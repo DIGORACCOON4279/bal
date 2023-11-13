@@ -3,17 +3,17 @@
     // Sign in & Create Account
 
     .container {
-        width: 100vw;
+        width: $screenWidth;
         height: auto;
         .logInCreateAccount {
-            width: 100vw;
+            width: $screenWidth;
             display: grid;
             grid-template-columns: repeat(2, 1fraction);
             grid-template-rows: repeat(1, 1fraction);
             align-items: center;
             z-index: 9;
             .tags{
-                width:100%;
+                width:$screenPercentageWidth;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
@@ -36,13 +36,13 @@
                     justify-content: center;
                     align-items: center;
                     gap: 15px;
-                    background-color: #ffffff;
-                    margin: 0px auto;
+                    background-color: $whiteColor;
+                    margin: $neutralMargin;
                     position:fixed;
                     top: 0;
                     left: 0;
                     transform: translate(-100%);
-                    transition:transform 0.3s ease-in-out;
+                    transition:$transition;
                     z-index: 1;
                     .tag{
                         position: fixed;
@@ -56,37 +56,37 @@
                         text-decoration: none;
                         z-index: 9;
                         .tagCreateAccount{
-                            font-size:0.8rem;
+                            font-size:$xSmallText;
                             font-family:$fontJura;
-                            color: #ffffff;
+                            color: $whiteColor;
                             text-align: center;
                             writing-mode: vertical-rl;
                             text-orientation: right;
                             transform: rotate(180deg);
-                            font-weight: 600;
+                            font-weight:$bold;
                             cursor: pointer;
-                            background-color: #000000;
+                            background-color: $blackColor;
                             padding: 20px 15px;
-                            transition: all 0.3s ease;
+                            transition:$transition;
                         }
                     }
                 }
                 .formLogIn{
                     width: 50vw;
-                    height: 100vh;
+                    height: $screenHeight;
                     display:flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     gap: 15px;
-                    background-color: #ffffff;
-                    margin: 0px auto;
+                    background-color: $whiteColor;
+                    margin: $neutralMargin;
                     position:fixed;
                     top: 0;
                     left: 0;
-                    transform: translate(0%);
-                    transition:transform 0.3s ease-in-out;
                     z-index: 1;
+                    transform: translate(0%);
+                    transition:$transition;
                     .tag{
                         position: fixed;
                         top:-10px;
@@ -98,39 +98,39 @@
                         text-decoration: none;
                         z-index: 9;
                         .tagLogIn{
-                            font-size:0.8rem;
+                            font-size:$xSmallText;
                             font-family: $fontJura;
-                            color: #ffffff;
+                            color: $whiteColor;
                             text-align: center;
                             writing-mode: vertical-rl;
                             text-orientation: right;
                             transform: rotate(180deg);
                             font-weight: 600;
                             cursor: pointer;
-                            background-color: #000000;
+                            background-color: $blackColor;
                             padding: 20px 15px;
-                            transition: all 0.3s ease;
+                            transition: $transition;
                         }
                     }
                 }
                 .formLogIn {
                     legend{
-                        font-size: 3rem;
-                        color: #BC2327;
+                        font-size:$cardLetter;
+                        color: $primaryColor;
                         font-family: $fontRubik;
                         text-align: center;
                     }
                     .formFloating{
                         width:50%;
-                        color: #000000;
+                        color: $blackColor;
                         font-family: $fontJura;
-                        font-size: 0.9rem;
-                        font-weight: 600;
+                        font-size: $smallText;
+                        font-weight:$bold;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: flex-start;
-                        padding: 0px auto;
+                        padding: $neutralMargin;
                         .formControl{
                             width:100%;
                             color: #000000;
@@ -141,11 +141,11 @@
                             border-top: transparent;
                             border-right: transparent;
                             border-left: transparent;
-                            border-bottom: 1px solid #9c9c9c;
+                            border-bottom: $FormBottom;
                         }
                     }
                     .ctaToSignIn {
-                        width: 100%;
+                        width: $screenPercentageWidth;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -153,75 +153,75 @@
                         gap:30px;
                         .btnSignIn{
                             width: 50%;
-                            font-size: 1rem;
-                            font-weight: 700;
-                            color: #ffffff;
+                            font-size: $regularText;
+                            font-weight: $ExtraBold;
+                            color: $whiteColor;
                             font-family: $fontJura;
                             padding: 10px;
-                            background-color: #000000;
-                            border: 1px solid #000000;
-                            transition: all 0.3s ease-in-out;
+                            background-color: $blackColor;
+                            border: $boxShadowMenu;
+                            transition: $transition;
                             &:hover{
-                                color: #000000;
-                                background-color: #ffffff;
-                                border: 1px solid #000000;
+                                color: $blackColor;
+                                background-color: $whiteColor;
+                                border: $btnMenu;
                             }
                         }
                         p{
-                            color: #2e2e2e;
-                            font-size: 0.8rem;
+                            color: $tertiaryColor;
+                            font-size:$xSmallText;
                             font-family: $fontJura;
-                            font-weight: 500;
+                            font-weight: $SemiBold;
                             margin-bottom:-15px;
                         }
                     }
                     label {
                         .ctaFormCreateAccount{
-                            font-size: 0.8rem;
-                            font-weight: 700;
-                            color: #2e2e2e;
+                            font-size:$xSmallText;
+                            font-weight: $ExtraBold;
+                            color: $tertiaryColor;
                             font-family:$fontJura;
                             text-decoration: none;
                             &:hover{
                                 text-decoration: underline;
-                                color: #BC2327;
+                                color: $primaryColor;
                             }
                         }
                     }
                 }
                 .formCreateAccount{
                     legend{
-                        font-size: 3rem;
-                        color: #BC2327;
+                        font-size:$cardLetter;
+                        color: $primaryColor;
                         font-family: $fontRubik;
                         text-align: center;
                     }
                     .formFloating{
                         width:50%;
-                        color: #000000;
-                        font-size: 0.9rem;
-                        font-weight: 600;
+                        color: $blackColor;
+                        font-size:$smallText;
+                        font-weight: $bold;
                         font-family: $fontJura;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: flex-start;
-                        padding: 0px auto;
+                        padding: $neutralMargin;
                         .formControl{
-                            width:100%;
-                            color: #000000;
-                            font-size: 0.8rem;
-                            font-weight: 400;
+                            width:$screenWidth;
+                            color: $blackColor;
+                            font-size:$xSmallText;
+                            font-weight: $MediumBold;
                             font-family: $fontJura;
                             padding: 10px 0px 10px 10px;
                             border-top: transparent;
                             border-right: transparent;
                             border-left: transparent;
-                            border-bottom: 1px solid #9c9c9c;
+                            border-bottom: $FormBottom;
                         }
                     }
                     .ctaToCreateAccount{
-                        width: 100%;
+                        width: $screenPercentageWidth;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -229,38 +229,38 @@
                         gap:30px;
                         .btnCreateAccount{
                             width: 50%;
-                            font-size: 1rem;
-                            font-weight: 700;
-                            color: #ffffff;
+                            font-size: $MediumTitle;
+                            font-weight: $ExtraBold;
+                            color: $whiteColor;
                             font-family: $fontJura;
                             padding: 10px;
-                            background-color: #000000;
-                            border: 1px solid #000000;
-                            transition: all 0.3s ease-in-out;
+                            background-color:$blackColor;
+                            border: $btnMenu;
+                            transition: $transition;
                             &:hover{
-                                color: #000000;
-                                background-color: #ffffff;
-                                border: 1px solid #000000;
+                                color: $blackColor;
+                                background-color: $whiteColor;
+                                border: $btnMenu;
                             }
                         }
                         p{
-                            color: #2e2e2e;
-                            font-size: 0.8rem;
+                            color: $tertiaryColor;
+                            font-size:$xSmallText;
                             font-family: $fontJura;
-                            font-weight: 500;
+                            font-weight: $SemiBold;
                             margin-bottom:-15px;
                         }
                     }
                     label {
                         .ctaFormLogIn{
-                            font-size: 0.8rem;
-                            font-weight: 700;
-                            color: #2e2e2e;
+                            font-size:$xSmallText;
+                            font-weight:$ExtraBold;
+                            color: $tertiaryColor;
                             font-family: $fontJura;
                             text-decoration: none;
                             &:hover{
                                 text-decoration: underline;
-                                color: #BC2327;
+                                color: $primaryColor;
                             }
                         }
                     }
@@ -268,15 +268,15 @@
             }
             .bannerCreateAccount{
                 width:50%;
-                height: 100%;
+                height: $screenPercentageHeight;
                 position:fixed;
                 top: 0;
                 right:0;
                 .background{
-                    width:100%;
-                    height: 100vh;
+                    width:$screenPercentageWidth;
+                    height: $screenHeight;
                     object-fit:cover;
-                    transition: all 0.3s ease-in-out;
+                    transition: $transition;
                     animation: background 7s linear infinite alternate-reverse;
                     @keyframes background {
                         0%{
