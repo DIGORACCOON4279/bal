@@ -125,7 +125,7 @@
                         color:$blackColor;
                         font-family: $fontJura;
                         font-size: $smallText;
-                        font-weight: $bold;
+                        font-weight: $MediumBold;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -133,9 +133,9 @@
                         padding: neutralMargin;
                         .formControl{
                             width:100%;
-                            color: $blackColor;
+                            color: $secondaryColor;
                             font-size: $xSmallText;
-                            font-weight: $MediumBold;
+                            font-weight: $RegularBold;
                             font-family: $fontJura;
                             padding: 10px 0px 10px 10px;
                             border-top: transparent;
@@ -168,7 +168,7 @@
                             }
                         }
                         p{
-                            color: $tertiaryColor;
+                            color: $secondaryColor;
                             font-size: $xSmallText;
                             font-family: $fontJura;
                             font-weight:$SemiBold;
@@ -200,7 +200,7 @@
                         width:50%;
                         color: $blackColor;
                         font-size:$smallText;
-                        font-weight: $bold;
+                        font-weight: $MediumBold;
                         font-family: $fontJura;
                         display: flex;
                         flex-direction: column;
@@ -209,9 +209,9 @@
                         padding: $neutralMargin;
                         .formControl{
                             width:100%;
-                            color: $blackColor;
+                            color: $secondaryColor;
                             font-size: $xSmallText;
-                            font-weight: $ExtraBold;
+                            font-weight: $RegularBold;
                             font-family: $fontJura;
                             padding: 10px 0px 10px 10px;
                             border-top: transparent;
@@ -244,7 +244,7 @@
                             }
                         }
                         p{
-                            color: $tertiaryColor;
+                            color:$secondaryColor;
                             font-size:$xSmallText;
                             font-family: $fontJura;
                             font-weight: $SemiBold;

@@ -2511,7 +2511,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   color: #000000;
   font-family: "Jura", sans-serif;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2520,9 +2520,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .container .logInCreateAccount .tags .formLogIn .formFloating .formControl {
   width: 100%;
-  color: #000000;
+  color: #9a9a9a;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Jura", sans-serif;
   padding: 10px 0px 10px 10px;
   border-top: transparent;
@@ -2555,7 +2555,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   border: 1px solid #000000;
 }
 .container .logInCreateAccount .tags .formLogIn .ctaToSignIn p {
-  color: #191919;
+  color: #9a9a9a;
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 500;
@@ -2582,7 +2582,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 50%;
   color: #000000;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Jura", sans-serif;
   display: flex;
   flex-direction: column;
@@ -2592,9 +2592,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .container .logInCreateAccount .tags .formCreateAccount .formFloating .formControl {
   width: 100%;
-  color: #000000;
+  color: #9a9a9a;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Jura", sans-serif;
   padding: 10px 0px 10px 10px;
   border-top: transparent;
@@ -2627,7 +2627,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   border: 1px solid #000000;
 }
 .container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount p {
-  color: #191919;
+  color: #9a9a9a;
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 500;
