@@ -543,7 +543,7 @@
 }
 .sectionShop{
     width:40vw;
-    height: 100vh;
+    height: $screenHeight;
     display:flex;
     position: fixed;
     top:0;
@@ -551,13 +551,13 @@
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color:$whiteColor;
     overflow: hidden;
-    box-shadow: 0 0 10px 6px #070707;
+    box-shadow:$boxShadowMenu;
     z-index: 10;
     padding-top: 30px;
     transform: translate(105%);
-    transition: .3s ease-in-out;
+    transition: $transition;
     .menuCart{
         .cartShop{
             .closeCross{
@@ -567,7 +567,7 @@
                 top:20px;
                 left:40px;
                 transform: rotate(0deg);
-                transition: all 0.3s ease-in-out;
+                transition: $transition;
                 &:hover{
                     transform: rotate(90deg);
                 }
@@ -580,7 +580,7 @@
                 flex-direction:column;
                 justify-content: space-between;
                 align-items:flex-start;
-                margin: 0px auto;
+                margin: $neutralMargin;
                 padding: 0px 20px;
                 height: 380px;
                 overflow: scroll;
@@ -589,10 +589,10 @@
                 left:20px;
                 .cartlistWord{
                     width: inherit;
-                    font-size: 1.3rem;
+                    font-size: $MediumTitle;
                     font-family: $fontJura;
-                    color:#BC2327;
-                    font-weight: 600;
+                    color:$primaryColor;
+                    font-weight: $ExtraBold;
                     margin:0px ;
                 }
                 .cart{
@@ -602,12 +602,12 @@
                         justify-content: space-between;
                         align-items: center;
                         padding: 20px 0px;
-                        border-bottom: 1px solid #e4e4e4;
+                        border-bottom: $borderBottom;
                         .titleCartlist{
-                            font-size: 1rem;
-                            font-family:$fontJura;
-                            color:#BC2327;
-                            font-weight: 600;
+                            font-size: $regularText;
+                            font-family: $fontJura;
+                            color:$primaryColor;
+                            font-weight: $bold;
                             margin: 15px 0px;
                         }
                     }
@@ -617,9 +617,9 @@
                         justify-content: space-between;
                         align-items: center;
                         padding: 20px 0px;
-                        border-bottom: 1px solid #e4e4e4;
+                        border-bottom: $borderBottom;
                         .total{
-                            font-size: 1rem;
+                            font-size: $smallText;
                         }
                         .itemProduct{
                             width:12%;
@@ -628,10 +628,10 @@
                             display: flex;
                             flex-direction: column;
                             .price{
-                                font-size: 0.9rem;
+                                font-size: $smallText;
                                 font-family: $fontJura;
-                                color:#424242;
-                                font-weight: 600;
+                                color:$tertiaryColor;
+                                font-weight: $bold;
                             }
                             .icons{
                                 img{
@@ -645,17 +645,17 @@
                                 width:50px;
                                 height:35px;
                                 padding: 2px;
-                                font-size: 0.9rem;
-                                font-family:$fontJura;
-                                color:#BC2327;
-                                font-weight: 600;
+                                font-size: $smallText;
+                                font-family: $fontJura;
+                                color:$primaryColor;
+                                font-weight:$bold;
                             }
                         }
                         .total{
-                            font-size: 0.9rem;
+                            font-size: $smallText;
                             font-family: $fontJura;
-                            color:#BC2327;
-                            font-weight: 600;
+                            color:$primaryColor;
+                            font-weight: $bold;
                         }
                     }
                 }
@@ -673,17 +673,17 @@
                     .shipping, .discount, .total{
                         margin: 2px;
                         width: inherit;
-                        font-size: 0.9rem;
+                        font-size: $smallText;
                         font-family: $fontJura;
-                        color:#424242;
-                        font-weight: 600;
+                        color:$tertiaryColor;
+                        font-weight: $bold;
                         display: flex;
                         justify-content: space-between;
                         // background-color: #707070;
                     }
                     .total{
-                        color:#BC2327;
-                        font-weight: 700;
+                        color:$primaryColor;
+                        font-weight: $ExtraBold;
                     }
                 }
                 .btnCheckout{
@@ -694,18 +694,18 @@
                     justify-content: center;
                     align-items: center;
                     margin:20px auto;
-                    font-size: 1rem;
+                    font-size: $regularText;
                     font-family: $fontJura;
-                    font-weight: 600;
-                    color: #ffffff;
+                    font-weight: $bold;
+                    color: $whiteColor;
                     border: 1px solid transparent;
-                    background-color: #070707;
-                    transition: all 0.3s ease;
+                    background-color: $blackColor;
+                    transition: $transition;
                     &:hover{
-                        color: #070707;
-                        background-color: #ffffff;
-                        border:1px solid #000000;
-                        font-weight: 600;
+                        color: $blackColor;
+                        background-color: $whiteColor;
+                        border:$btnMenu;
+                        font-weight: $bold;
                     }
                 }
             }
