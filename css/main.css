@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #131313;
-}
-
 html .mainContainer {
   width: 100%;
   height: 100%;
@@ -912,7 +908,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .giftCards .subtitle {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
+  color: #bc2327;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -937,7 +933,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .giftCards .containerGetOff .containerCards .sectionCards .card1 .subtitleGift, .giftCards .containerGetOff .containerCards .sectionCards .card2 .subtitleGift, .giftCards .containerGetOff .containerCards .sectionCards .card3 .subtitleGift, .giftCards .containerGetOff .containerCards .sectionCards .card4 .subtitleGift {
   font-size: 3rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   padding: 25px 0px;
   font-weight: 500;
 }
@@ -948,23 +944,23 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 600;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card1:nth-child(1) {
-  background-color: #F3F3F3;
+  background-color: #f1f1f1;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card2:nth-child(2) {
-  background-color: #1E1E1E;
+  background-color: #1b1b1b;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card2:nth-child(2) .paragraph {
-  color: #D9D9D9;
+  color: #9a9a9a;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card3:nth-child(3) {
   background-color: #E0B24D;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card4:nth-child(4) {
-  background-color: #BC2327;
+  background-color: #bc2327;
 }
 .giftCards .containerGetOff .containerCards .sectionCards .card4:nth-child(4) .subtitleGift {
-  color: #D9D9D9;
-  font-weight: 700px;
+  color: #9a9a9a;
+  font-weight: 700;
 }
 .giftCards .containerGetOff .containerMessage {
   width: 50%;
@@ -974,21 +970,21 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   align-items: flex-start;
 }
 .giftCards .containerGetOff .containerMessage .subtitleMessage {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   text-align: left;
-  font-weight: 700px;
+  font-weight: 700;
 }
 .giftCards .containerGetOff .containerMessage .paragraph {
   font-size: 1.5rem;
   font-family: "Jura", sans-serif;
-  color: #D9D9D9;
+  color: #9a9a9a;
   text-align: left;
-  font-weight: 400px;
+  font-weight: 400;
 }
 .giftCards .containerGetOff .containerMessage .paragraph .higthlighter {
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
 }
 

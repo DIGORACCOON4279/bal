@@ -1,14 +1,14 @@
 // Gift Cards
 
 .giftCards{
-    width:100%;
+    width:$screenPercentageWidth;
     max-width: 1000px;
     height: auto;
     margin: 0px auto 150px;
     .subtitle{
-        font-size:4rem;
+        font-size:$subtitle;
         font-family: $fontRubik;
-        color: #BC2327;
+        color: $primaryColor;
         text-align: center;
         margin-bottom: 100px;
     }
@@ -24,38 +24,38 @@
                 .card1, .card2, .card3, .card4{
                     width: 100%;
                     padding-top:20px;
-                    border-radius: 20px;
+                    border-radius: $borderRadius;
                     .subtitleGift{
-                        font-size:3rem;
+                        font-size:$cardLetter;
                         font-family: $fontJura;
-                        color: #BC2327;
+                        color: $primaryColor;
                         padding: 25px 0px;
                         font-weight: 500;
                     }
                     .paragraph{
-                        font-size:0.8rem;
+                        font-size:$xSmallText;
                         font-family: $fontJura;
-                        color: #000000;
-                        font-weight: 600;
+                        color: $blackColor;
+                        font-weight:$bold;
                     }
                 }
                 .card1:nth-child(1){
-                    background-color: #F3F3F3;
+                    background-color: $backgroundColor;
                 }
                 .card2:nth-child(2){
-                    background-color:#1E1E1E;
+                    background-color:$secondaryBackground;
                     .paragraph{
-                        color: #D9D9D9;
+                        color: $secondaryColor;
                     }
                 }
                 .card3:nth-child(3){
                     background-color: #E0B24D;
                 }
                 .card4:nth-child(4){
-                    background-color: #BC2327;
+                    background-color: $primaryColor;
                     .subtitleGift{
-                        color: #D9D9D9;
-                        font-weight: 700px;
+                        color: $secondaryColor;
+                        font-weight:$ExtraBold;
                     }
                 }
             }
@@ -67,21 +67,21 @@
             justify-content: center;
             align-items: flex-start;
             .subtitleMessage{
-                font-size:3rem;
+                font-size:$sectionSubtitle;
                 font-family: $fontJura;
-                color: #BC2327;
+                color: $primaryColor;
                 text-align: left;
-                font-weight: 700px;
+                font-weight: $ExtraBold;
             }
             .paragraph{
-                font-size:1.5rem;
+                font-size:$sentence;
                 font-family: $fontJura;
-                color: #D9D9D9;
+                color: $secondaryColor;
                 text-align: left;
-                font-weight: 400px;
+                font-weight: $MediumBold;
                 .higthlighter{
-                    color: #BC2327;
-                    font-weight: 600;
+                    color: $primaryColor;
+                    font-weight: $bold;
                 }
             }
         }
