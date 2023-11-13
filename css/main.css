@@ -2733,7 +2733,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .headerSignIn .menuIcons ul li .wishHeadLine .wishlistIcon, .headerSignIn .menuIcons ul li .wishHeadLine .cartIcon, .headerSignIn .menuIcons ul li .cartShop .wishlistIcon, .headerSignIn .menuIcons ul li .cartShop .cartIcon {
   cursor: pointer;
   transform: scale(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .headerSignIn .menuIcons ul li .wishHeadLine .wishlistIcon:hover, .headerSignIn .menuIcons ul li .wishHeadLine .cartIcon:hover, .headerSignIn .menuIcons ul li .cartShop .wishlistIcon:hover, .headerSignIn .menuIcons ul li .cartShop .cartIcon:hover {
   transform: scale(120%);
@@ -2758,7 +2758,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   left: -70px;
   background-color: rgb(0, 0, 0);
   transform: translate(-100%);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .headerSignIn .menuIcons ul li .toolTip .toolTipMessage {
   margin: 5px 10px;
@@ -2783,12 +2783,12 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #141414;
+  background-color: #191919;
   overflow: hidden;
   box-shadow: 0 0 10px 6px #070707;
   z-index: 10;
   transform: translate(-105%);
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .headerSignIn .menuSide .top {
   width: 100%;
@@ -2796,7 +2796,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #181818;
+  background-color: #1b1b1b;
   padding: 10px 10px 10px 30px;
 }
 .headerSignIn .menuSide .top .brand {
@@ -2827,7 +2827,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 100%;
   list-style-type: none;
   cursor: pointer;
-  background-color: #141414;
+  background-color: #1b1b1b;
 }
 .headerSignIn .menuSide .menu ul li .link {
   display: block;
@@ -2858,8 +2858,8 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 600;
   margin: 0px auto 0px 0px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #6b6b6b;
-  transition: all 0.3s ease;
+  border-bottom: 1px solid #9c9c9c;
+  transition: all 0.3s ease-in-out;
 }
 .headerSignIn .menuSide .menu ul li .cartShop .link:hover {
   background-color: rgba(188, 35, 40, 0.3490196078);
@@ -2870,7 +2870,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: #181818;
+  background-color: #191919;
   padding-top: 10px;
 }
 .headerSignIn .menuSide .contactUs p {
@@ -2880,7 +2880,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   color: #ffffff;
   font-weight: 600;
   padding-left: 30px;
-  border-bottom: 1px solid #6b6b6b;
+  border-bottom: 1px solid #9c9c9c;
   padding-bottom: 15px;
 }
 .headerSignIn .menuSide .contactUs ul {
