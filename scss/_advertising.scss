@@ -2,7 +2,7 @@
 // Advertising
 
 .advertising{
-    width: 100%;
+    width: $screenPercentageWidth;
     height: 900px;
     background-image: url(../img/background_Advertising.webp);
     background-position: center top;
@@ -22,10 +22,10 @@
         justify-content: flex-end;
         align-items: center;
         .subtitle{
-            font-size:3.5rem;
+            font-size:$sectionSubtitle;
             font-family: $fontJura;
-            font-weight: 600;
-            color: #E0E0E0;
+            font-weight: $bold;
+            color: $backgroundColor;
         }
         .subtitle:nth-child(1){
             opacity: 1;

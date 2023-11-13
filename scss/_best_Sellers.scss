@@ -1,12 +1,12 @@
 // Best Sellers
 
 .bestSellers{
-    width:100%;
+    width:$screenPercentageWidth;
     height: auto;
     .subtitle{
-        font-size:4rem;
+        font-size:$subtitle;
         font-family: $fontRubik;
-        color: #BC2327;
+        color: $primaryColor;
         text-align: center;
         margin-bottom: 100px;
     }
@@ -16,9 +16,9 @@
             height:auto;
             cursor: pointer;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: $transition;
             &:hover{
-                box-shadow: 0 0 4px 2px #707070;
+                box-shadow: $boxShadowCard;
             }
             .article{
                 width:100%;
@@ -27,19 +27,19 @@
                 &:hover > .outFit{
                     transform:scale(110%);
                     filter: grayscale(100%);
-                    box-shadow: 0 0 4px 2px #707070;
+                    box-shadow: $boxShadowCard;
                 }
                 .info{
                     width:101%;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    color: #D9D9D9;
-                    font-weight: 500;
+                    color: $tertiaryColor;
+                    font-weight: $bold;
                     font-family: $fontJura;
                     margin-top: 20px;
                     padding:20px;
-                    background-color: #ffffff;
+                    background-color: $whiteColor;
                     // background-color: #131313;
                     transform: translateY(110%);
                     transition: transform 0.3s ease;
@@ -53,17 +53,17 @@
                         width: 100%;
                         text-align: center;
                         padding: 5px;
-                        color: #D9D9D9;
-                        font-weight: 600;
+                        color: $whiteColor;
+                        font-weight: $bold;
                         font-family: $fontJura;
-                        background-color: #BC2327;
+                        background-color: $primaryColor;
                         text-decoration: none;
-                        transition: all 0.3s ease;
+                        transition: $transition;
                         &:hover{
                             // color: #BC2327;
-                            color: #ffffff;
+                            color: $whiteColor;
                             // background-color: #D9D9D9;
-                            background-color: #000000;
+                            background-color: $blackColor;
                             // box-shadow: 0 0 4px 2px #BC2327;
                         }
                     }
@@ -75,8 +75,8 @@
                     object-position: center top;
                     vertical-align: middle;
                     filter: grayscale(10%);
-                    box-shadow: 0 0 4px 2px rgb(112, 112, 112);
-                    transition: all 0.3s ease;
+                    box-shadow: 0 0 4px 2px $boxShadowCard;
+                    transition: $transition;
                     &:hover ~ .info{
                         transform: translateY(-110%);
                     }
@@ -89,16 +89,16 @@
         justify-content: center;
         margin: 70px auto 0px;
         width: 200px;
-        padding:20px 40px;
-        color:#d9d9d9;
+        padding:$paddingSectionCto;
+        color:$whiteColor;
         font-family: $fontJura;
-        font-weight: 700;
-        background-color: #3f3f3f;
+        font-weight: $ExtraBold;
+        background-color:$btnBackgroundColor;
         text-decoration: none;
         transition: all 0.3s ease;
         &:hover{
             background-color:#BC2327 ;
-            box-shadow: 0 0 4px 2px rgb(112, 112, 112);
+            box-shadow: $boxShadowCard;
             text-decoration: underline;
         }
     }

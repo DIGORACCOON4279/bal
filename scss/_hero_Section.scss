@@ -1,7 +1,7 @@
 // Hero Section
 
 .heroSection{
-    width:100%;
+    width:$screenPercentageWidth;
     height: 1000px;
     background-image: url(../img/background_Hero.webp);
     background-position: center;
@@ -20,43 +20,43 @@
             animation: info 0.75s linear;
             text-align: left;
             .break{
-                font-size: 4.5rem;
+                font-size: $mainTitle;
                 font-family: $fontRubik;
-                color: #9A9A9A;
+                color: $secondaryColor;
             }
             .subtitle{
-                font-size: 2.5rem;
+                font-size: $LargeTitle;
                 font-family: $fontJura;
-                color: #BC2327;
-                font-weight: 600;
+                color: $primaryColor;
+                font-weight:$bold;
                 margin-top: -45px;
             }
             .cta{
-                width:100%;
+                width:$screenPercentageWidth;
                 margin-top: 45px;
                 margin-bottom: 35px;
                 .ctaDiscount, .ctaNewArrivals{
-                    padding: 25px 55px;
+                    padding:$paddingHero ;
                     font-family: $fontJura;
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    color:#191919;
-                    background-color: #9A9A9A;
+                    font-weight: $bold;
+                    font-size: $MediumTitle;
+                    color:$tertiaryColor;
+                    background-color: $secondaryColor;
                     margin-right: 5px;
                     text-decoration: none;
-                    box-shadow: 1px 5px 6px 2px #363636;
+                    box-shadow:$btnBoxShadow;
                     transform:scale(100%);
                     transition: all 0.5s ease;
                     &:hover{
-                        color:#ffffff;
-                        background-color: #3d3d3d;
-                        box-shadow: 0 0 6px 2px #BC2327;
+                        color:$whiteColor;
+                        background-color: $btnBackgroundColor;
+                        box-shadow: $btnBoxShadowHover;
                         text-decoration: underline;
                     }
                 }
                 .ctaNewArrivals{
-                    color:#ffffff;
-                    background-color: #BC2327;
+                    color:$whiteColor;
+                    background-color: $primaryColor;
                 }
             }
             @keyframes info{
@@ -74,15 +74,16 @@
                 }
             }
             .promo{
-                font-size: 1rem;
+                font-size: $regularText;
                 font-family: $fontJura;
-                font-weight: 600;
+                font-weight: $bold;
+                color: $secondaryColor;
                 .ctaShowRoom{
-                    color: #BC2327;
+                    color: $primaryColor;
                     text-decoration: none;
                     transition:all 0.3s ease;
                     &:hover{
-                        color: #858585;
+                        color: $secondaryColor;
                         text-decoration: underline;
                     }
                 }

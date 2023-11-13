@@ -1,28 +1,110 @@
-/* Variables */
 
-/* Font */
+// Variables Globals
+
+// Font-size
 
 $fontJura: 'Jura', sans-serif;
 $fontRubik: 'Rubik Distressed', cursive;
-
-/* Color System */
-
-    /* Txt */
-
-    /* Background */
-
-    /* Box-Shadow */
-
-
-
-
-/* Margin */
-
-
-/* Padding */
+$mainTitle:4.5rem;
+$subtitle:4rem;
+$sectionSubtitle:3.5rem;
+$LargeTitle :2.5rem;
+$MediumTitle :1.2rem;
+// $breakTitle:1.2rem;
+$regularText:1rem;
+$smallText:0.9rem;
+$xSmallText:0.8rem;
+// $breakText:0.9rem;
+// $smallTitle:0.8rem;
+// $breakSmallText:0.7rem;
+// $xSmallParagraphText:0.6rem;
 
 
-/* Containers */
+// Cellphone-font-size
 
 
-/* Width-Size */
+// Font-Weight
+
+$RegularBold:300;
+$MediumBold:400;
+$SemiBold:500;
+$bold:600;
+$ExtraBold:700;
+
+
+// Color System
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$primaryColor:#bc2327;
+$secondaryColor:#9a9a9a;
+$tertiaryColor:#191919;
+
+$backgroundColor:#f1f1f1;
+$moonBackgroundColor:#131313;
+
+$btnBackgroundColor:#3d3d3d;
+$lineColor:#6b6b6b;
+
+// Shadows
+
+$btnBoxShadow:1px 5px 6px 2px #363636;
+$btnBoxShadowHover:0 0 6px 2px #BC2327;
+$boxShadowCard:0 0 4px 2px #707070;
+$boxShadowMenu:0 0 10px 6px #070707;
+
+
+// $shadowColor:;
+
+// $neutralShadow:;
+$btnDropShadow:#363636;
+$hoverCardColor:#707070;
+
+
+
+// Padding-btn
+
+// $paddingCto: ;
+$paddingSectionCto: 20px 40px;
+
+// Hero Section Button
+$paddingHero:25px 55px;
+// Margin
+
+// $margin:;
+// $sectionMargin: ;
+$neutralMargin: 0px auto;
+// $categoryMargin:;
+// $containerMargin:;
+
+
+// Padding
+
+// $paddingGeneral:;
+// $paddingNeurtral:;
+
+
+// Border-radius
+
+// Border
+
+$borderBottom:1px solid #e4e4e4;
+$btnMenu:1px solid #000000;
+
+// $popUpsBorderRadius:;
+
+// Size-screen
+
+$screenWidth:100vw;
+$screenHeight:100vh;
+$screenPercentageWidth:100%;
+$screenPercentageHeight:100%;
+
+// $maxWidth: 1100px;
+// $containerWidth:;
+// $breakPoint:;
+// $widthTotal:;
+
+// Transitions
+
+$transition:all 0.3s ease-in-out;
