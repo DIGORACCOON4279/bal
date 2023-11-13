@@ -2,14 +2,14 @@
 // footer
 
 .footerContainer{
-    width: 100%;
-    height: 100%;
-    background-color:#1b1b1b;
+    width: $screenPercentageWidth;
+    height: $screenPercentageHeight;
+    background-color:$secondaryBackground;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px 6px #070707;
+    box-shadow: $boxShadowMenu;
     .footer{
         width:100%;
         display: flex;
@@ -21,9 +21,9 @@
         .socialMedia{
             .contactUs{
                 font-family: $fontJura;
-                font-weight: 600;
-                font-size: 0.9rem;
-                color:rgb(194, 193, 193);
+                font-weight: $bold;
+                font-size: $smallText;
+                color:$secondaryColor;
             }
             ul{
                 display:flex;
@@ -54,9 +54,9 @@
             top:50px;
             left:43.5%;
             .nameLogo{
-                font-size: 1.8rem;
+                font-size: $nameLogo;
                 font-family: $fontRubik;
-                color:#BC2327;
+                color:$primaryColor;
             }
             .skull{
                 width:35px;
@@ -69,9 +69,9 @@
             align-items: flex-start;
             h3{
                 font-family: $fontJura;
-                font-weight: 600;
-                font-size: 0.9rem;
-                color:rgb(194, 193, 193);
+                font-weight: $bold;
+                font-size: $smallText;
+                color: $secondaryColor;
                 padding: 0px 0px;
                 position: absolute;
                 top:50px;
@@ -100,16 +100,16 @@
             justify-content: center;
             align-items: center;
             padding-bottom: 5px;
-            border-top: 1px solid rgb(61, 61, 61);
+            border-top: $borderTop;
             p{
                 font-family: $fontJura;
-                font-weight: 400;
-                font-size: 0.5rem;
-                color:rgb(194, 193, 193);
+                font-weight: $MediumBold;
+                font-size: $breakText;
+                color:$secondaryColor;
                 margin: 0px 0px;
                 .raccoon{
-                    color: #BC2327;
-                    font-weight: 600;
+                    color: $primaryColor;
+                    font-weight: $bold;
                     font-family: $fontJura;
                 }
             }

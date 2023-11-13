@@ -3708,7 +3708,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .sectionFilter .menuFilterSide .headLine .filter .filterIcon {
   width: 35px;
-  background-color: #D9D9D9;
+  background-color: #f1f1f1;
   border-radius: 50%;
   padding: 5px;
   margin: 5px;
@@ -3726,7 +3726,6 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-family: "Jura", sans-serif;
   font-weight: 600;
   color: #ffffff;
-  font-weight: 400;
   background-color: #000000;
   padding: 5px 15px;
   position: absolute;
@@ -3736,9 +3735,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   transition: all 0.3s ease-in-out;
 }
 .sectionFilter .menuFilterSide .subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #D9D9D9;
+  color: #9a9a9a;
   font-weight: 400;
   padding: 5px;
   margin: 50px 0px;
@@ -3758,7 +3757,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   box-shadow: 0 0 10px 6px #070707;
   z-index: 10;
   transform: translate(-105%);
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sectionFilter .menuFilterSide .menuFilter label .closeCross {
   width: 15px;
@@ -3782,9 +3781,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .filterWord {
   width: inherit;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
   margin: 0px auto;
   padding-bottom: 30px;
@@ -3799,14 +3798,14 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .titleAvailability, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .titlePricing, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .titleAvailability, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .titlePricing {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
   margin: 15px 0px;
 }
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing {
   font-size: 0.9rem;
   font-family: "Jura", sans-serif;
-  color: #424242;
+  color: #191919;
 }
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelThree {
   display: flex;
@@ -3837,11 +3836,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 600;
   color: #ffffff;
   border: 1px solid transparent;
-  background-color: #070707;
-  transition: all 0.3s ease;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter:hover {
-  color: #070707;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #000000;
   font-weight: 600;
@@ -4268,7 +4267,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-family: "Jura", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
-  color: rgb(194, 193, 193);
+  color: #9a9a9a;
 }
 .footerContainer .footer .socialMedia ul {
   display: flex;
@@ -4300,7 +4299,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .footerContainer .footer .brand .nameLogo {
   font-size: 1.8rem;
   font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
+  color: #bc2327;
 }
 .footerContainer .footer .brand .skull {
   width: 35px;
@@ -4315,7 +4314,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-family: "Jura", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
-  color: rgb(194, 193, 193);
+  color: #9a9a9a;
   padding: 0px 0px;
   position: absolute;
   top: 50px;
@@ -4343,17 +4342,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   justify-content: center;
   align-items: center;
   padding-bottom: 5px;
-  border-top: 1px solid rgb(61, 61, 61);
+  border-top: 1px solid #3d3d3d;
 }
 .footerContainer .development .developer p {
   font-family: "Jura", sans-serif;
   font-weight: 400;
   font-size: 0.5rem;
-  color: rgb(194, 193, 193);
+  color: #9a9a9a;
   margin: 0px 0px;
 }
 .footerContainer .development .developer p .raccoon {
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
   font-family: "Jura", sans-serif;
 }
