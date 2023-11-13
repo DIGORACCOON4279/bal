@@ -3,17 +3,17 @@
     // Sign in & Create Account
 
     .container {
-        width: $screenWidth;
+        width:$screenHeight;
         height: auto;
         .logInCreateAccount {
-            width: $screenWidth;
+            width: 100vw;
             display: grid;
             grid-template-columns: repeat(2, 1fraction);
             grid-template-rows: repeat(1, 1fraction);
             align-items: center;
             z-index: 9;
             .tags{
-                width:$screenPercentageWidth;
+                width:100%;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
@@ -36,7 +36,7 @@
                     justify-content: center;
                     align-items: center;
                     gap: 15px;
-                    background-color: $whiteColor;
+                    background-color:$whiteColor;
                     margin: $neutralMargin;
                     position:fixed;
                     top: 0;
@@ -73,7 +73,7 @@
                 }
                 .formLogIn{
                     width: 50vw;
-                    height: $screenHeight;
+                    height: 100vh;
                     display:flex;
                     flex-direction: column;
                     justify-content: center;
@@ -84,9 +84,9 @@
                     position:fixed;
                     top: 0;
                     left: 0;
-                    z-index: 1;
                     transform: translate(0%);
                     transition:$transition;
+                    z-index: 1;
                     .tag{
                         position: fixed;
                         top:-10px;
@@ -107,7 +107,7 @@
                             transform: rotate(180deg);
                             font-weight: 600;
                             cursor: pointer;
-                            background-color: $blackColor;
+                            background-color:$blackColor;
                             padding: 20px 15px;
                             transition: $transition;
                         }
@@ -115,27 +115,27 @@
                 }
                 .formLogIn {
                     legend{
-                        font-size:$cardLetter;
+                        font-size: $cardLetter;
                         color: $primaryColor;
                         font-family: $fontRubik;
                         text-align: center;
                     }
                     .formFloating{
                         width:50%;
-                        color: $blackColor;
+                        color:$blackColor;
                         font-family: $fontJura;
                         font-size: $smallText;
-                        font-weight:$bold;
+                        font-weight: $bold;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: flex-start;
-                        padding: $neutralMargin;
+                        padding: neutralMargin;
                         .formControl{
                             width:100%;
-                            color: #000000;
-                            font-size: 0.8rem;
-                            font-weight: 400;
+                            color: $blackColor;
+                            font-size: $xSmallText;
+                            font-weight: $MediumBold;
                             font-family: $fontJura;
                             padding: 10px 0px 10px 10px;
                             border-top: transparent;
@@ -145,7 +145,7 @@
                         }
                     }
                     .ctaToSignIn {
-                        width: $screenPercentageWidth;
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -153,13 +153,13 @@
                         gap:30px;
                         .btnSignIn{
                             width: 50%;
-                            font-size: $regularText;
+                            font-size:$regularText;
                             font-weight: $ExtraBold;
                             color: $whiteColor;
                             font-family: $fontJura;
                             padding: 10px;
                             background-color: $blackColor;
-                            border: $boxShadowMenu;
+                            border: $btnMenu;
                             transition: $transition;
                             &:hover{
                                 color: $blackColor;
@@ -169,15 +169,15 @@
                         }
                         p{
                             color: $tertiaryColor;
-                            font-size:$xSmallText;
+                            font-size: $xSmallText;
                             font-family: $fontJura;
-                            font-weight: $SemiBold;
+                            font-weight:$SemiBold;
                             margin-bottom:-15px;
                         }
                     }
                     label {
                         .ctaFormCreateAccount{
-                            font-size:$xSmallText;
+                            font-size: $xSmallText;
                             font-weight: $ExtraBold;
                             color: $tertiaryColor;
                             font-family:$fontJura;
@@ -208,10 +208,10 @@
                         align-items: flex-start;
                         padding: $neutralMargin;
                         .formControl{
-                            width:$screenWidth;
+                            width:100%;
                             color: $blackColor;
-                            font-size:$xSmallText;
-                            font-weight: $MediumBold;
+                            font-size: $xSmallText;
+                            font-weight: $ExtraBold;
                             font-family: $fontJura;
                             padding: 10px 0px 10px 10px;
                             border-top: transparent;
@@ -221,7 +221,7 @@
                         }
                     }
                     .ctaToCreateAccount{
-                        width: $screenPercentageWidth;
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -229,13 +229,13 @@
                         gap:30px;
                         .btnCreateAccount{
                             width: 50%;
-                            font-size: $MediumTitle;
-                            font-weight: $ExtraBold;
+                            font-size: $regularText;
+                            font-weight:$ExtraBold;
                             color: $whiteColor;
                             font-family: $fontJura;
                             padding: 10px;
-                            background-color:$blackColor;
-                            border: $btnMenu;
+                            background-color: $blackColor;
+                            border: 1px solid $blackColor;
                             transition: $transition;
                             &:hover{
                                 color: $blackColor;
@@ -253,8 +253,8 @@
                     }
                     label {
                         .ctaFormLogIn{
-                            font-size:$xSmallText;
-                            font-weight:$ExtraBold;
+                            font-size: $xSmallText;
+                            font-weight: $ExtraBold;
                             color: $tertiaryColor;
                             font-family: $fontJura;
                             text-decoration: none;
@@ -268,13 +268,13 @@
             }
             .bannerCreateAccount{
                 width:50%;
-                height: $screenPercentageHeight;
+                height: 100%;
                 position:fixed;
                 top: 0;
                 right:0;
                 .background{
-                    width:$screenPercentageWidth;
-                    height: $screenHeight;
+                    width:100%;
+                    height: 100vh;
                     object-fit:cover;
                     transition: $transition;
                     animation: background 7s linear infinite alternate-reverse;

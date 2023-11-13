@@ -2387,7 +2387,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 
 .container {
-  width: 100vw;
+  width: 100vh;
   height: auto;
 }
 .container .logInCreateAccount {
@@ -2471,9 +2471,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
   transform: translate(0%);
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 .container .logInCreateAccount .tags .formLogIn .tag {
   position: fixed;
@@ -2516,7 +2516,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px auto;
+  padding: neutralMargin;
 }
 .container .logInCreateAccount .tags .formLogIn .formFloating .formControl {
   width: 100%;
@@ -2546,7 +2546,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-family: "Jura", sans-serif;
   padding: 10px;
   background-color: #000000;
-  border: 0 0 10px 6px #070707;
+  border: 1px solid #000000;
   transition: all 0.3s ease-in-out;
 }
 .container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn:hover {
@@ -2591,10 +2591,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding: 0px auto;
 }
 .container .logInCreateAccount .tags .formCreateAccount .formFloating .formControl {
-  width: 100vw;
+  width: 100%;
   color: #000000;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 700;
   font-family: "Jura", sans-serif;
   padding: 10px 0px 10px 10px;
   border-top: transparent;
@@ -2612,7 +2612,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount .btnCreateAccount {
   width: 50%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
   font-family: "Jura", sans-serif;
