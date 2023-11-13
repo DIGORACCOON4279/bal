@@ -1,13 +1,13 @@
 // NavBar
 
 .header{
-    width:100%;
+    width:$screenPercentageWidth;
     height: 60px;
     position: fixed;
     top:0;
     left:0;
-    background-color:#1b1b1b;
-    box-shadow: 0 0 10px 6px #070707;
+    background-color:$secondaryBackground;
+    box-shadow: $boxShadowMenu;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,7 +28,7 @@
             left:53px;
             width:45px;
             border-radius: 50%;
-            transition: transform 0.3s ease-in-out;
+            transition: $transition;
             &:hover{
                 transform: translateY(0%) scale(105%);
                 filter:drop-shadow(0 0 6px #696061);
@@ -62,7 +62,7 @@
                     .icon{
                         cursor: pointer;
                         transform: scale(100%);
-                        transition: transform 0.3s ease-in-out;
+                        transition: $transition;
                         &:hover{
                             transform: scale(120%);
                             filter:drop-shadow(0 0 10px #696061);
@@ -75,7 +75,7 @@
                     cursor: pointer;
                     margin: 0px 5px;
                     transform: scale(100%);
-                    transition: transform 0.3s ease-in-out;
+                    transition: $transition;
                     &:hover{
                         transform: scale(120%);
                         filter:drop-shadow(0 0 10px #696061);
@@ -94,19 +94,19 @@
         flex-direction: column;
         justify-content:space-between;
         align-items: flex-start;
-        background-color: #141414;
+        background-color: $secondaryBackground;
         overflow: hidden;
-        box-shadow: 0 0 10px 6px #070707;
+        box-shadow:$boxShadowMenu;
         z-index: 10;
         transform: translate(-105%);
-        transition: .3s ease-in-out;
+        transition: $transition;
         .top{
             width:100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            background-color: #181818;
+            background-color: $tertiaryColor;
             padding: 10px 10px 10px 30px;
             .brand{
                 width:45px;
@@ -116,7 +116,7 @@
                     width:25px;
                     cursor: pointer;
                     transform: rotate(0deg);
-                    transition: all 0.3s ease-in-out;
+                    transition: $transition;
                     &:hover{
                         transform: rotate(90deg);
                     }
@@ -136,7 +136,7 @@
                     width: 100%;
                     list-style-type: none;
                     cursor: pointer;
-                    background-color: #141414;
+                    background-color: $tertiaryColor;
                     .link{
                         display: block;
                         width: inherit;
@@ -144,10 +144,10 @@
                         padding-bottom:10px;
                         padding-left: 30px;
                         padding-right: 100px;
-                        font-size: 0.9rem;
+                        font-size:$smallText;
                         font-family: $fontJura;
-                        color:#ffffff;
-                        font-weight: 600;
+                        color:$whiteColor;
+                        font-weight:$bold;
                         text-decoration: none;
                         &:hover{
                             background-color: #bc232859;
@@ -159,14 +159,14 @@
                         .link{
                             display: block;
                             width:100%;
-                            font-size: 0.9rem;
+                            font-size: $smallText;
                             font-family: $fontJura;
-                            color:#ffffff;
-                            font-weight: 600;
+                            color:$whiteColor;
+                            font-weight: $bold;
                             margin: 0px auto 0px 0px;
                             padding-bottom: 15px;
-                            border-bottom: 1px solid #6b6b6b;
-                            transition: all 0.3s ease;
+                            border-bottom: $FormBottom;
+                            transition: $transition;
                             &:hover{
                                 background-color: #bc232859;
                             }
@@ -181,16 +181,16 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start;
-            background-color: #181818;
+            background-color: $tertiaryColor;
             padding-top: 10px;
             p{
                 width:100%;
-                font-size: 0.9rem;
+                font-size: $smallText;
                 font-family: $fontJura;
-                color:#ffffff;
-                font-weight: 600;
+                color:$whiteColor;
+                font-weight:$bold;
                 padding-left: 30px;
-                border-bottom: 1px solid #6b6b6b;
+                border-bottom: $FormBottom;
                 padding-bottom: 15px;
             }
             ul{

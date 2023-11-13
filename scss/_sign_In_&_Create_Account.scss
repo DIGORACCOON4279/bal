@@ -410,7 +410,7 @@
         flex-direction: column;
         justify-content:space-between;
         align-items: flex-start;
-        background-color: $tertiaryColor;
+        background-color: $secondaryBackground;
         overflow: hidden;
         box-shadow:$boxShadowMenu;
         z-index: 10;
@@ -422,7 +422,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            background-color: $secondaryBackground;
+            background-color: $tertiaryColor;
             padding: 10px 10px 10px 30px;
             .brand{
                 width:45px;
@@ -453,7 +453,7 @@
                     width: 100%;
                     list-style-type: none;
                     cursor: pointer;
-                    background-color: $secondaryBackground;
+                    background-color: $tertiaryColor;
                     .link{
                         display: block;
                         width: inherit;
