@@ -3405,7 +3405,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .message {
   font-size: 0.7rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .message span {
   color: #bc2327;
