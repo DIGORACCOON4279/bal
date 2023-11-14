@@ -2538,7 +2538,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding-bottom: 30px;
   transform: translateY(0%);
   overflow: hidden;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sectionPurchaseOrder #orderCross {
   display: none;
@@ -2557,7 +2557,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   transform: rotate(90deg);
 }
 .sectionPurchaseOrder .breakaLeg {
-  color: #BC2327;
+  color: #bc2327;
   font-size: 1.8rem;
   font-family: "Rubik Distressed", cursive;
 }
@@ -2575,14 +2575,18 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .sectionPurchaseOrder .confirmation .done, .sectionPurchaseOrder .confirmation .order, .sectionPurchaseOrder .confirmation .number, .sectionPurchaseOrder .confirmation .close {
   font-family: "Jura", sans-serif;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 .sectionPurchaseOrder .confirmation .done {
-  color: #BC2327;
+  color: #bc2327;
 }
 .sectionPurchaseOrder .confirmation .number {
-  color: #BC2327;
+  color: #bc2327;
   padding: -10px;
+}
+.sectionPurchaseOrder .confirmation .order {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 .sectionPurchaseOrder .confirmation .cartCheck {
   width: 50px;
