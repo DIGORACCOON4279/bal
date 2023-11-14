@@ -5,9 +5,9 @@
     height: 25px;
     margin-top:-30px;
     .shipping{
-        color:#BC2327;
-        font-size:.8rem;
-        font-weight: 700;
+        color:$primaryColor;
+        font-size:$xSmallText;
+        font-weight:$ExtraBold;
         font-family: $fontJura;
         text-align: center;
         text-transform: uppercase;
