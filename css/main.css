@@ -255,7 +255,7 @@ html .mainContainer .sectionWishlist .menuWishlist .choiceWishlist .wish .wishli
   flex-direction: column;
   margin-left: -40px;
 }
-html .mainContainer .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .price {
+html .mainContainer .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .wishPrice {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
@@ -2648,7 +2648,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   z-index: 10;
   padding-top: 60px;
   transform: translate(105%);
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sectionWishlist .wishHeadLine .closeCross {
   width: 15px;
@@ -2672,9 +2672,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wishlistWord {
   width: inherit;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
   margin: 0px;
 }
@@ -2689,7 +2689,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .sectionWishlist .menuWishlist .choiceWishlist .wish .category .titleWishlist {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
   margin: 15px 0px;
 }
@@ -2710,9 +2710,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   margin-left: -40px;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .wishPrice {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Jura", sans-serif;
-  color: #BC2327;
+  color: #bc2327;
   font-weight: 600;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .icons img {
