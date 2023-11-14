@@ -3289,17 +3289,17 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 .showRoom .rightSide .infoProduct .addToCart .btnAddToCart {
   width: 100%;
   height: 50px;
-  color: #ffffff;
+  color: #f1f1f1;
   padding: 15px;
   font-size: 1rem;
   font-weight: 700;
   border: 1px solid black;
   background-color: #000000;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .showRoom .rightSide .infoProduct .addToCart .btnAddToCart:hover {
   color: #000000;
-  border: 1px solid black;
+  border: 1px solid #000000;
   background-color: #ffffff;
 }
 .showRoom .rightSide .infoProduct .addToCart .wishlistIcon {
@@ -3329,7 +3329,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   position: absolute;
   top: -80%;
   right: -10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   transform: translateY(100%);
   transition: all 0.3s ease-in-out;
 }
@@ -3357,7 +3357,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 100%;
   height: auto;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .showRoom .rightSide .infoProduct .complementInfo .delivery:hover > .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .creditCard:hover > .deliveryIcon, .showRoom .rightSide .infoProduct .complementInfo .return:hover > .deliveryIcon {
   transform: scale(109%);
@@ -3372,7 +3372,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 35px;
   padding-bottom: 10px;
   transform: scale(100%);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .title .btnCollapse {
   width: 100%;
@@ -3408,7 +3408,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 600;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .message span {
-  color: #da2222;
+  color: #bc2327;
   font-weight: 700;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion {
@@ -3429,11 +3429,11 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 50px;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info .name, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info .date {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   font-weight: 700;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion .info .date {
-  color: #da2222;
+  color: #bc2327;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos {
   display: flex;
@@ -3447,7 +3447,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   align-self: self-start;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos p span {
-  color: #da2222;
+  color: #bc2327;
   font-weight: 700;
 }
 
@@ -3455,9 +3455,9 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   margin-bottom: 150px;
 }
 #containerNewArrivals .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Rubik Distressed", cursive;
-  color: #BC2327;
+  color: #bc2327;
   text-align: center;
   margin-bottom: 100px;
 }

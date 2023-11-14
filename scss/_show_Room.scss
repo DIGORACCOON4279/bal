@@ -39,11 +39,11 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 5px 5px ;
-                background-color: #f1f1f1;
+                background-color: $backgroundColor;
                 .product{
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    color: #000000;
+                    font-size:$MediumTitle;
+                    font-weight:$ExtraBold;
+                    color: $blackColor;
                 }
                 .rating{
                     width:15%;
@@ -57,9 +57,9 @@
                 align-items: flex-start;
                 margin: 10px auto;
                 .titleColor{
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    color: #000000;
+                    font-size: $MediumTitle;
+                    font-weight: $ExtraBold;
+                    color: $blackColor;
                     margin-bottom: 20px;
                 }
                 .containerColor{
@@ -78,13 +78,13 @@
                             top:-40%;
                             left:10px;
                             transform: translateY(100%);
-                            transition:all 0.3s ease-in-out;
+                            transition:$transition;
                             p{
-                                background-color: #000000;
+                                background-color: $blackColor;
                                 padding: 5px 10px;
-                                font-size: 0.7rem;
-                                font-weight: 700;
-                                color: #ffffff;
+                                font-size: $xxSmallText;
+                                font-weight:$ExtraBold;
+                                color: $whiteColor;
                                 font-family: $fontJura;
                             }
                         }
@@ -92,10 +92,10 @@
                             width:70px;
                             height:auto;
                             object-fit: cover;
-                            border: 1px solid #f1f1f1;
-                            transition: all 0.3s ease-in-out;
+                            border: $itemProduct;
+                            transition: $transition;
                             &:hover{
-                                border: 1px solid #000000;
+                                border: $btnMenu;
                             }
                             &:hover + .toolTip{
                                 opacity: 1;
@@ -110,10 +110,10 @@
                         height:104px;
                         position: relative;
                         background-color: #555555;
-                        border:1px solid #f1f1f1;
-                        transition: all 0.3s ease-in-out;
+                        border:$itemProduct;
+                        transition: $transition;
                         &:hover{
-                            border: 1px solid #000000;
+                            border: $btnMenu;
                         }
                         &:hover > .toolTip{
                             opacity: 1;
@@ -127,19 +127,19 @@
                             top:-40%;
                             left:10px;
                             transform: translateY(100%);
-                            transition:all 0.3s ease-in-out;
+                            transition:$transition;
                             p{
-                                background-color: #000000;
+                                background-color: $blackColor;
                                 padding: 5px 10px;
-                                font-size: 0.7rem;
-                                font-weight: 700;
-                                color: #ffffff;
+                                font-size: $xxSmallText;
+                                font-weight: $ExtraBold;
+                                color: $whiteColor;
                                 font-family: $fontJura;
                             }
                         }
                     }
                     .colorWhite{
-                        background-color: #ffffff;
+                        background-color: $whiteColor;
                     }
                 }
             }
@@ -152,9 +152,9 @@
                 align-items: flex-start;
                 margin: 10px auto;
                 .titleSize{
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    color: #000000;
+                    font-size: $MediumTitle;
+                    font-weight: $ExtraBold;
+                    color: $blackColor;
                     margin-bottom: 20px;
                 }
                 .containerSize{
@@ -165,17 +165,17 @@
                     .itemSize{
                         width: 80px;
                         height: 60px;
-                        font-size: 1rem;
-                        font-weight: 700;
+                        font-size: $regularText;
+                        font-weight: $ExtraBold;
                         cursor:pointer;
-                        color: #000000;
-                        background-color: #f1f1f1;
+                        color: $blackColor;
+                        background-color: $backgroundColor;
                         display:flex;
                         justify-content: center;
                         align-items: center;
-                        transition: all 0.3s ease-in-out;
+                        transition: $transition;
                         &:hover{
-                            border: 1px solid #000000;
+                            border: $btnMenu;
                         }
                     }
                 }
@@ -192,17 +192,17 @@
                 .btnAddToCart{
                     width:100%;
                     height: 50px;
-                    color: #ffffff;
+                    color: $backgroundColor;
                     padding: 15px;
-                    font-size: 1rem;
-                    font-weight: 700;
+                    font-size: $regularText;
+                    font-weight: $ExtraBold;
                     border: 1px solid black;
-                    background-color: #000000;
-                    transition:all .3s ease;
+                    background-color:$blackColor;
+                    transition:$transition;
                     &:hover{
-                        color: #000000;
-                        border: 1px solid black;
-                        background-color: #ffffff;
+                        color: $blackColor;
+                        border:$btnMenu;
+                        background-color: $whiteColor;
                     }
                 }
                 .wishlistIcon{
@@ -212,10 +212,10 @@
                     padding-right: 11px;
                     padding-left: 11px;
                     padding-bottom: 11px;
-                    border: 1px solid #f1f1f1;
-                    transition: all 0.3s ease-in-out;
+                    border: $itemProduct;
+                    transition: $transition;
                     &:hover{
-                        border: 1px solid #000000;
+                        border: $btnMenu;
                     }
                     &:hover + .toolTip{
                         opacity:1;
@@ -232,14 +232,14 @@
                     position:absolute;
                     top:-80%;
                     right:-10px;
-                    background-color: rgb(0, 0, 0);
+                    background-color:$blackColor;
                     transform: translateY(100%);
-                    transition: all 0.3s ease-in-out;
+                    transition: $transition;
                     .toolTipMessage{
                         margin: 5px 10px;
-                        font-size: 0.7rem;
-                        font-weight: 700;
-                        color: #ffffff;
+                        font-size:$xxSmallText;
+                        font-weight: $ExtraBold;
+                        color: $whiteColor;
                         font-family: $fontJura;
                     }
                 }
@@ -251,16 +251,16 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 gap:40px;
-                color: #000000;
-                font-size: 0.8rem;
-                font-weight: 700;
+                color: $blackColor;
+                font-size: $xSmallText;
+                font-weight: $ExtraBold;
                 text-align: center;
                 margin: 20px auto 0px;
                 .delivery, .creditCard, .return{
                     width:100%;
                     height: auto;
                     cursor: pointer;
-                    transition: all 0.3s ease;
+                    transition: $transition;
                     &:hover > .deliveryIcon{
                         transform:scale(109%);
                     }
@@ -274,7 +274,7 @@
                         width:35px;
                         padding-bottom: 10px;
                         transform: scale(100%);
-                        transition:transform 0.3s ease;
+                        transition:$transition;
                     }
                 }
             }
@@ -284,13 +284,13 @@
                 .title{
                     .btnCollapse{
                         width:100%;
-                        font-weight: 700;
-                        color: #000000;
-                        background-color: #ffffff;
+                        font-weight: $ExtraBold;
+                        color: $blackColor;
+                        background-color:$whiteColor;
                     }
                 }
                 .accordionCollapse{
-                    border: 1px solid #f1f1f1;
+                    border: $itemProduct;
                     .accordionBody:nth-child(1){
                         height: auto;
                         display: flex;
@@ -304,17 +304,17 @@
                             justify-content: space-around;
                             align-items: flex-end;
                             cursor:pointer;
-                            background-color: #f1f1f1;
+                            background-color: $backgroundColor;
                             padding:10px;
                             &:hover{
                                 background-color: #f8f8f8;
                             }
                             .message{
-                                font-size: 0.7rem;
-                                font-weight: 600;
+                                font-size:$xxSmallText;
+                                font-weight: $bold;
                                 span{
-                                    color: #da2222;
-                                    font-weight: 700;
+                                    color: $primaryColor;
+                                    font-weight:$ExtraBold;
                                 }
                             }
                             .opinion{
@@ -333,11 +333,11 @@
                                         width:50px;
                                     }
                                     .name, .date{
-                                        font-size: 0.6rem;
-                                        font-weight: 700;
+                                        font-size: $breakText;
+                                        font-weight: $ExtraBold;
                                     }
                                     .date{
-                                        color: #da2222;
+                                        color: $primaryColor;
                                     }
                                 }
                             }
@@ -349,12 +349,12 @@
                         justify-content: center;
                         align-items: center;
                         p{
-                            font-size: 0.8rem;
-                            font-weight: 600;
+                            font-size: $xSmallText;
+                            font-weight: $bold;
                             align-self: self-start;
                             span{
-                                color: #da2222;
-                                font-weight: 700;
+                                color: $primaryColor;
+                                font-weight: $ExtraBold;
                             }
                         }
                     }
@@ -367,9 +367,9 @@
 #containerNewArrivals{
     margin-bottom:150px;
     .title{
-        font-size:2rem;
+        font-size:$nameLogo;
         font-family: $fontRubik;
-        color: #BC2327;
+        color: $primaryColor;
         text-align: center;
         margin-bottom: 100px;
     }
