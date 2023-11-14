@@ -3376,7 +3376,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .showRoom .rightSide .containerAccordion .accordionItem .title .btnCollapse {
   width: 100%;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
   background-color: #ffffff;
 }
@@ -3443,7 +3443,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos p {
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 400;
   align-self: self-start;
 }
 .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos p span {
