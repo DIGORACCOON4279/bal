@@ -1914,7 +1914,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  left: -70px;
+  left: -80px;
   background-color: rgb(0, 0, 0);
   transform: translate(-100%);
   transition: all 0.3s ease-in-out;
@@ -1925,6 +1925,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 700;
   color: #ffffff;
   font-family: "Jura", sans-serif;
+}
+.headerSignIn .menuIcons ul li .toolTip .clipPath {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  clip-path: polygon(30% 50%, 0 70%, 0 30%);
+  position: absolute;
+  top: -2px;
+  right: -30px;
 }
 .headerSignIn #menuSide {
   display: flex;
@@ -2810,10 +2819,19 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   background-color: #000000;
   padding: 5px 15px;
   position: absolute;
-  top: 25px;
-  left: 0px;
+  top: 33px;
+  left: -5px;
   transform: translateY(50%);
   transition: all 0.3s ease-in-out;
+}
+.sectionFilter .menuFilterSide .headLine .filter .filterWord .clipPath {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  clip-path: polygon(50% 70%, 20% 100%, 80% 100%);
+  position: absolute;
+  top: -29px;
+  left: 18px;
 }
 .sectionFilter .menuFilterSide .subtitle {
   font-size: 1rem;
@@ -3019,6 +3037,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   color: #ffffff;
   font-family: "Jura", sans-serif;
 }
+.showRoom .rightSide .infoProduct .color .containerColor .smallPic .toolTip .clipPath {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  clip-path: polygon(49% 30%, 20% 0, 80% 0);
+  position: absolute;
+  top: 25px;
+  left: 10px;
+}
 .showRoom .rightSide .infoProduct .color .containerColor .smallPic .itemProduct {
   width: 70px;
   height: auto;
@@ -3067,6 +3094,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 700;
   color: #ffffff;
   font-family: "Jura", sans-serif;
+}
+.showRoom .rightSide .infoProduct .color .containerColor .colorBlack .toolTip .clipPath, .showRoom .rightSide .infoProduct .color .containerColor .colorWhite .toolTip .clipPath {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  clip-path: polygon(49% 30%, 20% 0, 80% 0);
+  position: absolute;
+  top: 25px;
+  left: 10px;
 }
 .showRoom .rightSide .infoProduct .color .containerColor .colorWhite {
   background-color: #ffffff;
@@ -3167,6 +3203,15 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 700;
   color: #ffffff;
   font-family: "Jura", sans-serif;
+}
+.showRoom .rightSide .infoProduct .addToCart .toolTip .clipPath {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  clip-path: polygon(49% 30%, 20% 0, 80% 0);
+  position: absolute;
+  top: 25px;
+  left: 18px;
 }
 .showRoom .rightSide .infoProduct .complementInfo {
   width: 100%;

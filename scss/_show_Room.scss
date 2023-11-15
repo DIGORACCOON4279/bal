@@ -81,6 +81,15 @@
                                 color: $whiteColor;
                                 font-family: $fontJura;
                             }
+                            .clipPath{
+                                width: 30px;
+                                height: 30px;
+                                background-color: $blackColor;
+                                clip-path: polygon(49% 30%, 20% 0, 80% 0);
+                                position: absolute;
+                                top:25px;
+                                left:10px;
+                            }
                         }
                         .itemProduct{
                             width:70px;
@@ -129,6 +138,15 @@
                                 font-weight: $ExtraBold;
                                 color: $whiteColor;
                                 font-family: $fontJura;
+                            }
+                            .clipPath{
+                                width: 30px;
+                                height: 30px;
+                                background-color: $blackColor;
+                                clip-path: polygon(49% 30%, 20% 0, 80% 0);
+                                position: absolute;
+                                top:25px;
+                                left:10px;
                             }
                         }
                     }
@@ -229,6 +247,15 @@
                         font-weight: $ExtraBold;
                         color: $whiteColor;
                         font-family: $fontJura;
+                    }
+                    .clipPath{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $blackColor;
+                        clip-path: polygon(49% 30%, 20% 0, 80% 0);
+                        position: absolute;
+                        top:25px;
+                        left:18px;
                     }
                 }
             }

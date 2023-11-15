@@ -46,10 +46,19 @@
                     background-color: $blackColor;
                     padding: 5px 15px;
                     position: absolute;
-                    top:25px;
-                    left:0px;
+                    top:33px;
+                    left:-5px;
                     transform: translateY(50%);
                     transition: all 0.3s ease-in-out;
+                    .clipPath{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $blackColor;
+                        clip-path: polygon(50% 70%, 20% 100%, 80% 100%);
+                        position: absolute;
+                        top:-29px;
+                        left:18px;
+                    }
                 }
             }
         }

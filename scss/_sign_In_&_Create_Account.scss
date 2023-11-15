@@ -360,7 +360,7 @@
                     opacity: 0;
                     visibility: hidden;
                     position:absolute;
-                    left:-70px;
+                    left:-80px;
                     background-color: rgb(0, 0, 0);
                     transform: translate(-100%);
                     transition: $transition;
@@ -370,6 +370,15 @@
                         font-weight:$ExtraBold;
                         color: $whiteColor;
                         font-family: $fontJura;
+                    }
+                    .clipPath{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $blackColor;
+                        clip-path: polygon(30% 50%, 0 70%, 0 30%);
+                        position: absolute;
+                        top:-2px;
+                        right:-30px;
                     }
                 }
             }
