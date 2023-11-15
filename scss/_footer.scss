@@ -1,22 +1,18 @@
 
 // footer
 
+// Mixin
+
 .footerContainer{
     width: $screenPercentageWidth;
     height: $screenPercentageHeight;
     background-color:$secondaryBackground;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .flexColumnCenterCenter;
     box-shadow: $boxShadowMenu;
     .footer{
         width:100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 50px 20px;
+        @extend .flexRowBetween;
+        padding: 50px 50px;
         position: relative;
         .socialMedia{
             .contactUs{
@@ -26,10 +22,7 @@
                 color:$secondaryColor;
             }
             ul{
-                display:flex;
-                flex-direction: row;
-                justify-content:center;
-                align-items: flex-start;
+                @extend .flexRowCenterStart;
                 margin-left: -40px;
                 padding-top: 10px;
                 // border-top: 1px solid rgb(61, 61, 61);
@@ -46,10 +39,7 @@
             }
         }
         .brand{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @extend .flexColumnCenterCenter;
             position: absolute;
             top:50px;
             left:43.5%;
@@ -63,10 +53,7 @@
             }
         }
         .payments{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            @extend .flexColumnCenter;
             h3{
                 font-family: $fontJura;
                 font-weight: $bold;
@@ -94,11 +81,8 @@
             padding-bottom: 5px;
         }
         .developer{
-            display: flex;
-            flex-direction: row;
+            @include display_flex_row_center_center();
             flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
             padding-bottom: 5px;
             border-top: $borderTop;
             p{

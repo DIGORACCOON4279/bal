@@ -1,5 +1,7 @@
 // Hero Section
 
+// Mixin
+
 .heroSection{
     width:$screenPercentageWidth;
     height: 1000px;
@@ -7,10 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @extend .flexRowBetween;
     overflow: visible;
     margin: -250px 0px 100px 0px;
     padding: 0px 100px;

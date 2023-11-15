@@ -1,5 +1,7 @@
  // Purchase order
 
+// Mixin
+
 #orderCross{
     display: flex;
     font-family: $fontJura;
@@ -10,10 +12,7 @@
 .sectionPurchaseOrder{
     width: 40%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend .flexColumnEvenlyCenter;
     border-radius: 10px;
     background-color:#f3f3f31c;
     box-shadow: 0 0 4px 2px rgb(82, 82, 82);
@@ -74,7 +73,6 @@
         .order{
             font-size: $xSmallText;
             font-weight:$mediumBold;
-
         }
         .cartCheck{
             width:50px;

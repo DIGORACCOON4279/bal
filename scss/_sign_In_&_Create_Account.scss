@@ -1,6 +1,7 @@
 
-
     // Sign in & Create Account
+
+    // Mixin
 
     .container {
         width:$screenHeight;
@@ -14,9 +15,7 @@
             z-index: 9;
             .tags{
                 width:100%;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+                @include display_flex_row_center_center();
                 position: relative;
                 #navBarMenu {
                     display: none;
@@ -31,10 +30,7 @@
                 .formCreateAccount{
                     width: 50vw;
                     height: 100vh;
-                    display:flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @extend .flexColumnCenterCenter;
                     gap: 15px;
                     background-color:$whiteColor;
                     margin: $neutralMargin;
@@ -74,10 +70,7 @@
                 .formLogIn{
                     width: 50vw;
                     height: 100vh;
-                    display:flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @extend .flexColumnCenterCenter;
                     gap: 15px;
                     background-color: $whiteColor;
                     margin: $neutralMargin;
@@ -126,10 +119,7 @@
                         font-family: $fontJura;
                         font-size: $smallText;
                         font-weight: $mediumBold;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: flex-start;
+                        @extend .flexColumnCenter;
                         padding: neutralMargin;
                         .formControl{
                             width:100%;
@@ -202,10 +192,7 @@
                         font-size:$smallText;
                         font-weight: $mediumBold;
                         font-family: $fontJura;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: flex-start;
+                        @extend .flexColumnCenter;
                         padding: $neutralMargin;
                         .formControl{
                             width:100%;
@@ -340,16 +327,10 @@
         }
         ul{
             padding: 5px 0px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @extend .flexColumnCenterCenter;
             position: relative;
             li{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
+                @extend .flexRowEvenlyCenter;
                 list-style-type: none;
                 padding: 10px 0px;
                 .wishHeadLine, .cartShop{
@@ -406,10 +387,7 @@
         position: fixed;
         top:0%;
         left:125%;
-        display:flex;
-        flex-direction: column;
-        justify-content:space-between;
-        align-items: flex-start;
+        @include display_flex_column_space_between_flex_start();
         background-color: $secondaryBackground;
         overflow: hidden;
         box-shadow:$boxShadowMenu;
@@ -418,10 +396,7 @@
         transition: $transition;
         .top{
             width:100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            @extend .flexRowBetween;
             background-color: $tertiaryColor;
             padding: 10px 10px 10px 30px;
             .brand{
@@ -444,10 +419,7 @@
             width:100%;
             ul{
                 width:100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
+                @include display_flex_column_space_between_flex_start();
                 padding-left: 0;
                 li{
                     width: 100%;
@@ -494,10 +466,7 @@
         }
         .contactUs{
             width:100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-start;
+            @include display_flex_column_space_around_flex_start();
             background-color: $tertiaryColor;
             padding-top: 10px;
             p{
@@ -512,10 +481,7 @@
             }
             ul{
                 width:100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
+                @include display_flex_row_space_between_flex_start();
                 padding-left: 30px;
                 padding-right: 30px;
                 li{
@@ -544,13 +510,10 @@
 .sectionShop{
     width:40vw;
     height: $screenHeight;
-    display:flex;
     position: fixed;
     top:0;
     right:0;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
+    @extend .flexColumnBetween;
     background-color:$whiteColor;
     overflow: hidden;
     box-shadow:$boxShadowMenu;
@@ -576,10 +539,7 @@
         .menuCartlist{
             .choiceCartlist{
                 width: 90%;
-                display: flex;
-                flex-direction:column;
-                justify-content: space-between;
-                align-items:flex-start;
+                @include display_flex_column_space_between_flex_start();
                 margin: $neutralMargin;
                 padding: 0px 20px;
                 height: 380px;
@@ -597,10 +557,7 @@
                 }
                 .cart{
                     .category{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
+                        @extend .flexRowBetween;
                         padding: 20px 0px;
                         border-bottom: $borderBottom;
                         .titleCartlist{
@@ -612,10 +569,7 @@
                         }
                     }
                     .cartlist{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
+                        @extend .flexRowBetween;
                         padding: 20px 0px;
                         border-bottom: $borderBottom;
                         .total{
@@ -665,7 +619,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items: flex;
                 position:absolute;
                 bottom:0px;
                 left:20px;
@@ -689,10 +642,7 @@
                 .btnCheckout{
                     width: 100%;
                     padding: 10px 20px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @extend .flexColumnCenterCenter;
                     margin:20px auto;
                     font-size: $regularText;
                     font-family: $fontJura;
@@ -724,14 +674,11 @@
 .sectionWishlist{
     width:25vw;
     height:$screenHeight;
-    display:flex;
     position: fixed;
     top:0;
     right:0;
     z-index: 10px;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: flex-start;
+    @extend .flexColumn;
     background-color: $whiteColor;
     overflow: hidden;
     box-shadow: $boxShadowMenu;
@@ -756,10 +703,7 @@
     .menuWishlist{
         .choiceWishlist{
             width: 80%;
-            display: flex;
-            flex-direction:column;
-            justify-content: space-between;
-            align-items:flex-start;
+            @include display_flex_column_space_between_flex_start();
             margin:$neutralMargin;
             .wishlistWord{
                 width: inherit;
@@ -771,10 +715,7 @@
             }
             .wish{
                 .category{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-start;
+                    @include display_flex_row_space_between_flex_start();
                     padding: 20px 0px;
                     border-bottom:$borderBottom;
                     .titleWishlist{
@@ -787,10 +728,7 @@
                 }
                 .wishlist{
                     .blockProduct{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
+                        @extend .flexRowBetween;
                         padding: 20px 0px;
                         border-bottom: $borderBottom;
                         .itemProduct{
@@ -877,10 +815,7 @@
     .bannerGetOff{
         width: 62vw;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @extend .flexColumnEvenlyCenter;
         border-radius: 10px;
         background-color:#00000013;
         box-shadow: $boxShadowMenu;
@@ -891,6 +826,12 @@
         transform: translateY(300%);
         overflow: hidden;
         transition: $transition;
+        .title{
+            font-size:$subtitle;
+            font-family: $fontRubik;
+            color: $primaryColor;
+            margin-top:20px;
+        }
         label{
             .crossCloseWhite{
                 width:25px;
@@ -906,17 +847,8 @@
                 }
             }
         }
-        .title{
-            font-size:$subtitle;
-            font-family: $fontRubik;
-            color: $primaryColor;
-            margin-top:20px;
-        }
         .slideGetOff{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+            @extend .flexRowEvenlyCenter;
             padding: 20px;
             backdrop-filter: blur(10px);
             .hoddy{

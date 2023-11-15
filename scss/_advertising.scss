@@ -1,5 +1,6 @@
-
 // Advertising
+
+// Mixin
 
 .advertising{
     width: $screenPercentageWidth;
@@ -11,16 +12,10 @@
     background-attachment: fixed;
     object-fit: cover;
     margin:  200px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    @extend .flexColumnFlexEnd;
     padding: 100px;
     .advertisingMood{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
+        @extend .flexColumnFlexEnd;
         .subtitle{
             font-size:$sectionSubtitle;
             font-family: $fontJura;

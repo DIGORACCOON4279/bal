@@ -1,5 +1,7 @@
 // Menu Shop cart
 
+// Mixin
+
 #cart{
     display: none;
     &:checked ~ .sectionShop{
@@ -9,13 +11,10 @@
 .sectionShop{
     width:40vw;
     height: $screenHeight;
-    display:flex;
     position: fixed;
     top:0;
     right:0;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
+    @extend .flexColumnBetween;
     background-color: $whiteColor;
     overflow: hidden;
     box-shadow: $boxShadowMenu;
@@ -41,10 +40,7 @@
         .menuCartlist{
             .choiceCartlist{
                 width: 90%;
-                display: flex;
-                flex-direction:column;
-                justify-content: space-between;
-                align-items:flex-start;
+                @include display_flex_column_space_between_flex_start();
                 margin: $neutralMargin;
                 padding: 0px 20px;
                 height: 380px;
@@ -62,10 +58,7 @@
                 }
                 .cart{
                     .category{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
+                        @extend .flexRowBetween;
                         padding: 20px 0px;
                         border-bottom: $borderBottom;
                         .titleCartlist{
@@ -77,10 +70,7 @@
                         }
                     }
                     .cartlist{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
+                        @extend .flexRowBetween;
                         padding: 20px 0px;
                         border-bottom: $borderBottom;
                         .total{
@@ -130,7 +120,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items: flex;
                 position:absolute;
                 bottom:0px;
                 left:20px;
@@ -154,10 +143,7 @@
                 .btnCheckout{
                     width: 100%;
                     padding: 10px 20px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @extend .flexColumnCenterCenter;
                     margin:20px auto;
                     font-size: $regularText;
                     font-family: $fontJura;

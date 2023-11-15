@@ -1,5 +1,7 @@
 // Best Sellers
 
+// Mixin
+
 .bestSellers{
     width:$screenPercentageWidth;
     height: auto;
@@ -31,9 +33,7 @@
                 }
                 .info{
                     width:101%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
+                    @extend .flexColumn;
                     color: $tertiaryColor;
                     font-weight: $bold;
                     font-family: $fontJura;

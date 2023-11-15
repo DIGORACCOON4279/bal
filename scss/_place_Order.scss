@@ -1,5 +1,7 @@
  // Place order
 
+//  Mixin
+
 #order{
     display: flex;
     font-family: $fontJura;
@@ -13,10 +15,7 @@
     position: fixed;
     top:-80%;
     left:16.5%;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
+    @extend .flexColumnBetween;
     overflow: hidden;
     background-color:#f3f3f31c;
     box-shadow:$placeOrderShadow;
@@ -45,10 +44,7 @@
     }
     .unionOrder{
         width:92%;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @extend .flexRowBetween;
         .delivery{
             width:60%;
             height: 350px;
@@ -57,9 +53,7 @@
             padding: 15px ;
             border-radius: $borderRadius;
             .deliveryContact{
-                display:flex;
-                flex-direction: column;
-                align-items: flex-start;
+                @extend .flexColumn;
                 row-gap: 4px;
                 .contactTitle, .deliveryTitle{
                     font-size: $regularText;
@@ -72,10 +66,7 @@
                 }
                 .fullName{
                     width: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
+                    @extend .flexRowBetween;
                     #lastName{
                         margin-left: 15px;
                     }
@@ -106,18 +97,13 @@
         .formPayment{
             width:40%;
             height: 350px;
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
+            @include display_flex_column_space_between_flex_start();
             background-color:$whiteColor;
             padding: 15px;
             border-radius: $borderRadius;
             .payment{
                 width:100%;
-                display:flex;
-                flex-direction: column;
-                align-items: flex-start;
+                @extend .flexColumn;
                 row-gap: 4px;
                 .paymentTitle{
                     font-size:$regularText;
@@ -137,10 +123,7 @@
                 .btnPlaceOnOrder{
                     width: 100%;
                     padding: 10px 20px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @extend .flexColumnCenterCenter;
                     margin:75px auto 0px;
                     font-size: $regularText;
                     font-family: $fontJura;

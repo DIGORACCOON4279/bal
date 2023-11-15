@@ -1,5 +1,7 @@
 // NavBar
 
+// NOTA:SASS Mixin(Include)  & Extend
+
 .header{
     width:$screenPercentageWidth;
     height: 60px;
@@ -8,10 +10,7 @@
     left:0;
     background-color:$secondaryBackground;
     box-shadow: $boxShadowMenu;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @extend .flexRowBetween;
     padding:0px 30px;
     z-index: 10;
     label{
@@ -90,10 +89,7 @@
         position: fixed;
         top:0;
         left:0;
-        display:flex;
-        flex-direction: column;
-        justify-content:space-between;
-        align-items: flex-start;
+        @include display_flex_column_space_between_flex_start();
         background-color: $secondaryBackground;
         overflow: hidden;
         box-shadow:$boxShadowMenu;
@@ -102,10 +98,7 @@
         transition: $transition;
         .top{
             width:100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            @extend .flexRowBetween;
             background-color: $tertiaryColor;
             padding: 10px 10px 10px 30px;
             .brand{
@@ -127,10 +120,7 @@
             width:100%;
             ul{
                 width:100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
+                @include display_flex_column_space_between_flex_start();
                 padding-left: 0;
                 li{
                     width: 100%;
@@ -177,10 +167,7 @@
         }
         .contactUs{
             width:100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-start;
+            @include display_flex_column_space_around_flex_start();
             background-color: $tertiaryColor;
             padding-top: 10px;
             p{
@@ -195,10 +182,7 @@
             }
             ul{
                 width:100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
+                @include display_flex_row_space_between_flex_start();
                 padding-left: 30px;
                 padding-right: 30px;
                 li{
@@ -215,5 +199,3 @@
         }
     }
 }
-
-
