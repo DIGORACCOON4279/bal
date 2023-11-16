@@ -346,8 +346,8 @@ html{
                 .arrowUpIcon{
                     width:32px;
                     border-radius: 50%;
-                    background-color:  $secondaryColor;
-                    border: 2px solid $secondaryColor;
+                    background-color: $lineColor;
+                    border: 2px solid $lineColor;
                     transition: $transition;
                     &:hover{
                         background-color: $primaryColor;

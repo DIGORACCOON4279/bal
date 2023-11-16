@@ -42,8 +42,8 @@
                             transform: scale(100%, 100%);
                             transition:$transition;
                             &:hover{
-                                transform: scale(110%, 110%);
-                                filter: drop-shadow(0 0 10px black) grayscale(100%);
+                                transform: translateY(0%) scale(105%);
+                                filter:drop-shadow(0 0 6px #696061) grayscale(100%);
                             }
                         }
                     }

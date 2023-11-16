@@ -384,8 +384,8 @@ html .mainContainer .arrowUp {
 html .mainContainer .arrowUp .directionUp .arrowUpIcon {
   width: 32px;
   border-radius: 50%;
-  background-color: #9a9a9a;
-  border: 2px solid #9a9a9a;
+  background-color: #6b6b6b;
+  border: 2px solid #6b6b6b;
   transition: all 0.3s ease-in-out;
 }
 html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
@@ -1258,13 +1258,13 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .containerStore .arrowUp .directionUp .arrowUpIcon {
   width: 32px;
   border-radius: 50%;
-  background-color: #9a9a9a;
-  border: 2px solid #9a9a9a;
+  background-color: #6b6b6b;
+  border: 2px solid #6b6b6b;
   transition: all 0.3s ease;
 }
 .containerStore .arrowUp .directionUp .arrowUpIcon:hover {
-  background-color: #BC2327;
-  border: 2px solid #BC2327;
+  background-color: #bc2327;
+  border: 2px solid #bc2327;
 }
 .containerStore .skullSocialMedia {
   position: fixed;
@@ -1286,6 +1286,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   bottom: 30px;
   left: 30px;
   z-index: 8;
+  transition: all 0.3s ease-in-out;
+}
+.containerStore .skullSocialMedia .socialMedia .label .skullIcon:hover {
+  transform: translateY(0%) scale(105%);
+  filter: drop-shadow(0 0 6px #696061) grayscale(100%);
 }
 .containerStore .skullSocialMedia .socialMedia ul {
   position: relative;
@@ -1308,8 +1313,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transition: all 0.3s ease-in-out;
 }
 .containerStore .skullSocialMedia .socialMedia ul li .item .itemSocial:hover {
-  transform: scale(110%, 110%);
-  filter: drop-shadow(0 0 3px rgb(158, 158, 158)) grayscale(100%);
+  transform: translateY(0%) scale(105%);
+  filter: drop-shadow(0 0 6px #696061) grayscale(100%);
 }
 
 #cart {
@@ -3357,6 +3362,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   bottom: 30px;
   left: 30px;
   z-index: 8;
+  transition: all 0.3s ease-in-out;
+}
+.skullSocialMedia .socialMedia .label .skullIcon:hover {
+  transform: translateY(0%) scale(105%);
+  filter: drop-shadow(0 0 6px #696061);
 }
 .skullSocialMedia .socialMedia ul {
   position: relative;
@@ -3375,12 +3385,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-decoration: none;
   margin: 5px 0px;
   filter: grayscale(0%);
-  transform: scale(100%, 100%);
   transition: all 0.3s ease-in-out;
 }
 .skullSocialMedia .socialMedia ul li .item .itemSocial:hover {
-  transform: scale(110%, 110%);
-  filter: drop-shadow(0 0 3px rgb(158, 158, 158)) grayscale(100%);
+  transform: translateY(0%) scale(105%);
+  filter: drop-shadow(0 0 6px #696061) grayscale(100%);
 }
 
 #containerNewArrivals {
@@ -3435,8 +3444,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transition: all 0.3s ease-in-out;
 }
 .footerContainer .footer .socialMediaFooter ul li .item .itemSocial:hover {
-  transform: scale(110%, 110%);
-  filter: drop-shadow(0 0 10px black) grayscale(100%);
+  transform: translateY(0%) scale(105%);
+  filter: drop-shadow(0 0 6px #696061) grayscale(100%);
 }
 .footerContainer .footer .brand {
   position: absolute;
