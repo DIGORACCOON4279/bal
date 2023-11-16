@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap");
+/******************* Mixin ******************/
 /******************* Extend ******************/
 .flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .sectionWishlist, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .bestSellers .sectionCard .cardProducts .article .info, html .mainContainer .sectionWishlist {
   display: flex;
@@ -62,7 +63,7 @@
   align-items: flex-start;
 }
 
-/******************* Mixins ******************/
+/******************* Include ******************/
 * {
   margin: 0px;
   padding: 0px;

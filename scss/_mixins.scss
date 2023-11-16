@@ -1,4 +1,6 @@
 
+/******************* Mixin ******************/
+
 
 /******************* Extend ******************/
 
@@ -57,7 +59,7 @@
     align-items: flex-start;
 }
 
-/******************* Mixins ******************/
+/******************* Include ******************/
 
 @mixin display_flex_column_space_between_flex_start(){
     display:flex;

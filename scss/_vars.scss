@@ -1,10 +1,13 @@
 
 // Variables Globals
 
-// Font-size
+// Font-family
 
 $fontJura: 'Jura', sans-serif;
 $fontRubik: 'Rubik Distressed', cursive;
+
+// Font-size
+
 $mainTitle:4.5rem;
 $subtitle:4rem;
 $sectionSubtitle:3.5rem;
@@ -13,7 +16,6 @@ $LargeTitle :2.5rem;
 $nameLogo:1.8rem;
 $sentence:1.5rem;
 $MediumTitle:1.2rem;
-// $breakTitle:1.2rem;
 $regularText:1rem;
 $smallText:0.9rem;
 $xSmallText:0.8rem;
@@ -21,13 +23,7 @@ $xxSmallText:0.7rem;
 $BreakTextContent:0.6rem;
 $breakText:0.5rem;
 
-// $smallTitle:0.8rem;
-// $breakSmallText:0.7rem;
-// $xSmallParagraphText:0.6rem;
-
-
 // Cellphone-font-size
-
 
 // Font-Weight
 
@@ -44,10 +40,8 @@ $blackColor: #000000;
 $primaryColor:#bc2327;
 $secondaryColor:#9a9a9a;
 $tertiaryColor:#191919;
-
 $backgroundColor:#f1f1f1;
 $moonBackgroundColor:#131313;
-
 $btnBackgroundColor:#3d3d3d;
 $secondaryBackground:#1b1b1b;
 $lineColor:#6b6b6b;
@@ -62,23 +56,17 @@ $boxShadowNewArr:0 0 3px 1px #474747;
 $boxShadowNewArrHover:0 0 4px 3px #474747;
 $placeOrderShadow: 0 0 4px 2px #525252;
 
-
 // Animation
 
 $animationSkull:skull 2s linear infinite;
 
-
 // $shadowColor:;
 
-// $neutralShadow:;
 $btnDropShadow:#363636;
 $hoverCardColor:#707070;
 
+// $paddingCto
 
-
-// Padding-btn
-
-// $paddingCto: ;
 $paddingSectionCto: 20px 40px;
 
 // Hero Section Button
@@ -87,26 +75,15 @@ $paddingHero:25px 55px;
 
 // Margin
 
-// $margin:;
-// $sectionMargin: ;
 $neutralMargin: 0px auto;
-// $categoryMargin:;
-// $containerMargin:;
-
-
-// Padding
-
-// $paddingGeneral:;
-// $paddingNeurtral:;
-
 
 // Border-radius
+
 $borderRadius:10px;
 $borderRadiusInput:5px;
 
-
-
 // Border
+
 $borderTop:1px solid #3d3d3d;
 $borderBottom:1px solid #e4e4e4;
 $btnMenu:1px solid #000000;
@@ -115,19 +92,12 @@ $borderSkull: 2px solid #ffffff;
 $borderForm:1px solid #d9d9d9;
 $itemProduct:1px solid #f1f1f1;
 
-// $popUpsBorderRadius:;
-
 // Size-screen
 
 $screenWidth:100vw;
 $screenHeight:100vh;
 $screenPercentageWidth:100%;
 $screenPercentageHeight:100%;
-
-// $maxWidth: 1100px;
-// $containerWidth:;
-// $breakPoint:;
-// $widthTotal:;
 
 // Transitions
 
