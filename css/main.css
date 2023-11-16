@@ -1290,7 +1290,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .containerStore .skullSocialMedia .socialMedia ul {
   position: relative;
   bottom: -90px;
-  left: -22px;
+  left: -26px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(40%);
@@ -3354,7 +3354,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .skullSocialMedia .socialMedia ul {
   position: relative;
   bottom: -90px;
-  left: -22px;
+  left: -26px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(40%);
