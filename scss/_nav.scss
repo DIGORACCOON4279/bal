@@ -192,6 +192,13 @@
                         text-decoration: none;
                         .itemSocial{
                             width:28px;
+                            filter:  grayscale(0%);
+                            transform: scale(100%, 100%);
+                            transition:$transition;
+                            &:hover{
+                                transform: scale(110%, 110%);
+                                filter: drop-shadow(0 0 10px black) grayscale(100%);
+                            }
                         }
                     }
                 }

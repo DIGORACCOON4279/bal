@@ -619,6 +619,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .header .menuSide .contactUs ul li .item .itemSocial {
   width: 28px;
+  filter: grayscale(0%);
+  transform: scale(100%, 100%);
+  transition: all 0.3s ease-in-out;
+}
+.header .menuSide .contactUs ul li .item .itemSocial:hover {
+  transform: scale(110%, 110%);
+  filter: drop-shadow(0 0 10px black) grayscale(100%);
 }
 
 .heroSection {
@@ -2065,6 +2072,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .headerSignIn .menuSide .contactUs ul li .item .itemSocial {
   width: 28px;
+  filter: grayscale(0%);
+  transform: scale(100%, 100%);
+  transition: all 0.3s ease-in-out;
+}
+.headerSignIn .menuSide .contactUs ul li .item .itemSocial:hover {
+  transform: scale(110%, 110%);
+  filter: drop-shadow(0 0 10px black) grayscale(100%);
 }
 
 #cart {
@@ -3361,6 +3375,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .footerContainer .footer .socialMediaFooter ul li .item .itemSocial {
   width: 28px;
+  filter: grayscale(0%);
+  transform: scale(100%, 100%);
+  transition: all 0.3s ease-in-out;
+}
+.footerContainer .footer .socialMediaFooter ul li .item .itemSocial:hover {
+  transform: scale(110%, 110%);
+  filter: drop-shadow(0 0 10px black) grayscale(100%);
 }
 .footerContainer .footer .brand {
   position: absolute;
