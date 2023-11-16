@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-.flexColumnCenter, .footerContainer .footer .payments, .sectionFilter .menuFilterSide .menuFilter, .container .logInCreateAccount .tags .formCreateAccount .formFloating, .container .logInCreateAccount .tags .formLogIn .formFloating, .giftCards .containerGetOff .containerMessage {
+.flexColumnCenter, .footerContainer .footer .payments, .footerContainer .footer .socialMediaFooter, .sectionFilter .menuFilterSide .menuFilter, .container .logInCreateAccount .tags .formCreateAccount .formFloating, .container .logInCreateAccount .tags .formLogIn .formFloating, .giftCards .containerGetOff .containerMessage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,7 @@
   align-items: center;
 }
 
-.flexRowCenterStart, .footerContainer .footer .socialMedia ul {
+.flexRowCenterStart {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -3336,25 +3336,31 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   padding: 50px 50px;
   position: relative;
 }
-.footerContainer .footer .socialMedia .contactUs {
+.footerContainer .footer .socialMediaFooter .contactUs {
   font-family: "Jura", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   color: #9a9a9a;
+  padding: 0px 0px;
+  align-items: flex-start;
 }
-.footerContainer .footer .socialMedia ul {
-  margin-left: -40px;
+.footerContainer .footer .socialMediaFooter ul {
+  display: flex;
+  margin-bottom: 0px;
   padding-top: 10px;
+  padding-left: 0px;
+  border-top: 1px solid #3d3d3d;
+  gap: 10px;
 }
-.footerContainer .footer .socialMedia ul li {
+.footerContainer .footer .socialMediaFooter ul li {
   list-style-type: none;
+  align-items: flex-start;
 }
-.footerContainer .footer .socialMedia ul li .item {
+.footerContainer .footer .socialMediaFooter ul li .item {
   text-decoration: none;
 }
-.footerContainer .footer .socialMedia ul li .item .itemSocial {
-  width: 30px;
-  margin: 0px 5px;
+.footerContainer .footer .socialMediaFooter ul li .item .itemSocial {
+  width: 28px;
 }
 .footerContainer .footer .brand {
   position: absolute;
@@ -3367,10 +3373,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   color: #bc2327;
 }
 .footerContainer .footer .brand .skull {
-  width: 35px;
+  width: 32px;
 }
 .footerContainer .footer .payments h3 {
-  width: 55%;
+  width: 60%;
   font-family: "Jura", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
@@ -3379,9 +3385,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   align-self: flex-end;
 }
 .footerContainer .footer .payments .paymentCards {
-  width: 55%;
+  width: 60%;
   align-self: flex-end;
   padding-top: 10px;
+  border-top: 1px solid #3d3d3d;
 }
 .footerContainer .development {
   display: flex;
