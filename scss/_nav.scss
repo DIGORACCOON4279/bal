@@ -197,7 +197,7 @@
                             transition:$transition;
                             &:hover{
                                 transform: scale(110%, 110%);
-                                filter: drop-shadow(0 0 10px black) grayscale(100%);
+                                filter: drop-shadow(0 0 10px $blackColor) grayscale(100%);
                             }
                         }
                     }

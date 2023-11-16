@@ -418,7 +418,7 @@
                         filter:  grayscale(0%);
                         transition:$transition;
                         &:hover{
-                            transform: translateY(0%) scale(105%);
+                            transform: scale(110%, 110%);
                             filter:drop-shadow(0 0 6px #696061) grayscale(100%);
                         }
                     }

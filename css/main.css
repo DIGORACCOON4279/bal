@@ -70,6 +70,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #131313;
+}
+
 html .mainContainer {
   width: 100%;
   height: 100%;
@@ -603,7 +607,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .header .menuSide .contactUs ul li .item .itemSocial:hover {
   transform: scale(110%, 110%);
-  filter: drop-shadow(0 0 10px black) grayscale(100%);
+  filter: drop-shadow(0 0 10px #000000) grayscale(100%);
 }
 
 .heroSection {
@@ -1313,7 +1317,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transition: all 0.3s ease-in-out;
 }
 .containerStore .skullSocialMedia .socialMedia ul li .item .itemSocial:hover {
-  transform: translateY(0%) scale(105%);
+  transform: scale(110%, 110%);
   filter: drop-shadow(0 0 6px #696061) grayscale(100%);
 }
 
@@ -3388,7 +3392,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transition: all 0.3s ease-in-out;
 }
 .skullSocialMedia .socialMedia ul li .item .itemSocial:hover {
-  transform: translateY(0%) scale(105%);
+  transform: scale(110%, 110%);
   filter: drop-shadow(0 0 6px #696061) grayscale(100%);
 }
 
@@ -3444,8 +3448,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transition: all 0.3s ease-in-out;
 }
 .footerContainer .footer .socialMediaFooter ul li .item .itemSocial:hover {
-  transform: translateY(0%) scale(105%);
-  filter: drop-shadow(0 0 6px #696061) grayscale(100%);
+  transform: scale(110%, 110%);
+  filter: drop-shadow(0 0 10px #000000) grayscale(100%);
 }
 .footerContainer .footer .brand {
   position: absolute;
