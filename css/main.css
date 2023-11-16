@@ -7,7 +7,7 @@
   align-items: flex-start;
 }
 
-.flexColumnBetween, .sectionFilter .menuFilterSide .menuFilter .choiceFilter, .sectionFilter .menuFilterSide .headLine .filter, .sectionPlaceOrder, .sectionShop, html .mainContainer .sectionShop {
+.flexColumnBetween, .skullSocialMedia .socialMedia ul, .skullSocialMedia, .sectionFilter .menuFilterSide .menuFilter .choiceFilter, .sectionFilter .menuFilterSide .headLine .filter, .sectionPlaceOrder, .sectionShop, .containerStore .skullSocialMedia .socialMedia ul, .containerStore .skullSocialMedia, html .mainContainer .sectionShop {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -391,30 +391,6 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   background-color: #bc2327;
   border: 2px solid #bc2327;
 }
-html .mainContainer .skullSocialMedia {
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
-  cursor: pointer;
-  z-index: 8;
-}
-html .mainContainer .skullSocialMedia .socialMedia .skullIcon {
-  width: 45px;
-}
-html .mainContainer .skullSocialMedia .socialMedia ul {
-  display: none;
-  position: relative;
-  bottom: 58px;
-  left: 30px;
-}
-html .mainContainer .skullSocialMedia .socialMedia ul li {
-  list-style-type: none;
-}
-html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
-  width: 40px;
-  text-decoration: none;
-  margin: 5px 0px;
-}
 
 .newArrivals, .bestSellers, .containerStore {
   max-width: 1300px;
@@ -619,7 +595,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   text-decoration: none;
 }
 .header .menuSide .contactUs ul li .item .itemSocial {
-  width: 28px;
+  width: 32px;
   filter: grayscale(0%);
   transform: scale(100%, 100%);
   transition: all 0.3s ease-in-out;
@@ -1290,27 +1266,50 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
 }
 .containerStore .skullSocialMedia {
   position: fixed;
-  bottom: 30px;
+  bottom: 160px;
   left: 30px;
   cursor: pointer;
   z-index: 8;
 }
-.containerStore .skullSocialMedia .socialMedia .skullIcon {
+.containerStore .skullSocialMedia .socialMedia #socialSkull {
+  display: none;
+}
+.containerStore .skullSocialMedia .socialMedia #socialSkull:checked ~ ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+.containerStore .skullSocialMedia .socialMedia .label .skullIcon {
   width: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 8;
 }
 .containerStore .skullSocialMedia .socialMedia ul {
-  display: none;
   position: relative;
-  bottom: 58px;
-  left: 30px;
+  bottom: -90px;
+  left: -22px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40%);
+  transition: all 0.3s ease-in-out;
 }
 .containerStore .skullSocialMedia .socialMedia ul li {
   list-style-type: none;
 }
 .containerStore .skullSocialMedia .socialMedia ul li .item .itemSocial {
-  width: 40px;
+  width: 32px;
   text-decoration: none;
   margin: 5px 0px;
+  filter: grayscale(0%);
+  transform: scale(100%, 100%);
+  transition: all 0.3s ease-in-out;
+}
+.containerStore .skullSocialMedia .socialMedia ul li .item .itemSocial:hover {
+  transform: scale(110%, 110%);
+  filter: drop-shadow(0 0 3px rgb(158, 158, 158)) grayscale(100%);
 }
 
 #cart {
@@ -2072,7 +2071,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   text-decoration: none;
 }
 .headerSignIn .menuSide .contactUs ul li .item .itemSocial {
-  width: 28px;
+  width: 32px;
   filter: grayscale(0%);
   transform: scale(100%, 100%);
   transition: all 0.3s ease-in-out;
@@ -3329,6 +3328,54 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   font-weight: 700;
 }
 
+.skullSocialMedia {
+  position: fixed;
+  bottom: 160px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 8;
+}
+.skullSocialMedia .socialMedia #socialSkull {
+  display: none;
+}
+.skullSocialMedia .socialMedia #socialSkull:checked ~ ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+.skullSocialMedia .socialMedia .label .skullIcon {
+  width: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 8;
+}
+.skullSocialMedia .socialMedia ul {
+  position: relative;
+  bottom: -90px;
+  left: -22px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40%);
+  transition: all 0.3s ease-in-out;
+}
+.skullSocialMedia .socialMedia ul li {
+  list-style-type: none;
+}
+.skullSocialMedia .socialMedia ul li .item .itemSocial {
+  width: 32px;
+  text-decoration: none;
+  margin: 5px 0px;
+  filter: grayscale(0%);
+  transform: scale(100%, 100%);
+  transition: all 0.3s ease-in-out;
+}
+.skullSocialMedia .socialMedia ul li .item .itemSocial:hover {
+  transform: scale(110%, 110%);
+  filter: drop-shadow(0 0 3px rgb(158, 158, 158)) grayscale(100%);
+}
+
 #containerNewArrivals {
   margin-bottom: 150px;
 }
@@ -3375,7 +3422,7 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   text-decoration: none;
 }
 .footerContainer .footer .socialMediaFooter ul li .item .itemSocial {
-  width: 28px;
+  width: 32px;
   filter: grayscale(0%);
   transform: scale(100%, 100%);
   transition: all 0.3s ease-in-out;

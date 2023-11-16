@@ -355,34 +355,7 @@ html{
                 }
             }
         }
-        .skullSocialMedia{
-            position: fixed;
-            bottom:30px;
-            left:30px;
-            cursor: pointer;
-            z-index: 8;
-            .socialMedia{
-                .skullIcon{
-                    width:45px;
-                }
-                ul{
-                    display: none;
-                    position: relative;
-                    bottom:58px;
-                    left:30px;
-                    li{
-                        list-style-type: none;k
-                        .item{
-                            .itemSocial{
-                                width:40px;
-                                text-decoration: none;
-                                margin:5px 0px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+
     }
 }
 .newArrivals, .bestSellers, .containerStore{

@@ -369,7 +369,61 @@
         }
     }
 }
-
+.skullSocialMedia{
+    @extend .flexColumnBetween;
+    position: fixed;
+    bottom:160px;
+    left:30px;
+    cursor: pointer;
+    z-index: 8;
+    .socialMedia{
+        #socialSkull{
+            display:none;
+            &:checked ~ ul{
+                opacity:1;
+                visibility:visible;
+                transform: translateY(0%);
+            }
+        }
+        .label{
+            .skullIcon{
+                width:45px;
+                cursor: pointer;
+                position: fixed;
+                bottom: 30px;
+                left: 30px;
+                z-index: 8;
+            }
+        }
+        ul{
+            @extend .flexColumnBetween;
+            position: relative;
+            bottom:-90px;
+            left:-22px;
+            opacity:0;
+            visibility:hidden;
+            transform: translateY(40%);
+            transition:$transition;
+            li{
+                list-style-type: none;
+                .item{
+                    .itemSocial{
+                        width:32px;
+                        text-decoration: none;
+                        margin:5px 0px;
+                        filter:  grayscale(0%);
+                        transform: scale(100%, 100%);
+                        transition:$transition;
+                        &:hover{
+                            transform: scale(110%, 110%);
+                            filter: drop-shadow(0 0 3px rgb(158, 158, 158)) grayscale(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 #containerNewArrivals{
     margin-bottom:150px;
     .title{
