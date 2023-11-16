@@ -3370,14 +3370,13 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   width: 35px;
 }
 .footerContainer .footer .payments h3 {
+  width: 55%;
   font-family: "Jura", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   color: #9a9a9a;
   padding: 0px 0px;
-  position: absolute;
-  top: 50px;
-  right: 225px;
+  align-self: flex-end;
 }
 .footerContainer .footer .payments .paymentCards {
   width: 55%;
@@ -3402,6 +3401,10 @@ html .mainContainer .skullSocialMedia .socialMedia ul li k .item .itemSocial {
   flex-wrap: nowrap;
   padding-bottom: 5px;
   border-top: 1px solid #3d3d3d;
+}
+.footerContainer .development .developer .em-flag-co, .footerContainer .development .developer .em-flag-ca {
+  width: 12px;
+  margin: 0px 5px;
 }
 .footerContainer .development .developer p {
   font-family: "Jura", sans-serif;

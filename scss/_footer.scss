@@ -54,15 +54,16 @@
         }
         .payments{
             @extend .flexColumnCenter;
+
+
             h3{
+                width: 55%;
                 font-family: $fontJura;
                 font-weight: $bold;
                 font-size: $smallText;
                 color: $secondaryColor;
                 padding: 0px 0px;
-                position: absolute;
-                top:50px;
-                right: 225px;
+                align-self: flex-end;
             }
             .paymentCards{
                 width: 55%;
@@ -85,6 +86,10 @@
             flex-wrap: nowrap;
             padding-bottom: 5px;
             border-top: $borderTop;
+            .em-flag-co, .em-flag-ca{
+                width:12px;
+                margin:0px 5px;
+            }
             p{
                 font-family: $fontJura;
                 font-weight: $mediumBold;
