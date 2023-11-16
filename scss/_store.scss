@@ -212,7 +212,7 @@
         z-index: 8;
         .directionUp{
             .arrowUpIcon{
-                width:45px;
+                width:32px;
                 border-radius: 50%;
                 border: 2px solid white;
                 transition: all 0.3s ease;
@@ -227,7 +227,6 @@
         position: fixed;
         bottom:30px;
         left:30px;
-        z-index: 8;
         .socialMedia{
             @extend .flexColumnBetween;
             #socialSkull{
@@ -240,7 +239,7 @@
             }
             .label{
                 .skullIcon{
-                    width:45px;
+                    width:32px;
                     cursor: pointer;
                     position: fixed;
                     bottom: 30px;
@@ -252,7 +251,7 @@
                 @extend .flexColumnBetween;
                 position: relative;
                 bottom:30px;
-                left:-25px;
+                left:-30px;
                 opacity:0;
                 visibility:hidden;
                 transform: translateY(35%);

@@ -382,7 +382,7 @@ html .mainContainer .arrowUp {
   z-index: 8;
 }
 html .mainContainer .arrowUp .directionUp .arrowUpIcon {
-  width: 45px;
+  width: 32px;
   border-radius: 50%;
   border: 2px solid white;
   transition: all 0.3s ease-in-out;
@@ -1255,7 +1255,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   z-index: 8;
 }
 .containerStore .arrowUp .directionUp .arrowUpIcon {
-  width: 45px;
+  width: 32px;
   border-radius: 50%;
   border: 2px solid white;
   transition: all 0.3s ease;
@@ -1268,7 +1268,6 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   position: fixed;
   bottom: 30px;
   left: 30px;
-  z-index: 8;
 }
 .containerStore .skullSocialMedia .socialMedia #socialSkull {
   display: none;
@@ -1279,7 +1278,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transform: translateY(-100px);
 }
 .containerStore .skullSocialMedia .socialMedia .label .skullIcon {
-  width: 45px;
+  width: 32px;
   cursor: pointer;
   position: fixed;
   bottom: 30px;
@@ -1289,7 +1288,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .containerStore .skullSocialMedia .socialMedia ul {
   position: relative;
   bottom: 30px;
-  left: -25px;
+  left: -30px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(35%);
@@ -3345,12 +3344,12 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   display: none;
 }
 .skullSocialMedia .socialMedia #socialSkull:checked ~ ul {
-  opacity: 1;
+  opacity: 2;
   visibility: visible;
   transform: translateY(-100%);
 }
 .skullSocialMedia .socialMedia .label .skullIcon {
-  width: 45px;
+  width: 32px;
   cursor: pointer;
   position: fixed;
   bottom: 30px;
@@ -3360,7 +3359,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .skullSocialMedia .socialMedia ul {
   position: relative;
   bottom: -80px;
-  left: -25px;
+  left: -30px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-15%);
@@ -3457,11 +3456,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-size: 0.9rem;
   color: #9a9a9a;
   padding: 0px 0px;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 .footerContainer .footer .payments .paymentCards {
   width: 60%;
-  align-self: flex-end;
+  align-self: flex-start;
   padding-top: 10px;
   border-top: 1px solid #3d3d3d;
 }

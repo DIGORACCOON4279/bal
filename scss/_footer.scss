@@ -73,11 +73,11 @@
                 font-size: $smallText;
                 color: $secondaryColor;
                 padding: 0px 0px;
-                align-self: flex-end;
+                align-self: flex-start;
             }
             .paymentCards{
                 width: 60%;
-                align-self: flex-end;
+                align-self: flex-start;
                 padding-top: 10px;
                 border-top: $borderTop;
             }
