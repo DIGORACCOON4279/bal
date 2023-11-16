@@ -370,19 +370,18 @@
     }
 }
 .skullSocialMedia{
-    @extend .flexColumnBetween;
     position: fixed;
-    bottom:160px;
+    bottom:30px;
     left:30px;
-    cursor: pointer;
     z-index: 8;
     .socialMedia{
+        @extend .flexColumnBetween;
         #socialSkull{
             display:none;
             &:checked ~ ul{
                 opacity:1;
                 visibility:visible;
-                transform: translateY(0%);
+                transform: translateY(-100%);
             }
         }
         .label{
@@ -398,11 +397,11 @@
         ul{
             @extend .flexColumnBetween;
             position: relative;
-            bottom:-90px;
-            left:-26px;
+            bottom:-80px;
+            left:-25px;
             opacity:0;
             visibility:hidden;
-            transform: translateY(40%);
+            transform: translateY(-15%);
             transition:$transition;
             li{
                 list-style-type: none;
