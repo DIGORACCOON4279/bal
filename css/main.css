@@ -1749,6 +1749,10 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-decoration: underline;
   color: #bc2327;
 }
+.container .logInCreateAccount .tags .formLogIn .skullIcon {
+  width: 32px;
+  margin-top: -20px;
+}
 .container .logInCreateAccount .tags .formCreateAccount legend {
   font-size: 3rem;
   color: #bc2327;
@@ -1816,6 +1820,10 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn:hover {
   text-decoration: underline;
   color: #bc2327;
+}
+.container .logInCreateAccount .tags .formCreateAccount .skullIcon {
+  width: 32px;
+  margin-top: -20px;
 }
 .container .logInCreateAccount .bannerCreateAccount {
   width: 50%;
