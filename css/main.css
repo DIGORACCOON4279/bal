@@ -384,7 +384,8 @@ html .mainContainer .arrowUp {
 html .mainContainer .arrowUp .directionUp .arrowUpIcon {
   width: 32px;
   border-radius: 50%;
-  border: 2px solid white;
+  background-color: #9a9a9a;
+  border: 2px solid #9a9a9a;
   transition: all 0.3s ease-in-out;
 }
 html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
@@ -1257,7 +1258,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .containerStore .arrowUp .directionUp .arrowUpIcon {
   width: 32px;
   border-radius: 50%;
-  border: 2px solid white;
+  background-color: #9a9a9a;
+  border: 2px solid #9a9a9a;
   transition: all 0.3s ease;
 }
 .containerStore .arrowUp .directionUp .arrowUpIcon:hover {

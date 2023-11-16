@@ -214,7 +214,8 @@
             .arrowUpIcon{
                 width:32px;
                 border-radius: 50%;
-                border: 2px solid white;
+                background-color:  $secondaryColor;
+                border: 2px solid $secondaryColor;
                 transition: all 0.3s ease;
                 &:hover{
                     background-color: #BC2327;
