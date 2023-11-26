@@ -10,7 +10,7 @@
     }
 }
 .sectionWishlist{
-    width:25vw;
+    width:30vw;
     height: 100vh;
     position: fixed;
     top:0;
@@ -24,6 +24,7 @@
     padding-top: 60px;
     transform: translate(105%);
     transition: $transition;
+
     .wishHeadLine{
         .closeCross{
             width:15px;
@@ -39,8 +40,10 @@
         }
     }
     .menuWishlist{
+        width: 100%;
+
         .choiceWishlist{
-            width: 80%;
+            width: 90%;
             @include display_flex_column_space_between_flex_start();
             margin:  $neutralMargin;
             .wishlistWord{
@@ -52,10 +55,11 @@
                 margin:0px ;
             }
             .wish{
+                width: 90%;
                 .category{
                     @include display_flex_row_space_between_flex_start();
                     padding: 20px 0px;
-                    border-bottom: $borderBottom;
+                    border-bottom: none;
                     .titleWishlist{
                         font-size: $regularText;
                         font-family: $fontJura;
@@ -64,28 +68,38 @@
                         margin: 15px 0px;
                     }
                 }
-                .wishlist{
-                    .blockProduct{
-                        @extend .flexRowBetween;
-                        padding: 20px 0px;
-                        border-bottom: $borderBottom;
-                        .itemProduct{
-                            width:15%;
-                        }
-                        .description{
-                            display: flex;
-                            flex-direction: column;
-                            margin-left:-40px;
-                            .wishPrice{
-                                font-size: $regularText;
-                                font-family: $fontJura;
-                                color:$primaryColor;
-                                font-weight:$bold;
+                .containerWishlist{
+                    width: 90%;
+                    height: 430px;
+                    padding: 0px 20px 20px 0px;
+                    overflow: scroll;
+                    margin:0px 20px 0px 0px;
+                    position: fixed;
+                    top:150px;
+                    left:20px;
+                    .wishlist{
+                        .blockProduct{
+                            @extend .flexRowBetween;
+                            padding: 20px 0px;
+                            border-bottom: $borderBottom;
+                            .itemProduct{
+                                width:15%;
                             }
-                            .icons{
-                                img{
-                                    width:20px;
-                                    cursor: pointer;
+                            .description{
+                                display: flex;
+                                flex-direction: column;
+                                margin-left:-40px;
+                                .wishPrice{
+                                    font-size: $regularText;
+                                    font-family: $fontJura;
+                                    color:$primaryColor;
+                                    font-weight:$bold;
+                                }
+                                .icons{
+                                    img{
+                                        width:20px;
+                                        cursor: pointer;
+                                    }
                                 }
                             }
                         }

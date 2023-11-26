@@ -592,12 +592,12 @@
                             margin: 15px 0px;
                         }
                     }
-                    .cartlist{
+                    .cartList{
                         @extend .flexRowBetween;
                         padding: 20px 0px;
                         border-bottom: $borderBottom;
                         .total{
-                            font-size: $smallText;
+                            font-size: $regularText;
                         }
                         .itemProduct{
                             width:12%;
@@ -696,13 +696,14 @@
     }
 }
 .sectionWishlist{
-    width:25vw;
+    width:30vw;
     height:$screenHeight;
     position: fixed;
     top:0;
     right:0;
     z-index: 10px;
     @extend .flexColumn;
+    align-items: flex-start;
     background-color: $whiteColor;
     overflow: hidden;
     box-shadow: $boxShadowMenu;
@@ -741,7 +742,7 @@
                 .category{
                     @include display_flex_row_space_between_flex_start();
                     padding: 20px 0px;
-                    border-bottom:$borderBottom;
+                    border-bottom:0;
                     .titleWishlist{
                         font-size: $regularText;
                         font-family:$fontJura;
@@ -763,7 +764,7 @@
                             flex-direction: column;
                             margin-left:-40px;
                             .wishPrice{
-                                font-size:$smallText;
+                                font-size:$regularText;
                                 font-family:$fontJura;
                                 color:$primaryColor;
                                 font-weight: $bold;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap");
 /******************* Mixin ******************/
 /******************* Extend ******************/
-.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .sectionWishlist, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .bestSellers .sectionCard .cardProducts .article .info, html .mainContainer .sectionWishlist {
+.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .sectionWishlist, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .bestSellers .sectionCardBlock .cardProducts .article .info, html .mainContainer .sectionWishlist {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.flexRowBetween, .footerContainer .footer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion, .showRoom .rightSide .infoProduct .addToCart, .showRoom .rightSide .infoProduct .productRating, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelThree, .sectionFilter .menuFilterSide, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName, .sectionPlaceOrder .unionOrder, .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct, .headerSignIn .menuSide .top, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category, .giftCards .containerGetOff, .heroSection, .header .menuSide .top, .header, html .mainContainer .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct, html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist, html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
+.flexRowBetween, .footerContainer .footer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion, .showRoom .rightSide .infoProduct .addToCart, .showRoom .rightSide .infoProduct .productRating, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelThree, .sectionFilter .menuFilterSide, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName, .sectionPlaceOrder .unionOrder, .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct, .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct, .headerSignIn .menuSide .top, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category, .giftCards .containerGetOff, .heroSection, .header .menuSide .top, .header, html .mainContainer .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct, html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList, html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -143,31 +143,31 @@ html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .
   font-weight: 600;
   margin: 15px 0px;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList {
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .total {
   font-size: 1rem;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .itemProduct {
   width: 12%;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description {
   display: flex;
   flex-direction: column;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .price {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description .price {
   font-size: 0.9rem;
   font-family: "Jura", sans-serif;
   color: #191919;
   font-weight: 600;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description .icons img {
   width: 20px;
   cursor: pointer;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .itemNumber #quantity {
   width: 50px;
   height: 35px;
   padding: 2px;
@@ -176,7 +176,7 @@ html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .
   color: #bc2327;
   font-weight: 600;
 }
-html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+html .mainContainer .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .total {
   font-size: 0.9rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
@@ -230,7 +230,7 @@ html .mainContainer #wishlistSide:checked ~ .sectionWishlist {
   transform: translate(0%);
 }
 html .mainContainer .sectionWishlist {
-  width: 25vw;
+  width: 30vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -279,7 +279,7 @@ html .mainContainer .sectionWishlist .menuWishlist .choiceWishlist .wish .catego
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px 0px;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 0;
 }
 html .mainContainer .sectionWishlist .menuWishlist .choiceWishlist .wish .category .titleWishlist {
   font-size: 1rem;
@@ -985,27 +985,27 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-align: center;
   margin-bottom: 100px;
 }
-.bestSellers .sectionCard .cardProducts {
+.bestSellers .sectionCardBlock .cardProducts {
   width: 100%;
   height: auto;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-.bestSellers .sectionCard .cardProducts:hover {
+.bestSellers .sectionCardBlock .cardProducts:hover {
   box-shadow: 0 0 4px 2px #707070;
 }
-.bestSellers .sectionCard .cardProducts .article {
+.bestSellers .sectionCardBlock .cardProducts .article {
   width: 100%;
   height: inherit;
   overflow: hidden;
 }
-.bestSellers .sectionCard .cardProducts .article:hover > .outFit {
+.bestSellers .sectionCardBlock .cardProducts .article:hover > .outFit {
   transform: scale(110%);
   filter: grayscale(100%);
   box-shadow: 0 0 4px 2px #707070;
 }
-.bestSellers .sectionCard .cardProducts .article .info {
+.bestSellers .sectionCardBlock .cardProducts .article .info {
   width: 101%;
   color: #191919;
   font-weight: 600;
@@ -1016,13 +1016,13 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transform: translateY(110%);
   transition: transform 0.3s ease;
 }
-.bestSellers .sectionCard .cardProducts .article .info:hover {
+.bestSellers .sectionCardBlock .cardProducts .article .info:hover {
   transform: translateY(-110%);
 }
-.bestSellers .sectionCard .cardProducts .article .info .heartIcon {
+.bestSellers .sectionCardBlock .cardProducts .article .info .heartIcon {
   align-self: self-end;
 }
-.bestSellers .sectionCard .cardProducts .article .info .linkStore {
+.bestSellers .sectionCardBlock .cardProducts .article .info .linkStore {
   width: 100%;
   text-align: center;
   padding: 5px;
@@ -1033,11 +1033,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-.bestSellers .sectionCard .cardProducts .article .info .linkStore:hover {
+.bestSellers .sectionCardBlock .cardProducts .article .info .linkStore:hover {
   color: #ffffff;
   background-color: #000000;
 }
-.bestSellers .sectionCard .cardProducts .article .outFit {
+.bestSellers .sectionCardBlock .cardProducts .article .outFit {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1047,7 +1047,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   box-shadow: 0 0 4px 2px 0 0 4px 2px #707070;
   transition: all 0.3s ease-in-out;
 }
-.bestSellers .sectionCard .cardProducts .article .outFit:hover ~ .info {
+.bestSellers .sectionCardBlock .cardProducts .article .outFit:hover ~ .info {
   transform: translateY(-110%);
 }
 .bestSellers .ctaStore {
@@ -1193,11 +1193,15 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .containerStore .getOffHoddy .bannerGetOff > * {
   position: relative;
 }
+.containerStore .sectionStore .sectionCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+}
 .containerStore .sectionStore .sectionCard .cardProducts {
   width: 100%;
   height: auto;
-  cursor: pointer;
-  overflow: hidden;
   transition: all 0.3s ease;
 }
 .containerStore .sectionStore .sectionCard .cardProducts:hover {
@@ -1205,7 +1209,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article {
   width: 100%;
-  height: inherit;
+  height: auto;
   overflow: hidden;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article:hover > .outFit {
@@ -1215,32 +1219,36 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info {
   width: 101%;
-  color: #D9D9D9;
+  color: #191919;
   font-weight: 500;
   font-family: "Jura", sans-serif;
-  margin-top: 20px;
   padding: 20px;
   background-color: #ffffff;
-  transform: translateY(-110%);
+  gap: 20px;
+  transform: translateY(0%);
   transition: transform 0.3s ease;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info .heartIcon {
   align-self: self-end;
+  cursor: pointer;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info .linkStore {
   width: 100%;
   text-align: center;
-  padding: 5px;
-  color: #D9D9D9;
+  padding: 10px;
+  color: #ffffff;
   font-weight: 600;
   font-family: "Jura", sans-serif;
   background-color: #BC2327;
+  border: 1px solid #BC2327;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info .linkStore:hover {
   color: #ffffff;
   background-color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .outFit {
   width: 100%;
@@ -1387,31 +1395,31 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-weight: 600;
   margin: 15px 0px;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList {
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .total {
   font-size: 0.9rem;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .itemProduct {
   width: 12%;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description {
   display: flex;
   flex-direction: column;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .price {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description .price {
   font-size: 0.9rem;
   font-family: "Jura", sans-serif;
   color: #191919;
   font-weight: 600;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description .icons img {
   width: 20px;
   cursor: pointer;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .itemNumber #quantity {
   width: 50px;
   height: 35px;
   padding: 2px;
@@ -1420,7 +1428,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   color: #bc2327;
   font-weight: 600;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .total {
   font-size: 0.9rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
@@ -1479,28 +1487,28 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-align: center;
   margin-bottom: 100px;
 }
-.newArrivals .sectionCard {
+.newArrivals .sectionCardContainer {
   margin-bottom: 70px;
 }
-.newArrivals .sectionCard .cardProducts {
+.newArrivals .sectionCardContainer .cardProducts {
   width: 250%;
   position: relative;
 }
-.newArrivals .sectionCard .cardProducts .article1 .smallCard, .newArrivals .sectionCard .cardProducts .article2 .smallCard, .newArrivals .sectionCard .cardProducts .article3 .smallCard, .newArrivals .sectionCard .cardProducts .article4 .smallCard, .newArrivals .sectionCard .cardProducts .article5 .smallCard, .newArrivals .sectionCard .cardProducts .article6 .smallCard, .newArrivals .sectionCard .cardProducts .article7 .smallCard, .newArrivals .sectionCard .cardProducts .article8 .smallCard, .newArrivals .sectionCard .cardProducts .article9 .smallCard, .newArrivals .sectionCard .cardProducts .article10 .smallCard {
+.newArrivals .sectionCardContainer .cardProducts .article1 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article2 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article3 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article4 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article5 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article6 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article7 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article8 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article9 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article10 .smallCard {
   display: none;
 }
-.newArrivals .sectionCard .cardProducts .article1 #outFit, .newArrivals .sectionCard .cardProducts .article2 #outFit, .newArrivals .sectionCard .cardProducts .article3 #outFit, .newArrivals .sectionCard .cardProducts .article4 #outFit, .newArrivals .sectionCard .cardProducts .article5 #outFit, .newArrivals .sectionCard .cardProducts .article6 #outFit, .newArrivals .sectionCard .cardProducts .article7 #outFit, .newArrivals .sectionCard .cardProducts .article8 #outFit, .newArrivals .sectionCard .cardProducts .article9 #outFit, .newArrivals .sectionCard .cardProducts .article10 #outFit {
+.newArrivals .sectionCardContainer .cardProducts .article1 #outFit, .newArrivals .sectionCardContainer .cardProducts .article2 #outFit, .newArrivals .sectionCardContainer .cardProducts .article3 #outFit, .newArrivals .sectionCardContainer .cardProducts .article4 #outFit, .newArrivals .sectionCardContainer .cardProducts .article5 #outFit, .newArrivals .sectionCardContainer .cardProducts .article6 #outFit, .newArrivals .sectionCardContainer .cardProducts .article7 #outFit, .newArrivals .sectionCardContainer .cardProducts .article8 #outFit, .newArrivals .sectionCardContainer .cardProducts .article9 #outFit, .newArrivals .sectionCardContainer .cardProducts .article10 #outFit {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
 }
-.newArrivals .sectionCard .cardProducts .article1 #outFit:hover, .newArrivals .sectionCard .cardProducts .article2 #outFit:hover, .newArrivals .sectionCard .cardProducts .article3 #outFit:hover, .newArrivals .sectionCard .cardProducts .article4 #outFit:hover, .newArrivals .sectionCard .cardProducts .article5 #outFit:hover, .newArrivals .sectionCard .cardProducts .article6 #outFit:hover, .newArrivals .sectionCard .cardProducts .article7 #outFit:hover, .newArrivals .sectionCard .cardProducts .article8 #outFit:hover, .newArrivals .sectionCard .cardProducts .article9 #outFit:hover, .newArrivals .sectionCard .cardProducts .article10 #outFit:hover {
+.newArrivals .sectionCardContainer .cardProducts .article1 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article2 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article3 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article4 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article5 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article6 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article7 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article8 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article9 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article10 #outFit:hover {
   filter: blur(2px) grayscale(60%);
 }
-.newArrivals .sectionCard .cardProducts .article1 .new, .newArrivals .sectionCard .cardProducts .article2 .new, .newArrivals .sectionCard .cardProducts .article3 .new, .newArrivals .sectionCard .cardProducts .article4 .new, .newArrivals .sectionCard .cardProducts .article5 .new, .newArrivals .sectionCard .cardProducts .article6 .new, .newArrivals .sectionCard .cardProducts .article7 .new, .newArrivals .sectionCard .cardProducts .article8 .new, .newArrivals .sectionCard .cardProducts .article9 .new, .newArrivals .sectionCard .cardProducts .article10 .new {
+.newArrivals .sectionCardContainer .cardProducts .article1 .new, .newArrivals .sectionCardContainer .cardProducts .article2 .new, .newArrivals .sectionCardContainer .cardProducts .article3 .new, .newArrivals .sectionCardContainer .cardProducts .article4 .new, .newArrivals .sectionCardContainer .cardProducts .article5 .new, .newArrivals .sectionCardContainer .cardProducts .article6 .new, .newArrivals .sectionCardContainer .cardProducts .article7 .new, .newArrivals .sectionCardContainer .cardProducts .article8 .new, .newArrivals .sectionCardContainer .cardProducts .article9 .new, .newArrivals .sectionCardContainer .cardProducts .article10 .new {
   display: none;
 }
-.newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article2 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article3 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article4 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article5 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article6 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article7 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article8 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard, .newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard {
+.newArrivals .sectionCardContainer .cardProducts .article1 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article2 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article3 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article4 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article5 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article6 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article7 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article8 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article9 .new:checked + .smallCard, .newArrivals .sectionCardContainer .cardProducts .article10 .new:checked + .smallCard {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1516,10 +1524,10 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   z-index: 1;
   transition: all 0.3s ease;
 }
-.newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article2 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article3 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article4 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article5 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article6 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article7 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article8 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard:hover, .newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard:hover {
+.newArrivals .sectionCardContainer .cardProducts .article1 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article2 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article3 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article4 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article5 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article6 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article7 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article8 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article9 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article10 .new:checked + .smallCard:hover {
   box-shadow: 0 0 4px 3px #474747;
 }
-.newArrivals .sectionCard .cardProducts .article1 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article2 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article3 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article4 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article5 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article6 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article7 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article8 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article9 .new:checked + .smallCard .price, .newArrivals .sectionCard .cardProducts .article10 .new:checked + .smallCard .price {
+.newArrivals .sectionCardContainer .cardProducts .article1 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article2 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article3 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article4 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article5 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article6 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article7 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article8 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article9 .new:checked + .smallCard .price, .newArrivals .sectionCardContainer .cardProducts .article10 .new:checked + .smallCard .price {
   height: 50px;
   color: #BC2327;
   font-size: 1rem;
@@ -1530,7 +1538,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   align-items: center;
   margin: auto;
 }
-.newArrivals .sectionCard .cardProducts .article1 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article2 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article3 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article4 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article5 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article6 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article7 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article8 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article9 .fadeAway .skull, .newArrivals .sectionCard .cardProducts .article10 .fadeAway .skull {
+.newArrivals .sectionCardContainer .cardProducts .article1 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article2 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article3 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article4 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article5 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article6 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article7 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article8 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article9 .fadeAway .skull, .newArrivals .sectionCardContainer .cardProducts .article10 .fadeAway .skull {
   width: 35px;
   position: absolute;
   top: 30px;
@@ -1544,7 +1552,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transform: scale(100%);
   transition: transform 0.3s ease;
 }
-.newArrivals .sectionCard .cardProducts .article1 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article2 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article3 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article4 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article5 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article6 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article7 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article8 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article9 .fadeAway .skull:hover, .newArrivals .sectionCard .cardProducts .article10 .fadeAway .skull:hover {
+.newArrivals .sectionCardContainer .cardProducts .article1 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article2 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article3 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article4 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article5 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article6 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article7 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article8 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article9 .fadeAway .skull:hover, .newArrivals .sectionCardContainer .cardProducts .article10 .fadeAway .skull:hover {
   transform: scale(103%);
 }
 @keyframes skull {
@@ -2164,31 +2172,31 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-weight: 600;
   margin: 15px 0px;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList {
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .total {
   font-size: 0.9rem;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .itemProduct {
   width: 12%;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description {
   display: flex;
   flex-direction: column;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .price {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description .price {
   font-size: 0.9rem;
   font-family: "Jura", sans-serif;
   color: #191919;
   font-weight: 600;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .description .icons img {
   width: 20px;
   cursor: pointer;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .itemNumber #quantity {
   width: 50px;
   height: 35px;
   padding: 2px;
@@ -2197,7 +2205,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   color: #bc2327;
   font-weight: 600;
 }
-.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartList .total {
   font-size: 0.9rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
@@ -2573,7 +2581,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 
 .sectionWishlist {
-  width: 25vw;
+  width: 30vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -2599,8 +2607,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .sectionWishlist .wishHeadLine .closeCross:hover {
   transform: rotate(90deg);
 }
+.sectionWishlist .menuWishlist {
+  width: 100%;
+}
 .sectionWishlist .menuWishlist .choiceWishlist {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2615,13 +2626,16 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-weight: 600;
   margin: 0px;
 }
+.sectionWishlist .menuWishlist .choiceWishlist .wish {
+  width: 90%;
+}
 .sectionWishlist .menuWishlist .choiceWishlist .wish .category {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px 0px;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: none;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .category .titleWishlist {
   font-size: 1rem;
@@ -2630,25 +2644,35 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-weight: 600;
   margin: 15px 0px;
 }
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct {
+.sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist {
+  width: 90%;
+  height: 430px;
+  padding: 0px 20px 20px 0px;
+  overflow: scroll;
+  margin: 0px 20px 0px 0px;
+  position: fixed;
+  top: 150px;
+  left: 20px;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct {
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .itemProduct {
+.sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .itemProduct {
   width: 15%;
 }
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description {
+.sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .description {
   display: flex;
   flex-direction: column;
   margin-left: -40px;
 }
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .wishPrice {
+.sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .description .wishPrice {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
   font-weight: 600;
 }
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .icons img {
+.sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .description .icons img {
   width: 20px;
   cursor: pointer;
 }
