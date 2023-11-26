@@ -259,17 +259,17 @@ function renderProducts(outfitsArray) {
 
         const availabilityClass = outfit.availability === "Sold-out" || outfit.stock === 0 ? "sold-out" : "";
 
-        cart.innerHTML = `
-            <div class="article ${availabilityClass}">
-                ${outfit.availability === "Sold-out" || outfit.stock === 0 ? '<p class="soldOutLabel">Sold Out</p>' : ''}
-                <img class="outFit" src="${outfit.image}" alt="Outfit Image">
-
-                <div class="info">
-                    <img class="heartIcon" src="../img/wishlist_Icon.svg" alt="Wishlist icon" >
-                    <p class="price">${outfit.category}.......... $${outfit.pricing}</p>
-                    <button class="linkStore" type="button" id="${outfitId}"> Add to cart </button>
-                </div>
-            </div>
+        cart.innerHTML =
+        `
+                        <div class="article ${availabilityClass}">
+                            ${outfit.availability === "Sold-out" || outfit.stock === 0 ? '<p class="soldOutLabel">Sold Out</p>' : ''}
+                            <img class="outFit" src="${outfit.image}" alt="Outfit Image">
+                            <div class="info">
+                                <img class="heartIcon" src="../img/wishlist_Icon.svg" alt="Wishlist icon" >
+                                <p class="price">${outfit.category}.......... $${outfit.pricing}</p>
+                                <button class="linkStore" type="button" id="${outfitId}"> Add to cart </button>
+                            </div>
+                        </div>
         `;
 
         sectionCard.appendChild(cart);
