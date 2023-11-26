@@ -261,7 +261,7 @@ function renderProducts(outfitsArray) {
 
         cart.innerHTML = `
             <div class="article ${availabilityClass}">
-                ${outfit.availability === "Sold-out" || outfit.stock === 0 ? '<p class="sold-out-label">Sold Out</p>' : ''}
+                ${outfit.availability === "Sold-out" || outfit.stock === 0 ? '<p class="soldOutLabel">Sold Out</p>' : ''}
                 <img class="outFit" src="${outfit.image}" alt="Outfit Image">
 
                 <div class="info">
@@ -273,8 +273,6 @@ function renderProducts(outfitsArray) {
         `;
 
         sectionCard.appendChild(cart);
-
-
 
     });
 
