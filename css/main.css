@@ -1206,7 +1206,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .containerStore .sectionStore .sectionCard .cardProducts {
   width: 100%;
   height: auto;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 .containerStore .sectionStore .sectionCard .cardProducts:hover {
   box-shadow: 0 0 4px 2px #707070;
@@ -1222,25 +1222,30 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   filter: grayscale(100%);
   box-shadow: 0 0 4px 2px #707070;
 }
+.containerStore .sectionStore .sectionCard .cardProducts .article:hover > .soldOutLabel {
+  background-color: #bc2327;
+}
 .containerStore .sectionStore .sectionCard .cardProducts .article .soldOutLabel {
+  transform: skew(-15deg, 0deg);
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: -5px;
   padding: 5px 10px;
   background-color: #000000;
   color: #ffffff;
   font-weight: 500;
   font-family: "Jura", sans-serif;
   z-index: 1;
+  transition: 0.3s ease-in-out;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info {
   width: 101%;
   color: #191919;
   font-weight: 500;
   font-family: "Jura", sans-serif;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
-  gap: 20px;
+  gap: 5px;
   transform: translateY(0%);
   transition: transform 0.3s ease;
 }

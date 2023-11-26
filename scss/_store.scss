@@ -145,7 +145,7 @@
             .cardProducts{
                 width:100%;
                 height:auto;
-                transition: all 0.3s ease;
+                transition: 0.3s ease;
                 &:hover{
                     box-shadow: 0 0 4px 2px #707070;
                 }
@@ -159,16 +159,22 @@
                         filter: grayscale(100%);
                         box-shadow: 0 0 4px 2px #707070;
                     }
+                    &:hover > .soldOutLabel{
+                        background-color: $primaryColor;
+
+                    }
                     .soldOutLabel{
+                        transform: skew(-15deg, 0deg);
                         position: absolute;
                         top:0px;
-                        right:0px;
+                        right:-5px;
                         padding:5px 10px;
                         background-color: $blackColor;
                         color:$whiteColor;
                         font-weight: 500;
                         font-family: $fontJura;
                         z-index:1;
+                        transition: 0.3s ease-in-out;
                     }
                     .info{
                         width:101%;
@@ -176,9 +182,9 @@
                         color: $tertiaryColor;
                         font-weight: 500;
                         font-family: $fontJura;
-                        padding:20px;
+                        padding:10px;
                         background-color:$whiteColor;
-                        gap:20px;
+                        gap:5px;
                         transform: translateY(0%);
                         transition: transform 0.3s ease;
                         .heartIcon{
