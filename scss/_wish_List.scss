@@ -24,14 +24,13 @@
     padding-top: 60px;
     transform: translate(105%);
     transition: $transition;
-
     .wishHeadLine{
         .closeCross{
             width:15px;
             cursor: pointer;
             position: absolute;
             top:20px;
-            left:35px;
+            left:20px;
             transform: rotate(0deg);
             transition: $transition;
             &:hover{
@@ -41,7 +40,6 @@
     }
     .menuWishlist{
         width: 100%;
-
         .choiceWishlist{
             width: 90%;
             @include display_flex_column_space_between_flex_start();

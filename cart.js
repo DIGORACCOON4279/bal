@@ -9,6 +9,7 @@ let cartStorage = localStorage.getItem("cartProducts");
 cartStorage = JSON.parse(cartStorage);
 
 let cartContainer = document.querySelector(".containerArticles");
+// let outcomeCart = document.querySelector(".outcomeCart");
 
 function renderCart(cartItems) {
     cartContainer.innerHTML = "";
@@ -28,9 +29,9 @@ function renderCart(cartItems) {
                             </div>
                             <div class="itemNumber">
                                 <div class="counter">
-                                    <button class="minus-button">-</button>
-                                    <span class="counter-value">${cartItem.quantity}</span>
-                                    <button class="plus-button">+</button>
+                                    <button class="minusBtn">-</button>
+                                    <span class="counterValue">${cartItem.quantity}</span>
+                                    <button class="plusBtn">+</button>
                                 </div>
                             </div>
                             <p class="total">$${cartItem.pricing * cartItem.quantity}</p>
@@ -38,9 +39,9 @@ function renderCart(cartItems) {
 
         cartContainer.appendChild(cart);
 
-        const counterValue = cart.querySelector(".counter-value");
-        const plusButton = cart.querySelector(".plus-button");
-        const minusButton = cart.querySelector(".minus-button");
+        const counterValue = cart.querySelector(".counterValue");
+        const plusButton = cart.querySelector(".plusBtn");
+        const minusButton = cart.querySelector(".minusBtn");
 
         plusButton.addEventListener('click', () => {
             actualizarContador(cartItem, counterValue, 1);
@@ -68,8 +69,28 @@ function renderCart(cartItems) {
     });
 }
 
-
 renderCart(cartStorage);
+
+
+
+// function getTotalProducts() {
+//     outcomeCart = document.querySelector(".outcomeCart");
+//     const outcome = document.createElement("div");
+//         outcome.classList.add("outcome");
+//         outcome.innerHTML =
+//         `
+//                             <article class="outcome">
+//                                 <p class="shipping">Shipping<span>$00</span></p>
+//                                 <p class="discount">Discount 25%<span>$374</span></p>
+//                                 <p class="total">Total<span>$1122</span></p>
+//                                 <button class="btnCheckout">Secure checkout</button>
+//                             </article>
+
+//         `;
+
+//         outcomeCart.appendChild(outcome);
+
+// }
 
 
 function actualizarContador(cartItem, counterElement, incremento) {
