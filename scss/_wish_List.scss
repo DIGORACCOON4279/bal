@@ -1,9 +1,7 @@
 
 // Wishlist
 
-// Mixin
-
-#wishlistSide{
+section#wishlistSide{
     display: none;
     &:checked ~ .sectionWishlist{
         transform:translate(0%);

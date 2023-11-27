@@ -1,0 +1,30 @@
+
+// wishlist modal
+
+#messageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 50px;
+    right: 10%;
+    z-index: 9;
+    div{
+        .messageWishlist{
+            width: 20vw;
+            height: auto;
+            font-size: $xSmallText;
+            font-family: $fontJura;
+            color:$primaryColor;
+            font-weight:$bold;
+            background-color: #000000d9;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            filter: $filterShadow;
+        }
+    }
+}

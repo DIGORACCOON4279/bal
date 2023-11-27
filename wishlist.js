@@ -26,18 +26,19 @@ function renderWishlist(wishlistItems) {
             wishlistProduct.classList.add("wishlist");
             wishlistProduct.setAttribute("data-product-id", wishlistItem.id);
 
-            wishlistProduct.innerHTML = `
-                <div class="blockProduct">
-                    <img class="itemProduct" src="${wishlistItem.image}" alt="Product pic">
-                    <div class="description">
-                        <p class="wishPrice">$${wishlistItem.pricing}</p>
-                        <div class="icons">
-                            <img class="delete" src="../img/trash_Icon.svg" alt="Trash icon">
-                            <img class="edit" src="../img/edit_Icon.svg" alt="Edit icon">
-                        </div>
-                    </div>
-                    <img class="itemWishlist" src="../img/wishlist_Icon.svg" alt="Wishlist icon">
-                </div>
+            wishlistProduct.innerHTML =
+            `
+                                        <div class="blockProduct">
+                                            <img class="itemProduct" src="${wishlistItem.image}" alt="Product pic">
+                                            <div class="description">
+                                                <p class="wishPrice">$${wishlistItem.pricing}</p>
+                                                <div class="icons">
+                                                    <img class="delete" src="../img/trash_Icon.svg" alt="Trash icon">
+                                                    <img class="edit" src="../img/edit_Icon.svg" alt="Edit icon">
+                                                </div>
+                                            </div>
+                                            <img class="itemWishlist" src="../img/wishlist_Icon.svg" alt="Wishlist icon">
+                                        </div>
             `;
 
             wishlistProduct.querySelector('.delete').addEventListener('click', () => {
@@ -58,23 +59,33 @@ function renderWishlist(wishlistItems) {
 
 
 function agregarAWishlist(selectedOutfit) {
-
     // Asegurémonos de que selectedOutfit y su propiedad 'id' estén definidos
     if (!selectedOutfit || !selectedOutfit.id) {
         console.error("El producto seleccionado no tiene un ID válido:", selectedOutfit);
         return;
     }
 
-
-
     // Verifica si el producto ya está en la wishlist
     const existingWishlistItem = wishlistProducts.find(item => item && item.id === selectedOutfit.id);
 
     if (existingWishlistItem) {
-        alert("¡Este producto ya esta agregado en tu wishlist!");
+        // Reemplaza la alerta con un mensaje en el DOM
+        const message = document.createElement('div');
+        message.innerHTML = `<p class='messageWishlist'>"This product is already added to your wishlist ⚡!!!"</p>`;
+
+        // Inserta el mensaje dentro de un contenedor específico con el ID 'mensaje-container'
+        const messageContainer = document.getElementById('messageContainer'); // Reemplaza con el ID real de tu contenedor
+        messageContainer.appendChild(message);
+
+        // Puedes agregar lógica adicional aquí según tus necesidades
+
+        setTimeout(() => {
+            // Elimina el mensaje después de unos segundos (ajusta según tus necesidades)
+            message.remove();
+        }, 2250); // 3000 milisegundos (3 segundos) en este ejemplo
+
         return;
     }
-
 
     // Agrega el producto a la wishlist
     wishlistProducts.push(selectedOutfit);
@@ -87,6 +98,37 @@ function agregarAWishlist(selectedOutfit) {
 
     console.log("Producto agregado a la wishlist:", selectedOutfit);
 }
+
+
+
+
+// function agregarAWishlist(selectedOutfit) {
+
+//     // Asegurémonos de que selectedOutfit y su propiedad 'id' estén definidos
+//     if (!selectedOutfit || !selectedOutfit.id) {
+//         console.error("El producto seleccionado no tiene un ID válido:", selectedOutfit);
+//         return;
+//     }
+
+//     // Verifica si el producto ya está en la wishlist
+//     const existingWishlistItem = wishlistProducts.find(item => item && item.id === selectedOutfit.id);
+
+//     if (existingWishlistItem) {
+//         alert("¡Este producto ya esta agregado en tu wishlist!");
+//         return;
+//     }
+
+//     // Agrega el producto a la wishlist
+//     wishlistProducts.push(selectedOutfit);
+
+//     // Actualiza localStorage después de agregar a la wishlist
+//     localStorage.setItem("wishlistProducts", JSON.stringify(wishlistProducts));
+
+//     // Renderiza la wishlist actualizada
+//     renderWishlist(wishlistProducts);
+
+//     console.log("Producto agregado a la wishlist:", selectedOutfit);
+// }
 
 
 function eliminarDeWishlist(productId) {
