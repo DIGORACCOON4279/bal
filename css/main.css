@@ -1384,12 +1384,24 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .newArrivals .sectionCardContainer .cardProducts .article1 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article2 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article3 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article4 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article5 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article6 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article7 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article8 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article9 .smallCard, .newArrivals .sectionCardContainer .cardProducts .article10 .smallCard {
   display: none;
 }
+.newArrivals .sectionCardContainer .cardProducts .article1 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article2 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article3 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article4 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article5 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article6 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article7 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article8 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article9 .nameOut, .newArrivals .sectionCardContainer .cardProducts .article10 .nameOut {
+  color: #bc2327;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Rubik Distressed", cursive;
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  z-index: -1;
+}
 .newArrivals .sectionCardContainer .cardProducts .article1 #outFit, .newArrivals .sectionCardContainer .cardProducts .article2 #outFit, .newArrivals .sectionCardContainer .cardProducts .article3 #outFit, .newArrivals .sectionCardContainer .cardProducts .article4 #outFit, .newArrivals .sectionCardContainer .cardProducts .article5 #outFit, .newArrivals .sectionCardContainer .cardProducts .article6 #outFit, .newArrivals .sectionCardContainer .cardProducts .article7 #outFit, .newArrivals .sectionCardContainer .cardProducts .article8 #outFit, .newArrivals .sectionCardContainer .cardProducts .article9 #outFit, .newArrivals .sectionCardContainer .cardProducts .article10 #outFit {
   width: 100%;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .newArrivals .sectionCardContainer .cardProducts .article1 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article2 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article3 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article4 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article5 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article6 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article7 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article8 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article9 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article10 #outFit:hover {
+  content: "";
+  transform: translateY(50px);
   filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCardContainer .cardProducts .article1 .new, .newArrivals .sectionCardContainer .cardProducts .article2 .new, .newArrivals .sectionCardContainer .cardProducts .article3 .new, .newArrivals .sectionCardContainer .cardProducts .article4 .new, .newArrivals .sectionCardContainer .cardProducts .article5 .new, .newArrivals .sectionCardContainer .cardProducts .article6 .new, .newArrivals .sectionCardContainer .cardProducts .article7 .new, .newArrivals .sectionCardContainer .cardProducts .article8 .new, .newArrivals .sectionCardContainer .cardProducts .article9 .new, .newArrivals .sectionCardContainer .cardProducts .article10 .new {
@@ -1409,7 +1421,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   right: 25px;
   box-shadow: 0 0 3px 1px #474747;
   z-index: 1;
-  transition: all 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .newArrivals .sectionCardContainer .cardProducts .article1 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article2 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article3 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article4 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article5 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article6 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article7 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article8 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article9 .new:checked + .smallCard:hover, .newArrivals .sectionCardContainer .cardProducts .article10 .new:checked + .smallCard:hover {
   box-shadow: 0 0 4px 3px #474747;
