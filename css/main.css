@@ -1014,7 +1014,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .bestSellers .sectionCardBlock .cardProducts {
   width: 100%;
-  height: auto;
+  height: 400px;
   cursor: pointer;
   overflow: hidden;
   transition: 0.3s ease-in-out;
@@ -1024,7 +1024,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .bestSellers .sectionCardBlock .cardProducts .article {
   width: 100%;
-  height: inherit;
+  height: auto;
   overflow: hidden;
 }
 .bestSellers .sectionCardBlock .cardProducts .article:hover > .outFit {
@@ -1034,11 +1034,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .bestSellers .sectionCardBlock .cardProducts .article .info {
   width: 101%;
-  color: #191919;
-  font-weight: 600;
-  font-family: "Jura", sans-serif;
   margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
   transform: translateY(110%);
   transition: transform 0.3s ease;
@@ -1046,23 +1043,16 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .bestSellers .sectionCardBlock .cardProducts .article .info:hover {
   transform: translateY(-110%);
 }
-.bestSellers .sectionCardBlock .cardProducts .article .info .heartIcon {
-  align-self: self-end;
+.bestSellers .sectionCardBlock .cardProducts .article .info .nameOutfit {
+  color: #bc2327;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Rubik Distressed", cursive;
 }
-.bestSellers .sectionCardBlock .cardProducts .article .info .linkStore {
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-  color: #ffffff;
+.bestSellers .sectionCardBlock .cardProducts .article .info .price {
+  color: #191919;
   font-weight: 600;
   font-family: "Jura", sans-serif;
-  background-color: #bc2327;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-.bestSellers .sectionCardBlock .cardProducts .article .info .linkStore:hover {
-  color: #ffffff;
-  background-color: #000000;
 }
 .bestSellers .sectionCardBlock .cardProducts .article .outFit {
   width: 100%;

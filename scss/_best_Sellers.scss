@@ -15,7 +15,7 @@
     .sectionCardBlock{
         .cardProducts{
             width:100%;
-            height:auto;
+            height:400px;
             cursor: pointer;
             overflow: hidden;
             transition: $transition;
@@ -24,7 +24,7 @@
             }
             .article{
                 width:100%;
-                height:inherit;
+                height:auto;
                 overflow: hidden;
                 &:hover > .outFit{
                     transform:scale(110%);
@@ -34,11 +34,8 @@
                 .info{
                     width:101%;
                     @extend .flexColumn;
-                    color: $tertiaryColor;
-                    font-weight: $bold;
-                    font-family: $fontJura;
                     margin-top: 20px;
-                    padding:20px;
+                    padding:10px;
                     background-color: $whiteColor;
                     // background-color: #131313;
                     transform: translateY(110%);
@@ -46,26 +43,16 @@
                     &:hover{
                         transform: translateY(-110%);
                     }
-                    .heartIcon{
-                        align-self: self-end;
+                    .nameOutfit{
+                        color: $primaryColor;
+                        font-size: $nameLogo;
+                        font-weight: $mediumBold;
+                        font-family: $fontRubik;
                     }
-                    .linkStore{
-                        width: 100%;
-                        text-align: center;
-                        padding: 5px;
-                        color: $whiteColor;
+                    .price{
+                        color: $tertiaryColor;
                         font-weight: $bold;
                         font-family: $fontJura;
-                        background-color: $primaryColor;
-                        text-decoration: none;
-                        transition: $transition;
-                        &:hover{
-                            // color: #BC2327;
-                            color: $whiteColor;
-                            // background-color: #D9D9D9;
-                            background-color: $blackColor;
-                            // box-shadow: 0 0 4px 2px #BC2327;
-                        }
                     }
                 }
                 .outFit{
