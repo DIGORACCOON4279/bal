@@ -327,30 +327,7 @@ function addToCartButton() {
     });
 }
 
-// Agregar al carrito
 
-// function agregarAlCarrito(selectedOutfit) {
-//     const existingCartItem = cartProducts.find(item => item.id == selectedOutfit.id);
-
-//     if (existingCartItem) {
-//         // Si el producto ya está en el carrito, verifica si la cantidad es menor que 5 antes de agregar
-//         if (existingCartItem.quantity < 5) {
-//             existingCartItem.quantity++;
-//         } else {
-//             alert("¡No puedes agregar más de 5 unidades de un producto!");
-//             return;
-//         }
-//     } else {
-//         // Si el producto no está en el carrito, agrega uno nuevo
-//         selectedOutfit.quantity = 1;
-//         cartProducts.push(selectedOutfit);
-//     }
-
-//     console.log(cartProducts);
-//     renderCart(cartProducts);
-
-//     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-// }
 
 function agregarAlCarrito(selectedOutfit) {
     const existingCartItem = cartProducts.find(item => item.id == selectedOutfit.id);

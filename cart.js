@@ -104,7 +104,7 @@ function actualizarContador(cartItem, counterElement, incremento) {
             messageContainer.appendChild(messageProduct);
 
 
-            // Eliminar el mensaje después de 3 segundos
+            // Eliminar el mensaje después de 2 segundos
             setTimeout(() => {
                 messageProduct.remove();
             }, 2250);

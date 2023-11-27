@@ -82,7 +82,7 @@ function agregarAWishlist(selectedOutfit) {
         setTimeout(() => {
             // Elimina el mensaje después de unos segundos (ajusta según tus necesidades)
             message.remove();
-        }, 2250); // 3000 milisegundos (3 segundos) en este ejemplo
+        }, 2250); // 2000 milisegundos (2 segundos) en este ejemplo
 
         return;
     }
@@ -102,33 +102,6 @@ function agregarAWishlist(selectedOutfit) {
 
 
 
-// function agregarAWishlist(selectedOutfit) {
-
-//     // Asegurémonos de que selectedOutfit y su propiedad 'id' estén definidos
-//     if (!selectedOutfit || !selectedOutfit.id) {
-//         console.error("El producto seleccionado no tiene un ID válido:", selectedOutfit);
-//         return;
-//     }
-
-//     // Verifica si el producto ya está en la wishlist
-//     const existingWishlistItem = wishlistProducts.find(item => item && item.id === selectedOutfit.id);
-
-//     if (existingWishlistItem) {
-//         alert("¡Este producto ya esta agregado en tu wishlist!");
-//         return;
-//     }
-
-//     // Agrega el producto a la wishlist
-//     wishlistProducts.push(selectedOutfit);
-
-//     // Actualiza localStorage después de agregar a la wishlist
-//     localStorage.setItem("wishlistProducts", JSON.stringify(wishlistProducts));
-
-//     // Renderiza la wishlist actualizada
-//     renderWishlist(wishlistProducts);
-
-//     console.log("Producto agregado a la wishlist:", selectedOutfit);
-// }
 
 
 function eliminarDeWishlist(productId) {
