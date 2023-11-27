@@ -230,11 +230,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   padding-left: 20px;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart {
-  width: 90%;
+  width: 95%;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
   width: 100%;
-  padding: 20px 0px 0px 20px;
+  padding: 20px 45px 0px 20px;
   border-bottom: none;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category .titleCartlist {
@@ -245,9 +245,10 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-weight: 600;
 }
 .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .containerArticles {
+  width: 90%;
+  height: 310px;
   margin: 0px 20px;
   padding: 0px 20px 0px 0px;
-  height: 310px;
   overflow: scroll;
   position: fixed;
   top: 140px;

@@ -164,11 +164,11 @@ html{
                     padding-left:20px ;
                 }
                 .cart{
-                    width:90%;
+                    width:95%;
                     .category{
                         width: 100%;
                         @extend .flexRowBetween;
-                        padding: 20px 0px 0px 20px;
+                        padding: 20px 45px 0px 20px;
                         border-bottom: none;
                         .titleCartlist{
                             align-self: self-start;
@@ -179,9 +179,10 @@ html{
                         }
                     }
                     .containerArticles{
+                        width:90%;
+                        height: 310px;
                         margin: 0px 20px;
                         padding: 0px 20px 0px 0px;
-                        height: 310px;
                         overflow: scroll;
                         position: fixed;
                         top:140px;
