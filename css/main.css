@@ -1390,8 +1390,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-weight: 400;
   font-family: "Rubik Distressed", cursive;
   position: absolute;
-  top: 30px;
-  left: 20%;
+  top: 20px;
+  left: 5%;
   z-index: -1;
 }
 .newArrivals .sectionCardContainer .cardProducts .article1 #outFit, .newArrivals .sectionCardContainer .cardProducts .article2 #outFit, .newArrivals .sectionCardContainer .cardProducts .article3 #outFit, .newArrivals .sectionCardContainer .cardProducts .article4 #outFit, .newArrivals .sectionCardContainer .cardProducts .article5 #outFit, .newArrivals .sectionCardContainer .cardProducts .article6 #outFit, .newArrivals .sectionCardContainer .cardProducts .article7 #outFit, .newArrivals .sectionCardContainer .cardProducts .article8 #outFit, .newArrivals .sectionCardContainer .cardProducts .article9 #outFit, .newArrivals .sectionCardContainer .cardProducts .article10 #outFit {
@@ -1401,7 +1401,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .newArrivals .sectionCardContainer .cardProducts .article1 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article2 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article3 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article4 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article5 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article6 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article7 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article8 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article9 #outFit:hover, .newArrivals .sectionCardContainer .cardProducts .article10 #outFit:hover {
   content: "";
-  transform: translateY(50px);
+  transform: translateY(40px);
   filter: blur(2px) grayscale(60%);
 }
 .newArrivals .sectionCardContainer .cardProducts .article1 .new, .newArrivals .sectionCardContainer .cardProducts .article2 .new, .newArrivals .sectionCardContainer .cardProducts .article3 .new, .newArrivals .sectionCardContainer .cardProducts .article4 .new, .newArrivals .sectionCardContainer .cardProducts .article5 .new, .newArrivals .sectionCardContainer .cardProducts .article6 .new, .newArrivals .sectionCardContainer .cardProducts .article7 .new, .newArrivals .sectionCardContainer .cardProducts .article8 .new, .newArrivals .sectionCardContainer .cardProducts .article9 .new, .newArrivals .sectionCardContainer .cardProducts .article10 .new {

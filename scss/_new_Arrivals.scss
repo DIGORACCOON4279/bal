@@ -27,8 +27,8 @@
                     font-weight: $mediumBold;
                     font-family: $fontRubik;
                     position: absolute;
-                    top:30px;
-                    left: 20%;
+                    top:20px;
+                    left:5%;
                     z-index: -1;
                 }
                 #outFit{
@@ -37,7 +37,7 @@
                     transition:$transition;
                     &:hover{
                         content:"";
-                        transform: translateY(50px);
+                        transform: translateY(40px);
                         filter: blur(2px) grayscale(60%);
                     }
                 }
