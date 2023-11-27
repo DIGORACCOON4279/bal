@@ -1264,6 +1264,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transition: transform 0.3s ease-in-out;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info .heartIcon {
+  width: 20px;
   align-self: self-end;
   cursor: pointer;
 }
