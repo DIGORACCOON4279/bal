@@ -1354,6 +1354,7 @@ section#wishlistSide:checked ~ .sectionWishlist {
   font-weight: 500;
   font-family: "Jura", sans-serif;
   transition: 0.3s ease-in-out;
+  z-index: 1;
 }
 .containerStore .sectionStore .sectionCard .cardProducts .article .info {
   width: 101%;
