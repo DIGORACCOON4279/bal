@@ -127,34 +127,6 @@ function actualizarContador(cartItem, counterElement, incremento) {
     totalElement.innerHTML = `$${cartItem.pricing * contador}`;
 }
 
-// function actualizarContador(cartItem, counterElement, incremento) {
-//     let contador = parseInt(counterElement.textContent);
-
-//     // Verifica si la cantidad es mayor al límite de 5 unidades o menor al límite de 1 unidad
-//     if ((contador + incremento) > 5 || (contador + incremento) < 1) {
-//         if (contador + incremento > 5) {
-//             alert(`¡No puedes agregar más de 5 unidades de un producto!`);
-//         } else {
-//             alert(`La cantidad mínima permitida es 1 unidad.`);
-//         }
-//         return;
-//     }
-
-//     // Actualiza el contador y el valor en el DOM
-//     contador += incremento;
-//     counterElement.textContent = contador;
-
-//     // Actualiza la cantidad en el objeto cartItem
-//     cartItem.quantity = contador;
-
-//     // Actualiza el localStorage después de modificar la cantidad
-//     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-
-//     // Actualiza el total en el DOM
-//     const totalElement = counterElement.closest(".cartList").querySelector(".total");
-//     totalElement.textContent = `$${cartItem.pricing * contador}`;
-// }
-
 
 // Función para eliminar un producto del carrito por su ID
 
