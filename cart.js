@@ -73,42 +73,48 @@ renderCart(cartStorage);
 
 
 
-// function getTotalProducts() {
-//     outcomeCart = document.querySelector(".outcomeCart");
-//     const outcome = document.createElement("div");
-//         outcome.classList.add("outcome");
-//         outcome.innerHTML =
-//         `
-//                             <article class="outcome">
-//                                 <p class="shipping">Shipping<span>$00</span></p>
-//                                 <p class="discount">Discount 25%<span>$374</span></p>
-//                                 <p class="total">Total<span>$1122</span></p>
-//                                 <button class="btnCheckout">Secure checkout</button>
-//                             </article>
-
-//         `;
-
-//         outcomeCart.appendChild(outcome);
-
-// }
-
+// Funcion actualizar el contador
 
 function actualizarContador(cartItem, counterElement, incremento) {
-    let contador = parseInt(counterElement.textContent);
+    let contador = parseInt(counterElement.innerHTML);
 
     // Verifica si la cantidad es mayor al límite de 5 unidades o menor al límite de 1 unidad
     if ((contador + incremento) > 5 || (contador + incremento) < 1) {
         if (contador + incremento > 5) {
-            alert(`¡No puedes agregar más de 5 unidades de un producto!`);
+            // Muestra el mensaje si se supera el límite
+            const messageProduct = document.createElement("div");
+            messageProduct.classList.add("messageProduct");
+            messageProduct.innerHTML = `<p class="stockProduct">"You cannot add more than 5 units of a product 🚀"</p>`;
+
+
+            const messageContainer = document.getElementById('messageNewProduct'); // Reemplaza con el ID real de tu contenedor
+            messageContainer.appendChild(messageProduct);
+
+            // Eliminar el mensaje después de 3 segundos
+            setTimeout(() => {
+                messageProduct.remove();
+            }, 3000);
         } else {
-            alert(`La cantidad mínima permitida es 1 unidad.`);
+            // Muestra el mensaje si la cantidad es menor al límite
+            const messageProduct = document.createElement("div");
+            messageProduct.classList.add("messageProduct");
+            messageProduct.innerHTML = `<p class="stockProduct">"The minimum allowed quantity is 1 unit 👍"</p>`;
+
+            const messageContainer = document.getElementById('messageNewProduct'); // Reemplaza con el ID real de tu contenedor
+            messageContainer.appendChild(messageProduct);
+
+
+            // Eliminar el mensaje después de 3 segundos
+            setTimeout(() => {
+                messageProduct.remove();
+            }, 2250);
         }
         return;
     }
 
     // Actualiza el contador y el valor en el DOM
     contador += incremento;
-    counterElement.textContent = contador;
+    counterElement.innerHTML = contador;
 
     // Actualiza la cantidad en el objeto cartItem
     cartItem.quantity = contador;
@@ -118,8 +124,36 @@ function actualizarContador(cartItem, counterElement, incremento) {
 
     // Actualiza el total en el DOM
     const totalElement = counterElement.closest(".cartList").querySelector(".total");
-    totalElement.textContent = `$${cartItem.pricing * contador}`;
+    totalElement.innerHTML = `$${cartItem.pricing * contador}`;
 }
+
+// function actualizarContador(cartItem, counterElement, incremento) {
+//     let contador = parseInt(counterElement.textContent);
+
+//     // Verifica si la cantidad es mayor al límite de 5 unidades o menor al límite de 1 unidad
+//     if ((contador + incremento) > 5 || (contador + incremento) < 1) {
+//         if (contador + incremento > 5) {
+//             alert(`¡No puedes agregar más de 5 unidades de un producto!`);
+//         } else {
+//             alert(`La cantidad mínima permitida es 1 unidad.`);
+//         }
+//         return;
+//     }
+
+//     // Actualiza el contador y el valor en el DOM
+//     contador += incremento;
+//     counterElement.textContent = contador;
+
+//     // Actualiza la cantidad en el objeto cartItem
+//     cartItem.quantity = contador;
+
+//     // Actualiza el localStorage después de modificar la cantidad
+//     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+
+//     // Actualiza el total en el DOM
+//     const totalElement = counterElement.closest(".cartList").querySelector(".total");
+//     totalElement.textContent = `$${cartItem.pricing * contador}`;
+// }
 
 
 // Función para eliminar un producto del carrito por su ID

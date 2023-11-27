@@ -2612,6 +2612,32 @@ section#wishlistSide:checked ~ .sectionWishlist {
   filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.6431372549));
 }
 
+#messageNewProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 50px;
+  left: 35%;
+  z-index: 9;
+}
+#messageNewProduct .stockProduct {
+  width: 20vw;
+  height: auto;
+  font-size: 0.8rem;
+  font-family: "Jura", sans-serif;
+  color: #bc2327;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.8509803922);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.6431372549));
+}
+
 .sectionFilter .menuFilterSide {
   width: 100%;
 }

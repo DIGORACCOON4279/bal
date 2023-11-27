@@ -327,6 +327,31 @@ function addToCartButton() {
     });
 }
 
+// Agregar al carrito
+
+// function agregarAlCarrito(selectedOutfit) {
+//     const existingCartItem = cartProducts.find(item => item.id == selectedOutfit.id);
+
+//     if (existingCartItem) {
+//         // Si el producto ya está en el carrito, verifica si la cantidad es menor que 5 antes de agregar
+//         if (existingCartItem.quantity < 5) {
+//             existingCartItem.quantity++;
+//         } else {
+//             alert("¡No puedes agregar más de 5 unidades de un producto!");
+//             return;
+//         }
+//     } else {
+//         // Si el producto no está en el carrito, agrega uno nuevo
+//         selectedOutfit.quantity = 1;
+//         cartProducts.push(selectedOutfit);
+//     }
+
+//     console.log(cartProducts);
+//     renderCart(cartProducts);
+
+//     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+// }
+
 function agregarAlCarrito(selectedOutfit) {
     const existingCartItem = cartProducts.find(item => item.id == selectedOutfit.id);
 
@@ -335,7 +360,18 @@ function agregarAlCarrito(selectedOutfit) {
         if (existingCartItem.quantity < 5) {
             existingCartItem.quantity++;
         } else {
-            alert("¡No puedes agregar más de 5 unidades de un producto!");
+            // Muestra el mensaje si se supera el límite
+            const messageProduct = document.createElement("div");
+            messageProduct.classList.add("messageProduct");
+            messageProduct.innerHTML = `<p class="stockProduct">"You cannot add more than 5 units of a product 🚀"</p>`;
+
+            const messageContainer = document.getElementById('messageNewProduct'); // Reemplaza con el ID real de tu contenedor
+            messageContainer.appendChild(messageProduct);
+
+            // Eliminar el mensaje después de 3 segundos
+            setTimeout(() => {
+                messageProduct.remove();
+            }, 2250);
             return;
         }
     } else {
@@ -349,7 +385,6 @@ function agregarAlCarrito(selectedOutfit) {
 
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
 }
-
 
 
 
