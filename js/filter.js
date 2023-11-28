@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Función para reiniciar el filtro
 
 function resetFilter() {
+
     // Reinicia los checkboxes
     inStockCheckbox.checked = true;
     newArrivalsCheckbox.checked = true;
@@ -84,6 +85,7 @@ function clearProducts() {
 
 // Lógica para inicializar la página con todos los productos
 document.addEventListener("DOMContentLoaded", () => {
+
     // Limpia la sección de productos antes de renderizar
     clearProducts();
 

@@ -8,7 +8,9 @@ let cartStorage = localStorage.getItem("cartProducts");
 cartStorage = JSON.parse(cartStorage);
 
 let cartContainer = document.querySelector(".containerArticles");
-// let outcomeCart = document.querySelector(".outcomeCart");
+
+
+//Funcion para renderizar el carrito
 
 function renderCart(cartItems) {
     cartContainer.innerHTML = "";
@@ -56,11 +58,12 @@ function renderCart(cartItems) {
             });
         });
 
-            // Ahora, agrega un manejador de eventos en un nivel superior para los íconos de editar
+            // Agrega un manejador de eventos para los íconos de editar
             const editIcons = document.querySelectorAll(".edit-icon");
             editIcons.forEach(editIcon => {
             editIcon.addEventListener('click', (e) => {
-            // Obtén el ID del producto desde el atributo data-product-id del contenedor del producto
+
+            // Obtener el ID del producto desde el atributo data-product-id del contenedor del producto
             const productId = e.currentTarget.closest(".cartList").getAttribute("data-product-id");
             const showroomUrl = `showRoom.html?id=${productId}`;
             window.location.href = showroomUrl;
@@ -77,9 +80,10 @@ renderCart(cartStorage);
 function actualizarContador(cartItem, counterElement, incremento) {
     let contador = parseInt(counterElement.innerHTML);
 
-    // Verifica si la cantidad es mayor al límite de 5 unidades o menor al límite de 1 unidad
+    // Verifica si la cantidad es mayor al límite
     if ((contador + incremento) > 5 || (contador + incremento) < 1) {
         if (contador + incremento > 5) {
+
             // Muestra el mensaje si se supera el límite
             const messageProduct = document.createElement("div");
             messageProduct.classList.add("messageProduct");
@@ -93,6 +97,7 @@ function actualizarContador(cartItem, counterElement, incremento) {
                 messageProduct.remove();
             }, 3000);
         } else {
+
             // Muestra el mensaje si la cantidad es menor al límite
             const messageProduct = document.createElement("div");
             messageProduct.classList.add("messageProduct");
@@ -102,7 +107,7 @@ function actualizarContador(cartItem, counterElement, incremento) {
             messageContainer.appendChild(messageProduct);
 
 
-            // Eliminar el mensaje después de 2 segundos
+            // Eliminar el mensaje después de 2250 milisegundos
             setTimeout(() => {
                 messageProduct.remove();
             }, 2250);
@@ -110,7 +115,7 @@ function actualizarContador(cartItem, counterElement, incremento) {
         return;
     }
 
-    // Actualiza el contador y el valor en el DOM
+    // Actualiza el contador
     contador += incremento;
     counterElement.innerHTML = contador;
 
@@ -129,10 +134,11 @@ function actualizarContador(cartItem, counterElement, incremento) {
 // Función para eliminar un producto del carrito por su ID
 
 function eliminarDelCarrito(productId) {
+
     // Encuentra el índice del producto con el ID proporcionado en el array cartProducts
     const index = cartProducts.findIndex(product => product.id == productId);
 
-    // Si se encuentra el producto, elimínalo del array
+    // Si se encuentra el producto, lo elimínalo del array
     if (index !== -1) {
         cartProducts.splice(index, 1);
         console.log("Producto eliminado del carrito:", productId);

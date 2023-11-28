@@ -3,7 +3,7 @@ console.log("Script loaded: wishlist.js");
 
 // Wishlist y localStorage
 
-// Obtén la sección de la wishlist
+// Obtiene la sección de la wishlist
 const wishlistContainer = document.querySelector('.sectionWishlist .containerWishlist');
 
 // Storage
@@ -16,7 +16,7 @@ if(wishlistProductsLS) {
 }
 
 
-// // Función para renderizar la wishlist
+// Función para renderizar la wishlist
 
 function renderWishlist(wishlistItems) {
     wishlistContainer.innerHTML = "";
@@ -59,7 +59,8 @@ function renderWishlist(wishlistItems) {
 // Función para agregar a la wishlist
 
 function agregarAWishlist(selectedOutfit) {
-    // Asegurémonos de que selectedOutfit y su propiedad 'id' estén definidos
+
+    // Aseguro de que selectedOutfit y su propiedad 'id' estén definidos
     if (!selectedOutfit || !selectedOutfit.id) {
         console.error("El producto seleccionado no tiene un ID válido:", selectedOutfit);
         return;
@@ -69,20 +70,20 @@ function agregarAWishlist(selectedOutfit) {
     const existingWishlistItem = wishlistProducts.find(item => item && item.id === selectedOutfit.id);
 
     if (existingWishlistItem) {
-        // Reemplaza la alerta con un mensaje en el DOM
+
+        // Mensaje de alerta
         const message = document.createElement('div');
         message.innerHTML = `<p class='messageWishlist'>"This product is already added to your wishlist ⚡!!!"</p>`;
 
-        // Inserta el mensaje dentro de un contenedor específico con el ID 'mensaje-container'
-        const messageContainer = document.getElementById('messageContainer'); // Reemplaza con el ID real de tu contenedor
+        // Inserta el mensaje
+        const messageContainer = document.getElementById('messageContainer');
         messageContainer.appendChild(message);
 
-        // Puedes agregar lógica adicional aquí según tus necesidades
-
         setTimeout(() => {
-            // Elimina el mensaje después de unos segundos (ajusta según tus necesidades)
+
+            // Elimina el mensaje después de unos 2250 milisegundos
             message.remove();
-        }, 2250); // 2000 milisegundos (2 segundos) en este ejemplo
+        }, 2250);
 
         return;
     }
@@ -103,10 +104,11 @@ function agregarAWishlist(selectedOutfit) {
 // Función para eliminar desde wishlist
 
 function eliminarDeWishlist(productId) {
-    // Encuentra el índice del producto con el ID proporcionado en el array wishlistProducts
+
+    // Encuentra el índice del producto con el ID del array wishlistProducts
     const index = wishlistProducts.findIndex(product => product && product.id == productId);
 
-    // Si se encuentra el producto, elimínalo del array
+    // Si se encuentra el producto lo elimína del array
     if (index !== -1) {
         wishlistProducts.splice(index, 1);
         console.log("Producto eliminado de la wishlist:", productId);
