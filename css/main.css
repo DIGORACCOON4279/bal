@@ -2416,13 +2416,13 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   justify-content: space-between;
   position: fixed;
   bottom: 70px;
-  right: 7%;
+  right: 6%;
   z-index: 99;
 }
 #messageContainer div .messageWishlist, #messageContainer div .stockProduct, #messageContainer div .soldOutProduct, #messageNewProduct div .messageWishlist, #messageNewProduct div .stockProduct, #messageNewProduct div .soldOutProduct, #out-of-stock-message div .messageWishlist, #out-of-stock-message div .stockProduct, #out-of-stock-message div .soldOutProduct {
-  width: 20vw;
+  width: 14vw;
   height: auto;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
   font-weight: 600;
