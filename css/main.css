@@ -1096,7 +1096,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-weight: 600;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .description .icons img {
-  width: 15px;
+  width: 20px;
+  cursor: pointer;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .itemWishlist {
   width: 20px;
