@@ -5,6 +5,7 @@ console.log("Script loaded: filter.js");
 
 
 // Obtén elementos del filtro
+
 const inStockCheckbox = document.getElementById("inStock");
 const newArrivalsCheckbox = document.getElementById("newArrivals");
 const soldOutCheckbox = document.getElementById("soldOut");
@@ -15,7 +16,7 @@ const priceThreeCheckbox = document.getElementById("priceThree");
 
 // const resetButton = document.querySelector(".btnReset");
 
-// Manejadores de eventos para checkboxes
+// Controladores de eventos para checkboxes
 inStockCheckbox.addEventListener("change", applyFilter);
 newArrivalsCheckbox.addEventListener("change", applyFilter);
 soldOutCheckbox.addEventListener("change", applyFilter);
