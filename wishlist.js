@@ -17,6 +17,7 @@ if(wishlistProductsLS) {
 
 
 // // Función para renderizar la wishlist
+
 function renderWishlist(wishlistItems) {
     wishlistContainer.innerHTML = "";
 
@@ -56,7 +57,6 @@ function renderWishlist(wishlistItems) {
 
 
 // Función para agregar a la wishlist
-
 
 function agregarAWishlist(selectedOutfit) {
     // Asegurémonos de que selectedOutfit y su propiedad 'id' estén definidos
@@ -100,9 +100,7 @@ function agregarAWishlist(selectedOutfit) {
 }
 
 
-
-
-
+// Función para eliminar desde wishlist
 
 function eliminarDeWishlist(productId) {
     // Encuentra el índice del producto con el ID proporcionado en el array wishlistProducts
@@ -122,7 +120,6 @@ function eliminarDeWishlist(productId) {
         console.log("Producto no encontrado en la wishlist:", productId);
     }
 }
-
 
 // Renderiza la wishlist inicial
 renderWishlist(wishlistProducts);

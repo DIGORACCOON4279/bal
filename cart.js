@@ -2,7 +2,6 @@
 
 console.log("Script loaded: cart.js");
 
-
 // Carrito y localStorage
 
 let cartStorage = localStorage.getItem("cartProducts");
@@ -85,7 +84,6 @@ function actualizarContador(cartItem, counterElement, incremento) {
             const messageProduct = document.createElement("div");
             messageProduct.classList.add("messageProduct");
             messageProduct.innerHTML = `<p class="stockProduct">"You cannot add more than 5 units of a product 🚀"</p>`;
-
 
             const messageContainer = document.getElementById('messageNewProduct'); // Reemplaza con el ID real de tu contenedor
             messageContainer.appendChild(messageProduct);

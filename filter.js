@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 // Función para reiniciar el filtro
+
 function resetFilter() {
     // Reinicia los checkboxes
     inStockCheckbox.checked = true;
