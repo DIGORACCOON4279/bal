@@ -2591,9 +2591,9 @@ section#wishlistSide:checked ~ .sectionWishlist {
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  bottom: 0px;
-  right: 10%;
-  z-index: 999;
+  bottom: 70px;
+  right: 7%;
+  z-index: 99;
 }
 #messageContainer div .messageWishlist, #messageContainer div .stockProduct, #messageNewProduct div .messageWishlist, #messageNewProduct div .stockProduct {
   width: 20vw;
@@ -2614,8 +2614,8 @@ section#wishlistSide:checked ~ .sectionWishlist {
 
 #messageNewProduct {
   position: fixed;
-  bottom: 0px;
-  right: 10%;
+  bottom: 70px;
+  right: 7%;
 }
 
 #out-of-stock-message {
@@ -2623,9 +2623,10 @@ section#wishlistSide:checked ~ .sectionWishlist {
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  bottom: 0px;
-  right: 10%;
-  z-index: 999;
+  bottom: 70px;
+  right: 7%;
+  z-index: 99;
+  animation: slideUp 5800ms linear 0.3s;
 }
 #out-of-stock-message div .soldOutProduct {
   width: 20vw;
@@ -2642,6 +2643,23 @@ section#wishlistSide:checked ~ .sectionWishlist {
   flex-direction: column;
   justify-content: space-between;
   filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.6431372549));
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-125%);
+  }
+  50% {
+    transform: translateY(-225%);
+  }
+  75% {
+    transform: translateY(-325%);
+  }
+  100% {
+    transform: translateY(-425%);
+  }
 }
 
 .sectionFilter .menuFilterSide {

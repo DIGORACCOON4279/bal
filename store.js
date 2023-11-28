@@ -307,7 +307,7 @@ function addToCartButton() {
                 if (bodyElement) {
                     // Crear un elemento 'div' con el mensaje
                     const messageParagraph = document.createElement("div");
-                    messageParagraph.innerHTML = `<p class="soldOutProduct">"¡Este producto está agotado o no hay unidades disponibles!"</p>`;
+                    messageParagraph.innerHTML = `<p class="soldOutProduct">"¡This product is out of stock or there are no units available 🔕!"</p>`;
 
                     // Agregar el párrafo a la sección
                     messageSection.appendChild(messageParagraph);
