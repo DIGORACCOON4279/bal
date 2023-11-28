@@ -2410,7 +2410,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   position: relative;
 }
 
-#messageContainer, #messageNewProduct {
+#messageContainer, #messageNewProduct, #out-of-stock-message {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2419,7 +2419,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   right: 7%;
   z-index: 99;
 }
-#messageContainer div .messageWishlist, #messageContainer div .stockProduct, #messageNewProduct div .messageWishlist, #messageNewProduct div .stockProduct {
+#messageContainer div .messageWishlist, #messageContainer div .stockProduct, #messageContainer div .soldOutProduct, #messageNewProduct div .messageWishlist, #messageNewProduct div .stockProduct, #messageNewProduct div .soldOutProduct, #out-of-stock-message div .messageWishlist, #out-of-stock-message div .stockProduct, #out-of-stock-message div .soldOutProduct {
   width: 20vw;
   height: auto;
   font-size: 0.8rem;
@@ -2434,39 +2434,10 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   flex-direction: column;
   justify-content: space-between;
   filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.6431372549));
-}
-
-#messageNewProduct {
-  position: fixed;
-  bottom: 70px;
-  right: 7%;
 }
 
 #out-of-stock-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: fixed;
-  bottom: 70px;
-  right: 7%;
-  z-index: 99;
   animation: slideUp 5800ms linear 0.3s;
-}
-#out-of-stock-message div .soldOutProduct {
-  width: 20vw;
-  height: auto;
-  font-size: 0.8rem;
-  font-family: "Jura", sans-serif;
-  color: #bc2327;
-  font-weight: 600;
-  background-color: rgba(0, 0, 0, 0.8509803922);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.6431372549));
 }
 @keyframes slideUp {
   0% {
