@@ -201,11 +201,8 @@
                             text-decoration: none;
                             transition:$transition;
                             &:hover{
-                                // color: #BC2327;
                                 color: $whiteColor;
-                                // background-color: #D9D9D9;
                                 background-color: $blackColor;
-                                // box-shadow: 0 0 4px 2px #BC2327;
                                 border: 1px solid $blackColor;
                                 cursor:pointer;
                             }
