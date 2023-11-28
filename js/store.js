@@ -292,34 +292,25 @@ function addToCartButton() {
             const outfitId = e.currentTarget.id;
             const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
 
-            // Verifica si el producto está agotado o tiene 0 unidades
             if (selectedOutfit.stock === 0 || selectedOutfit.availability === "Sold-out") {
 
-                // Crea una nueva sección en el documento
                 const messageSection = document.createElement("section");
                 messageSection.setAttribute("id", "out-of-stock-message");
 
-                // Verifica si el body existe antes de intentar agregar la sección
                 const bodyElement = document.body;
                 if (bodyElement) {
 
-                    // Crea un elemento 'div' con el mensaje
                     const messageParagraph = document.createElement("div");
                     messageParagraph.innerHTML = `<p class="soldOutProduct">"¡This product is out of stock or there are no units available 🔕!"</p>`;
 
-                    // Agrega el párrafo a la sección
                     messageSection.appendChild(messageParagraph);
 
-                    // Agrega la sección al cuerpo del documento
                     bodyElement.appendChild(messageSection);
 
-                    // Resalta el botón del producto con la clase 'sold-out-button' al hacer clic
                     e.currentTarget.classList.add("sold-out-button");
 
-                    // Espera 3 segundos (3000 milisegundos) y luego eliminar el mensaje y la clase
                     await new Promise(resolve => setTimeout(resolve, 2250));
 
-                    // Elimina la sección después de espera
                     messageSection.remove();
 
                     // Elimina la clase 'sold-out-button' después del tiempo de espera
@@ -329,7 +320,6 @@ function addToCartButton() {
                 return;
             }
 
-            // Lógica para agregar al carrito solo si no está agotado
             agregarAlCarrito(selectedOutfit);
         };
     });
@@ -345,11 +335,9 @@ function addToCartButton() {
                 const outfitId = linkStoreElement.id;
                 console.log("ID del producto:", outfitId);
 
-                // Estento encontrar el producto en la lista de outfits
                 const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
                 console.log("Producto seleccionado:", selectedOutfit);
 
-                // Intento agregar a la wishlist
                 agregarAWishlist(selectedOutfit);
             } else {
                 console.error("No se pudo obtener el ID del producto.");
@@ -366,12 +354,10 @@ function agregarAlCarrito(selectedOutfit) {
 
     if (existingCartItem) {
 
-        // Si el producto ya está en el carrito, verifica si la cantidad es menor
         if (existingCartItem.quantity < 5) {
             existingCartItem.quantity++;
         } else {
 
-            // Muestra el modal si se supera el límite
             const messageProduct = document.createElement("div");
             messageProduct.classList.add("messageProduct");
             messageProduct.innerHTML = `<p class="stockProduct">"You cannot add more than 5 units of a product 🚀"</p>`;
@@ -379,7 +365,6 @@ function agregarAlCarrito(selectedOutfit) {
             const messageContainer = document.getElementById('messageNewProduct'); // Reemplaza con el ID real de tu contenedor
             messageContainer.appendChild(messageProduct);
 
-            // Elimina el mensaje después de 3 segundos
             setTimeout(() => {
                 messageProduct.remove();
             }, 2250);
@@ -387,7 +372,6 @@ function agregarAlCarrito(selectedOutfit) {
         }
     } else {
 
-        // Si el producto no está en el carrito, agrega uno nuevo
         selectedOutfit.quantity = 1;
         cartProducts.push(selectedOutfit);
     }

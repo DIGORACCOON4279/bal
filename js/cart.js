@@ -58,12 +58,10 @@ function renderCart(cartItems) {
             });
         });
 
-            // Agrega un manejador de eventos para los íconos de editar
             const editIcons = document.querySelectorAll(".edit-icon");
             editIcons.forEach(editIcon => {
             editIcon.addEventListener('click', (e) => {
 
-            // Obtener el ID del producto desde el atributo data-product-id del contenedor del producto
             const productId = e.currentTarget.closest(".cartList").getAttribute("data-product-id");
             const showroomUrl = `showRoom.html?id=${productId}`;
             window.location.href = showroomUrl;
@@ -80,11 +78,9 @@ renderCart(cartStorage);
 function actualizarContador(cartItem, counterElement, incremento) {
     let contador = parseInt(counterElement.innerHTML);
 
-    // Verifica si la cantidad es mayor al límite
     if ((contador + incremento) > 5 || (contador + incremento) < 1) {
         if (contador + incremento > 5) {
 
-            // Muestra el mensaje si se supera el límite
             const messageProduct = document.createElement("div");
             messageProduct.classList.add("messageProduct");
             messageProduct.innerHTML = `<p class="stockProduct">"You cannot add more than 5 units of a product 🚀"</p>`;
@@ -92,13 +88,11 @@ function actualizarContador(cartItem, counterElement, incremento) {
             const messageContainer = document.getElementById('messageNewProduct'); // Reemplaza con el ID real de tu contenedor
             messageContainer.appendChild(messageProduct);
 
-            // Eliminar el mensaje después de 3 segundos
             setTimeout(() => {
                 messageProduct.remove();
             }, 3000);
         } else {
 
-            // Muestra el mensaje si la cantidad es menor al límite
             const messageProduct = document.createElement("div");
             messageProduct.classList.add("messageProduct");
             messageProduct.innerHTML = `<p class="stockProduct">"The minimum allowed quantity is 1 unit 👍"</p>`;
@@ -106,8 +100,6 @@ function actualizarContador(cartItem, counterElement, incremento) {
             const messageContainer = document.getElementById('messageNewProduct'); // Reemplaza con el ID real de tu contenedor
             messageContainer.appendChild(messageProduct);
 
-
-            // Eliminar el mensaje después de 2250 milisegundos
             setTimeout(() => {
                 messageProduct.remove();
             }, 2250);
@@ -115,17 +107,13 @@ function actualizarContador(cartItem, counterElement, incremento) {
         return;
     }
 
-    // Actualiza el contador
     contador += incremento;
     counterElement.innerHTML = contador;
 
-    // Actualiza la cantidad en el objeto cartItem
     cartItem.quantity = contador;
 
-    // Actualiza el localStorage después de modificar la cantidad
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
 
-    // Actualiza el total en el DOM
     const totalElement = counterElement.closest(".cartList").querySelector(".total");
     totalElement.innerHTML = `$${cartItem.pricing * contador}`;
 }
@@ -135,18 +123,14 @@ function actualizarContador(cartItem, counterElement, incremento) {
 
 function eliminarDelCarrito(productId) {
 
-    // Encuentra el índice del producto con el ID proporcionado en el array cartProducts
     const index = cartProducts.findIndex(product => product.id == productId);
 
-    // Si se encuentra el producto, lo elimínalo del array
     if (index !== -1) {
         cartProducts.splice(index, 1);
         console.log("Producto eliminado del carrito:", productId);
 
-        // Actualiza el localStorage después de eliminar el producto
         localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
 
-        // Vuelve a renderizar el carrito
         renderCart(cartProducts);
     } else {
         console.log("Producto no encontrado en el carrito:", productId);

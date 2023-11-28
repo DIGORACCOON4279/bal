@@ -27,8 +27,9 @@ priceThreeCheckbox.addEventListener("change", applyFilter);
 // Manejador de eventos para el botón de reinicio
 // resetButton.addEventListener("click", resetFilter);
 
+// Funcion aplicar filtros
+
 function applyFilter() {
-    // Filtra la lista de productos según los checkboxes seleccionados
     const filteredProducts = outfits.filter(product => {
         const isInStock = inStockCheckbox.checked ? product.stock > 0 : true;
         const isNewArrival = newArrivalsCheckbox.checked ? product.availability === "New Arrivals" : true;
@@ -41,18 +42,15 @@ function applyFilter() {
         return isInStock && isNewArrival && isSoldOut && isPriceOne && isPriceTwo && isPriceThree;
     });
 
-    // Limpia la sección de productos antes de renderizar
     clearProducts();
 
-    // Llama a la función renderProducts con la nueva lista filtrada
     renderProducts(filteredProducts);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Limpia la sección de productos antes de renderizar
+
     clearProducts();
 
-    // Renderiza todos los productos sin filtrar
     renderProducts(outfits);
 });
 
@@ -62,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function resetFilter() {
 
     // Reinicia los checkboxes
+
     inStockCheckbox.checked = true;
     newArrivalsCheckbox.checked = true;
     soldOutCheckbox.checked = true;
@@ -70,26 +69,23 @@ function resetFilter() {
     priceTwoCheckbox.checked = true;
     priceThreeCheckbox.checked = true;
 
-    // Limpia la sección de productos antes de renderizar
     clearProducts();
 
-    // Renderiza todos los productos sin filtrar
     renderProducts(outfits);
 }
 
 // Función para limpiar la sección de productos
+
 function clearProducts() {
     const sectionCard = document.querySelector(".sectionCard");
     sectionCard.innerHTML = "";
 }
 
-// Lógica para inicializar la página con todos los productos
+// Inicializa la página con todos los productos
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Limpia la sección de productos antes de renderizar
     clearProducts();
 
-    // Renderiza todos los productos sin filtrar
     renderProducts(outfits);
 });
 

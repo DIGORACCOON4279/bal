@@ -6,21 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const passwordInput = document.getElementById('floatingPassword');
 
     formSignIn.addEventListener('submit', function(e) {
-        // Validar el campo de correo electrónico
+
         if (!validateEmail(emailInput.value)) {
             alert('Por favor, ingresa una dirección de correo electrónico válida.');
             e.preventDefault();
             return;
         }
 
-        // Validar el campo de contraseña
         if (passwordInput.value.length < 6) {
             alert('La contraseña debe tener al menos 6 caracteres.');
-            e.preventDefault(); // Evitar el envío del formulario
+            e.preventDefault();
         }
     });
 
-    // Función para validar el correo electrónico
     const validateEmail = (email) => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
@@ -41,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     formCreateAccount.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Validar los campos del formulario
         if (!validateName(firstNameInput.value, "First name")) {
             alert('Por favor, ingresa un nombre válido.');
             return;
@@ -67,9 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formCreateAccount.reset();
     });
 
-    // Función para validar el nombre
     const validateName = (name, fieldName) => {
-        // Validar que el nombre no esté vacío
         const namePattern = /^[A-Za-z\s]+$/;
         if (namePattern.test(name)) {
             return true;
@@ -79,13 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Función para validar el correo electrónico
     const validateEmail = (email) => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     };
 
-    // Función para validar la contraseña
     const validatePassword = (password) => {
         return password.length >= 6;
     };
