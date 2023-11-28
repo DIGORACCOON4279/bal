@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap");
 /******************* Mixin ******************/
 /******************* Extend ******************/
-.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .bestSellers .sectionCardBlock .cardProducts .article .info, .sectionWishlist {
+.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .sectionWishlist, .bestSellers .sectionCardBlock .cardProducts .article .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.flexRowBetween, .footerContainer .footer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion, .showRoom .rightSide .infoProduct .addToCart, .showRoom .rightSide .infoProduct .productRating, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelThree, .sectionFilter .menuFilterSide, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName, .sectionPlaceOrder .unionOrder, .headerSignIn .menuSide .top, .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct, .giftCards .containerGetOff, .heroSection, .header .menuSide .top, .header, .sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .containerArticles .cartList, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
+.flexRowBetween, .footerContainer .footer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion, .showRoom .rightSide .infoProduct .addToCart, .showRoom .rightSide .infoProduct .productRating, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelThree, .sectionFilter .menuFilterSide, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName, .sectionPlaceOrder .unionOrder, .headerSignIn .menuSide .top, .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct, .giftCards .containerGetOff, .heroSection, .header .menuSide .top, .header, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .containerArticles .cartList, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -336,99 +336,6 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   background-color: #ffffff;
   border: 1px solid #000000;
   font-weight: 600;
-}
-
-#wishlistSide {
-  display: none;
-}
-#wishlistSide:checked ~ .sectionWishlist {
-  transform: translate(0%);
-}
-
-.sectionWishlist {
-  width: 30vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 10px;
-  align-items: flex-start;
-  background-color: #ffffff;
-  overflow: hidden;
-  box-shadow: 0 0 10px 6px #070707;
-  z-index: 10;
-  padding-top: 60px;
-  transform: translate(105%);
-  transition: 0.3s ease-in-out;
-}
-.sectionWishlist .wishHeadLine .closeCross {
-  width: 15px;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  transform: rotate(0deg);
-  transition: 0.3s ease-in-out;
-}
-.sectionWishlist .wishHeadLine .closeCross:hover {
-  transform: rotate(90deg);
-}
-.sectionWishlist .menuWishlist .choiceWishlist {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0px auto;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wishlistWord {
-  width: inherit;
-  font-size: 1.2rem;
-  font-family: "Jura", sans-serif;
-  color: #bc2327;
-  font-weight: 600;
-  margin: 0px;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .category {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px 0px;
-  border-bottom: 0;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .category .titleWishlist {
-  text-align: right;
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  color: #bc2327;
-  font-weight: 600;
-  margin: 15px 0px;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct {
-  padding: 20px 0px;
-  border-bottom: 1px solid #e4e4e4;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .itemProduct {
-  width: 15%;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description {
-  display: flex;
-  flex-direction: column;
-  margin-left: -40px;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .wishPrice {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  color: #bc2327;
-  font-weight: 600;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .icons img {
-  width: 15px;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .itemWishlist {
-  width: 20px;
-  cursor: pointer;
 }
 
 .header {
@@ -1087,10 +994,10 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-decoration: underline;
 }
 
-section#wishlistSide {
+#wishlistSide {
   display: none;
 }
-section#wishlistSide:checked ~ .sectionWishlist {
+#wishlistSide:checked ~ .sectionWishlist {
   transform: translate(0%);
 }
 
@@ -1101,11 +1008,12 @@ section#wishlistSide:checked ~ .sectionWishlist {
   top: 0;
   right: 0;
   z-index: 10px;
+  align-items: flex-start;
   background-color: #ffffff;
   overflow: hidden;
   box-shadow: 0 0 10px 6px #070707;
   z-index: 10;
-  padding-top: 60px;
+  padding-top: 30px;
   transform: translate(105%);
   transition: 0.3s ease-in-out;
 }
@@ -1125,7 +1033,7 @@ section#wishlistSide:checked ~ .sectionWishlist {
   width: 100%;
 }
 .sectionWishlist .menuWishlist .choiceWishlist {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1133,47 +1041,48 @@ section#wishlistSide:checked ~ .sectionWishlist {
   margin: 0px auto;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wishlistWord {
-  width: inherit;
+  width: 100%;
   font-size: 1.2rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
   font-weight: 600;
-  margin: 0px;
+  padding: 25px 0px 20px 20px;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish {
-  width: 90%;
+  width: 100%;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .category {
+  width: 100%;
+  border-bottom: 0;
+  padding-left: 20px;
+  margin-right: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 0px;
-  border-bottom: none;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .category .titleWishlist {
+  width: 100%;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
   font-weight: 600;
-  margin: 15px 0px;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist {
   width: 90%;
-  height: 430px;
-  padding: 0px 20px 20px 0px;
-  overflow: scroll;
-  margin: 0px 20px 0px 0px;
-  position: fixed;
-  top: 150px;
+  height: 440px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 140px;
   left: 20px;
+  padding: 0px 50px 0px 0px;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct {
   padding: 20px 0px;
   border-bottom: 1px solid #e4e4e4;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .itemProduct {
-  width: 15%;
+  width: 18%;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .description {
   display: flex;
@@ -1187,6 +1096,9 @@ section#wishlistSide:checked ~ .sectionWishlist {
   font-weight: 600;
 }
 .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .description .icons img {
+  width: 15px;
+}
+.sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct .itemWishlist {
   width: 20px;
   cursor: pointer;
 }
@@ -2109,95 +2021,6 @@ section#wishlistSide:checked ~ .sectionWishlist {
 .headerSignIn .menuSide .contactUs ul li .item .itemSocial:hover {
   transform: scale(110%, 110%);
   filter: drop-shadow(0 0 10px black) grayscale(100%);
-}
-
-#wishlistSide {
-  display: none;
-}
-#wishlistSide:checked ~ .sectionWishlist {
-  transform: translate(0%);
-}
-
-.sectionWishlist {
-  width: 30vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 10px;
-  align-items: flex-start;
-  background-color: #ffffff;
-  overflow: hidden;
-  box-shadow: 0 0 10px 6px #070707;
-  z-index: 10;
-  padding-top: 60px;
-  transform: translate(105%);
-  transition: 0.3s ease-in-out;
-}
-.sectionWishlist .wishHeadLine .closeCross {
-  width: 15px;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 35px;
-  transform: rotate(0deg);
-  transition: 0.3s ease-in-out;
-}
-.sectionWishlist .wishHeadLine .closeCross:hover {
-  transform: rotate(90deg);
-}
-.sectionWishlist .menuWishlist .choiceWishlist {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0px auto;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wishlistWord {
-  width: inherit;
-  font-size: 1.2rem;
-  font-family: "Jura", sans-serif;
-  color: #bc2327;
-  font-weight: 600;
-  margin: 0px;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .category {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px 0px;
-  border-bottom: 0;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .category .titleWishlist {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  color: #bc2327;
-  font-weight: 600;
-  margin: 15px 0px;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct {
-  padding: 20px 0px;
-  border-bottom: 1px solid #e4e4e4;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .itemProduct {
-  width: 15%;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description {
-  display: flex;
-  flex-direction: column;
-  margin-left: -40px;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .wishPrice {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  color: #bc2327;
-  font-weight: 600;
-}
-.sectionWishlist .menuWishlist .choiceWishlist .wish .wishlist .blockProduct .description .icons img {
-  width: 20px;
-  cursor: pointer;
 }
 
 .tagGetOff {
