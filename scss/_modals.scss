@@ -9,9 +9,9 @@
     position: fixed;
     bottom: 0px;
     right: 10%;
-    z-index: 9;
+    z-index: 999;
     div{
-        .messageWishlist, .stockProduct {
+        .messageWishlist, .stockProduct{
             width: 20vw;
             height: auto;
             font-size: $xSmallText;
@@ -32,7 +32,38 @@
 #messageNewProduct{
     position: fixed;
     bottom: 0px;
-    left: 35%;
+    right: 10%;
 }
 
+// SoldOutStock
+
+#out-of-stock-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    right: 10%;
+    z-index: 999;
+
+
+    div{
+        .soldOutProduct{
+            width: 20vw;
+            height: auto;
+            font-size: $xSmallText;
+            font-family: $fontJura;
+            color:$primaryColor;
+            font-weight:$bold;
+            background-color: #000000d9;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            filter: $filterShadow;
+        }
+    }
+}
 

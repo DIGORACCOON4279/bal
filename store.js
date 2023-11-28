@@ -257,7 +257,7 @@ function renderProducts(outfitsArray) {
         // Modificación: No necesitas buscar el elemento padre aquí, ya tienes el ID en el objeto outfit
         const outfitId = outfit.id;
 
-        const availabilityClass = outfit.availability === "Sold-out" || outfit.stock === 0 ? "sold-out" : "";
+        const availabilityClass = outfit.availability === "Sold-out" || outfit.stock === 0 ? "Sold-out" : "";
 
         cart.innerHTML =
         `
@@ -283,16 +283,51 @@ function renderProducts(outfitsArray) {
 renderProducts(outfits);
 
 
+
+
+// Funcion agregar al carrito
+
+
+
 function addToCartButton() {
     addButton = document.querySelectorAll(".linkStore");
     addButton.forEach(button => {
-        button.onclick = (e) => {
+        button.onclick = async (e) => {
             const outfitId = e.currentTarget.id;
             const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
 
             // Verificar si el producto está agotado o tiene 0 unidades disponibles
             if (selectedOutfit.stock === 0 || selectedOutfit.availability === "Sold-out") {
-                alert("¡Este producto está agotado o no hay unidades disponibles!");
+                // Crear una nueva sección en el cuerpo del documento
+                const messageSection = document.createElement("section");
+                messageSection.setAttribute("id", "out-of-stock-message");
+
+                // Verificar si el body existe antes de intentar agregar la sección
+                const bodyElement = document.body;
+                if (bodyElement) {
+                    // Crear un elemento 'div' con el mensaje
+                    const messageParagraph = document.createElement("div");
+                    messageParagraph.innerHTML = `<p class="soldOutProduct">"¡Este producto está agotado o no hay unidades disponibles!"</p>`;
+
+                    // Agregar el párrafo a la sección
+                    messageSection.appendChild(messageParagraph);
+
+                    // Agregar la sección al cuerpo del documento
+                    bodyElement.appendChild(messageSection);
+
+                    // Resaltar el botón del producto con la clase 'sold-out-button' al hacer clic
+                    e.currentTarget.classList.add("sold-out-button");
+
+                    // Esperar 3 segundos (3000 milisegundos) y luego eliminar el mensaje y la clase
+                    await new Promise(resolve => setTimeout(resolve, 2250));
+
+                    // Eliminar la sección después del tiempo de espera
+                    messageSection.remove();
+
+                    // Eliminar la clase 'sold-out-button' después del tiempo de espera
+                    // e.currentTarget.classList.remove("sold-out-button");
+                }
+
                 return;
             }
 
@@ -326,6 +361,253 @@ function addToCartButton() {
         });
     });
 }
+
+
+// function addToCartButton() {
+//     addButton = document.querySelectorAll(".linkStore");
+//     addButton.forEach(button => {
+//         button.onclick = async (e) => {
+//             const outfitId = e.currentTarget.id;
+//             const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+
+//             // Verificar si el producto está agotado o tiene 0 unidades disponibles
+//             if (selectedOutfit.stock === 0 || selectedOutfit.availability === "Sold-out") {
+//                 // Crear una nueva sección en el cuerpo del documento
+//                 const messageSection = document.getElementById("messageSoldOutStock");
+//                 // Crear un elemento 'p' con el mensaje
+//                 const messageParagraph = document.createElement("div");
+//                 messageParagraph.innerHTML = `<p class="SoldOutProduct">"¡Este producto está agotado o no hay unidades disponibles!"</p>`;
+
+//                 // Agregar el párrafo a la sección
+//                 messageSection.appendChild(messageParagraph);
+
+//                 // Agregar la sección al cuerpo del documento
+//                 document.body.appendChild(messageSection);
+
+//                 // Resaltar el botón del producto con la clase 'sold-out-button' al hacer clic
+//                 e.currentTarget.classList.add("sold-out-button");
+
+//                 // Esperar 3 segundos (3000 milisegundos) y luego eliminar el mensaje y la clase
+//                 await new Promise(resolve => setTimeout(resolve, 2250));
+
+//                 // Eliminar la sección después del tiempo de espera
+//                 messageSection.remove();
+
+//                 // Eliminar la clase 'sold-out-button' después del tiempo de espera
+//                 e.currentTarget.classList.remove("sold-out-button");
+
+//                 return;
+//             }
+
+//             // Continuar con la lógica de agregar al carrito solo si no está agotado
+//             agregarAlCarrito(selectedOutfit);
+//         };
+//     });
+
+//     const heartIcons = document.querySelectorAll(".heartIcon");
+//     heartIcons.forEach(icon => {
+//         icon.addEventListener('click', (e) => {
+//             console.log("Clic en el icono de corazón");
+
+//             // Obtén el elemento padre con la clase .linkStore
+//             const linkStoreElement = e.currentTarget.parentElement.querySelector(".linkStore");
+
+//             // Asegurémonos de que el elemento exista y tenga un ID antes de intentar acceder a él
+//             if (linkStoreElement && linkStoreElement.id) {
+//                 const outfitId = linkStoreElement.id;
+//                 console.log("ID del producto:", outfitId);
+
+//                 // Asegurémonos de que estemos encontrando el producto en la lista de outfits
+//                 const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+//                 console.log("Producto seleccionado:", selectedOutfit);
+
+//                 // Intentemos agregar a la wishlist
+//                 agregarAWishlist(selectedOutfit);
+//             } else {
+//                 console.error("No se pudo obtener el ID del producto.");
+//             }
+//         });
+//     });
+// }
+
+
+
+// function addToCartButton() {
+//     addButton = document.querySelectorAll(".linkStore");
+//     addButton.forEach(button => {
+//         button.onclick = async (e) => {
+//             const outfitId = e.currentTarget.id;
+//             const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+
+//             // Verificar si el producto está agotado o tiene 0 unidades disponibles
+//             if (selectedOutfit.stock === 0 || selectedOutfit.availability === "Sold-out") {
+//                 // Crear una nueva sección en el cuerpo del documento
+//                 const messageSection = document.getElementById("messageSoldOutStock");
+
+//                 // Crear un elemento 'p' con el mensaje
+//                 const messageParagraph = document.createElement("div");
+//                 messageParagraph.innerHTML = `<p class="messageSoldOut">"This product is sold out or there are no units available 😉!!!"</p>`;
+
+//                 // Agregar el párrafo a la sección
+//                 messageSection.appendChild(messageParagraph);
+
+//                 // Agregar la sección al cuerpo del documento
+//                 document.body.appendChild(messageSection);
+
+//                 // Resaltar el botón del producto con la clase 'sold-out' al hacer clic
+//                 e.currentTarget.classList.add("sold-out-button");
+
+//                 // Esperar 3 segundos (3000 milisegundos) y luego eliminar el mensaje y la clase
+//                 await new Promise(resolve => setTimeout(resolve, 3000));
+
+//                 // Eliminar la sección después del tiempo de espera
+//                 messageSection.remove();
+
+//                 // Eliminar la clase 'sold-out-button' después del tiempo de espera
+//                 e.currentTarget.classList.remove("sold-out-button");
+
+//                 return;
+//             }
+
+//             // Continuar con la lógica de agregar al carrito solo si no está agotado
+//             agregarAlCarrito(selectedOutfit);
+//         };
+//     });
+
+//     const heartIcons = document.querySelectorAll(".heartIcon");
+//     heartIcons.forEach(icon => {
+//         icon.addEventListener('click', (e) => {
+//             console.log("Clic en el icono de corazón");
+
+//             // Obtén el elemento padre con la clase .linkStore
+//             const linkStoreElement = e.currentTarget.parentElement.querySelector(".linkStore");
+
+//             // Asegurémonos de que el elemento exista y tenga un ID antes de intentar acceder a él
+//             if (linkStoreElement && linkStoreElement.id) {
+//                 const outfitId = linkStoreElement.id;
+//                 console.log("ID del producto:", outfitId);
+
+//                 // Asegurémonos de que estemos encontrando el producto en la lista de outfits
+//                 const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+//                 console.log("Producto seleccionado:", selectedOutfit);
+
+//                 // Intentemos agregar a la wishlist
+//                 agregarAWishlist(selectedOutfit);
+//             } else {
+//                 console.error("No se pudo obtener el ID del producto.");
+//             }
+//         });
+//     });
+// }
+
+// function addToCartButton() {
+//     addButton = document.querySelectorAll(".linkStore");
+//     addButton.forEach(button => {
+//         button.onclick = async (e) => {
+//             const outfitId = e.currentTarget.id;
+//             const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+
+//             // Verificar si el producto está agotado o tiene 0 unidades disponibles
+//             if (selectedOutfit.stock === 0 || selectedOutfit.availability === "Sold-out") {
+//                 // Crear una nueva sección en el cuerpo del documento
+//                 const messageSection = document.getElementById("messageSoldOutStock");
+//                 // messageSection.classList.add("outOfStockMessage");
+
+//                 // Crear un elemento 'p' con el mensaje
+//                 const messageParagraph = document.createElement("div");
+
+//                 messageParagraph.innerHTML = `<p class="messageSoldOut">"This product is sold out or there are no units available 😉!!!"</p>`;
+
+//                 // Agregar el párrafo a la sección
+//                 messageSection.appendChild(messageParagraph);
+
+//                 // Agregar la sección al cuerpo del documento
+//                 document.body.appendChild(messageSection);
+
+//                 // Esperar 3 segundos (3000 milisegundos) y luego eliminar el mensaje
+//                 await new Promise(resolve => setTimeout(resolve, 2250));
+
+//                 // Eliminar la sección después del tiempo de espera
+//                 messageSection.remove();
+
+//                 return;
+//             }
+
+//             // Continuar con la lógica de agregar al carrito solo si no está agotado
+//             agregarAlCarrito(selectedOutfit);
+//         };
+//     });
+
+//     const heartIcons = document.querySelectorAll(".heartIcon");
+//     heartIcons.forEach(icon => {
+//         icon.addEventListener('click', (e) => {
+//             console.log("Clic en el icono de corazón");
+
+//             // Obtén el elemento padre con la clase .linkStore
+//             const linkStoreElement = e.currentTarget.parentElement.querySelector(".linkStore");
+
+//             // Asegurémonos de que el elemento exista y tenga un ID antes de intentar acceder a él
+//             if (linkStoreElement && linkStoreElement.id) {
+//                 const outfitId = linkStoreElement.id;
+//                 console.log("ID del producto:", outfitId);
+
+//                 // Asegurémonos de que estemos encontrando el producto en la lista de outfits
+//                 const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+//                 console.log("Producto seleccionado:", selectedOutfit);
+
+//                 // Intentemos agregar a la wishlist
+//                 agregarAWishlist(selectedOutfit);
+//             } else {
+//                 console.error("No se pudo obtener el ID del producto.");
+//             }
+//         });
+//     });
+// }
+
+
+// function addToCartButton() {
+//     addButton = document.querySelectorAll(".linkStore");
+//     addButton.forEach(button => {
+//         button.onclick = (e) => {
+//             const outfitId = e.currentTarget.id;
+//             const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+
+//             // Verificar si el producto está agotado o tiene 0 unidades disponibles
+//             if (selectedOutfit.stock === 0 || selectedOutfit.availability === "Sold-out") {
+//                 alert("¡Este producto está agotado o no hay unidades disponibles!");
+//                 return;
+//             }
+
+//             // Continuar con la lógica de agregar al carrito solo si no está agotado
+//             agregarAlCarrito(selectedOutfit);
+//         };
+//     });
+
+//     const heartIcons = document.querySelectorAll(".heartIcon");
+//     heartIcons.forEach(icon => {
+//         icon.addEventListener('click', (e) => {
+//             console.log("Clic en el icono de corazón");
+
+//             // Obtén el elemento padre con la clase .linkStore
+//             const linkStoreElement = e.currentTarget.parentElement.querySelector(".linkStore");
+
+//             // Asegurémonos de que el elemento exista y tenga un ID antes de intentar acceder a él
+//             if (linkStoreElement && linkStoreElement.id) {
+//                 const outfitId = linkStoreElement.id;
+//                 console.log("ID del producto:", outfitId);
+
+//                 // Asegurémonos de que estemos encontrando el producto en la lista de outfits
+//                 const selectedOutfit = outfits.find(outfit => outfit.id == outfitId);
+//                 console.log("Producto seleccionado:", selectedOutfit);
+
+//                 // Intentemos agregar a la wishlist
+//                 agregarAWishlist(selectedOutfit);
+//             } else {
+//                 console.error("No se pudo obtener el ID del producto.");
+//             }
+//         });
+//     });
+// }
 
 
 
