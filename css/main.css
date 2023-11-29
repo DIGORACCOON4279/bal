@@ -1632,7 +1632,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   transition: 0.3s ease-in-out;
 }
 .container .logInCreateAccount .tags .formLogIn {
-  width: 50vw;
+  width: 50%;
   height: 100vh;
   gap: 15px;
   background-color: #ffffff;
@@ -1681,7 +1681,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-family: "Jura", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  padding: neutralMargin;
+  padding: 0px auto;
 }
 .container .logInCreateAccount .tags .formLogIn .formFloating .formControl {
   width: 100%;
@@ -1747,6 +1747,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   color: #bc2327;
   font-family: "Rubik Distressed", cursive;
   text-align: center;
+  padding-bottom: 10px;
 }
 .container .logInCreateAccount .tags .formCreateAccount .formFloating {
   width: 50%;

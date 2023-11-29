@@ -64,7 +64,7 @@
                     }
                 }
                 .formLogIn{
-                    width: 50vw;
+                    width: 50%;
                     height: 100vh;
                     @extend .flexColumnCenterCenter;
                     gap: 15px;
@@ -116,7 +116,7 @@
                         font-size: $smallText;
                         font-weight: $mediumBold;
                         @extend .flexColumnCenter;
-                        padding: neutralMargin;
+                        padding: $neutralMargin;
                         .formControl{
                             width:100%;
                             color: $secondaryColor;
@@ -186,6 +186,7 @@
                         color: $primaryColor;
                         font-family: $fontRubik;
                         text-align: center;
+                        padding-bottom: 10px;
                     }
                     .formFloating{
                         width:50%;
