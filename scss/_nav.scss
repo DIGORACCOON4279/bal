@@ -68,38 +68,44 @@
                 }
             }
             .menuSection{
-                display: flex;
-                flex-direction: column;
+                @extend .flexColumn;
+                align-items: none;
                 position:relative;
+                #newMenu{
+                    display: none;
+                    &:checked ~ .landingMenu{
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translateX(0%);
+                    }
+                }
                 .landingIcon{
                     .menuLandingIcon{
                         width:25px;
                         margin: 0px 0px 0px 5px;
                         cursor: pointer;
-                        &:hover ~ .landingMenu{
-                            transform: translateY(100%);
-                        }
                     }
                 }
-                nav.landingMenu{
+                .landingMenu{
                     width:140px;
-                    align-items: flex-start;
-                    transition:$transition;
-                    background-color: $secondaryBackground;
                     position:absolute;
                     top:50px;
                     right:0px;
                     filter: $filterShadow;
-                    transform: translateY(0%);
+                    opacity: 0;
+                    visibility: hidden;
+                    background-color: $secondaryBackground;
+                    transform: translateX(-130%);
+                    transition: transform $transition;
                     ul{
                         @extend .flexColumn;
                         margin-left:-32px;
                         li{
                             width: 100%;
                             .linksLanding{
-                                display: block;
                                 width: 100%;
                                 height:auto;
+                                display: block;
                                 font-size:$xSmallText;
                                 font-family: $fontJura;
                                 color:$whiteColor;
