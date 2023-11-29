@@ -34,19 +34,19 @@ Primero que todo se realizo el mockup en Figma:</br>
 💻[Prototipo desktop](https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design)</br>
 🚧I´m so sorry📱Cellphone (man at work)</br>
 
-En esta tercera pre-entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con CSS:</br>
+En esta tercera pre-entrega se hace entrega de maquetacion HTML y los estilos con CSS:</br>
 
 ✔Landing page</br>
 ✔Store</br>
 ✔Sign in & </br>
 ✔Create Account</br>
 ✔Showroom</br>
-✖Resta la pagina Error 404</br>
+✖Resta la pagina Error 404(opcional)</br>
 
-Se  realizo la logica del store agregando productos a favoritos con dos opciones de eliminar y editar cuando el producto ya fue ingresado a sus favoritos aparece un modal advirtiendo.</br>
-Al crear la seccion store  se tuvo en cuenta el shopping card, en el cual los usuarios pueden escoger el producto con una maximo total de 5 unidades por producto mostrando con sus respectivos modales la cantidad maxima permitida y la cantidad minima del producto el cual es uno lo puede realizar desde el store o desde la shopping card section. Tiene la opcion de editar y eliminar mostrando el calculo por producto pero aun hace falta el calculo del total con el shipping</br>
-se creo la seccion de filtros de eleccion del usuario con dos categorias availability & pricing cada uno con sus respectivas opciones combinandolas uno a uno
-Se creo una carpeta llamada JS y se crearon 5 archivos.
+>>Se  realizo la logica del store agregando productos a favoritos con dos opciones de eliminar y editar cuando el producto ya fue ingresado a sus favoritos aparece un modal advirtiendo</br>
+>>Al crear la seccion store  se tuvo en cuenta el shopping card, en el cual los usuarios pueden escoger el producto con una maximo total de 5 unidades por producto mostrando con sus respectivos modales la cantidad maxima permitida y la cantidad minima del producto el cual es uno, lo puede realizar desde el store o desde la shopping card section. Tiene la opcion de editar y eliminar mostrando el calculo por producto pero aun hace falta el calculo del total con el shipping</br>
+>>Se creo la seccion de filtros de eleccion del usuario con dos categorias availability & pricing cada uno con sus respectivas opciones combinandolas uno a uno
+>>Se creo una carpeta llamada JS y se crearon 5 archivos.
 
 Para la consigna se utilizaron:</br>
 
