@@ -45,10 +45,10 @@ En esta tercera pre-entrega se hace entrega de maquetacion HTML y los estilos co
 ✔Showroom</br>
 ✖Resta la pagina Error 404(opcional)</br>
 
->>Se  realizo la logica del store agregando productos a favoritos con dos opciones de eliminar y editar cuando el producto ya fue ingresado a sus favoritos aparece un modal advirtiendo</br>
->>Al crear la seccion store  se tuvo en cuenta el shopping card, en el cual los usuarios pueden escoger el producto con una maximo total de 5 unidades por producto mostrando con sus respectivos modales la cantidad maxima permitida y la cantidad minima del producto el cual es uno, lo puede realizar desde el store o desde la shopping card section. Tiene la opcion de editar y eliminar mostrando el calculo por producto pero aun hace falta el calculo del total con el shipping</br>
->>Se creo la seccion de filtros de eleccion del usuario con dos categorias availability & pricing cada uno con sus respectivas opciones combinandolas uno a uno
->>Se creo una carpeta llamada JS y se crearon 5 archivos.
+>>**Se  realizo la logica del store agregando productos a favoritos con dos opciones de eliminar y editar cuando el producto ya fue ingresado a sus favoritos aparece un modal advirtiendo</br>
+>>**Al crear la seccion store  se tuvo en cuenta el shopping card, en el cual los usuarios pueden escoger el producto con una maximo total de 5 unidades por producto mostrando con sus respectivos modales la cantidad maxima permitida y la cantidad minima del producto el cual es uno, lo puede realizar desde el store o desde la shopping card section. Tiene la opcion de editar y eliminar mostrando el calculo por producto pero aun hace falta el calculo del total con el shipping</br>
+>>**Se creo la seccion de filtros de eleccion del usuario con dos categorias availability & pricing cada uno con sus respectivas opciones combinandolas uno a uno
+>>**Se creo una carpeta llamada JS y se crearon 5 archivos.
 
 Para la consigna se utilizaron:</br>
 
