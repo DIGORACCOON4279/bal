@@ -1676,7 +1676,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-align: center;
 }
 .container .logInCreateAccount .tags .formLogIn .formFloating {
-  width: 50%;
+  width: 60%;
   color: #000000;
   font-family: "Jura", sans-serif;
   font-size: 0.9rem;
@@ -1704,7 +1704,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   gap: 10px;
 }
 .container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn {
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
@@ -1750,7 +1750,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   padding-bottom: 10px;
 }
 .container .logInCreateAccount .tags .formCreateAccount .formFloating {
-  width: 50%;
+  width: 60%;
   color: #000000;
   font-size: 0.9rem;
   font-weight: 400;
@@ -1778,7 +1778,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   gap: 10px;
 }
 .container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount .btnCreateAccount {
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
