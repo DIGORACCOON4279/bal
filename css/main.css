@@ -1597,7 +1597,6 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .container .logInCreateAccount .tags .formCreateAccount {
   width: 50vw;
   height: 100vh;
-  gap: 15px;
   background-color: #ffffff;
   margin: 0px auto;
   position: fixed;
@@ -1609,7 +1608,6 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .container .logInCreateAccount .tags .formCreateAccount .tag {
   position: fixed;
-  /* top:136px; */
   top: -10px;
   right: -45px;
   transform: rotate(180deg);
@@ -1703,7 +1701,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  gap: 30px;
+  gap: 10px;
 }
 .container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn {
   width: 50%;
@@ -1726,7 +1724,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 500;
-  margin-bottom: -15px;
+  margin-top: 15px;
+  margin-bottom: -25px;
 }
 .container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount {
   font-size: 0.8rem;
@@ -1775,7 +1774,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  gap: 30px;
+  gap: 10px;
 }
 .container .logInCreateAccount .tags .formCreateAccount .ctaToCreateAccount .btnCreateAccount {
   width: 50%;
@@ -1798,7 +1797,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 500;
-  margin-bottom: -15px;
+  margin-top: 15px;
+  margin-bottom: -10px;
 }
 .container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn {
   font-size: 0.8rem;
@@ -1813,7 +1813,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .container .logInCreateAccount .tags .formCreateAccount .skullIcon {
   width: 32px;
-  margin-top: -20px;
+  margin-top: -5px;
 }
 .container .logInCreateAccount .bannerCreateAccount {
   width: 50%;
