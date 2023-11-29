@@ -10,7 +10,7 @@
     .footer{
         width:100%;
         @extend .flexRowBetween;
-        padding: 50px 50px;
+        padding: 50px 30px;
         position: relative;
         .socialMediaFooter{
             @extend .flexColumnCenter;

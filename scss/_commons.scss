@@ -10,6 +10,7 @@ body{
     // background-color: #131313;
 }
 html{
+    scroll-behavior: smooth;
     .mainContainer{
         width: $screenPercentageWidth;
         height: $screenPercentageHeight;
