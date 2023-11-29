@@ -76,7 +76,7 @@
                     &:checked ~ .landingMenu{
                         visibility: visible;
                         opacity: 1;
-                        transform: translateX(0%);
+                        transform: translateX(00%);
                     }
                 }
                 .landingIcon{
@@ -88,13 +88,15 @@
                 }
                 .landingMenu{
                     width:140px;
+                    height: auto;
                     position:absolute;
-                    top:50px;
+                    top:48px;
                     right:0px;
                     filter: $filterShadow;
                     opacity: 0;
                     visibility: hidden;
                     background-color: $secondaryBackground;
+                    overflow: hidden;
                     transform: translateX(-130%);
                     transition: transform $transition;
                     ul{
@@ -110,12 +112,26 @@
                                 font-family: $fontJura;
                                 color:$whiteColor;
                                 font-weight:$bold;
+                                padding:0px;
+                                margin: 0px;
                                 text-decoration: none;
-                                padding: 10px 15px;
-                                margin-left: 0px;
                                 transition: $transition;
                                 &:hover{
                                     background-color: $backgroundColorMenu;
+                                }
+                                p{
+                                    @extend .flexRowBetween;
+                                    padding: 10px;
+                                    margin:0;
+                                    transition: $transition;
+                                    span{
+                                        opacity: 0;
+                                        visibility:hidden;
+                                    }
+                                    &:hover > span{
+                                        opacity: 1;
+                                        visibility:visible;
+                                    }
                                 }
                             }
                         }

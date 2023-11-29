@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.flexRowBetween, .footerContainer .footer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion, .showRoom .rightSide .infoProduct .addToCart, .showRoom .rightSide .infoProduct .productRating, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelThree, .sectionFilter .menuFilterSide, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName, .sectionPlaceOrder .unionOrder, .headerSignIn .menuSide .top, .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct, .giftCards .containerGetOff, .heroSection, .header .menuSide .top, .header, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .containerArticles .cartList, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
+.flexRowBetween, .footerContainer .footer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBody:nth-child(1) .case .opinion, .showRoom .rightSide .infoProduct .addToCart, .showRoom .rightSide .infoProduct .productRating, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .priceThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionAvailability .pricing .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .availability .labelThree, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelOne, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelTwo, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .sectionPricing .pricing .labelThree, .sectionFilter .menuFilterSide, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName, .sectionPlaceOrder .unionOrder, .headerSignIn .menuSide .top, .sectionWishlist .menuWishlist .choiceWishlist .wish .containerWishlist .wishlist .blockProduct, .giftCards .containerGetOff, .heroSection, .header .menuSide .top, .header .menuIcons ul .menuSection .landingMenu ul li .linksLanding p, .header, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .containerArticles .cartList, .sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -425,13 +425,15 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .header .menuIcons ul .menuSection .landingMenu {
   width: 140px;
+  height: auto;
   position: absolute;
-  top: 50px;
+  top: 48px;
   right: 0px;
   filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.6431372549));
   opacity: 0;
   visibility: hidden;
   background-color: #1b1b1b;
+  overflow: hidden;
   transform: translateX(-130%);
   transition: transform 0.3s ease-in-out;
 }
@@ -449,13 +451,26 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-family: "Jura", sans-serif;
   color: #ffffff;
   font-weight: 600;
+  padding: 0px;
+  margin: 0px;
   text-decoration: none;
-  padding: 10px 15px;
-  margin-left: 0px;
   transition: 0.3s ease-in-out;
 }
 .header .menuIcons ul .menuSection .landingMenu ul li .linksLanding:hover {
   background-color: rgba(188, 35, 40, 0.3490196078);
+}
+.header .menuIcons ul .menuSection .landingMenu ul li .linksLanding p {
+  padding: 10px;
+  margin: 0;
+  transition: 0.3s ease-in-out;
+}
+.header .menuIcons ul .menuSection .landingMenu ul li .linksLanding p span {
+  opacity: 0;
+  visibility: hidden;
+}
+.header .menuIcons ul .menuSection .landingMenu ul li .linksLanding p:hover > span {
+  opacity: 1;
+  visibility: visible;
 }
 .header .menuIcons ul .wishHeadLine .wishlistIcon, .header .menuIcons ul .wishHeadLine .cartIcon, .header .menuIcons ul .cartShop .wishlistIcon, .header .menuIcons ul .cartShop .cartIcon {
   cursor: pointer;
