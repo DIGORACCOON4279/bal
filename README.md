@@ -52,9 +52,9 @@ En esta tercera pre-entrega se hace entrega de maquetacion HTML y los estilos co
 
 Para la consigna se utilizaron:</br>
 
-👉DOM</br
+👉DOM</br>
 ✔Se creo en el archivo de JS los arrays de objetos el cual contiene 28 productos con sus respectivos clave:, valor:</br>
-👉Eventos</br
+👉Eventos</br>
 👉Storage & JSON</br>
 👉Async & await(opcional)</br>
 
