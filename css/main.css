@@ -2738,13 +2738,14 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .showRoom .rightSide .infoProduct .productRating {
   width: 100%;
-  padding: 5px 5px;
+  padding: 15px;
   background-color: #f1f1f1;
 }
 .showRoom .rightSide .infoProduct .productRating .product {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #000000;
+  margin: 0px;
 }
 .showRoom .rightSide .infoProduct .productRating .rating {
   width: 15%;

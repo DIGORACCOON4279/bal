@@ -32,12 +32,13 @@
             .productRating{
                 width: 100%;
                 @extend .flexRowBetween;
-                padding: 5px 5px ;
+                padding: 15px;
                 background-color: $backgroundColor;
                 .product{
-                    font-size:$MediumTitle;
+                    font-size:$regularText;
                     font-weight:$ExtraBold;
                     color: $blackColor;
+                    margin:0px;
                 }
                 .rating{
                     width:15%;
