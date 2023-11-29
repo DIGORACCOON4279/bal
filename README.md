@@ -46,21 +46,21 @@ En esta tercera pre-entrega se hace entrega de maquetacion HTML y los estilos co
 ✖Resta la pagina Error 404(opcional)</br>
 
 >>**Se  realizo la logica del store agregando productos a favoritos con dos opciones de eliminar y editar cuando el producto ya fue ingresado a sus favoritos aparece un modal advirtiendo</br>
->>**Al crear la seccion store  se tuvo en cuenta el shopping card, en el cual los usuarios pueden escoger el producto con una maximo total de 5 unidades por producto mostrando con sus respectivos modales la cantidad maxima permitida y la cantidad minima del producto el cual es uno, lo puede realizar desde el store o desde la shopping card section. Tiene la opcion de editar y eliminar mostrando el calculo por producto pero aun hace falta el calculo del total con el shipping</br>
+>>**Al crear la seccion store  se tuvo en cuenta el shopping card, en el cual los usuarios pueden escoger el producto con un maximo total de 5 unidades de stock por producto mostrando con sus respectivos modales la cantidad maxima permitida y la cantidad minima del producto el cual es uno, lo puede realizar desde el store o desde la shopping card section. Tiene la opcion de editar y eliminar mostrando el calculo por producto pero aun hace falta el calculo del total con el shipping</br>
 >>**Se creo la seccion de filtros de eleccion del usuario con dos categorias availability & pricing cada uno con sus respectivas opciones combinandolas uno a uno
 >>**Se creo una carpeta llamada JS y se crearon 5 archivos.
 
 Para la consigna se utilizaron:</br>
 
 👉DOM</br
-✔Se creo en el archivo de JS los arrays de objetos el cual contiene los productos con sus respectivos clave:, valor:</br>
+✔Se creo en el archivo de JS los arrays de objetos el cual contiene 28 productos con sus respectivos clave:, valor:</br>
 👉Eventos</br
 👉Storage & JSON</br>
 👉Async & await(opcional)</br>
 
-Pero quedan faltando para la ultima entrega del proyecto final los dos formularios, el calculo total de shopping cart, el cart(checkout &</br>
-orden de compra. Se usara una de las librerias para mostrar el modal de realizada la compra).</br>
-Tambien ajustes en las interfaces y page Error 404, como tambien su adaptacion a pantallas cellphone y tablet(Opcional)</br>
+>>**Pero quedan faltando para la ultima entrega del proyecto final los dos formularios, el calculo total de shopping cart, el cart(checkout & orden de compra.</br> 
+>>**Se usara una de las librerias para mostrar el modal de realizada la compra).</br>
+>>**Tambien ajustes en las interfaces y page Error 404(opcional), como tambien su adaptacion a pantallas cellphone y tablet(Opcional)</br>
 
 👉Links:</br>
 
