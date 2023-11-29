@@ -1,7 +1,9 @@
 
 # Break a Leg - Ecommerce</br>
 
-![portadaBreakaLeg](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/e6fee5e6-b19b-4c69-9284-9de105b0228c)
+![portadaBreakaLeg](https://github.com/DIGORACCOON4279/PreEntrega3/assets/88150970/14d27299-ad01-48f4-8fd7-82b8264922ba)
+)
+)
 
 # Descripcion</br>
 
@@ -34,29 +36,36 @@ Primero que todo se realizo el mockup en Figma:</br>
 💻[Prototipo desktop](https://www.figma.com/proto/gRXoq1ASGPhQZxr65ZgDZQ/Break-a-Leg?page-id=1868%3A9069&type=design&node-id=1868-11638&viewport=4929%2C20517%2C0.31&t=SJTlBD9JZ5jP49Mz-1&scaling=scale-down&starting-point-node-id=1868%3A11638&mode=design)</br>
 🚧I´m so sorry📱Cellphone (man at work)</br>
 
-En esta primera entrega aunque no se pide en la consigna se ha realizado la maquetacion HTML y los estilos con CSS:</br>
+En esta tercera pre-entrega se hace entrega de maquetacion HTML y los estilos con CSS:</br>
 
 ✔Landing page</br>
 ✔Store</br>
 ✔Sign in & </br>
 ✔Create Account</br>
-✖Resta la pagina Error 404</br>
+✔Showroom</br>
+✖Resta la pagina Error 404(opcional)</br>
 
-En los formularios "Sign in" & "Create Account", se realizo con JS el simulador, para la consigna se utilizaron:</br>
+>>**Se  realizo la logica del store agregando productos a favoritos con dos opciones de eliminar y editar cuando el producto ya fue ingresado a sus favoritos aparece un modal advirtiendo</br>
+>>**Al crear la seccion store  se tuvo en cuenta el shopping card, en el cual los usuarios pueden escoger el producto con un maximo total de 5 unidades de stock por producto mostrando con sus respectivos modales la cantidad maxima permitida y la cantidad minima del producto el cual es uno, lo puede realizar desde el store o desde la shopping card section. Tiene la opcion de editar y eliminar mostrando el calculo por producto pero aun hace falta el calculo del total con el shipping</br>
+>>**Se creo la seccion de filtros de eleccion del usuario con dos categorias availability & pricing cada uno con sus respectivas opciones combinandolas uno a uno.</br>
+>>**Se creo una carpeta llamada JS y se crearon 5 archivos.
 
-✔Constantes</br>
-✔Condicionales</br>
-✔Funcion flecha</br>
-✔Regex &</br>
-✔AddEvenListener</br>
+Para la consigna se utilizaron:</br>
 
-Pero quedan faltando para proximas consignas activar el dark mode, el cart(checkout & orden de compra) & favoritos. Tambien ajustes en las interfaces y page Error 404, como tambien su adaptacion a pantallas cellphone y tablet</br>
+👉DOM</br>
+✔Se creo en el archivo de JS los arrays de objetos el cual contiene 28 productos con sus respectivos clave:, valor:</br>
+👉Eventos</br>
+👉Storage & JSON</br>
+👉Async & await(opcional)</br>
+
+>>**Pero quedan faltando para la ultima entrega del proyecto final los dos formularios, el calculo total de shopping cart.</br> 
+>>**Para el checkout & orden de compra se usara una de las librerias para mostrar el modal de realizada la compra.</br>
+>>**Tambien ajustes en las interfaces y page Error 404(opcional), como tambien su adaptacion a pantallas cellphone y tablet(Opcional)</br>
 
 👉Links:</br>
 
-🚀 ![color_Github](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/396134d1-0b2d-48da-a5c1-e2f3b5d62e17)[Github Pages]()</br>
 🚀 ![white_Vercel](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/05e191bc-53e1-42d0-9c84-0b4b832abd88)[Vercel](https://break-a-leg.vercel.app/)</br>
-
+🚀 ![color_Github](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/396134d1-0b2d-48da-a5c1-e2f3b5d62e17)[Github Pages]()</br>
 
 
 ![raccon_Logo3](https://github.com/DIGORACCOON4279/Break-a-Leg/assets/88150970/0950de58-a518-42f3-a502-088da15a18d4)
