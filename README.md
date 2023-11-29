@@ -58,8 +58,8 @@ Para la consigna se utilizaron:</br>
 👉Storage & JSON</br>
 👉Async & await(opcional)</br>
 
->>**Pero quedan faltando para la ultima entrega del proyecto final los dos formularios, el calculo total de shopping cart, el cart(checkout & orden de compra).</br> 
->>**Se usara una de las librerias para mostrar el modal de realizada la compra).</br>
+>>**Pero quedan faltando para la ultima entrega del proyecto final los dos formularios, el calculo total de shopping cart.</br> 
+>>**Para el checkout & orden de compra se usara una de las librerias para mostrar el modal de realizada la compra.</br>
 >>**Tambien ajustes en las interfaces y page Error 404(opcional), como tambien su adaptacion a pantallas cellphone y tablet(Opcional)</br>
 
 👉Links:</br>
