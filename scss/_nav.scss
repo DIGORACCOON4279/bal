@@ -67,6 +67,55 @@
                     }
                 }
             }
+            .menuSection{
+                display: flex;
+                flex-direction: column;
+                position:relative;
+                .landingIcon{
+                    .menuLandingIcon{
+                        width:25px;
+                        margin: 0px 0px 0px 5px;
+                        cursor: pointer;
+                        &:hover ~ .landingMenu{
+                            transform: translateY(100%);
+                        }
+                    }
+                }
+                nav.landingMenu{
+                    width:140px;
+                    align-items: flex-start;
+                    transition:$transition;
+                    background-color: $secondaryBackground;
+                    position:absolute;
+                    top:50px;
+                    right:0px;
+                    filter: $filterShadow;
+                    transform: translateY(0%);
+                    ul{
+                        @extend .flexColumn;
+                        margin-left:-32px;
+                        li{
+                            width: 100%;
+                            .linksLanding{
+                                display: block;
+                                width: 100%;
+                                height:auto;
+                                font-size:$xSmallText;
+                                font-family: $fontJura;
+                                color:$whiteColor;
+                                font-weight:$bold;
+                                text-decoration: none;
+                                padding: 10px 15px;
+                                margin-left: 0px;
+                                transition: $transition;
+                                &:hover{
+                                    background-color: $backgroundColorMenu;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .wishHeadLine, .cartShop{
                 .wishlistIcon, .cartIcon{
                     cursor: pointer;
@@ -138,7 +187,7 @@
                         font-weight:$bold;
                         text-decoration: none;
                         &:hover{
-                            background-color: #bc232859;
+                            background-color: $backgroundColorMenu;
                         }
                     }
                     .cartShop{
@@ -156,7 +205,7 @@
                             border-bottom: $FormBottom;
                             transition: $transition;
                             &:hover{
-                                background-color: #bc232859;
+                                background-color: $backgroundColorMenu;
                             }
                         }
                     }

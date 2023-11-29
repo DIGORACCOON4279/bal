@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap");
 /******************* Mixin ******************/
 /******************* Extend ******************/
-.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .sectionWishlist, .bestSellers .sectionCardBlock .cardProducts .article .info {
+.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .sectionWishlist, .bestSellers .sectionCardBlock .cardProducts .article .info, .header .menuIcons ul .menuSection nav.landingMenu ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -405,6 +405,52 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .header .menuIcons ul li a .icon:hover {
   transform: scale(120%);
   filter: drop-shadow(0 0 10px #696061);
+}
+.header .menuIcons ul .menuSection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.header .menuIcons ul .menuSection .landingIcon .menuLandingIcon {
+  width: 25px;
+  margin: 0px 0px 0px 5px;
+  cursor: pointer;
+}
+.header .menuIcons ul .menuSection .landingIcon .menuLandingIcon:hover ~ .landingMenu {
+  transform: translateY(100%);
+}
+.header .menuIcons ul .menuSection nav.landingMenu {
+  width: 140px;
+  align-items: flex-start;
+  transition: 0.3s ease-in-out;
+  background-color: #1b1b1b;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.6431372549));
+  transform: translateY(0%);
+}
+.header .menuIcons ul .menuSection nav.landingMenu ul {
+  margin-left: -32px;
+}
+.header .menuIcons ul .menuSection nav.landingMenu ul li {
+  width: 100%;
+}
+.header .menuIcons ul .menuSection nav.landingMenu ul li .linksLanding {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 0.8rem;
+  font-family: "Jura", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-left: 0px;
+  transition: 0.3s ease-in-out;
+}
+.header .menuIcons ul .menuSection nav.landingMenu ul li .linksLanding:hover {
+  background-color: rgba(188, 35, 40, 0.3490196078);
 }
 .header .menuIcons ul .wishHeadLine .wishlistIcon, .header .menuIcons ul .wishHeadLine .cartIcon, .header .menuIcons ul .cartShop .wishlistIcon, .header .menuIcons ul .cartShop .cartIcon {
   cursor: pointer;
