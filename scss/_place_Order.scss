@@ -89,15 +89,15 @@
                 }
             }
             .creditCards{
+                margin:10px 0px 5px 15px;
                 .transactions{
-                    margin:15px auto 5px;
                     font-size: $xSmallText;
                     font-family: $fontJura;
                     font-weight: $bold;
                     color: $primaryColor;
                 }
                 .paymentCards{
-                    width:70%;
+                    width:75%;
                 }
             }
         }

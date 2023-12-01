@@ -2429,15 +2429,17 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   width: 100%;
   gap: 10px;
 }
+.sectionPlaceOrder .unionOrder .delivery .creditCards {
+  margin: 10px 0px 5px 15px;
+}
 .sectionPlaceOrder .unionOrder .delivery .creditCards .transactions {
-  margin: 15px auto 5px;
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
   color: #bc2327;
 }
 .sectionPlaceOrder .unionOrder .delivery .creditCards .paymentCards {
-  width: 70%;
+  width: 75%;
 }
 .sectionPlaceOrder .unionOrder .formPayment {
   width: 40%;
