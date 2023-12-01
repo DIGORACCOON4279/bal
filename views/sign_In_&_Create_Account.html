@@ -242,14 +242,14 @@
                     <legend>Welcome back</legend>
                     <fieldset class="formFloating">
                         <label class="email" for="floatingInput">Email</label>
-                        <input type="email" class="formControl input" id="floatingInput" placeholder="Enter your mail" required>
+                        <input type="email" class="formControl input" id="floatingInput" placeholder="Enter your mail" required/>
                     </fieldset>
                     <fieldset class="formFloating">
-                        <label class="password" for="floatingInput">Password</label>
-                        <input type="text" class="formControl input" id="floatingPassword" placeholder="Enter your password" required>
+                        <label class="password" for="floatingPassword">Password</label>
+                        <input type="password" class="formControl input" id="floatingPassword" name="password" pattern="^[A-Za-z0-9]{10}$" title="Asegura que haya exactamente 10 caracteres. Pueden ser letras o numeros" placeholder="Enter your password" required>
                     </fieldset>
                     <fieldset class="ctaToSignIn">
-                        <button type="button" class="btnSignIn">Submit</button>
+                        <button type="submit" class="btnSignIn">Submit</button>
                         <p>¿Do you have an account with us?</p>
                     </fieldset>
                     <label for="navBarMenu">
@@ -271,7 +271,7 @@
                     </fieldset>
                     <fieldset class="formFloating">
                         <label class="lastName" for="floatingInput">Last name</label>
-                        <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your last name" required>
+                        <input type="text" class="formControl input" id="floatingInput" name="firstName" pattern="[A-Za-z]+" minlength="3"  maxlength="10" placeholder="Enter your last name" required>
                     </fieldset>
                     <fieldset class="formFloating">
                         <label class="email" for="floatingInput">Email address</label>
@@ -279,10 +279,10 @@
                     </fieldset>
                     <fieldset class="formFloating">
                         <label class="password"for="floatingPassword">Password</label>
-                        <input type="password" class="formControl input" id="floatingPassword" placeholder="Enter your password" required>
+                        <input type="password" class="formControl input" id="floatingPassword" name="password" pattern="^[A-Za-z0-9]{10}$" title="Asegura que haya exactamente 10 caracteres. Pueden ser letras o numeros" placeholder="Enter your password" required>
                     </fieldset>
                     <fieldset class="ctaToCreateAccount">
-                        <button type="button" class="btnCreateAccount">Submit</button>
+                        <button type="submit" class="btnCreateAccount">Submit</button>
                         <p>"Do you already have an account?"</p>
                     </fieldset>
                     <label  for="navBarMenu">
