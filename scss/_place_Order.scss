@@ -42,17 +42,37 @@
     }
     .unionOrder{
         width:92%;
+        overflow: hidden;
         @extend .flexRowBetween;
         .delivery{
             width:60%;
             height: 350px;
+            padding: 15px ;
             margin-right:35px;
             background-color:$whiteColor;
-            padding: 15px ;
             border-radius: $borderRadius;
+            @extend .flexColumn;
             .deliveryContact{
+                width: 100%;
                 @extend .flexColumn;
                 row-gap: 4px;
+                fieldset{
+                    width: 100%;
+                    height: auto;
+                    padding: 0px;
+                    label{
+                        width:100%;
+                        input{
+                            width:100%;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            padding-left: 10px;
+                            font-size: 0.8rem;
+                            border:$borderForm;
+                            border-radius: $borderRadiusInput;
+                        }
+                    }
+                }
                 .contactTitle, .deliveryTitle{
                     font-size: $regularText;
                     font-family: $fontJura;
@@ -60,35 +80,24 @@
                     color: $primaryColor;
                 }
                 .deliveryTitle{
-                    margin-top:15px;
+                    margin-top:5px;
                 }
                 .fullName{
                     width: 100%;
                     @extend .flexRowBetween;
-                    #lastName{
-                        margin-left: 15px;
-                    }
-                }
-                input{
-                    width:100%;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    padding-left: 10px;
-                    font-size: 0.8rem;
-                    border:$borderForm;
-                    border-radius: $borderRadiusInput;
+                    gap: 10px;
                 }
             }
             .creditCards{
                 .transactions{
-                    margin:25px auto 5px;
+                    margin:15px auto 5px;
                     font-size: $xSmallText;
                     font-family: $fontJura;
                     font-weight: $bold;
                     color: $primaryColor;
                 }
                 .paymentCards{
-                    width:100%;
+                    width:70%;
                 }
             }
         }

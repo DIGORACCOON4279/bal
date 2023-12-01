@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap");
-/******************* Mixin ******************/
+/********************* Mixin ******************/
 /******************* Extend ******************/
-.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .sectionWishlist, .bestSellers .sectionCardBlock .cardProducts .article .info, .header .menuIcons ul .menuSection .landingMenu ul, .header .menuIcons ul .menuSection {
+.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .sectionPlaceOrder .unionOrder .delivery, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .sectionWishlist, .bestSellers .sectionCardBlock .cardProducts .article .info, .header .menuIcons ul .menuSection .landingMenu ul, .header .menuIcons ul .menuSection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2385,34 +2385,29 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .sectionPlaceOrder .unionOrder {
   width: 92%;
+  overflow: hidden;
 }
 .sectionPlaceOrder .unionOrder .delivery {
   width: 60%;
   height: 350px;
+  padding: 15px;
   margin-right: 35px;
   background-color: #ffffff;
-  padding: 15px;
   border-radius: 10px;
 }
 .sectionPlaceOrder .unionOrder .delivery .deliveryContact {
+  width: 100%;
   row-gap: 4px;
 }
-.sectionPlaceOrder .unionOrder .delivery .deliveryContact .contactTitle, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
-  font-size: 1rem;
-  font-family: "Jura", sans-serif;
-  font-weight: 600;
-  color: #bc2327;
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact fieldset {
+  width: 100%;
+  height: auto;
+  padding: 0px;
 }
-.sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
-  margin-top: 15px;
-}
-.sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName {
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact fieldset label {
   width: 100%;
 }
-.sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName #lastName {
-  margin-left: 15px;
-}
-.sectionPlaceOrder .unionOrder .delivery .deliveryContact input {
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact fieldset label input {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -2421,15 +2416,28 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact .contactTitle, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: #bc2327;
+}
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
+  margin-top: 5px;
+}
+.sectionPlaceOrder .unionOrder .delivery .deliveryContact .fullName {
+  width: 100%;
+  gap: 10px;
+}
 .sectionPlaceOrder .unionOrder .delivery .creditCards .transactions {
-  margin: 25px auto 5px;
+  margin: 15px auto 5px;
   font-size: 0.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
   color: #bc2327;
 }
 .sectionPlaceOrder .unionOrder .delivery .creditCards .paymentCards {
-  width: 100%;
+  width: 70%;
 }
 .sectionPlaceOrder .unionOrder .formPayment {
   width: 40%;

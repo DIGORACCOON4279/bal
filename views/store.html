@@ -273,11 +273,11 @@
                         <legend class="contactTitle">Contact</legend>
                         <fieldset>
                             <label for="email">
-                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </label>
                         </fieldset>
                         <legend class="deliveryTitle">Delivery</legend>
-                        <fieldset>
+                        <fieldset class="fullName">
                             <label for="firstName">
                                 <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" minlength="3"  maxlength="10" placeholder="First name" required>
                             </label>
@@ -308,19 +308,19 @@
                 </fieldset>
                 <fieldset class="formPayment">
                     <Legend class="paymentTitle">Payment</Legend>
-                    <fieldset  required>
+                    <fieldset required>
                         <select>
-                            <option class="card" value="Card select" disabled selected>Card select</option>
-                            <option class="card" value="Credit Card" required>Debit Card</option>
-                            <option class="card" value="Credit Card" required>Credit Card</option>
+                            <option class="card" disabled selected>Card select</option>
+                            <option class="card" required>Debit Card</option>
+                            <option class="card" required>Credit Card</option>
                         </select>
                     </fieldset>
                     <fieldset>
                         <select required>
-                            <option class="cardType" value="Card Type" disabled selected>Card type</option>
-                            <option class="cardType" value="Credit Card" required>Master card</option>
-                            <option class="cardType" value="Credit Card" required>Visa</option>
-                            <option class="cardType" value="Credit Card" required>American express</option>
+                            <option class="cardType" disabled selected>Card type</option>
+                            <option class="cardType" required>Master card</option>
+                            <option class="cardType" required>Visa</option>
+                            <option class="cardType" required>American express</option>
                         </select>
                     </fieldset>
                     <fieldset>
