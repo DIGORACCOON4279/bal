@@ -300,40 +300,38 @@
                     <form class="payment">
                         <h3 class="paymentTitle">Payment</h3>
                         <select>
-                            <option class="card" value="Card select" selected>Card select</option>
-                            <option class="card" value="Credit Card" requiered>Debit Card</option>
-                            <option class="card" value="Credit Card" requiered>Credit Card</option>
+                            <option class="card" value="Card select" disabled selected>Card select</option>
+                            <option class="card" value="Credit Card" required>Debit Card</option>
+                            <option class="card" value="Credit Card" required>Credit Card</option>
                         </select>
                         <select>
-                            <option class="cardType" value="Card Type" selected>Card type</option>
-                            <option class="cardType" value="Credit Card" requiered>Master card</option>
-                            <option class="cardType" value="Credit Card" requiered>Visa</option>
-                            <option class="cardType" value="Credit Card" requiered>American express</option>
+                            <option class="cardType" value="Card Type" disabled selected>Card type</option>
+                            <option class="cardType" value="Credit Card" required>Master card</option>
+                            <option class="cardType" value="Credit Card" required>Visa</option>
+                            <option class="cardType" value="Credit Card" required>American express</option>
                         </select>
                     <fieldset>
-                        <label for="cardNumber">-
-                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered>
-                        </label>
-                        <label for="cardNumber">-
-                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered   >
-                        </label>
-                        <label for="cardNumber">-
-                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered>
-                        </label>
                         <label for="cardNumber">
-                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered>
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                        </label>
+                    <fieldset>
+                    <fieldset>
+                        <label for="securityCode">
+                            <input type="tel" id="securityCode" inputmode="numeric" pattern="\d{3}" placeholder="CVC" minlength="4"  maxlength="3" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="nameOnCard">
+                            <input type="text" id="nameOnCard" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required>
                         </label>
                     </fieldset>
 
 
-                        <label for="expiration"></label>
-                        <input type="text" id="expiration" placeholder="Expiration [MM/YY] *">
 
-                        <label for="securityCode"></label>
-                        <input type="text" id="securityCode" placeholder="Security code *">
 
-                        <label for="nameOnCard"></label>
-                        <input type="text" id="nameOnCard" placeholder="Name on card *">
 
                         <button href="#" class="btnPlaceOnOrder">Place on order</button>
                     </form>
