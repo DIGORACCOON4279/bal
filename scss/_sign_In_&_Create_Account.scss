@@ -567,7 +567,7 @@
 
  // Banner getOff
 
-.getOffHoddy{
+.getOffSignIn{
     width:$screenPercentageWidth;
     height:$screenPercentageHeight;
     #cross{
@@ -577,7 +577,7 @@
         }
     }
     .bannerGetOff{
-        width: 62vw;
+        width: 65vw;
         height: auto;
         @extend .flexColumnEvenlyCenter;
         border-radius: 10px;
@@ -601,7 +601,7 @@
                 width:25px;
                 position: relative;
                 top: 15px;
-                right:-390px;
+                right:-400px;
                 cursor: pointer;
                 z-index: 10;
                 transform: rotate(0deg);

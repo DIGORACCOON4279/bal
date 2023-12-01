@@ -88,20 +88,38 @@
         }
     }
     .laptop{
-        width: 60%;
+        max-width: 60%;
+        height:auto;
         padding-top: 50px;
-        animation: laptopSlide 0.75s linear;
-        @keyframes laptopSlide{
+        display:block;
+        -webkit-max-width: 100%;
+        -moz-max-width: 100%;
+        filter:drop-shadow(2px 9px 5px rgb(44, 44, 44) ) blur(0px);
+        animation:motion 1.3s linear alternate;
+        @keyframes motion{
             0%{
-                transform: translateY(30%);
+                filter: drop-shadow(0 0 95px $primaryColor ) blur(8px) brightness(0%);
+                transform: translate(-1800px, -1100px) scale(0%) ;
                 opacity: 0;
             }
             25%{
-                transform: translateY(15%);
-                opacity: 0.5;
+                filter:drop-shadow(0 0 85px $primaryColor )  blur(6px) brightness(250%);
+                transform: translate(-900px, -500px) scale(0%, 10%);
+                opacity: 0.2;
+            }
+            50%{
+                filter: drop-shadow(0 0 75px $primaryColor ) blur(5px) brightness(550%);
+                transform: translate(-700px, -300px) scale(35%, 45%);
+                opacity: 0.3;
+            }
+            75%{
+                filter: drop-shadow(0 0 25px rgb(0, 0, 0) ) blur(4px) brightness(200%);
+                transform: translate(-200px, -100px)scale(70%, 70%);
+                opacity: 0.7;
             }
             100%{
-                transform: translateY(0%);
+                filter:drop-shadow(0 0 5px rgb(44,44,44) ) blur(0px) brightness(100%)  ;
+                transform: scale(100%, 100%);
                 opacity: 1;
             }
         }

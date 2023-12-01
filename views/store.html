@@ -139,7 +139,7 @@
 
         <!-- Get 25% Off -->
 
-        <section class="getOffHoddy" id="getOff">
+        <section class="getOffStore" id="getOff">
             <input type="checkbox" id="cross">
             <article class="bannerGetOff">
                 <label for="cross">
@@ -299,11 +299,32 @@
                 <div class="formPayment">
                     <form class="payment">
                         <h3 class="paymentTitle">Payment</h3>
-                        <label for="creditCard"></label>
-                        <input type="text" id="creditCard" placeholder="Credit card *">
+                        <select>
+                            <option class="card" value="Card select" selected>Card select</option>
+                            <option class="card" value="Credit Card" requiered>Debit Card</option>
+                            <option class="card" value="Credit Card" requiered>Credit Card</option>
+                        </select>
+                        <select>
+                            <option class="cardType" value="Card Type" selected>Card type</option>
+                            <option class="cardType" value="Credit Card" requiered>Master card</option>
+                            <option class="cardType" value="Credit Card" requiered>Visa</option>
+                            <option class="cardType" value="Credit Card" requiered>American express</option>
+                        </select>
+                    <fieldset>
+                        <label for="cardNumber">-
+                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered>
+                        </label>
+                        <label for="cardNumber">-
+                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered   >
+                        </label>
+                        <label for="cardNumber">-
+                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered>
+                        </label>
+                        <label for="cardNumber">
+                            <input type="" id="cardNumber" placeholder="XXXX" min="4" max="4" maxlength="4" requiered>
+                        </label>
+                    </fieldset>
 
-                        <label for="cardNumber"></label>
-                        <input type="text" id="cardNumber" placeholder="Card number *">
 
                         <label for="expiration"></label>
                         <input type="text" id="expiration" placeholder="Expiration [MM/YY] *">

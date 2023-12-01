@@ -9,12 +9,12 @@
 }
 .sectionPlaceOrder{
     width:65vw;
+    max-width: 65vw;
     height:auto;
     position: fixed;
     top:-80%;
     left:16.5%;
     @extend .flexColumnBetween;
-    overflow: hidden;
     background-color:#f3f3f31c;
     box-shadow:$placeOrderShadow;
     margin:7px auto;
@@ -30,8 +30,8 @@
             width:25px;
             cursor: pointer;
             position: absolute;
-            top:-30px;
-            right:-435px;
+            top:-20px;
+            right:-422px;
             z-index: 8;
             transform: rotate(0deg);
             transition: $transition;

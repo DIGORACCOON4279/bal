@@ -35,21 +35,21 @@
   align-items: flex-start;
 }
 
-.flexColumnCenterCenter, .footerContainer .footer .brand, .footerContainer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter, .sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder, .headerSignIn .menuIcons ul, .container .logInCreateAccount .tags .formLogIn, .container .logInCreateAccount .tags .formCreateAccount, .getOff, .sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout {
+.flexColumnCenterCenter, .footerContainer .footer .brand, .footerContainer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter, .sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder, .headerSignIn .menuIcons ul, .container .logInCreateAccount .tags .formLogIn, .container .logInCreateAccount .tags .formCreateAccount, .getOffHoddy, .sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.flexColumnEvenlyCenter, .sectionPurchaseOrder, .getOffHoddy .bannerGetOff, .containerStore .getOffHoddy .bannerGetOff, .getOff .bannerGetOff {
+.flexColumnEvenlyCenter, .getOffShowRoom .bannerGetOff, .sectionPurchaseOrder, .getOffSignIn .bannerGetOff, .containerStore .getOffStore .bannerGetOff, .getOffHoddy .bannerGetOff {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.flexRowEvenlyCenter, .getOffHoddy .bannerGetOff .slideGetOff, .headerSignIn .menuIcons ul li, .containerStore .getOffHoddy .bannerGetOff .slideGetOff, .getOff .bannerGetOff .slideGetOff {
+.flexRowEvenlyCenter, .getOffShowRoom .bannerGetOff .slideGetOff, .getOffSignIn .bannerGetOff .slideGetOff, .headerSignIn .menuIcons ul li, .containerStore .getOffStore .bannerGetOff .slideGetOff, .getOffHoddy .bannerGetOff .slideGetOff {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -702,26 +702,44 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   text-decoration: underline;
 }
 .heroSection .laptop {
-  width: 60%;
+  max-width: 60%;
+  height: auto;
   padding-top: 50px;
-  animation: laptopSlide 0.75s linear;
+  display: block;
+  -webkit-max-width: 100%;
+  -moz-max-width: 100%;
+  filter: drop-shadow(2px 9px 5px rgb(44, 44, 44)) blur(0px);
+  animation: motion 1.3s linear alternate;
 }
-@keyframes laptopSlide {
+@keyframes motion {
   0% {
-    transform: translateY(30%);
+    filter: drop-shadow(0 0 95px #bc2327) blur(8px) brightness(0%);
+    transform: translate(-1800px, -1100px) scale(0%);
     opacity: 0;
   }
   25% {
-    transform: translateY(15%);
-    opacity: 0.5;
+    filter: drop-shadow(0 0 85px #bc2327) blur(6px) brightness(250%);
+    transform: translate(-900px, -500px) scale(0%, 10%);
+    opacity: 0.2;
+  }
+  50% {
+    filter: drop-shadow(0 0 75px #bc2327) blur(5px) brightness(550%);
+    transform: translate(-700px, -300px) scale(35%, 45%);
+    opacity: 0.3;
+  }
+  75% {
+    filter: drop-shadow(0 0 25px rgb(0, 0, 0)) blur(4px) brightness(200%);
+    transform: translate(-200px, -100px) scale(70%, 70%);
+    opacity: 0.7;
   }
   100% {
-    transform: translateY(0%);
+    filter: drop-shadow(0 0 5px rgb(44, 44, 44)) blur(0px) brightness(100%);
+    transform: scale(100%, 100%);
     opacity: 1;
   }
 }
 
-.getOff {
+.getOffHoddy {
   width: 100%;
   height: 100%;
   background-image: url("../img/background_Gift.webp");
@@ -731,7 +749,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   background-color: #131313;
   margin: 200px 0px;
 }
-.getOff .containerGetOff {
+.getOffHoddy .containerGetOff {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -739,25 +757,25 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.getOff .containerGetOff .info .title {
+.getOffHoddy .containerGetOff .info .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
   color: #bc2327;
   margin-top: -150px;
 }
-.getOff .containerGetOff .info .paragraph {
+.getOffHoddy .containerGetOff .info .paragraph {
   margin-top: 50px;
 }
-.getOff .containerGetOff .info .paragraph .subtitle, .getOff .containerGetOff .info .paragraph .sentence, .getOff .containerGetOff .info .paragraph .cta {
+.getOffHoddy .containerGetOff .info .paragraph .subtitle, .getOffHoddy .containerGetOff .info .paragraph .sentence, .getOffHoddy .containerGetOff .info .paragraph .cta {
   font-size: 1.8rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
   color: #f1f1f1;
 }
-.getOff .containerGetOff .info .paragraph .sentence {
+.getOffHoddy .containerGetOff .info .paragraph .sentence {
   font-size: 1.5rem;
 }
-.getOff .containerGetOff .hoddy {
+.getOffHoddy .containerGetOff .hoddy {
   animation: hoddy 2s linear 2s infinite;
 }
 @keyframes hoddy {
@@ -777,7 +795,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
     filter: drop-shadow(0 4px 6px #BC2327);
   }
 }
-.getOff .ctaSentence {
+.getOffHoddy .ctaSentence {
   position: relative;
   bottom: 250px;
   left: -140px;
@@ -788,18 +806,18 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   color: #f1f1f1;
   transition: color 0.3s ease-in-out;
 }
-.getOff .ctaSentence:hover {
+.getOffHoddy .ctaSentence:hover {
   color: #bc2327;
   text-decoration: underline;
 }
-.getOff #cross {
+.getOffHoddy #cross {
   display: none;
 }
-.getOff #cross:checked ~ .bannerGetOff {
+.getOffHoddy #cross:checked ~ .bannerGetOff {
   transform: translateY(100%);
 }
-.getOff .bannerGetOff {
-  width: 62vw;
+.getOffHoddy .bannerGetOff {
+  width: 65vw;
   height: auto;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.0745098039);
@@ -812,49 +830,49 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.getOff .bannerGetOff .title {
+.getOffHoddy .bannerGetOff .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
   color: #bc2327;
   margin-top: 20px;
 }
-.getOff .bannerGetOff label .crossCloseWhite {
+.getOffHoddy .bannerGetOff label .crossCloseWhite {
   width: 25px;
   position: relative;
   top: -90px;
-  right: -390px;
+  right: -400px;
   cursor: pointer;
   z-index: 3;
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
 }
-.getOff .bannerGetOff label .crossCloseWhite:hover {
+.getOffHoddy .bannerGetOff label .crossCloseWhite:hover {
   transform: rotate(90deg);
 }
-.getOff .bannerGetOff .slideGetOff {
+.getOffHoddy .bannerGetOff .slideGetOff {
   padding: 20px;
   backdrop-filter: blur(10px);
 }
-.getOff .bannerGetOff .slideGetOff .hoddy {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy {
   padding: 10px;
 }
-.getOff .bannerGetOff .slideGetOff .hoddy img {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy img {
   width: 100%;
   height: auto;
 }
-.getOff .bannerGetOff .slideGetOff .hoddy h3 {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy h3 {
   margin-top: 30px;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
 }
-.getOff .bannerGetOff .slideGetOff .hoddy p {
+.getOffHoddy .bannerGetOff .slideGetOff .hoddy p {
   padding: 10px auto;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #f1f1f1;
 }
-.getOff .bannerGetOff::before {
+.getOffHoddy .bannerGetOff::before {
   content: "";
   position: absolute;
   top: 0;
@@ -867,7 +885,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   z-index: -1;
   border-radius: 10px;
 }
-.getOff .bannerGetOff > * {
+.getOffHoddy .bannerGetOff > * {
   position: relative;
 }
 
@@ -1215,18 +1233,18 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
     transform: translateX(0%);
   }
 }
-.containerStore .getOffHoddy {
+.containerStore .getOffStore {
   width: 100%;
   height: 100%;
 }
-.containerStore .getOffHoddy #cross {
+.containerStore .getOffStore #cross {
   display: none;
 }
-.containerStore .getOffHoddy #cross:checked ~ .bannerGetOff {
+.containerStore .getOffStore #cross:checked ~ .bannerGetOff {
   transform: translateY(100%);
 }
-.containerStore .getOffHoddy .bannerGetOff {
-  width: 62vw;
+.containerStore .getOffStore .bannerGetOff {
+  width: 65vw;
   height: auto;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.0745098039);
@@ -1239,49 +1257,49 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.containerStore .getOffHoddy .bannerGetOff label .crossCloseWhite {
+.containerStore .getOffStore .bannerGetOff label .crossCloseWhite {
   width: 25px;
   position: relative;
   top: 15px;
-  right: -390px;
+  right: -400px;
   cursor: pointer;
   z-index: 10;
   transform: rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
-.containerStore .getOffHoddy .bannerGetOff label .crossCloseWhite:hover {
+.containerStore .getOffStore .bannerGetOff label .crossCloseWhite:hover {
   transform: rotate(90deg);
 }
-.containerStore .getOffHoddy .bannerGetOff .title {
+.containerStore .getOffStore .bannerGetOff .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
   color: #BC2327;
   margin-top: 20px;
 }
-.containerStore .getOffHoddy .bannerGetOff .slideGetOff {
+.containerStore .getOffStore .bannerGetOff .slideGetOff {
   padding: 20px;
   backdrop-filter: blur(10px);
 }
-.containerStore .getOffHoddy .bannerGetOff .slideGetOff .hoddy {
+.containerStore .getOffStore .bannerGetOff .slideGetOff .hoddy {
   padding: 10px;
 }
-.containerStore .getOffHoddy .bannerGetOff .slideGetOff .hoddy img {
+.containerStore .getOffStore .bannerGetOff .slideGetOff .hoddy img {
   width: 100%;
   height: auto;
 }
-.containerStore .getOffHoddy .bannerGetOff .slideGetOff .hoddy h3 {
+.containerStore .getOffStore .bannerGetOff .slideGetOff .hoddy h3 {
   margin-top: 30px;
   font-size: 1.1rem;
   font-family: "Jura", sans-serif;
   color: #BC2327;
 }
-.containerStore .getOffHoddy .bannerGetOff .slideGetOff .hoddy p {
+.containerStore .getOffStore .bannerGetOff .slideGetOff .hoddy p {
   padding: 10px auto;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #d9d9d9;
 }
-.containerStore .getOffHoddy .bannerGetOff::before {
+.containerStore .getOffStore .bannerGetOff::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1294,7 +1312,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   z-index: -1;
   border-radius: 10px;
 }
-.containerStore .getOffHoddy .bannerGetOff > * {
+.containerStore .getOffStore .bannerGetOff > * {
   position: relative;
 }
 .containerStore .sectionStore .sectionCard {
@@ -2135,18 +2153,18 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   }
 }
 
-.getOffHoddy {
+.getOffSignIn {
   width: 100%;
   height: 100%;
 }
-.getOffHoddy #cross {
+.getOffSignIn #cross {
   display: none;
 }
-.getOffHoddy #cross:checked ~ .bannerGetOff {
+.getOffSignIn #cross:checked ~ .bannerGetOff {
   transform: translateY(100%);
 }
-.getOffHoddy .bannerGetOff {
-  width: 62vw;
+.getOffSignIn .bannerGetOff {
+  width: 65vw;
   height: auto;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.0745098039);
@@ -2159,49 +2177,49 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-.getOffHoddy .bannerGetOff .title {
+.getOffSignIn .bannerGetOff .title {
   font-size: 4rem;
   font-family: "Rubik Distressed", cursive;
   color: #bc2327;
   margin-top: 20px;
 }
-.getOffHoddy .bannerGetOff label .crossCloseWhite {
+.getOffSignIn .bannerGetOff label .crossCloseWhite {
   width: 25px;
   position: relative;
   top: 15px;
-  right: -390px;
+  right: -400px;
   cursor: pointer;
   z-index: 10;
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
 }
-.getOffHoddy .bannerGetOff label .crossCloseWhite:hover {
+.getOffSignIn .bannerGetOff label .crossCloseWhite:hover {
   transform: rotate(90deg);
 }
-.getOffHoddy .bannerGetOff .slideGetOff {
+.getOffSignIn .bannerGetOff .slideGetOff {
   padding: 20px;
   backdrop-filter: blur(10px);
 }
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy {
+.getOffSignIn .bannerGetOff .slideGetOff .hoddy {
   padding: 10px;
 }
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy img {
+.getOffSignIn .bannerGetOff .slideGetOff .hoddy img {
   width: 100%;
   height: auto;
 }
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy h3 {
+.getOffSignIn .bannerGetOff .slideGetOff .hoddy h3 {
   margin-top: 30px;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #bc2327;
 }
-.getOffHoddy .bannerGetOff .slideGetOff .hoddy p {
+.getOffSignIn .bannerGetOff .slideGetOff .hoddy p {
   padding: 10px auto;
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #f1f1f1;
 }
-.getOffHoddy .bannerGetOff::before {
+.getOffSignIn .bannerGetOff::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2214,7 +2232,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   z-index: -1;
   border-radius: 10px;
 }
-.getOffHoddy .bannerGetOff > * {
+.getOffSignIn .bannerGetOff > * {
   position: relative;
 }
 
@@ -2249,7 +2267,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   width: 25px;
   position: absolute;
   top: -15px;
-  right: -250px;
+  right: -245px;
   cursor: pointer;
   z-index: 10;
   transform: rotate(0deg);
@@ -2336,11 +2354,11 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 
 .sectionPlaceOrder {
   width: 65vw;
+  max-width: 65vw;
   height: auto;
   position: fixed;
   top: -80%;
   left: 16.5%;
-  overflow: hidden;
   background-color: rgba(243, 243, 243, 0.1098039216);
   box-shadow: 0 0 4px 2px #525252;
   margin: 7px auto;
@@ -2356,8 +2374,8 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   width: 25px;
   cursor: pointer;
   position: absolute;
-  top: -30px;
-  right: -435px;
+  top: -20px;
+  right: -422px;
   z-index: 8;
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
@@ -3126,6 +3144,130 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   color: #bc2327;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.tagGetOff {
+  position: fixed;
+  top: 35%;
+  right: 0px;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+  text-decoration: none;
+}
+.tagGetOff .discount {
+  animation: getOff 0.5s linear;
+}
+.tagGetOff .discount .title {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: right;
+  transform: rotate(180deg);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #000000;
+  padding: 40px 15px;
+  transition: 0.3s ease-in-out;
+}
+.tagGetOff .discount .title:hover {
+  background-color: #bc2327;
+  transform: translateX(15%) rotate(180deg);
+}
+@keyframes getOff {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.getOffShowRoom {
+  width: 100%;
+  height: 100%;
+}
+.getOffShowRoom #cross {
+  display: none;
+}
+.getOffShowRoom #cross:checked ~ .bannerGetOff {
+  transform: translateY(100%);
+}
+.getOffShowRoom .bannerGetOff {
+  width: 65vw;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.0745098039);
+  box-shadow: 0 0 10px 6px #070707;
+  position: fixed;
+  top: -340px;
+  left: 18%;
+  z-index: 8;
+  transform: translateY(300%);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.getOffShowRoom .bannerGetOff .title {
+  font-size: 4rem;
+  font-family: "Rubik Distressed", cursive;
+  color: #bc2327;
+  margin-top: 20px;
+}
+.getOffShowRoom .bannerGetOff label .crossCloseWhite {
+  width: 25px;
+  position: relative;
+  top: 15px;
+  right: -400px;
+  cursor: pointer;
+  z-index: 10;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+.getOffShowRoom .bannerGetOff label .crossCloseWhite:hover {
+  transform: rotate(90deg);
+}
+.getOffShowRoom .bannerGetOff .slideGetOff {
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+.getOffShowRoom .bannerGetOff .slideGetOff .hoddy {
+  padding: 10px;
+}
+.getOffShowRoom .bannerGetOff .slideGetOff .hoddy img {
+  width: 100%;
+  height: auto;
+}
+.getOffShowRoom .bannerGetOff .slideGetOff .hoddy h3 {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #bc2327;
+}
+.getOffShowRoom .bannerGetOff .slideGetOff .hoddy p {
+  padding: 10px auto;
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #f1f1f1;
+}
+.getOffShowRoom .bannerGetOff::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8980392157);
+  backdrop-filter: blur(10px);
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 10px;
+}
+.getOffShowRoom .bannerGetOff > * {
+  position: relative;
 }
 
 .footerContainer {
