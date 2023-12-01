@@ -72,7 +72,6 @@ function renderCart(cartItems) {
 renderCart(cartStorage);
 
 
-
 // Funcion actualizar el contador
 
 function actualizarContador(cartItem, counterElement, incremento) {

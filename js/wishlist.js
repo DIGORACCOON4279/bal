@@ -3,7 +3,7 @@ console.log("Script loaded: wishlist.js");
 
 // Wishlist y localStorage
 
-// Obtiene la sección de la wishlist
+// Obtiene la sección de wishlist
 
 const wishlistContainer = document.querySelector('.sectionWishlist .containerWishlist');
 
@@ -17,7 +17,7 @@ if(wishlistProductsLS) {
 }
 
 
-// Función para renderizar la wishlist
+// Función para renderizar wishlist
 
 function renderWishlist(wishlistItems) {
     wishlistContainer.innerHTML = "";
@@ -57,7 +57,7 @@ function renderWishlist(wishlistItems) {
 }
 
 
-// Función para agregar a la wishlist
+// Función para agregar wishlist
 
 function agregarAWishlist(selectedOutfit) {
 

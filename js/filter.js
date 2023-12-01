@@ -4,7 +4,7 @@
 console.log("Script loaded: filter.js");
 
 
-// Obtén elementos del filtro
+// Obtener elementos del filtro
 
 const inStockCheckbox = document.getElementById("inStock");
 const newArrivalsCheckbox = document.getElementById("newArrivals");
@@ -76,7 +76,6 @@ function resetFilter() {
 }
 
 // Función para limpiar la sección de productos
-
 function clearProducts() {
     const sectionCard = document.querySelector(".sectionCard");
     sectionCard.innerHTML = "";
