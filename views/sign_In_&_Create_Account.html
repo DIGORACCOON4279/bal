@@ -30,9 +30,6 @@
     <!-- Header & NavBar -->
 
     <header class="headerSignIn">
-        <!-- <label for="menuSide">
-            <img class="drawerIcon" src="img/menu_Icon.svg" alt="Menu icon">
-        </label> -->
         <input id="menuSide" type="checkbox">
         <nav class="menuSide">
             <section class="top">
@@ -186,20 +183,9 @@
                                 <h3 class="titleCartlist">Total</h3>
                             </article>
                             <article class="containerArticles">
-                                <!-- <article class="cartlist">
-                                        <img class="itemProduct" src="../img/pic24.webp" alt="Product pic">
-                                        <div class="description">
-                                            <p class="price">$499</p>
-                                            <div class="icons">
-                                                <img src="../img/trash_Icon.svg" alt="Trash icon">
-                                                <img src="../img/edit_Icon.svg" alt="Edit icon">
-                                            </div>
-                                        </div>
-                                        <div class="itemNumber">
-                                            <label for="quantity"></label>
-                                        </div>
-                                        <p class="total">$499</p>
-                                </article> -->
+
+                            <!-- Se inyecta el codigo desde wishlist.js -->
+
                             </article>
                         </div>
                     </div>
@@ -232,19 +218,8 @@
                             <h3 class="titleWishlist">Wish</h3>
                         </article>
                         <article class="containerWishlist">
-                            <!-- <article class="wishlist">
-                                <div class="blockProduct">
-                                    <img class="itemProduct" src="img/pic24.webp" alt="Product pic">
-                                    <div class="description">
-                                        <p class="wishPrice">$499</p>
-                                        <div class="icons">
-                                            <img src="img/trash_Icon.svg" alt="Trash icon">
-                                            <img src="img/edit_Icon.svg" alt="Edit icon">
-                                        </div>
-                                    </div>
-                                    <img class="itemWishlist" src="img/wishlist_Icon.svg" alt="Wishlist icon">
-                                </div>
-                            </article> -->
+
+                        <!-- Se inyecta el codigo desde wishlist.js -->
 
                         </article>
                     </div>
@@ -262,22 +237,21 @@
                 <input id="navBarMenu" type="checkbox">
                 <form action="" class="formLogIn">
                     <label for="navBarMenu" class="tag">
-                        <h3 class="tagLogIn">Log in</h3>
+                        <legend class="tagLogIn">Log in</legend>
                     </label>
                     <legend>Welcome back</legend>
                     <fieldset class="formFloating">
-                        <label class="email" for="floatingInput"></label>Email address
-                        <input type="email" class="formControl input" id="floatingInput" placeholder="Email">
+                        <label class="email" for="floatingInput">Enter your email address </label>
+                        <input type="email" class="formControl input" id="floatingInput" placeholder="Email" required>
                     </fieldset>
                     <fieldset class="formFloating">
-                        <label class="password" for="floatingInput"></label>Password
-                        <input type="password" class="formControl input" id="floatingPassword" placeholder="Password">
+                        <label class="password" for="floatingInput">Enter your password</label>
+                        <input type="password" class="formControl input" id="floatingPassword" placeholder="Password" required>
                     </fieldset>
                     <fieldset class="ctaToSignIn">
                         <button type="button" class="btnSignIn" type="Submit">Submit</button>
                         <p>¿Do you have an account with us?</p>
                     </fieldset>
-
                     <label for="navBarMenu">
                         <p class="ctaFormCreateAccount">Create account</p>
                     </label>
@@ -288,24 +262,24 @@
 
                 <form action="" class="formCreateAccount">
                     <label  for="navBarMenu" class="tag">
-                        <h3 class="tagCreateAccount">Create Account</h3>
+                        <legend class="tagCreateAccount">Create Account</legend>
                     </label>
                     <legend>Create Account</legend>
                     <fieldset class="formFloating">
                         <label class="firstName" for="floatingInput"></label>First name
-                        <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your first name">
+                        <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your first name" required>
                     </fieldset>
                     <fieldset class="formFloating">
                         <label class="lastName" for="floatingInput"></label>Last name
-                        <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your last name">
+                        <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your last name" required>
                     </fieldset>
                     <fieldset class="formFloating">
                         <label class="email" for="floatingInput"></label>Email address
-                        <input type="email" class="formControl input" id="floatingInput" placeholder="Enter your Email">
+                        <input type="email" class="formControl input" id="floatingInput" placeholder="Enter your Email" required>
                     </fieldset>
                     <fieldset class="formFloating">
                         <label class="password"for="floatingPassword"></label>Password
-                        <input type="password" class="formControl input" id="floatingPassword" placeholder="Enter your password">
+                        <input type="password" class="formControl input" id="floatingPassword" placeholder="Enter your password" required>
                     </fieldset>
                     <fieldset class="ctaToCreateAccount">
                         <button type="button" class="btnCreateAccount" type="Submit">Submit</button>
@@ -315,7 +289,6 @@
                         <p class="ctaFormLogIn"> Enter here </p>
                     </label>
                     <img src="../img/skull.svg" alt="" class="skullIcon">
-
                 </form>
             </article>
             <article class="bannerCreateAccount">

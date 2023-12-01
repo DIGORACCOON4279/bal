@@ -1642,7 +1642,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .container .logInCreateAccount .tags .formCreateAccount .tag {
   position: fixed;
   top: -10px;
-  right: -45px;
+  right: -49px;
   transform: rotate(180deg);
   display: flex;
   justify-content: center;
@@ -1680,7 +1680,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 .container .logInCreateAccount .tags .formLogIn .tag {
   position: fixed;
   top: -10px;
-  right: -45px;
+  right: -49px;
   transform: rotate(180deg);
   display: flex;
   justify-content: center;
