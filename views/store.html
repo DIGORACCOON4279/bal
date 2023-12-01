@@ -279,25 +279,25 @@
                         <legend class="deliveryTitle">Delivery</legend>
                         <fieldset>
                             <label for="firstName">
-                                <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+                                <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" minlength="3"  maxlength="10" placeholder="First name" required>
                             </label>
                             <label for="lastName">
-                                <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+                                <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]+" minlength="3"  maxlength="10" placeholder="Last name" required>
                             </label>
                         </fieldset>
                         <fieldset>
                             <label for="province">
-                                <input type="text" id="province" name="province" placeholder="Province" required>
+                                <input type="text" id="province" name="province" pattern="[A-Za-z]+" minlength="3"  maxlength="12" placeholder="Province" required>
                             </label>
                         </fieldset>
                         <fieldset>
                             <label for="address">
-                                <input type="text" id="address" name="address" placeholder="Address" required>
+                                <input type="text" id="address" name="address" pattern="[A-Za-z0-9\s]+" placeholder="Address" required>
                             </label>
                         </fieldset>
                         <fieldset>
                             <label for="cellphone">
-                                <input type="tel" id="cellphone" name="cellphone" placeholder="Cellphone number [optional]">
+                                <input type="tel" id="cellphone" name="cellphone" inputmode="numeric" pattern="\d+" minlength="11"  maxlength="12" placeholder="Cellphone number [optional]" required>
                             </label>
                         </fieldset>
                     </fieldset>
@@ -308,7 +308,7 @@
                 </fieldset>
                 <fieldset class="formPayment">
                     <Legend class="paymentTitle">Payment</Legend>
-                    <fieldset>
+                    <fieldset  required>
                         <select>
                             <option class="card" value="Card select" disabled selected>Card select</option>
                             <option class="card" value="Credit Card" required>Debit Card</option>
@@ -316,7 +316,7 @@
                         </select>
                     </fieldset>
                     <fieldset>
-                        <select>
+                        <select required>
                             <option class="cardType" value="Card Type" disabled selected>Card type</option>
                             <option class="cardType" value="Credit Card" required>Master card</option>
                             <option class="cardType" value="Credit Card" required>Visa</option>
@@ -338,7 +338,7 @@
                     </fieldset>
                     <fieldset>
                         <label for="nameOnCard">
-                            <input type="text" id="nameOnCard" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required>
+                            <input type="text" id="nameOnCard"inputmode="text" pattern="[A-Za-z]+" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required>
                         </label>
                     </fieldset>
                     <button href="#" class="btnPlaceOnOrder">Place on order</button>
