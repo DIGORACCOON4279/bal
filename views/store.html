@@ -297,7 +297,7 @@
                         </fieldset>
                         <fieldset>
                             <label for="cellphone">
-                                <input type="tel" id="cellphone" name="cellphone" inputmode="numeric" pattern="\d+" minlength="11"  maxlength="12" placeholder="Cellphone number [optional]" required>
+                                <input type="tel" id="cellphone" name="cellphone" inputmode="numeric" pattern="\d+" minlength="11"  maxlength="12" placeholder="Cellphone number" required>
                             </label>
                         </fieldset>
                     </fieldset>
@@ -324,21 +324,21 @@
                         </select>
                     </fieldset>
                     <fieldset>
-                        <label for="cardNumber">
+                        <label class="cardNumbers" for="cardNumber">
                             <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
                             <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
                             <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
-                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="securityCode">
-                            <input type="tel" id="securityCode" inputmode="numeric" pattern="\d{3}" placeholder="CVC" minlength="3"  maxlength="3" required>
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />
                         </label>
                     </fieldset>
                     <fieldset>
                         <label for="nameOnCard">
-                            <input type="text" id="nameOnCard"inputmode="text" pattern="[A-Za-z]+" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required>
+                            <input type="text" id="nameOnCard"inputmode="text" pattern="[A-Za-z]+" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required/                              >
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="expirateDate">
+                            <input type="month" id="expirateDate" name="date" required/>
                         </label>
                     </fieldset>
                     <button href="#" class="btnPlaceOnOrder">Place on order</button>

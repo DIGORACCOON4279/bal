@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap");
 /********************* Mixin ******************/
 /******************* Extend ******************/
-.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .formPayment .payment, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .sectionPlaceOrder .unionOrder .delivery, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .sectionWishlist, .bestSellers .sectionCardBlock .cardProducts .article .info, .header .menuIcons ul .menuSection .landingMenu ul, .header .menuIcons ul .menuSection {
+.flexColumn, .showRoom .rightSide .infoProduct .color, .sectionPlaceOrder .unionOrder .delivery .deliveryContact, .sectionPlaceOrder .unionOrder .delivery, .containerStore .sectionStore .sectionCard .cardProducts .article .info, .sectionWishlist, .bestSellers .sectionCardBlock .cardProducts .article .info, .header .menuIcons ul .menuSection .landingMenu ul, .header .menuIcons ul .menuSection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -35,7 +35,7 @@
   align-items: flex-start;
 }
 
-.flexColumnCenterCenter, .footerContainer .footer .brand, .footerContainer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter, .sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder, .headerSignIn .menuIcons ul, .container .logInCreateAccount .tags .formLogIn, .container .logInCreateAccount .tags .formCreateAccount, .getOffHoddy, .sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout {
+.flexColumnCenterCenter, .footerContainer .footer .brand, .footerContainer, .showRoom .rightSide .containerAccordion .accordionItem .accordionCollapse .accordionBodyDos, .sectionFilter .menuFilterSide .menuFilter .choiceFilter .btnFilter, .sectionPlaceOrder .unionOrder .formPayment .btnPlaceOnOrder, .headerSignIn .menuIcons ul, .container .logInCreateAccount .tags .formLogIn, .container .logInCreateAccount .tags .formCreateAccount, .getOffHoddy, .sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2415,6 +2415,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   font-size: 0.8rem;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
+  color: #9a9a9a;
 }
 .sectionPlaceOrder .unionOrder .delivery .deliveryContact .contactTitle, .sectionPlaceOrder .unionOrder .delivery .deliveryContact .deliveryTitle {
   font-size: 1rem;
@@ -2451,18 +2452,33 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   background-color: #ffffff;
   padding: 15px;
   border-radius: 10px;
-}
-.sectionPlaceOrder .unionOrder .formPayment .payment {
-  width: 100%;
   row-gap: 4px;
 }
-.sectionPlaceOrder .unionOrder .formPayment .payment .paymentTitle {
+.sectionPlaceOrder .unionOrder .formPayment .paymentTitle {
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   font-weight: 600;
   color: #bc2327;
 }
-.sectionPlaceOrder .unionOrder .formPayment .payment input {
+.sectionPlaceOrder .unionOrder .formPayment fieldset {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+.sectionPlaceOrder .unionOrder .formPayment fieldset label {
+  width: 100%;
+}
+.sectionPlaceOrder .unionOrder .formPayment fieldset label input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  color: #9a9a9a;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+.sectionPlaceOrder .unionOrder .formPayment fieldset select {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -2471,7 +2487,14 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
-.sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder {
+.sectionPlaceOrder .unionOrder .formPayment fieldset .cardNumbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+.sectionPlaceOrder .unionOrder .formPayment .btnPlaceOnOrder {
   width: 100%;
   padding: 10px 20px;
   margin: 75px auto 0px;
@@ -2483,7 +2506,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   background-color: #000000;
   transition: 0.3s ease-in-out;
 }
-.sectionPlaceOrder .unionOrder .formPayment .payment .btnPlaceOnOrder:hover {
+.sectionPlaceOrder .unionOrder .formPayment .btnPlaceOnOrder:hover {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #000000;

@@ -70,6 +70,7 @@
                             font-size: 0.8rem;
                             border:$borderForm;
                             border-radius: $borderRadiusInput;
+                            color:$secondaryColor;
                         }
                     }
                 }
@@ -108,43 +109,61 @@
             background-color:$whiteColor;
             padding: 15px;
             border-radius: $borderRadius;
-            .payment{
-                width:100%;
-                @extend .flexColumn;
-                row-gap: 4px;
-                .paymentTitle{
-                    font-size:$regularText;
-                    font-family: $fontJura;
-                    font-weight:$bold;
-                    color: $primaryColor;
+            row-gap: 4px;
+            .paymentTitle{
+                font-size:$regularText;
+                font-family: $fontJura;
+                font-weight:$bold;
+                color: $primaryColor;
+            }
+            fieldset{
+                width: 100%;
+                height: auto;
+                padding: 0px;
+                label{
+                    width:100%;
+                    input{
+                        width:100%;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 10px;
+                        font-size: 0.8rem;
+                        color:$secondaryColor;
+                        border:$borderForm;
+                        border-radius: $borderRadiusInput;
+                    }
                 }
-                input{
+                select{
                     width:100%;
                     padding-top: 5px;
                     padding-bottom: 5px;
                     padding-left: 10px;
-                    font-size:$xSmallText;
+                    font-size: 0.8rem;
                     border:$borderForm;
                     border-radius: $borderRadiusInput;
                 }
-                .btnPlaceOnOrder{
-                    width: 100%;
-                    padding: 10px 20px;
-                    @extend .flexColumnCenterCenter;
-                    margin:75px auto 0px;
-                    font-size: $regularText;
-                    font-family: $fontJura;
-                    font-weight: 600;
-                    color: $whiteColor;
+                .cardNumbers{
+                    @include display_flex_row_space_between_flex_start();
+                    gap:8px;
+                }
+            }
+            .btnPlaceOnOrder{
+                width: 100%;
+                padding: 10px 20px;
+                @extend .flexColumnCenterCenter;
+                margin:75px auto 0px;
+                font-size: $regularText;
+                font-family: $fontJura;
+                font-weight: 600;
+                color: $whiteColor;
+                border:$btnMenu;
+                background-color: $blackColor;
+                transition:$transition;
+                &:hover{
+                    color:$blackColor;
+                    background-color: $whiteColor;
                     border:$btnMenu;
-                    background-color: $blackColor;
-                    transition:$transition;
-                    &:hover{
-                        color:$blackColor;
-                        background-color: $whiteColor;
-                        border:$btnMenu;
-                        font-weight:$bold;
-                    }
+                    font-weight:$bold;
                 }
             }
         }
