@@ -235,21 +235,21 @@
 
             <article class ="tags">
                 <input id="navBarMenu" type="checkbox">
-                <form action="" class="formLogIn">
+                <form class="formLogIn">
                     <label for="navBarMenu" class="tag">
                         <legend class="tagLogIn">Log in</legend>
                     </label>
                     <legend>Welcome back</legend>
                     <fieldset class="formFloating">
-                        <label class="email" for="floatingInput">Enter your email address </label>
-                        <input type="email" class="formControl input" id="floatingInput" placeholder="Email" required>
+                        <label class="email" for="floatingInput">Email</label>
+                        <input type="email" class="formControl input" id="floatingInput" placeholder="Enter your mail" required>
                     </fieldset>
                     <fieldset class="formFloating">
-                        <label class="password" for="floatingInput">Enter your password</label>
-                        <input type="password" class="formControl input" id="floatingPassword" placeholder="Password" required>
+                        <label class="password" for="floatingInput">Password</label>
+                        <input type="text" class="formControl input" id="floatingPassword" placeholder="Enter your password" required>
                     </fieldset>
                     <fieldset class="ctaToSignIn">
-                        <button type="button" class="btnSignIn" type="Submit">Submit</button>
+                        <button type="button" class="btnSignIn">Submit</button>
                         <p>¿Do you have an account with us?</p>
                     </fieldset>
                     <label for="navBarMenu">
@@ -260,29 +260,29 @@
 
                 <!-- CreateAccount -->
 
-                <form action="" class="formCreateAccount">
+                <form class="formCreateAccount">
                     <label  for="navBarMenu" class="tag">
                         <legend class="tagCreateAccount">Create Account</legend>
                     </label>
                     <legend>Create Account</legend>
                     <fieldset class="formFloating">
-                        <label class="firstName" for="floatingInput"></label>First name
-                        <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your first name" required>
+                        <label class="firstName" for="floatingInput">First name</label>
+                        <input type="text" class="formControl input" id="floatingInput" name="firstName" pattern="[A-Za-z]+" minlength="3"  maxlength="10" placeholder="Enter your first name" required>
                     </fieldset>
                     <fieldset class="formFloating">
-                        <label class="lastName" for="floatingInput"></label>Last name
+                        <label class="lastName" for="floatingInput">Last name</label>
                         <input type="text" class="formControl input" id="floatingInput" placeholder="Enter your last name" required>
                     </fieldset>
                     <fieldset class="formFloating">
-                        <label class="email" for="floatingInput"></label>Email address
+                        <label class="email" for="floatingInput">Email address</label>
                         <input type="email" class="formControl input" id="floatingInput" placeholder="Enter your Email" required>
                     </fieldset>
                     <fieldset class="formFloating">
-                        <label class="password"for="floatingPassword"></label>Password
+                        <label class="password"for="floatingPassword">Password</label>
                         <input type="password" class="formControl input" id="floatingPassword" placeholder="Enter your password" required>
                     </fieldset>
                     <fieldset class="ctaToCreateAccount">
-                        <button type="button" class="btnCreateAccount" type="Submit">Submit</button>
+                        <button type="button" class="btnCreateAccount">Submit</button>
                         <p>"Do you already have an account?"</p>
                     </fieldset>
                     <label  for="navBarMenu">
