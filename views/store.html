@@ -267,75 +267,83 @@
             <label for="order" class="orderCross">
                 <img class="crossCloseWhite" src="../img/close_Cross_White.svg" alt="Cross Icon" >
             </label>
-            <div class="unionOrder">
-                <div class="delivery">
-                    <form class="deliveryContact">
-                        <h3 class="contactTitle">Contact</h3>
-                        <label for="email"></label>
-                        <input type="email" id="email" placeholder="Email *">
-                        <h3 class="deliveryTitle">Delivery</h3>
-                        <div class="fullName">
-                            <label for="name"></label>
-                            <input type="text" id="name" placeholder="Name *">
-                            <label for="lastName"></label>
-                            <input type="text" id="lastName" placeholder="Last name *">
-                        </div>
-
-                        <label for="Province"></label>
-                        <input type="text" id="Province" placeholder="Province *">
-
-                        <label for="Address"></label>
-                        <input type="text" id="Address" placeholder="Address *">
-
-                        <label for="cellPhone"></label>
-                        <input type="text" id="cellPhone" placeholder="Cellphone [optional]">
-
-                    </form>
+            <form class="unionOrder">
+                <fieldset class="delivery">
+                    <fieldset class="deliveryContact">
+                        <legend class="contactTitle">Contact</legend>
+                        <fieldset>
+                            <label for="email">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </label>
+                        </fieldset>
+                        <legend class="deliveryTitle">Delivery</legend>
+                        <fieldset>
+                            <label for="firstName">
+                                <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+                            </label>
+                            <label for="lastName">
+                                <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="province">
+                                <input type="text" id="province" name="province" placeholder="Province" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="address">
+                                <input type="text" id="address" name="address" placeholder="Address" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="cellphone">
+                                <input type="tel" id="cellphone" name="cellphone" placeholder="Cellphone number [optional]">
+                            </label>
+                        </fieldset>
+                    </fieldset>
                     <article class="creditCards">
                         <p class="transactions">All transactions are secure and encrypted.</p>
                         <img class="paymentCards" src="../img/payments.webp" alt="Credit cards">
                     </article>
-                </div>
-                <div class="formPayment">
-                    <form class="payment">
-                        <h3 class="paymentTitle">Payment</h3>
-                        <fieldset>
-                            <select>
-                                <option class="card" value="Card select" disabled selected>Card select</option>
-                                <option class="card" value="Credit Card" required>Debit Card</option>
-                                <option class="card" value="Credit Card" required>Credit Card</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <select>
-                                <option class="cardType" value="Card Type" disabled selected>Card type</option>
-                                <option class="cardType" value="Credit Card" required>Master card</option>
-                                <option class="cardType" value="Credit Card" required>Visa</option>
-                                <option class="cardType" value="Credit Card" required>American express</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <label for="cardNumber">
-                                <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
-                                <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
-                                <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
-                                <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
-                            </label>
-                        <fieldset>
-                        <fieldset>
-                            <label for="securityCode">
-                                <input type="tel" id="securityCode" inputmode="numeric" pattern="\d{3}" placeholder="CVC" minlength="3"  maxlength="3" required>
-                            </label>
-                        </fieldset>
-                        <fieldset>
-                            <label for="nameOnCard">
-                                <input type="text" id="nameOnCard" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required>
-                            </label>
-                        </fieldset>
-                        <button href="#" class="btnPlaceOnOrder">Place on order</button>
-                    </form>
-                </div>
-            </div>
+                </fieldset>
+                <fieldset class="formPayment">
+                    <Legend class="paymentTitle">Payment</Legend>
+                    <fieldset>
+                        <select>
+                            <option class="card" value="Card select" disabled selected>Card select</option>
+                            <option class="card" value="Credit Card" required>Debit Card</option>
+                            <option class="card" value="Credit Card" required>Credit Card</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <select>
+                            <option class="cardType" value="Card Type" disabled selected>Card type</option>
+                            <option class="cardType" value="Credit Card" required>Master card</option>
+                            <option class="cardType" value="Credit Card" required>Visa</option>
+                            <option class="cardType" value="Credit Card" required>American express</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="cardNumber">
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                            <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{4}" placeholder="XXXX" minlength="4" maxlength="4" required />-
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="securityCode">
+                            <input type="tel" id="securityCode" inputmode="numeric" pattern="\d{3}" placeholder="CVC" minlength="3"  maxlength="3" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="nameOnCard">
+                            <input type="text" id="nameOnCard" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required>
+                        </label>
+                    </fieldset>
+                    <button href="#" class="btnPlaceOnOrder">Place on order</button>
+                </fieldset>
+            </form>
         </section>
 
         <!-- Purchase Order -->
