@@ -55,7 +55,7 @@
             .deliveryContact{
                 width: 100%;
                 @extend .flexColumn;
-                row-gap: 4px;
+                gap: 4px;
                 fieldset{
                     width: 100%;
                     height: auto;
@@ -146,6 +146,10 @@
                     @include display_flex_row_space_between_flex_start();
                     gap:8px;
                 }
+            }
+            .expirateDateCvc{
+                @include display_flex_row_space_between_flex_start();
+                gap:8px;
             }
             .btnPlaceOnOrder{
                 width: 100%;

@@ -2397,7 +2397,7 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
 }
 .sectionPlaceOrder .unionOrder .delivery .deliveryContact {
   width: 100%;
-  row-gap: 4px;
+  gap: 4px;
 }
 .sectionPlaceOrder .unionOrder .delivery .deliveryContact fieldset {
   width: 100%;
@@ -2488,6 +2488,13 @@ html .mainContainer .arrowUp .directionUp .arrowUpIcon:hover {
   border-radius: 5px;
 }
 .sectionPlaceOrder .unionOrder .formPayment fieldset .cardNumbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+.sectionPlaceOrder .unionOrder .formPayment .expirateDateCvc {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -336,7 +336,10 @@
                             <input type="text" id="nameOnCard" inputmode="text" pattern="[A-Za-z]+" name="cardholderName" minlength="3" maxlength="10" placeholder="Name on card" required/                              >
                         </label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="expirateDateCvc">
+                        <label for="cvc">
+                            <input type="tel" id="cvc" inputmode="numeric" name="cvc" minlength="3" maxlength="3" placeholder="CVC" required/                              >
+                        </label>
                         <label for="expirateDate">
                             <input type="month" id="expirateDate" name="date" required/>
                         </label>
