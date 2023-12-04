@@ -10,32 +10,108 @@ cartStorage = JSON.parse(cartStorage);
 let cartContainer = document.querySelector(".containerArticles");
 
 
+// Mi codigo
+
 //Funcion para renderizar el carrito
+
+// function renderCart(cartItems) {
+//     cartContainer.innerHTML = "";
+//     cartItems.forEach(cartItem => {
+//         const cart = document.createElement("article");
+//         cart.classList.add("cartList");
+//         cart.setAttribute("data-product-id", cartItem.id);
+//         cart.innerHTML =
+//         `
+//                             <img class="itemProduct" src="${cartItem.image}" alt="Product pic">
+//                             <div class="description">
+//                                 <p class="price"> $${cartItem.pricing} </p>
+//                                 <div class="icons">
+//                                     <img src="../img/trash_Icon.svg" alt="Trash icon" class="delete-icon">
+//                                     <img src="../img/edit_Icon.svg" alt="Edit icon" class="edit-icon">
+//                                 </div>
+//                             </div>
+//                             <div class="itemNumber">
+//                                 <div class="counter">
+//                                     <button class="minusBtn">-</button>
+//                                     <span class="counterValue">${cartItem.quantity}</span>
+//                                     <button class="plusBtn">+</button>
+//                                 </div>
+//                             </div>
+//                             <p class="total">$${cartItem.pricing * cartItem.quantity}</p>
+//         `;
+
+//         cartContainer.appendChild(cart);
+
+//         const counterValue = cart.querySelector(".counterValue");
+//         const plusButton = cart.querySelector(".plusBtn");
+//         const minusButton = cart.querySelector(".minusBtn");
+
+//         plusButton.addEventListener('click', () => {
+//             actualizarContador(cartItem, counterValue, 1);
+//         });
+
+//         minusButton.addEventListener('click', () => {
+//             actualizarContador(cartItem, counterValue, -1);
+//         });
+
+//             const deleteIcon = cart.querySelector(".delete-icon");
+//             deleteIcon.addEventListener('click', () => {
+//                 eliminarDelCarrito(cartItem.id);
+//             });
+//         });
+
+//             const editIcons = document.querySelectorAll(".edit-icon");
+//             editIcons.forEach(editIcon => {
+//             editIcon.addEventListener('click', (e) => {
+
+//             const productId = e.currentTarget.closest(".cartList").getAttribute("data-product-id");
+//             const showroomUrl = `showRoom.html?id=${productId}`;
+//             window.location.href = showroomUrl;
+//         });
+//     });
+// }
+
+// renderCart(cartStorage);
+
+
+
+
+
+
+// Codigo gpt PERFECTAMENTE me funiono
+
+// Funcion para renderizar el carrito
 
 function renderCart(cartItems) {
     cartContainer.innerHTML = "";
+
+    // Verificar si cartItems es un array antes de usar forEach
+    if (!Array.isArray(cartItems)) {
+        cartItems = [];
+    }
+
     cartItems.forEach(cartItem => {
         const cart = document.createElement("article");
         cart.classList.add("cartList");
         cart.setAttribute("data-product-id", cartItem.id);
         cart.innerHTML =
-        `
-                            <img class="itemProduct" src="${cartItem.image}" alt="Product pic">
-                            <div class="description">
-                                <p class="price"> $${cartItem.pricing} </p>
-                                <div class="icons">
-                                    <img src="../img/trash_Icon.svg" alt="Trash icon" class="delete-icon">
-                                    <img src="../img/edit_Icon.svg" alt="Edit icon" class="edit-icon">
-                                </div>
-                            </div>
-                            <div class="itemNumber">
-                                <div class="counter">
-                                    <button class="minusBtn">-</button>
-                                    <span class="counterValue">${cartItem.quantity}</span>
-                                    <button class="plusBtn">+</button>
-                                </div>
-                            </div>
-                            <p class="total">$${cartItem.pricing * cartItem.quantity}</p>
+            `
+            <img class="itemProduct" src="${cartItem.image}" alt="Product pic">
+            <div class="description">
+                <p class="price"> $${cartItem.pricing} </p>
+                <div class="icons">
+                    <img src="../img/trash_Icon.svg" alt="Trash icon" class="delete-icon">
+                    <img src="../img/edit_Icon.svg" alt="Edit icon" class="edit-icon">
+                </div>
+            </div>
+            <div class="itemNumber">
+                <div class="counter">
+                    <button class="minusBtn">-</button>
+                    <span class="counterValue">${cartItem.quantity}</span>
+                    <button class="plusBtn">+</button>
+                </div>
+            </div>
+            <p class="total">$${cartItem.pricing * cartItem.quantity}</p>
         `;
 
         cartContainer.appendChild(cart);
@@ -52,24 +128,17 @@ function renderCart(cartItems) {
             actualizarContador(cartItem, counterValue, -1);
         });
 
-            const deleteIcon = cart.querySelector(".delete-icon");
-            deleteIcon.addEventListener('click', () => {
-                eliminarDelCarrito(cartItem.id);
-            });
-        });
-
-            const editIcons = document.querySelectorAll(".edit-icon");
-            editIcons.forEach(editIcon => {
-            editIcon.addEventListener('click', (e) => {
-
-            const productId = e.currentTarget.closest(".cartList").getAttribute("data-product-id");
-            const showroomUrl = `showRoom.html?id=${productId}`;
-            window.location.href = showroomUrl;
+        const deleteIcon = cart.querySelector(".delete-icon");
+        deleteIcon.addEventListener('click', () => {
+            eliminarDelCarrito(cartItem.id);
         });
     });
 }
 
+
 renderCart(cartStorage);
+
+
 
 
 // Funcion actualizar el contador
@@ -135,16 +204,3 @@ function eliminarDelCarrito(productId) {
         console.log("Producto no encontrado en el carrito:", productId);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
